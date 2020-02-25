@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Absolute Cartesian Method}{3}{0}{1}
+\beamer@sectionintoc {2}{Examples}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Example: Slider-crank Mechanism}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Example: Four-bar linkage Mechanism}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Example: Inverted slider-crank Mechanism}{20}{0}{2}
+\beamer@subsectionintoc {2}{4}{Example: R-RTR-RTR mechanism}{27}{0}{2}
