@@ -1,0 +1,47 @@
+\subsection{Acceleration Field for a Rigid Body}
+\begin{frame}
+	Acceleration vector $\vb{a}{}=\xvec[:]{\bm{r}}$ with respect to time $t$:
+	\[\vb{a}{}= \frac{d}{dt}(\vb{v}{O} + \vb{\omega}{}\times\vb{r}{}) = \xvec[.]{\bm{r}}_{\bm{M}}+\xvec[.]{\bm{\omega}}\times\vb{r}{} + \vb{\omega}{}\times\xvec[.]{\bm{r}} = \vb{a}{0}+\vb{\alpha}{}\times\vb{r}{}+\vb{\omega}{}\times(\vb{\omega}{}\times\vb{r}{})\]
+	where $\displaystyle \vb{\alpha}{} = \xvec[.]{\bm{\omega}} = \dot{\omega}_x\ih + \dot{\omega}_y\jh + \dot{\omega}_z\kh + \omega_x\frac{d\ih}{dt} + \omega_y\frac{d\jh}{dt}+\omega_z\frac{d\kh}{dt}$\\
+	$\hskip 22mm\displaystyle = \alpha_x\ih + \alpha_y\jh + \alpha_z\kh + \omega_x\vb{\omega}{}\times\ih + \omega_y\vb{\omega}{}\times\jh + \omega_z\vb{\omega}{}\times\kh$\\
+	$\hskip 22mm\displaystyle = \alpha_x\ih + \alpha_y\jh + \alpha_z\kh + \vb{\omega}{}\times\vb{\omega}{}$\\
+	$\hskip 22mm\displaystyle = \alpha_x\ih + \alpha_y\jh + \alpha_z\kh$
+	\begin{block}{Formula}
+		For any point of a rigid body, its acceleration equation is:
+		\[
+		\vb{a}{}=\vb{a}{0}+\vb{\alpha}{}\times\vb{r}{}+\vb{\omega}{}\times(\vb{\omega}{}\times\vb{r}{})
+		\]
+		where $\vb{\alpha}{}\times\vb{r}{}$ is tangential acceleration\\\hskip10.5mm
+		$\vb{\omega}{}\times(\vb{\omega}{}\times\vb{r}{})$ is centripetal acceleration 
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	In matrix form, acceleration vector $\vb{a}{M}$ of point $M$ relative to fixed reference frame $(O_0x_0y_0z_0)$ can be written as:
+	\[
+	\vb{a}{M}=
+	\begin{bmatrix}
+	a_x\\a_y\\a_z
+	\end{bmatrix}=
+	\begin{bmatrix}
+	a_{Ox}+(z\alpha_y-y\alpha_z)+\omega_y(y\omega_x-x\omega_y)+\omega_z(x\omega_x-x\omega_z)\\
+	a_{Oy}+(x\alpha_z-z\alpha_x)+\omega_z(z\omega_y-y\omega_z)+\omega_x(x\omega_y-y\omega_z)\\
+	a_{Oz}+(y\alpha_x-x\alpha_y)+\omega_x(x\omega_z-z\omega_x)+\omega_y(y\omega_z-z\omega_y)
+	\end{bmatrix}
+	\]\hskip7mm
+	$\displaystyle= \vb{a}{O}+\vb{\alpha}{}\times\vb{r}{MO} + \vb{\omega}{}\times(\vb{\omega}{}\times\vb{r}{MO}) = \vb{a}{O} +\vb{a}{MO}^{\bm t}+ \vb{a}{MO}^{\bm n}$\\
+	where 
+	\[
+	\vb{a}{MO}^{\bm t}=
+	\begin{cases}
+	\perp \vb{r}{MO}\rightturn \vb{\alpha}{}\\\alpha r_{MO}
+	\end{cases}
+	\]
+	\[
+	\hskip 6mm\vb{a}{MO}^{\bm n}=
+	\begin{cases}
+	\uparrow\uparrow \vb{r}{MO}\\\omega^2r_{MO}=\frac{v_{MO}^2}{r_{MO}}
+	\end{cases}
+	\]
+	For planar motions: $\vb{\omega}{}\times(\vb{\omega}{}\times\vb{r}{MO})=-\vb{\omega}{}^2\vb{r}{MO}$
+\end{frame}

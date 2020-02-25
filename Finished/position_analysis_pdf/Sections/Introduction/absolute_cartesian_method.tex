@@ -1,0 +1,30 @@
+\subsection{Absolute Cartesian Method}
+
+\begin{frame}{Definition}
+    \begin{itemize}
+        \item Use a fixed reference frame which has $x,y,z$-axes (as opposed to $r,\theta,z$-axes or $\rho,\theta,z$-axes).
+        \item In a planar kinematic chain, the position of every link is defined by:
+        \begin{itemize}
+            \item Joint positions
+            \item Center of gravity $g$
+            \item Angle $\theta$ with respect to $x$-axis
+       \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+For planar mechanisms, the following relations are considered:
+	\begin{itemize}
+	    \item[] $\displaystyle (x_A-x_B)^2+(y_A-y_B)^2=AB^2=l_{AB}^2$
+	    \item[] $\displaystyle k=\tan{\theta}=\frac{y_B-y_A}{x_B-x_A}$
+	    \item[] $\displaystyle\Rightarrow y=ax+b$
+	\end{itemize}
+where:
+	\begin{itemize}
+	    \item[-] $A(x_A,y_A)$, $B(x_B,y_B)$ are joint coordinates
+	    \item[-] $l_{AB}$ is the length of link $AB$
+	    \item[-] $\theta$ is the angle of link $AB$ with respect to $x$-axis
+	    \item[-] $a,b$ are coefficients ($a$ is slope of link $AB$, $b$ is intercept)
+	\end{itemize}
+Solving these equations often yields 2 position coordinates. Depending on positions of other links, choose the correct solution.
+\end{frame}
