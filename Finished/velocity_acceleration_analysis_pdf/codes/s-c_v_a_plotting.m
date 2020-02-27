@@ -1,13 +1,13 @@
 global AB BC omg1 alp1
 AB = .5; BC = 1; omg1 = [0,0,1]; alp1 = [0,0,-1];
 
-i = 0; phis = zeros(201, 1);
-vCs = phis; aCs = phis;
+i = 0; theta1s = zeros(201, 1);
+vCs = theta1s; aCs = theta1s;
 
-for phi=0:(2*pi/200):2*pi
-    i=i+1; phis(i)=phi;
-    [~,vC,~] = vel(phi); vCs(i, 1) = vC(1);
-    [~,aC,~] = acc(phi); aCs(i, 1) = aC(1);
+for theta1=0:(2*pi/200):2*pi
+    i=i+1; theta1s(i)=phi;
+    [~,vC] = vel(theta1); vCs(i) = vC(1);
+    [~,aC] = acc(theta1); aCs(i) = aC(1);
 end
-plot(phis, vCs(:, 1))
-plot(phis, aCs(:, 1))
+plot(theta1s, vCs)
+plot(theta1s, aCs)
