@@ -1,0 +1,6 @@
+The algorithm used in the assignment is RRT. The basic ideas are as follows:
+- create a set of variables which fully describes the geometry of all obstacles. In this case, the obstacles are simply circles.
+- create a function to detect collision (def in python). Using a little bit of math, we can find out if a line coincides with a circle. Since there are many circles, taking advantage of recursive function is preferable in this case.
+- create a motion planner function accepting x_nearest, x_samp, and a fixed distance d as arguments. This motion planner returns a new point x_new, where x_new is between the line created from x_nearest and x_new. In addition, the distance between x_nearest and x_new is d, satisfying the requirement of RRT algorithm.
+- create a path function which takes edges as 1 argument. After successfully identifying a path to the goal region, a set of edges will be used to crawl from x_new_n in goal region back to x_start. An edge in the set is specified as (x1, x2), e.g (x_start, x_new_1)
+- The rest is based on the pseudocode in the book.

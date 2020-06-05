@@ -1,0 +1,18 @@
+10 examples of linear system:
+- harmonic oscillator
+- fork suspension
+- damper
+- convection
+- spring
+- static air flow
+- static water flow
+- pendulum
+- gyroscope
+- friction
+
+10 exmaples of nonlinear systems:
+All physical devices are nonlinear to some degree.
+
+In-text: (De Silva, 2018)
+
+Your Bibliography: De Silva, C., 2018. Modeling Of Dynamic Systems With Engineering Applications. 1st ed. London: CRC Press, p.123.

@@ -1,50 +1,50 @@
 global AB BC omg1 alp1
 AB = .5; BC = 1; omg1 = [0,0,1]; alp1 = [0,0,-1];
 
-% hold on, axis equal
-% [rB, rC] = pos(pi/3);
-% plot([0, rB(1)], [0,rB(2)], 'r-o')
-% plot([rB(1), rC(1)], [rB(2), rC(2)], 'b-o');
+hold on, axis equal
+[rB, rC] = pos(pi/3);
+plot([0, rB(1)], [0,rB(2)], 'r-o')
+plot([rB(1), rC(1)], [rB(2), rC(2)], 'b-o');
 
-% for phi1=0:2*pi/32:2*pi
-%     hold on, axis equal
-%     [rB, rC] = pos(phi1);
-%     plot([0, rB(1)], [0,rB(2)], 'r-o');
-%     plot([rB(1), rC(1)], [rB(2), rC(2)], 'b-o');
-% end
+for phi1=0:2*pi/32:2*pi
+    hold on, axis equal
+    [rB, rC] = pos(phi1);
+    plot([0, rB(1)], [0,rB(2)], 'r-o');
+    plot([rB(1), rC(1)], [rB(2), rC(2)], 'b-o');
+end
 
-% i=0; phi1s=zeros(201); vCs=phi1s; aCs=phi1s;
-% for phi1=0:(2*pi/200):2*pi
-%     i=i+1;
-%     [~,vC,~] = vel(phi1); vCs(i) = vC(1);
-%     [~,aC,~] = acc(phi1); aCs(i) = aC(1);
-%     phi1s(i)=phi1;
-% end
-% plot(phi1s, vCs)
-% plot(phi1s, aCs)
-% 
-% syms phi(t)
-% phi1 = pi/3;
-% old = {diff(phi, t, 2), diff(phi), phi}; new = {alp1(3), omg1(3), phi1};
-% 
-% [rB, rC] = pos(phi1)
-% [d_rB, d_rC] = d_pos(phi1);
-% d_rB = double(subs(d_rB, old, new))
-% d_rC = double(subs(d_rC, old, new))
-% 
-% [vB, vC, omg2] = vel(phi1)
-% [c_vB, c_vC, c_omg2] = c_vel(phi1)
-% [d_vB, d_vC, d_omg2] = d_vel(phi1);
-% d_vB = double(subs(d_vB, old, new))
-% d_vC = double(subs(d_vC, old, new))
-% d_omg2 = double(subs(d_omg2, old, new))
-% 
-% [aB, aC, alp2] = acc(phi1)
-% [c_aB, c_aC, c_alp2] = c_acc(phi1)
-% [d_aB, d_aC, d_alp2] = d_acc(phi1);
-% d_aB = double(subs(d_aB, old, new))
-% d_aC = double(subs(d_aC, old, new))
-% d_alp2 = double(subs(d_alp2, old, new))
+i=0; phi1s=zeros(201); vCs=phi1s; aCs=phi1s;
+for phi1=0:(2*pi/200):2*pi
+    i=i+1;
+    [~,vC,~] = vel(phi1); vCs(i) = vC(1);
+    [~,aC,~] = acc(phi1); aCs(i) = aC(1);
+    phi1s(i)=phi1;
+end
+plot(phi1s, vCs)
+plot(phi1s, aCs)
+
+syms phi(t)
+phi1 = pi/3;
+old = {diff(phi, t, 2), diff(phi), phi}; new = {alp1(3), omg1(3), phi1};
+
+[rB, rC] = pos(phi1)
+[d_rB, d_rC] = d_pos(phi1);
+d_rB = double(subs(d_rB, old, new))
+d_rC = double(subs(d_rC, old, new))
+
+[vB, vC, omg2] = vel(phi1)
+[c_vB, c_vC, c_omg2] = c_vel(phi1)
+[d_vB, d_vC, d_omg2] = d_vel(phi1);
+d_vB = double(subs(d_vB, old, new))
+d_vC = double(subs(d_vC, old, new))
+d_omg2 = double(subs(d_omg2, old, new))
+
+[aB, aC, alp2] = acc(phi1)
+[c_aB, c_aC, c_alp2] = c_acc(phi1)
+[d_aB, d_aC, d_alp2] = d_acc(phi1);
+d_aB = double(subs(d_aB, old, new))
+d_aC = double(subs(d_aC, old, new))
+d_alp2 = double(subs(d_alp2, old, new))
 
 function [rB, rC] = pos(phi1)
 global AB BC, syms x
