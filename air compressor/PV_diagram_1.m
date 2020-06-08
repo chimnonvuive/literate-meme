@@ -1,5 +1,6 @@
+addpath('./functions/pva')
 %Export XY for Pressure-S diagram of B
-data = readtable('Practical diagram.csv'); s = data{:,1}; P = 10*data{:,2};
+data = readtable('./outputs/Practical_diagram'); s = data{:,1}; P = 10*data{:,2};
 % plot(s,P,'k')
 
 HB = 39; alpha = 90*pi/180; beta = 90*pi/180; n1 = 500; iter = 20000;
