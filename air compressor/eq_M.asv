@@ -1,26 +1,26 @@
 %% Generated external forces and corresponding pva
-data = readtable('./outputs/phiD_PD.txt'); phis = data{:,1}; P_Ds = data{:,2};
-P_Bs = readtable('./outputs/PB_wrt_phiD.txt'); P_Bs = P_Bs{:,1}*10;
+data = readtable('PD_phiD.txt'); phis = data{:,1}; P_Ds = data{:,2};
+P_Bs = readtable('PB_wrt_phiD.txt'); P_Bs = P_Bs{:,1}*10;
 
-rs = readtable('./outputs/lib_pos.txt');
+rs = readtable('system_positions.txt');
 rAs = rs{:,1} + rs{:,5}*1j;
 rBs = rs{:,2} + rs{:,6}*1j;
 rCs = rs{:,3} + rs{:,7}*1j;
 rDs = rs{:,4} + rs{:,8}*1j;
 
-vs = readtable('./outputs/lib_vel.txt');
+vs = readtable('system_velocities.txt');
 vAs = vs{:,1} + vs{:,5}*1j;
 vBs = vs{:,2} + vs{:,6}*1j;
 vCs = vs{:,3} + vs{:,7}*1j;
 vDs = vs{:,4} + vs{:,8}*1j;
 
-as = readtable('./outputs/lib_acc.txt');
+as = readtable('system_accelerations.txt');
 aAs = as{:,1} + as{:,5}*1j;
 aBs = as{:,2} + as{:,6}*1j;
 aCs = as{:,3} + as{:,7}*1j;
 aDs = as{:,4} + as{:,8}*1j;
 
-alps = readtable('./outputs/lib_ang_acc.txt');
+alps = readtable('system_angular_accs.txt');
 alp2s = alps{:,1}; alp4s = alps{:,2};
 %% ----- Gravity on 5 links -----
 m1 = 1;    m2 = 1;    m3 = 1;    m4 = 1;    m5 = 1;    g = -9.81j;
@@ -87,6 +87,4 @@ for i=1:length(phis)
    Fs_eq_Ms(i,:) = [F01, F03, F05, F12, F23, F24, F45, M_eq];
 end
 
-plot(phis*180/pi, Fs_eq_Ms(:,end), 'k'), xlabel('\phi (deg)'), ylabel('M_{equilibrium} (N\cdotmm)')
-f = gcf;
-exportgraphics(f,'./outputs/M_equilibrium.png','Resolution',600)
+plot(phis*180/pi, Fs_eq_Ms, 'ko-'), xlabel('\phi (deg)')

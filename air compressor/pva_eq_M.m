@@ -1,25 +1,26 @@
 % Pressure acting on link 5
-data = readtable('PD_phiD.txt'); phis = data{:,1}; iter = length(phis);
+data = readtable('./outputs/phiD_PD.txt');
+phis = data{:,1}; iter = length(phis);
 
-rs = readtable('system_positions.txt');
+rs = readtable('./outputs/lib_pos.txt');
 rAs = rs{:,1} + rs{:,5}*1j;
 rBs = rs{:,2} + rs{:,6}*1j;
 rCs = rs{:,3} + rs{:,7}*1j;
 rDs = rs{:,4} + rs{:,8}*1j;
 
-vs = readtable('system_velocities.txt');
+vs = readtable('./outputs/lib_vel.txt');
 vAs = vs{:,1} + vs{:,5}*1j;
 vBs = vs{:,2} + vs{:,6}*1j;
 vCs = vs{:,3} + vs{:,7}*1j;
 vDs = vs{:,4} + vs{:,8}*1j;
 
-as = readtable('system_accelerations.txt');
+as = readtable('./outputs/lib_acc.txt');
 aAs = as{:,1} + as{:,5}*1j;
 aBs = as{:,2} + as{:,6}*1j;
 aCs = as{:,3} + as{:,7}*1j;
 aDs = as{:,4} + as{:,8}*1j;
 
-alps = readtable('system_angular_accs.txt');
+alps = readtable('./outputs/lib_ang_acc.txt');
 alp2s = alps{:,1}; alp4s = alps{:,2};
 
 % rA rotates from 135 deg to -45 deg
@@ -47,7 +48,7 @@ rCs_  = zeros(iter, 1); vCs_  = zeros(iter, 1); aCs_  = zeros(iter, 1);
 rDs_  = zeros(iter, 1); vDs_  = zeros(iter, 1); aDs_  = zeros(iter, 1);
 alp2s_ = zeros(iter, 1); alp4s_ = zeros(iter, 1);
 
-figure, sys(iter) = struct('cdata',[],'colormap',[]);
+% figure, sys(iter) = struct('cdata',[],'colormap',[]);
 
 for i=1:iter
     dist = abs(rAs - OA*exp(1j*phis(i)));
@@ -57,16 +58,16 @@ for i=1:iter
     rCs_(i) = rCs(index); vCs_(i) = vCs(index); aCs_(i) = aCs(index);
     rDs_(i) = rDs(index); vDs_(i) = vDs(index); aDs_(i) = aDs(index);
     alp2s_(i) = alp2s(index); alp4s_(i) = alp4s(index);
-    plot_frame(rAs_(i), rBs_(i), rCs_(i), rDs_(i), sys(i));
+%     plot_frame(rAs_(i), rBs_(i), rCs_(i), rDs_(i), sys(i));
 end
 
 rs_ = [rAs_, rBs_, rCs_, rDs_];
 vs_ = [vAs_, vBs_, vCs_, vDs_];
 as_ = [aAs_, aBs_, aCs_, aDs_];
-writematrix([real(rs_), imag(rs_)], 'eq_M_pos');
-writematrix([real(vs_), imag(vs_)], 'eq_M_vel');
-writematrix([real(as_), imag(as_)], 'eq_M_acc');
-writematrix([alp2s_, alp4s_], 'eq_M_alp');
+writematrix([real(rs_), imag(rs_)], './outputs/eq_M_pos');
+writematrix([real(vs_), imag(vs_)], './outputs/eq_M_vel');
+writematrix([real(as_), imag(as_)], './outputs/eq_M_acc');
+writematrix([alp2s_, alp4s_], './outputs/eq_M_alp');
 
 
 function plot_frame(rA, rB, rC, rD, sys)
