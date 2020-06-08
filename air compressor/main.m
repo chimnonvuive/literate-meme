@@ -1,4 +1,4 @@
-addpath('./functions')
+addpath('./functions'), addpath('./outputs')
 % addpath('./functions/velocity')
 % addpath('./functions/acceleration')
 
