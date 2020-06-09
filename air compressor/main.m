@@ -1,6 +1,4 @@
 addpath('./functions'), addpath('./outputs')
-% addpath('./functions/velocity')
-% addpath('./functions/acceleration')
 
 HB = 39; alpha = 90*pi/180; beta = 90*pi/180; n1 = 500; iter = 20000;
 AB = 104.75; 
