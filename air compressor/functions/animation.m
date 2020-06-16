@@ -2,9 +2,9 @@ function animation(rAs, rBs, rCs, rDs)
     figure
     sys(length(rAs)) = struct('cdata',[],'colormap',[]);
     
-    v = VideoWriter('./outputs/animation.avi');
-    v.Quality = 100; open(v);
-    
+%     v = VideoWriter('./outputs/animation.avi');
+%     v.Quality = 100; open(v);
+    figsize = max(abs(rBs));
     for i = 1:length(rAs)
 
 %     ----- plot position -----
@@ -21,8 +21,8 @@ function animation(rAs, rBs, rCs, rDs)
         plot(real(link2_AC), imag(link2_AC), 'ro-');
         plot(real(link2_BC), imag(link2_BC), 'ro-');
         plot(real(link4), imag(link4), 'ko-');
-        xlim([-150,150]); ylim([-150,150]);
+        xlim([-figsize,figsize]); ylim([-figsize,figsize]);
         sys(i) = getframe; clf;
     end
-    writeVideo(v,sys); close(v);
+%     writeVideo(v,sys); close(v);
 end
