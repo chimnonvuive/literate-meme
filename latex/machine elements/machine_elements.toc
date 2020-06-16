@@ -1,6 +1,7 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Shaft Design}{3}%
-\contentsline {section}{\numberline {1.1}Choose material}{3}%
-\contentsline {section}{\numberline {1.2}Determine permissible stress}{4}%
-\contentsline {subsection}{\numberline {1.2.1}Find $ [\sigma _H] $}{4}%
-\contentsline {subsection}{\numberline {1.2.2}Find $ [\sigma _F] $}{4}%
+\contentsline {chapter}{\numberline {1}Shaft Design}{3}
+\contentsline {section}{\numberline {1.1}Nomenclature }{3}
+\contentsline {section}{\numberline {1.2}Choose material}{3}
+\contentsline {section}{\numberline {1.3}Determine permissible stress}{4}
+\contentsline {subsection}{\numberline {1.3.1}Find $ [\sigma _H] $}{4}
+\contentsline {subsection}{\numberline {1.3.2}Find $ [\sigma _F] $}{4}

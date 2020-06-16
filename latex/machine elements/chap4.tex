@@ -2,7 +2,9 @@
 \section{Nomenclature	}
 \section{Choose material}
 We choose material based on the following formula:
-\[v_s=4.5\times10^{-5}n\sqrt[3]{T}\]
+\begin{equation}
+	v_s=4.5\times10^{-5}n\sqrt[3]{T}
+\end{equation}
 With $ n_{sh1} = 2930\unit{rpm} $, $ T_{sh1} \approx 37570.93\unit{N\cdot mm} \Rightarrow v_{s1} \approx 4.42 \unit{m/s}$\\
 With $ n_{sh2} = 586\unit{rpm} $, $ T_{sh2} \approx 178537.08\unit{N\cdot mm} \Rightarrow v_{s2} \approx 1.48 \unit{m/s}$\\
 Therefore, for shaft 1, we choose worm wheel material \foreignlanguage{russian}{бра жн} 10-4-4, which yields $ \sigma_{b1}=600\unit{MPa} $, $ \sigma_{ch1} = 200\unit{MPa} $ according to table 7.1. Using interpolation and table 7.2, the choice of shaft material is quenched and tempered 45 steel (specifications in table 6.1), which yields $ [\sigma_{H1}] \approx 191.3259 \unit{MPa}$.\\
@@ -17,7 +19,9 @@ $ [\sigma_{H2}] \approx 141.7534 \unit{MPa}$
 
 \subsection{Find $ [\sigma_F] $}
 For shaft 1, we use the formula:
-\[[\sigma_{F1}] = [\sigma_{FO1}]K_{FL1}\]
-Since the steel is quenched, we can increase $ [\sigma_{FO1}] $ by $ 25\% $
+\begin{equation}
+	[\sigma_{F1}] = [\sigma_{FO1}]K_{FL1}
+\end{equation}
+Since the steel is quenched, we can increase $ [\sigma_{FO1}] $ by $ 25\% $:\\
 $ [\sigma_{FO1}] = (0.25\sigma_{b1} + 0.08\sigma_{ch1})\times125\% = 207.5\unit{MPa} $\\
-$ K_{FL1} = \sqrt[9]{10}$
+$ K_{FL1} = \sqrt[9]{10^6}$
