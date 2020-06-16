@@ -1,0 +1,23 @@
+\chapter{Shaft Design}
+\section{Nomenclature	}
+\section{Choose material}
+We choose material based on the following formula:
+\[v_s=4.5\times10^{-5}n\sqrt[3]{T}\]
+With $ n_{sh1} = 2930\unit{rpm} $, $ T_{sh1} \approx 37570.93\unit{N\cdot mm} \Rightarrow v_{s1} \approx 4.42 \unit{m/s}$\\
+With $ n_{sh2} = 586\unit{rpm} $, $ T_{sh2} \approx 178537.08\unit{N\cdot mm} \Rightarrow v_{s2} \approx 1.48 \unit{m/s}$\\
+Therefore, for shaft 1, we choose worm wheel material \foreignlanguage{russian}{бра жн} 10-4-4, which yields $ \sigma_{b1}=600\unit{MPa} $, $ \sigma_{ch1} = 200\unit{MPa} $ according to table 7.1. Using interpolation and table 7.2, the choice of shaft material is quenched and tempered 45 steel (specifications in table 6.1), which yields $ [\sigma_{H1}] \approx 191.3259 \unit{MPa}$.\\
+For shaft 2, we choose worm wheel material \foreignlanguage{russian}{сч} 15-32, which yields $ \sigma_{b2}=150\unit{MPa} $, $ \sigma_{ch2} = 320\unit{MPa} $ according to table 7.1. Also using interpolation and table 7.2, the choice of shaft material is 20X steel (specifications in table 6.1), which yields $ [\sigma_{H2}] \approx 141.7534 \unit{MPa}$.
+
+\section{Determine permissible stress}
+
+\subsection{Find $ [\sigma_H] $}
+Since $v_{s1} \approx 4.42 \unit{m/s} < 5\unit{m/s}$ and $v_{s2} \approx 1.48 \unit{m/s} < 2\unit{m/s}$, table 7.2 is used to find $ [\sigma_H] $. From the results above, we choose:\\
+$ [\sigma_{H1}] \approx 191.3259 \unit{MPa}$\\
+$ [\sigma_{H2}] \approx 141.7534 \unit{MPa}$
+
+\subsection{Find $ [\sigma_F] $}
+For shaft 1, we use the formula:
+\[[\sigma_{F1}] = [\sigma_{FO1}]K_{FL1}\]
+Since the steel is quenched, we can increase $ [\sigma_{FO1}] $ by $ 25\% $
+$ [\sigma_{FO1}] = (0.25\sigma_{b1} + 0.08\sigma_{ch1})\times125\% = 207.5\unit{MPa} $\\
+$ K_{FL1} = \sqrt[9]{10}$

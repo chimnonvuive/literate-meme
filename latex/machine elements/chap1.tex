@@ -1,0 +1,70 @@
+\chapter{Motor Design}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{7cm}}
+	$ \eta_c $ & coupling efficiency\\
+	$ \eta_b $ & bearing efficiency\\
+	$ \eta_{hg} $ & helical gear efficiency\\
+	$ \eta_{ch} $ & chain drive efficiency\\
+	$ \eta_{sys} $ & efficiency of the system\\
+	$ P_m $ & maximum operating power of belt conveyor, $ kW $\\
+	$ P_w $ & opearting power of belt conveyor given a workload, $ kW $\\
+	$ P_{motor} $ & calculated motor power to drive the system, $ kW $\\
+	$ P_{sh} $ & operating power of shaft, $ kW $\\
+\end{tabular}
+\begin{tabular}[t]{lp{7cm}}
+	$ n_{bc} $ & rotational speed of belt conveyor, $ rpm $\\
+	$ n_{sh} $ & rotational speed of shaft, $ rpm $\\
+	$ u_{hg} $ & transmission ratio of helical gear\\
+	$ u_{ch} $ & transmission ratio of chain drive\\
+	$ u_{sys} $ & transmission ratio of the system\\
+	$ T_{motor} $ & motor torque, $ N\cdot mm $\\
+	$ T_{sh} $ & shaft torque, $ N\cdot mm $
+\end{tabular}
+\section{Calculate $ \eta_{sys} $}
+From table 2.3 :\\
+$ \eta_c = 1 $, $ \eta_b = 0.99 $, $ \eta_{hg} = 0.96 $, $ \eta_{ch} = 0.95 $\\
+$ \eta_{sys} = \eta_c\eta_b^3\eta_{hg}\eta_{ch} \approx 0.88 $
+\section{Calculate $ P_{motor} $}
+$ P_m = \dfrac{F_tv}{1000} \approx 13.73 \unit{kW}$\\\\
+From equation (2.13) :\\
+$ P_w = P_m\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} \approx 10.41 \unit{kW} $\\
+$ P_{motor} = \dfrac{P_w}{\eta_{sys}} \approx 11.76\unit{kW}$
+\section{Calculate $ n_{motor} $}
+$ n_{bc} = \dfrac{6\times10^4v}{\pi D} \approx 116.5 \unit{rpm}$\\
+$ u_{ch} = 5$, $ u_{hg} = 5$ (table 2.4)\\
+$ u_{sys} = u_{ch}u_{hg} = 25 $\\
+$ n_{motor} = u_{sys}n_{bc} \approx 2912.54  \unit{rpm} $
+\section{Choose motor}
+The operating power and rotational speed of the chosen motor must be larger than estimated $ P_{motor} $ and $ n_{motor} $, respectively. Thus, from table P1.3, we choose motor 4A160S2Y3 operating at $ 15\unit{kW} $ and $ 2930\unit{rpm} $\\
+$\Rightarrow P_{motor} = 15\unit{kW}, n_{motor} = 2930\unit{rpm}$\\
+Recalculating $ u_{sys} $ with the new $ P_{motor} $ and $ n_{motor} $, we obtain:\\
+$ u_{sys} = \dfrac{n_{motor}}{n_{bc}} \approx 25.15	$\\
+Assuming $ u_{hg} = const $:\\
+$ u_{ch} = \dfrac{u_{sys}}{u_{hg}} \approx 5.03$
+\section{Calculate power, rotational speed and torque of the motor and 2 shafts}
+\subsection{Power}
+$ P_{ch} = P_w \approx 10.41\unit{kW}$\\
+$ P_{sh2} = \dfrac{P_{ch}}{\eta_{ch}} \approx 10.96\unit{kW}$\\
+$ P_{sh1} = \dfrac{P_{sh2}}{\eta_b\eta_{hg}} \approx 11.53\unit{kW}$\\
+$ P_{motor} = \dfrac{P_{sh1}}{\eta_b\eta_c} \approx 11.64\unit{kW}$
+\subsection{Rotational speed}
+$ n_{sh1} = n_{motor} = 2930\unit{rpm}$\\
+$ n_{sh2} = \dfrac{n_{sh1}}{u_{hg}} = 586 \unit{rpm}$
+\subsection{Torque}
+$ T_{motor} = 9.55\times10^6 \dfrac{P_{motor}}{n_{motor}} \approx 37950.46 \unit{N\cdot mm}$\\
+$ T_{sh1} = 9.55\times10^6 \dfrac{P_{sh1}}{n_{sh1}} \approx 37570.93 \unit{N\cdot mm}$\\
+$ T_{sh2} = 9.55\times10^6 \dfrac{P_{sh2}}{n_{sh2}} \approx 178537.08 \unit{N\cdot mm}$\\\\
+In summary, we obtain the following table:
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |l|l|l|l|}
+		\hline
+		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Motor} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}Shaft 1} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Shaft 2} \\ \hline
+		$ P \unit{kW}$ & 11.64                                            & \multicolumn{2}{l|}{11.527}                          & 10.96                                              \\ \hline
+		$ u $ & \multicolumn{2}{p{3.cm}|}{5}                                                         & \multicolumn{2}{l|}{5.03}                                                       \\ \hline
+		$ n \unit{rpm}$ & 2930                                               & \multicolumn{2}{l|}{2930}                            & 586                                                  \\ \hline
+		$ T \unit{N\cdot mm}$ & 37950.44                                         & \multicolumn{2}{l|}{37570.93}                      & 178537.08                                          \\ \hline
+	\end{tabular}
+	\caption{System properties}
+\end{table}
