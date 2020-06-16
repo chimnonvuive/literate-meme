@@ -1,27 +1,27 @@
 % Pressure acting on link 5
-data = readtable('PD_phiD.txt'); phis = data{:,1}; iter = length(phis);
+data = readtable('./outputs/phiD_PD.txt'); phis = data{:,1}; iter = length(phis);
 
-rs = readtable('system_positions.txt');
+rs = readtable('outputs/lib_pos.txt');
 rAs = rs{:,1} + rs{:,5}*1j;
 rBs = rs{:,2} + rs{:,6}*1j;
 rCs = rs{:,3} + rs{:,7}*1j;
 rDs = rs{:,4} + rs{:,8}*1j;
 
-vs = readtable('system_velocities.txt');
+vs = readtable('outputs/lib_vel.txt');
 vAs = vs{:,1} + vs{:,5}*1j;
 vBs = vs{:,2} + vs{:,6}*1j;
 vCs = vs{:,3} + vs{:,7}*1j;
 vDs = vs{:,4} + vs{:,8}*1j;
 
-as = readtable('system_accelerations.txt');
+as = readtable('outputs/lib_acc.txt');
 aAs = as{:,1} + as{:,5}*1j;
 aBs = as{:,2} + as{:,6}*1j;
 aCs = as{:,3} + as{:,7}*1j;
 aDs = as{:,4} + as{:,8}*1j;
 
-alps = readtable('system_angular_accs.txt');
+alps = readtable('outputs/lib_ang_acc.txt');
 alp2s = alps{:,1}; alp4s = alps{:,2};
-
+    
 % rA rotates from 135 deg to -45 deg
 rA1 = [rAs(17501:20000);rAs(1:7500)];
 rB1 = [rBs(17501:20000);rBs(1:7500)];
@@ -47,8 +47,6 @@ rCs_  = zeros(iter, 1); vCs_  = zeros(iter, 1); aCs_  = zeros(iter, 1);
 rDs_  = zeros(iter, 1); vDs_  = zeros(iter, 1); aDs_  = zeros(iter, 1);
 alp2s_ = zeros(iter, 1); alp4s_ = zeros(iter, 1);
 
-figure, sys(iter) = struct('cdata',[],'colormap',[]);
-
 for i=1:iter
     dist = abs(rAs - OA*exp(1j*phis(i)));
     index = find(dist == min(dist));
@@ -57,7 +55,6 @@ for i=1:iter
     rCs_(i) = rCs(index); vCs_(i) = vCs(index); aCs_(i) = aCs(index);
     rDs_(i) = rDs(index); vDs_(i) = vDs(index); aDs_(i) = aDs(index);
     alp2s_(i) = alp2s(index); alp4s_(i) = alp4s(index);
-    plot_frame(rAs_(i), rBs_(i), rCs_(i), rDs_(i), sys(i));
 end
 
 rs_ = [rAs_, rBs_, rCs_, rDs_];
@@ -67,24 +64,3 @@ writematrix([real(rs_), imag(rs_)], 'eq_M_pos');
 writematrix([real(vs_), imag(vs_)], 'eq_M_vel');
 writematrix([real(as_), imag(as_)], 'eq_M_acc');
 writematrix([alp2s_, alp4s_], 'eq_M_alp');
-
-
-function plot_frame(rA, rB, rC, rD, sys)
-
-    link1 = [0, rA]; 
-    link2_AB = [rA, rB];
-    link2_AC = [rA, rC];
-    link2_BC = [rB, rC]; 
-    link4 = [rC, rD];
-    
-    hold on, axis equal
-    plot(real(link1), imag(link1), 'bo-')
-    plot(real(link2_AB), imag(link2_AB), 'ro-')
-    plot(real(link2_AC), imag(link2_AC), 'ro-')
-    plot(real(link2_BC), imag(link2_BC), 'ro-')
-    plot(real(link4), imag(link4), 'go-')
-    xlim([-150,150]); ylim([-150,150]);
-    drawnow;
-    sys = getframe;
-    clf
-end
