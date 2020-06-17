@@ -1,3 +1,3 @@
 function P = cdot(F, v)
-  P = real(F)*real(F) + imag(v)*imag(v);
+  P = real(F)*real(v) + imag(F)*imag(v);
 end
