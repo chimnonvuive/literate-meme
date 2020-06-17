@@ -1,5 +1,10 @@
 function [phi1] = phi1wrtPD(sD)
 
+    params = readtable('parameters');
+    alpha = params{1,1}*pi/180;     xOD = pi/2 + alpha/2; 
+    HB = params{1,4}*1e-3;      OA = HB/2;
+    AB = params{1,5}*1e-3;
+
     crest = find(sD == max(sD),1,'first');
 
     rs = readtable('outputs/lib_pos.txt');
@@ -42,25 +47,19 @@ function [phi1] = phi1wrtPD(sD)
 %     rD2 = rDs(2501:12500)/1e3;
     
     len_rs = length(rAs);
-    xOD = angle(rDs(1));
     dp1 = fix(xOD*len_rs/2/pi);
     dp2 = fix((xOD+pi)*len_rs/2/pi);
     % rA rotates from 135 deg to -45 deg
-    rA1 = [rAs(dp2+1:end);rAs(1:dp1)]/1e3;
-    rB1 = [rBs(dp2+1:end);rBs(1:dp1)]/1e3;
-    rC1 = [rCs(dp2+1:end);rCs(1:dp1)]/1e3;
-    rD1 = [rDs(dp2+1:end);rDs(1:dp1)]/1e3;
+    rA1 = [rAs(dp2+1:end);rAs(1:dp1)];
+    rB1 = [rBs(dp2+1:end);rBs(1:dp1)];
+    rC1 = [rCs(dp2+1:end);rCs(1:dp1)];
+    rD1 = [rDs(dp2+1:end);rDs(1:dp1)];
     
     % rA rotates from -45 deg to 135 deg
-    rA2 = rAs(dp1+1:dp2)/1e3;
-    rB2 = rBs(dp1+1:dp2)/1e3;
-    rC2 = rCs(dp1+1:dp2)/1e3;
-    rD2 = rDs(dp1+1:dp2)/1e3;
-    
-    
-
-    % ----- Designed parameters -----
-    OA = abs(rAs(1))/1e3; AB = abs(rAs(1)-rBs(1))/1e3;
+    rA2 = rAs(dp1+1:dp2);
+    rB2 = rBs(dp1+1:dp2);
+    rC2 = rCs(dp1+1:dp2);
+    rD2 = rDs(dp1+1:dp2);
 
     iter = length(sD);
     rAs_ = zeros(iter, 1);
