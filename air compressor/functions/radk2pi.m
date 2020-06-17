@@ -9,12 +9,10 @@ function angle_rad = radk2pi(angle_rad)
         end
     end
     left_max = cell2mat(left_max);
-    for k=1:length(left_max)-1
-        angle_rad(left_max(k)+1:left_max(k+1)) = angle_rad(left_max(k)+1:left_max(k+1)) + 2*pi*k;
+    for k=1:length(left_max)
+        if k<length(left_max)
+            angle_rad(left_max(k)+1:left_max(k+1)) = angle_rad(left_max(k)+1:left_max(k+1)) + 2*pi*k;
+        end
     end
-    if isempty(k)
-        angle_rad(left_max(end)+1:end) = angle_rad(left_max(end)+1:end) + 2*pi;
-    else
-        angle_rad(left_max(end)+1:end) = angle_rad(left_max(end)+1:end) + 2*pi*(k+1);
-    end
+    angle_rad(left_max(end)+1:end) = angle_rad(left_max(end)+1:end) + 2*pi*(k+1);
 end
