@@ -78,7 +78,7 @@ b=min(pointB);
 x_td = linspace(-0.1,0.15,26);
 ytmax=tan(psi_max)*x_td+a;
 ytmin=tan(psi_min)*x_td+b;
-Jd=muJ*(a-b/3)/(tan(psi_max)-tan(psi_min))-phi_Js(1,2);
+Jd=muJ*(a-b/3)/(tan(psi_max)-tan(psi_min))+phi_Js(1,2);
 
 %% Plotting diagrams
 
@@ -102,3 +102,6 @@ Jd=muJ*(a-b/3)/(tan(psi_max)-tan(psi_min))-phi_Js(1,2);
 grid on, hold on
 plot(J,E,'k');
 plot(x_td,ytmax,'r',x_td,ytmin,'r');
+
+%% Clear some unecessary data
+clear params sP_B sP_D phi_u phi_Js_u index iter
