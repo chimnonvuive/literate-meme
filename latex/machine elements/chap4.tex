@@ -22,6 +22,10 @@
 	$ q $ & standardized coefficient of shaft diameter\\
 	$ b_O $ & rolling bearing width, $ \unit{mm} $\\
 	$ l_m $ & hub diameter, $ \unit{mm} $\\
+	$ k_1 $ & distance between elements, $ \unit{mm} $\\
+	$ k_2 $ & distance between bearing surface and inner walls of the gearbox, $ \unit{mm} $\\
+	$ k_3 $ & distance between element surface and bearing lid, $ \unit{mm} $\\
+	$ h_n $ & distance between bearing lid and bolt, $ \unit{mm} $\\
 	$ T $ & torque on shaft\\
 	$ \alpha_{tw} $ & meshing profile angle, $ ^\circ $\\
 	$ \beta $ & helix angle, $ ^\circ $\\
@@ -95,12 +99,16 @@ Since shaft 1 receives input torque $ T_{sh1} $ and shaft 2 is produces output t
 $ d_1 \geq \sqrt[3]{\dfrac{T_{sh1}}{0.2[\tau_1]}} \approx 23.22\unit{(mm)}\Rightarrow d_1 = 25\unit{(mm)}$\\
 $ d_2 \geq \sqrt[3]{\dfrac{T_{sh2}}{0.2[\tau_2]}} \approx 30.99\unit{(mm)}\Rightarrow d_1 = 35\unit{(mm)}$
 \subsection{Identify the distance between bearings and applied forces}
-From table (10.2), we can estimate $ b_O $. On shaft 1, $ b_{O1} = 15\unit{(mm)} $. On shaft 2, $ b_{O2} = 21\unit{(mm)} $. Using equation (10.10), $ l_{m1} = 1.5d_1 \approx  34.83\unit{(mm)} $, $ l_{m2} = 1.5d_2 \approx 46.48\unit{(mm)} $.
+From table (10.2), we can estimate $ b_O $. On shaft 1, $ b_{O1} = 15\unit{(mm)} $. On shaft 2, $ b_{O2} = 21\unit{(mm)} $. Using equation (10.10), $ l_{m12} = 1.5d_1 \approx  34.83\unit{(mm)} $, $ l_{m21} = l_{m22} = 1.5d_2 \approx 46.48\unit{(mm)} $.\\
+From table (10.3), we choose $ k_1=10\unit{(mm)}$, $ k_2=8\unit{(mm)} $, $ k_3=15\unit{(mm)} $, $ h_n=18\unit{(mm)} $. This parameters apply for both shafts in the system.\\
+Table (10.4) introduce the formulas for several types of gearbox. Since our system only concerns about 1-level gear reducer, the formulas below are used:\\
+$ l_{22} = -l_{c22} = -\left[ 0.5(l_{m22}+b_{O2})+k_3+h_n \right]  $
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=120mm]{shaft1.png}
 	\caption{Shaft design and its dimensions}
 \end{figure}
+
 %\paragraph{Find $ a_w $} On p.149, the following formula is used:
 %\begin{equation}
 %	a_w = (z_2+q)\sqrt[3]{\left( \dfrac{170}{z_2[\sigma_H]}\right) ^2 \dfrac{T_2K_H}{q}}
