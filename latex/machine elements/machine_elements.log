@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.30)  19 JUN 2020 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 07:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,7 +882,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 \tf@lot=\write4
 \openout4 = `machine_elements.lot'.
 
- (./chap2.tex [3
+ (./chap1.tex [3
 
 ]
 Chapter 1.
@@ -895,6 +895,34 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 
+Overfull \hbox (37.46362pt too wide) in paragraph at lines 3--23
+[] [] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 23.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 16.1pt on input line 23.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 11.4pt on input line 23.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+
+ []
+
+[4
+
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 45.
+ [5]) (./chap2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 54--1
+
+ []
+
+[6]
+Chapter 2.
+
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 []|\T1/ntxtlf/m/n/14.4 experimental ro-ta-tional speed,
  []
@@ -904,7 +932,7 @@ Overfull \hbox (11.14772pt too wide) in paragraph at lines 3--33
 [] [] 
  []
 
-[4
+[7
 
 ]
 Underfull \hbox (badness 5504) in paragraph at lines 38--39
@@ -916,14 +944,8 @@ Overfull \hbox (23.29498pt too wide) in paragraph at lines 34--50
 [][] [] 
  []
 
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 50.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.1pt on input line 50.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 11.4pt on input line 50.
-[5]) (./chap3.tex [6] [7]
-Chapter 2.
+[8]) (./chap3.tex [9] [10]
+Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 []|\T1/ntxtlf/m/n/14.4 permissible con-tact stress
@@ -953,7 +975,7 @@ Overfull \hbox (23.47408pt too wide) in paragraph at lines 3--28
 [] [] 
  []
 
-[8
+[11
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
@@ -980,62 +1002,61 @@ Overfull \hbox (32.9404pt too wide) in paragraph at lines 29--72
 [][] [] 
  []
 
-[9]
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 80.
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 85--91
 
  []
 
-[10]
+[13]
 Overfull \hbox (1.01117pt too wide) in paragraph at lines 108--114
 \T1/ntxtlf/m/n/14.4 gear-box, we es-ti-mate $\OML/ntxmi/m/it/14.4 a[]$ \T1/ntxt
 lf/m/n/14.4 us-ing equa-tion (6.15a) be-fore fol-low-ing SEV229-75 stan-dard: 
  []
 
-[11] [12] [13]
+[14] [15] [16]
 Overfull \hbox (4.7626pt too wide) in paragraph at lines 183--185
 \T1/ntxtlf/m/n/14.4 Through cal-cu-la-tions, there is no cor-rec-tion needed, i
 .e. $\OML/ntxmi/m/it/14.4 y \U/ntxmia/m/it/14.4 = \OT1/ntxtlf/m/n/14.4 0$\T1/nt
 xtlf/m/n/14.4 . Thus, the spec-i-fi-ca-tions
  []
 
-[14]) (./chap4.tex [15]
-Chapter 3.
+[17]) (./chap4.tex [18]
+Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-[]|\T1/ntxtlf/m/n/14.4 permissible bend-ing stress
- []
-
-
-Overfull \hbox (22.15721pt too wide) in paragraph at lines 3--22
+Overfull \hbox (5.5661pt too wide) in paragraph at lines 3--36
 [] [] 
  []
 
-[16
+[19
 
-] [17]) [18] (./machine_elements.aux) ) 
+] [20]
+<shaft1.png, id=77, 673.51625pt x 479.7925pt>
+File: shaft1.png Graphic file (type png)
+<use shaft1.png>
+Package pdftex.def Info: shaft1.png  used on input line 101.
+(pdftex.def)             Requested size: 341.43306pt x 243.22672pt.
+) [21] [22 <./shaft1.png>] (./machine_elements.aux) ) 
 Here is how much of TeX's memory you used:
- 8049 strings out of 481239
- 106508 string characters out of 5920377
- 360745 words of memory out of 5000000
- 23082 multiletter control sequences out of 15000+600000
+ 8060 strings out of 481239
+ 106625 string characters out of 5920377
+ 360743 words of memory out of 5000000
+ 23088 multiletter control sequences out of 15000+600000
  619713 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,74p,832b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc
-/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/new
-tx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTX
-MI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></u
-sr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/typ
-e1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
-ewtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on machine_elements.pdf (19 pages, 124900 bytes).
+ 45i,13n,74p,832b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/Ne
+wTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/t
+exmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.
+pfb>
+Output written on machine_elements.pdf (23 pages, 237443 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
