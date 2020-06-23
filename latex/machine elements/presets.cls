@@ -15,4 +15,4 @@
 \usepackage[none]{hyphenat}
 \renewcommand{\baselinestretch}{1.5}
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
-\newcommand{\unit}[1]{\ensuremath{\, (\mathrm{#1})}}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
