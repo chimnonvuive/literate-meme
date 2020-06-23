@@ -1,0 +1,53 @@
+
+\subsection{Independent Contour Method}
+\begin{frame}{Definition}
+	\begin{block}{Formula}
+		For a closed mechanism, the number of independent contours $N$ is calculated as follows:
+		\[N=c-n\]
+		where\\
+		$c$ is the number of joints\\
+		$n$ is the number of links, excluding ground
+	\end{block}
+	The number of independent contours depends on the number of joint connections to ground. Its graphical representation can be referred to as \textit{connectivity table}, \textit{structural diagram} or \textit{\textbf{contour diagram}}.
+\end{frame}
+\begin{frame}{Velocity Analysis}
+	\begin{block}{Formulas}
+		For a closed kinematic chain:
+		\begin{itemize}
+			\item $\displaystyle\sum_{i}\vb{\omega}{i-1,i}=\vb{0}{}$
+			\item $\displaystyle\sum_{i}\vb{r}{A_i}\times\vb{\omega}{i-1,i} + \sum_{i}\vb{v}{A_{i-1,i}}=\vb{0}{}$
+		\end{itemize}
+		where:\\
+		$\vb{\omega}{i-1,i}$ is the angular velocity of link $i$ relative to link $i-1$\\
+		$\vb{r}{A_i}$ is the position vector of joint $A_i$\\
+		$\vb{v}{A_{i-1,i}}$ is the velocity vector of joint $A_i$ on link $i$ relative to joint $A_i$ on link $A_{i-1}$\\
+	\end{block}
+\end{frame}
+\begin{frame}{Acceleration Analysis}
+\begin{block}{Formulas}
+	For a closed kinematic chain:
+	\begin{itemize}
+		\item $\displaystyle\sum_{i}\vb{\alpha}{i-1,i}+\sum_{i}\vb{\omega}{i}\times\vb{\omega}{i-1,i}=\vb{0}{}$
+		\item $\displaystyle\sum_{i}\vb{r}{A_i}\times(\vb{\alpha}{i-1,i}+\vb{\omega}{i}\times\vb{\omega}{i-1,i}) +  \sum_{i}\vb{a}{A_{i-1,i}} + 2 \sum_i\vb{\omega}{i-1}\times \vb{v}{A_{i-1,i}}+ \sum_{i}\vb{\omega}{i}\times(\vb{\omega}{i}\times \vb{r}{A_{i+1}A_i})=\vb{0}{}$
+	\end{itemize}
+	where:\\
+	$\vb{\omega}{i}$, $\vb{\omega}{i-1}$ are the angular velocities of link $i$ and $i-1$ relative to ground\\
+	$\vb{\alpha}{i-1,i}$ is the angular acceleration of joint $A_i$ relative to joint $A_{i-1}$\\
+	$\vb{a}{A_{i-1,i}}$ is the acceleration vector of joint $A_i$ on link $i$ relative to joint $A_i$ on link $A_{i-1}$\\
+\end{block}
+\end{frame}
+\begin{frame}
+	In planar motions, the above equations for acceleration analysis can be reduced to:
+	\begin{itemize}
+		\item$\displaystyle\sum_{i}\vb{\alpha}{i-1,i}=\vb{0}{}$
+		\item $\displaystyle\sum_{i}\vb{r}{A_i}\times\vb{\alpha}{i-1,i} +  \sum_{i}\vb{a}{A_{i-1,i}} + 2 \sum_i\vb{\omega}{i-1}\times \vb{v}{A_{i-1,i}}- \sum_{i}\vb{\omega}{i}^2\vb{r}{A_{i+1}A_i})=\vb{0}{}$
+	\end{itemize}\vskip3mm
+	In general, the steps of this method are:
+	\begin{enumerate}
+		\item Perform position analysis.
+		\item Draw the contour diagram of the mechanism.
+		\item Use the formulas above to obtain the results.
+		\item Calculate $\vb{\omega}{i}$ and $\vb{a}{i}$ with respect to ground.
+		\item Compute relevant velocities and accelerations.
+	\end{enumerate}
+\end{frame}
