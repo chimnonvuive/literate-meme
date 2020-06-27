@@ -20,51 +20,58 @@
 	$ T_{motor} $ & motor torque, $ \unit{N\cdot mm} $\\
 	$ T_{sh} $ & shaft torque, $ \unit{N\cdot mm} $
 \end{tabular}
+
 \section{Calculate $ \eta_{sys} $}
 From table 2.3 :\\
 $ \eta_c = 1 $, $ \eta_b = 0.99 $, $ \eta_{hg} = 0.96 $, $ \eta_{ch} = 0.95 $\\
 $ \eta_{sys} = \eta_c\eta_b^3\eta_{hg}\eta_{ch} \approx 0.88 $
+
 \section{Calculate $ P_{motor} $}
 $ P_m = \dfrac{F_tv}{1000} \approx 13.73 \unit{(kW)}$\\\\
 From equation (2.13) :\\
 $ P_w = P_m\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} \approx 10.41 \unit{(kW)} $\\
 $ P_{motor} = \dfrac{P_w}{\eta_{sys}} \approx 11.76\unit{(kW)}$
+
 \section{Calculate $ n_{motor} $}
 $ n_{bc} = \dfrac{6\times10^4v}{\pi D} \approx 116.5 \unit{(rpm)}$\\
 $ u_{ch} = 5$, $ u_{hg} = 5$ (table 2.4)\\
 $ u_{sys} = u_{ch}u_{hg} = 25 $\\
 $ n_{motor} = u_{sys}n_{bc} \approx 2912.54  \unit{(rpm)} $
+
 \section{Choose motor}
-The operating power and rotational speed of the chosen motor must be larger than estimated $ P_{motor} $ and $ n_{motor} $, respectively. Thus, from table P1.3, we choose motor 4A160S2Y3 operating at $ 15\unit{kW} $ and $ 2930\unit{rpm} $\\
-$\Rightarrow P_{motor} = 15\unit{kW}, n_{motor} = 2930\unit{(rpm)}$\\
+To work normally, the maximum operating power of the chosen motor must be no smaller than both estimated $ P_{motor} $ and $ P_m $. Since $ P_{motor} < P_m $ for our case, the minimum operating power of choice is $ P_m $. In similar fashion, its rotational speed must also be no smaller than estimated $ n_{motor} $.\\
+Thus, from table P1.3, we choose motor 4A160M2Y3 which operates at $ 18.5\unit{kW} $ and $ 2930\unit{rpm} $\\
+$\Rightarrow P_{motor} = 18.5\unit{kW}, n_{motor} = 2930\unit{(rpm)}$\\
 Recalculating $ u_{sys} $ with the new $ P_{motor} $ and $ n_{motor} $, we obtain:\\
 $ u_{sys} = \dfrac{n_{motor}}{n_{bc}} \approx 25.15	$\\
 Assuming $ u_{hg} = const $:\\
 $ u_{ch} = \dfrac{u_{sys}}{u_{hg}} \approx 5.03$
+
 \section{Calculate power, rotational speed and torque of the motor and 2 shafts}
+Let us denote $ P_{sh1} $, $ n_{sh1} $ and $ T_{sh1} $ be the transmitted power, rotational speed and torque onto shaft 1, respectively. Similarly, $ P_{sh2} $, $ n_{sh2} $ and $ T_{sh2} $ will be the transmitted parameters onto shaft 2. These notations will be used throughout the next chapters.
 \subsection{Power}
-$ P_{ch} = P_w \approx 10.41\unit{(kW)}$\\
-$ P_{sh2} = \dfrac{P_{ch}}{\eta_{ch}} \approx 10.96\unit{(kW)}$\\
-$ P_{sh1} = \dfrac{P_{sh2}}{\eta_b\eta_{hg}} \approx 11.53\unit{(kW)}$\\
-$ P_{motor} = \dfrac{P_{sh1}}{\eta_b\eta_c} \approx 11.64\unit{(kW)}$
+$ P_{ch} = P_m \approx 13.72 \unit{(kW)}$\\
+$ P_{sh2} = \dfrac{P_{ch}}{\eta_{ch}} \approx 14.45 \unit{(kW)}$\\
+$ P_{sh1} = \dfrac{P_{sh2}}{\eta_b\eta_{hg}} \approx 15.2 \unit{(kW)}$\\
+$ P_{motor} = \dfrac{P_{sh1}}{\eta_b\eta_c} \approx 15.35 \unit{(kW)}$
 \subsection{Rotational speed}
 $ n_{sh1} = n_{motor} = 2930\unit{(rpm)}$\\
 $ n_{sh2} = \dfrac{n_{sh1}}{u_{hg}} = 586 \unit{(rpm)}$
 \subsection{Torque}
-$ T_{motor} = 9.55\times10^6 \dfrac{P_{motor}}{n_{motor}} \approx 37950.46 \unit{(N\cdot mm)}$\\
-$ T_{sh1} = 9.55\times10^6 \dfrac{P_{sh1}}{n_{sh1}} \approx 37570.93 \unit{(N\cdot mm)}$\\
-$ T_{sh2} = 9.55\times10^6 \dfrac{P_{sh2}}{n_{sh2}} \approx 178537.08 \unit{(N\cdot mm)}$\\\\
-In summary, we obtain the following table:
+$ T_{motor} = 9.55\times10^6 \dfrac{P_{motor}}{n_{motor}} \approx 50047.36 \unit{(N\cdot mm)}$\\
+$ T_{sh1} = 9.55\times10^6 \dfrac{P_{sh1}}{n_{sh1}} \approx 49547.08 \unit{(N\cdot mm)}$\\
+$ T_{sh2} = 9.55\times10^6 \dfrac{P_{sh2}}{n_{sh2}} \approx 235447.73 \unit{(N\cdot mm)}$\\\\
+In summary, we obtain the following table:\\\\\\\\\\
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|l|l|l|}
 		\hline
 		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Motor} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}Shaft 1} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Shaft 2} \\ \hline
-		$ P \unit{(kW)}$ & 11.64                                            & \multicolumn{2}{l|}{11.527}                          & 10.96                                              \\ \hline
+		$ P \unit{(kW)}$ & 15.35                                            & \multicolumn{2}{l|}{15.2}                          & 14.45                                              \\ \hline
 		$ u $ & \multicolumn{2}{p{3.cm}|}{5}                                                         & \multicolumn{2}{l|}{5.03}                                                       \\ \hline
 		$ n \unit{(rpm)}$ & 2930                                               & \multicolumn{2}{l|}{2930}                            & 586                                                  \\ \hline
-		$ T \unit{(N\cdot mm)}$ & 37950.44                                         & \multicolumn{2}{l|}{37570.93}                      & 178537.08                                          \\ \hline
+		$ T \unit{(N\cdot mm)}$ & 50047.36                                         & \multicolumn{2}{l|}{49547.08}                      & 235447.73                                          \\ \hline
 	\end{tabular}
 	\caption{System properties}
 \end{table}

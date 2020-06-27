@@ -31,8 +31,6 @@
 	$ \beta $ & helix angle, $ ^\circ $\\
 	$ _1 $ & subscript for shaft 1\\
 	$ _2 $ & subscript for shaft 2\\
-\end{tabular}
-\begin{tabular}{cc}
 	$ _x $ & subscript for x-axis\\
 	$ _y $ & subscript for y-axis\\
 	$ _z $ & subscript for z-axis\\
@@ -45,8 +43,7 @@ For moderate load, we will use quenched steel 40X to design the shafts. From tab
 \section{Tranmission Design}
 \subsection{Load on shafts}
 \subsubsection{Applied forces from Gears}
-Following p.186, the subscript convention of the book will be used in this chapter. If a symbol has 2 numeric subscripts, the first one is the ordinal number of shafts while the second one is used for machine elements.\\
-On shaft 1, the motor is labeled 1 and the pinion is labeled 2. On shaft 2, the driven gear is labeled 1 and the driving sprocket is labeled 2. Therefore, we obtain:\\
+Following p.186, the subscript convention of the book will be used in this chapter. If a symbol has 2 numeric subscripts, the first one is the ordinal number of shafts while the second one is used for machine elements. On shaft 1, the motor is labeled 1 and the pinion is labeled 2. On shaft 2, the driven gear is labeled 1 and the driving sprocket is labeled 2. Therefore, we obtain:\\
 $ r_{12} = -d_{w12}/2 \approx -13.57\unit{(mm)}$, $ hr_{12} = +1 $, $ cb_{12} = +1 $, $ cq_1 = +1 $\\
 $ r_{21} = +d_{w21}/2 \approx +67.84\unit{(mm)}$, $ hr_{21} = -1 $, $ cb_{21} = -1$, $ cq_2 = -1$
 \paragraph{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}
@@ -86,19 +83,19 @@ F_{z21}& cq_2cb_{21}hr_{21}F_{t21}\tan\beta\approx-1007.84\unit{(N)}\\
 \]
 
 \subsubsection{Applied forces from Chain drives}
-Assuming the angle between x-axis and $ F_r $ is $ 210^\circ $ and $ F_r \approx 2539.28\unit{(N)} $ (chapter 2), we get the direction of $ F_r $ on shaft 2:
+Assuming the angle between x-axis and $ F_r $ is $ 150^\circ $ and $ F_r \approx 2539.28\unit{(N)} $ (chapter 2), we get the direction of $ F_r $ on shaft 2:
 \[
 \left\{ 
 \begin{array}{l@{{}={}}l}
-F_{x22}& F_{r22}\cos210^\circ\approx-1269.64\unit{(N)}\\
+F_{x22}& F_{r22}\cos150^\circ\approx-2199.08\unit{(N)}\\
 
-F_{y22}& F_{r22}\sin210^\circ\approx-2199.08\unit{(N)}\\
+F_{y22}& F_{r22}\sin150^\circ\approx1269.64\unit{(N)}\\
 \end{array}
 \right.
 \]
 
 \subsection{Preliminary calculations}
-Since shaft 1 receives input torque $ T_{sh1} $ and shaft 2 produces output torque $ T_{sh2} $, $ [\tau_1] = 15\unit{(MPa)}$ and $ [\tau_2]=30\unit{(MPa)} $. Using equation (10.9), we can approximate $ d_1 $ and $ d_2 $:\\
+Since shaft 1 receives input torque $ T_{sh1} $ and shaft 2 is produces output torque $ T_{sh2} $, $ [\tau_1] = 15\unit{(MPa)}$ and $ [\tau_2]=30\unit{(MPa)} $. Using equation (10.9), we can approximate $ d_1 $ and $ d_2 $:\\
 $ d_1 \geq \sqrt[3]{\dfrac{T_{sh1}}{0.2[\tau_1]}} \approx 23.22\unit{(mm)}\Rightarrow d_1 = 25\unit{(mm)}$\\
 $ d_2 \geq \sqrt[3]{\dfrac{T_{sh2}}{0.2[\tau_2]}} \approx 30.99\unit{(mm)}\Rightarrow d_2 = 35\unit{(mm)}$
 
@@ -125,76 +122,14 @@ $ l_{21} = 2l_{23} \approx 103.48\unit{(mm)}$\\
 
 \subsection{Determine shaft diameters and lengths}
 
-From the diagram, we derive the reaction forces at $ A_1 $, $ A_2 $, $ B_1 $, $ B_2 $, which are $ R_{A1x} $, $ R_{A1y} $, $ R_{B1x} $, $ R_{B1y} $, $ R_{A2x} $, $ R_{A2y} $, $ R_{B2x} $, $ R_{B2y} $. Using equilibrium conditions:
-\[
-\left\{ 
-\begin{array}{l@{{}={}}l}
-\displaystyle\sum_{i} \mathbf{F_{i}} & 0\\
-\displaystyle\sum_{i} \mathbf{r_i}\times \mathbf{F_i}& 0\\
-\end{array}
-\right.
-\]
-We obtain the results as follows:
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{p{7cm}p{7cm}}
-		$
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		R_{A1x} & 1384.51\unit{(N)}\\
-		R_{A1y} & -570.68\unit{(N)}\\
-		R_{B1x} & 1384.51\unit{(N)}\\
-		R_{B1y} & -570.68\unit{(N)}\\
-		\end{array}
-		\right.
-		$ & $
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		R_{A2x} & 703.98\unit{(N)}\\
-		R_{A2y} & 4188.06\unit{(N)}\\
-		R_{B2x} & -2203.37\unit{(N)}\\
-		R_{B2y} & -847.62\unit{(N)}\\
-		\end{array}
-		\right.
-		$
-	\end{tabular}
-\end{table}
-
+From the diagram, we derive the reaction forces at $ A_1 $, $ A_2 $, $ B_1 $, $ B_2 $\\
 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=175mm]{shaft.png}
+	\includegraphics[width=170mm]{shaft.png}
 	\caption{Force analysis of shafts}
-	\label{force on shaft}
-\end{figure}
-From the reaction forces, we can easily draw shear force-bending moment diagram for both shafts on 2 major planes (xOz) and (yOz). Let us remind that the symbols of the figures below does not relate to any forces or moments mentioned in the nomenclature section. Hence, we will only focus on the form of the diagrams.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=150mm]{shaft1_xoz.png}
-	\caption{Shear force - Bending moment diagram on (xOz) of shaft 1}
-	\label{1_xoz}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=150mm]{shaft1_yoz.png}
-	\caption{Shear force - bending moment diagram on (yOz) of shaft 1}
-	\label{1_yoz}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=150mm]{shaft2_xoz.png}
-	\caption{Shear force - Bending moment diagram on (xOz) of shaft 2}
-	\label{2_xoz}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=150mm]{shaft2_yoz.png}
-	\caption{Shear force - Bending moment diagram on (yOz) of shaft 2}
-	\label{2_yoz}
+	\label{shaft}
 \end{figure}
 
 
