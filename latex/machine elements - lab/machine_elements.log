@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.30)  20 JUN 2020 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  28 JUN 2020 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,9 +287,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language27) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language27) on input line 108.
+(babel)             (\language69) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
@@ -906,6 +906,11 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
+
+Overfull \hbox (3.86502pt too wide) in paragraph at lines 3--26
+[] [] 
+ []
+
 [4
 
 ]
@@ -932,22 +937,22 @@ Chapter 2.
 <Exp2cb.png, id=41, 433.62pt x 289.08pt>
 File: Exp2cb.png Graphic file (type png)
 <use Exp2cb.png>
-Package pdftex.def Info: Exp2cb.png  used on input line 41.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+Package pdftex.def Info: Exp2cb.png  used on input line 40.
+(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
 <Exp2sb.png, id=42, 433.62pt x 289.08pt>
 File: Exp2sb.png Graphic file (type png)
 <use Exp2sb.png>
-Package pdftex.def Info: Exp2sb.png  used on input line 46.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-) [9] [10 <./Exp2cb.png> <./Exp2sb.png>] (./machine_elements.aux) ) 
+Package pdftex.def Info: Exp2sb.png  used on input line 45.
+(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
+) [9 <./Exp2cb.png>] [10 <./Exp2sb.png>] (./machine_elements.aux) ) 
 Here is how much of TeX's memory you used:
  8107 strings out of 481239
  107518 string characters out of 5920377
- 357303 words of memory out of 5000000
+ 357302 words of memory out of 5000000
  23141 multiletter control sequences out of 15000+600000
  597045 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,74p,832b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,74p,832b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/
 texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/e
 nc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/n
@@ -956,7 +961,7 @@ TXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
 ewtx/txsys.pfb>
-Output written on machine_elements.pdf (11 pages, 506843 bytes).
+Output written on machine_elements.pdf (11 pages, 507033 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
