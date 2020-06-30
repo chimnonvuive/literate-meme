@@ -1,0 +1,118 @@
+\chapter{Shaft Design}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{7cm}}
+	$ [\sigma_H] $ & permissible contact stress, $ MPa $\\
+	$ [\sigma_H]_{max} $ & permissible contact stress due to overloading, $ MPa $\\
+	$ [\sigma_F]_{max} $ & permissible bending stress due to overloading, $ MPa $\\
+	$ [\sigma_{FO}] $ & permissible bending stress corresponding to $ 10^6 $ cycles, $ MPa $\\
+	$ v_s $ & translational velocity, $ m/s $\\
+	$ \sigma_b $ & ultimate strength, $ MPa $\\
+	$ \sigma_{ch} $ & yield limit, $ MPa $\\
+	$ N_{FE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_F] $\\
+	$ K_{FL} $ & aging factor due to bending stress\\
+	$ a_w $ & shaft distance, $ mm $\\
+	$ z $ & number of teeth of worm wheel\\
+	$ d $ & worm wheel diameter, $ mm $\\
+	
+\end{tabular}
+\begin{tabular}[t]{lp{7cm}}
+	$ q $ & standardized coefficient of shaft diameter\\
+	$ T $ & torque on shaft
+\end{tabular}
+\section{Choose material}
+For moderate load, we will use quenched steel 40X to design the shafts. From table 6.1, the specifications are as follows: $ S \leq 100\unit{mm} $, HB260, $ \sigma_b = 850\unit{MPa}$, $ \sigma_{ch} = 550\unit{MPa}$. 
+
+%\section{Determine permissible stress}
+%
+%\subsection{Find $ [\sigma_H] $}
+%Since $v_{s1} \approx 4.42 \unit{m/s} < 5\unit{m/s}$ and $v_{s2} \approx 1.48 \unit{m/s} < 2\unit{m/s}$, table 7.2 is used to find $ [\sigma_H] $. From the results above, we choose:\\
+%$ [\sigma_{H1}] \approx 191.3259 \unit{MPa}$\\
+%$ [\sigma_{H2}] \approx 141.7534 \unit{MPa}$
+%
+%\subsection{Find $ [\sigma_F] $}
+%Following p.149, for shaft 1 and 2, we use the formulas:
+%\begin{equation}
+%	[\sigma_{F1}] = [\sigma_{FO1}]K_{FL1}
+%\end{equation}
+%Since shaft 1 is quenched, we can increase $ [\sigma_{FO1}] $ and $ [\sigma_{FO2}] $ by $ 25\% $:\\
+%$ [\sigma_{FO2}] = (0.25\sigma_{b2} + 0.08\sigma_{ch2})\times125\% \approx 207.5\unit{MPa} $\\
+%$ [\sigma_{FO1}] = (0.25\sigma_{b1} + 0.08\sigma_{ch1})\times125\% \approx 78.88\unit{MPa} $\\
+%$ N_{FE1} = 60\left[ \left( \dfrac{T_1}{T}\right)^9n_{sh1}t_1 + \left( \dfrac{T_2}{T}\right)^9n_{sh1}t_2\right] \approx 2.54\times10^6 \unit{cycles} \in [10^6,25\times10^7] $\\
+%$ K_{FL1} = \sqrt[9]{\dfrac{10^6}{N_{FE1}}} \approx 0.9$\\
+%From calculations, 
+%\begin{equation}
+%	\Rightarrow[\sigma_{F1}] \approx 187.12 \unit{MPa}
+%\end{equation}
+%For shaft 2, the following equation applies:
+%\begin{equation}
+%	[\sigma_{F2}] = 0.12\sigma_{bu2}
+%\end{equation}
+%Substituting the values yields $ [\sigma_{F2}] \approx 38.4\unit{MPa}$
+
+%\subsection{Permissible stress due to overloading}
+%Since $v_{s1} \approx 4.42 \unit{m/s} < 5 \unit{m/s}$, we apply the following equations:
+%\begin{align}
+%	[\sigma_{H1}]_{max} &= 2\sigma_{b1} = 400\unit{MPa}\\
+%	[\sigma_{F1}]_{max} &= 0.8\sigma_{ch1} = 160\unit{MPa}
+%\end{align}
+%Also $v_{s2} \approx 1.48 \unit{m/s} < 2 \unit{m/s}$, we apply the following equations:
+%\begin{align}
+%	[\sigma_{H2}]_{max} &= 1.5[\sigma_{H2}] \approx 212.63\unit{MPa}\\
+%	[\sigma_{F2}]_{max} &= 0.6\sigma_{b2} = 90\unit{MPa}
+%\end{align}
+
+\section{Tranmission Design}
+\subsection{Load on shafts}
+Following p.186, the sign convention of the book will be used in this section. On shaft 1, the motor is 1 and the pinion is 2. On shaft 2, the driven gear is 1 and the driving sprocket is 2. Therefore, we obtain:\\
+$ r_{12} = d_{12}/2 \approx 13.57\unit{mm}$, $ hr_{12} = +1 $, $ cb_{12} = +1 $, $ cq_1 = +1 $\\
+$ r_{21} = d_{21}/2 \approx 67.84\unit{mm}$, $ hr_{21} = +1 $, $ cb_{21} = -1$, $ cq_2 = -1$
+\paragraph{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}
+Using the results from the previous chapter, we obtain $ \alpha_{tw} \approx 21.17^\circ $, $ \beta = 20^\circ $, $ d_{w12} = d_{12} \approx 27.14\unit{mm} $
+\[
+\left\{ 
+\begin{array}{l@{{}={}}l@{{}={}}l}
+F_{t12}& F_{t21}& \dfrac{2T_{sh1}}{d_{w12}}=2769.03\unit{N}\\
+F_{r12}& F_{r21}&  \dfrac{F_{t12}\tan\alpha_{tw}}{\cos\beta}=1141.36\unit{N}\\
+F_{a12}& F_{a21}& F_{t12}\tan\beta =1007.84\unit{N}\\ 
+\end{array}
+\right.
+\]
+\paragraph{Find direction of $ F_{t} $, $ F_r $, $ F_a $}
+Following the sign convention, we obtain the forces:
+\[
+\left\{ 
+\begin{array}{l@{{}={}}l}
+F_{x12}& \dfrac{r_{12}}{|r_{12}|}cq_1cb_{12}F_{t12}\approx2769.03\unit{N}\\
+
+F_{y12}& -\dfrac{r_{12}}{|r_{12}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t12}\approx-1141.36\unit{N}\\
+
+F_{z12}& cq_1cb_{12}hr_{12}F_{t12}\tan\beta\approx1007.84\unit{N}\\ 
+\end{array}
+\right.
+\]
+\[
+\left\{ 
+\begin{array}{l@{{}={}}l}
+F_{x21}& \dfrac{r_{21}}{|r_{21}|}cq_2cb_{21}F_{t21}\approx2769.03\unit{N}\\
+
+F_{y21}& -\dfrac{r_{21}}{|r_{21}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t21}\approx-1141.36\unit{N}\\
+
+F_{z21}& cq_2cb_{21}hr_{21}F_{t21}\tan\beta\approx1007.84\unit{N}\\ 
+\end{array}
+\right.
+\]
+Assuming $ \alpha = 150^\circ $ and combining with $ F_r \approx 2539.28\unit{N} $ from chapter 2, we get the direction of $ F_r $ onto shaft 2:
+\[
+\left\{ 
+\begin{array}{l@{{}={}}l}
+F_{x22}& F_{r22}\cos\alpha\approx-2199.08\unit{N}\\
+
+F_{y22}& F_{r22}\sin\alpha\approx1269.64\unit{N}\\
+\end{array}
+\right.
+\]
+
+%\paragraph{Find $ a_w $} On p.149, the following formula is used:
+%\begin{equation}
+%	a_w = (z_2+q)\sqrt[3]{\left( \dfrac{170}{z_2[\sigma_H]}\right) ^2 \dfrac{T_2K_H}{q}}
+%\end{equation}

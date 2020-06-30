@@ -1,0 +1,150 @@
+\chapter{Chain Drive Design}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{6.5cm}}
+		$ [i] $ & permissible impact times per second\\
+		$ [s] $ & permissible safety factor\\
+		$ [P] $ & permissible power, $ \unit{kW} $\\
+		$ a $ & center distance, $ \unit{mm} $\\
+		$ a_{max} $ & maximum center distance, $ \unit{mm} $\\
+		$ a_{min} $ & minimum center distance, $ \unit{mm} $\\
+		$ B $ & bush length, $ \unit{mm} $\\
+		$ d $ & driving sprocket diameter, $ \unit{mm} $\\
+		$ d_c $ & pin diameter, $ \unit{mm} $\\
+		$ F_0 $ & sagging force, $ \unit{N} $\\
+		$ F_1 $ & tight side tension force, $ \unit{N} $\\
+		$ F_2 $ & slack side tension force, $ \unit{N} $\\
+		$ F_r $ & force on the shaft, $ \unit{N} $\\
+		$ F_t $ & effective peripheral force, $ \unit{N} $\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+		$ F_v $ & centrifugal force, $ \unit{N} $\\
+		$ i $ & impact times per second\\
+		$ k $ & overall factor\\
+		$ k_0 $ & arrangement of drive factor\\
+		$ k_a $ & center distance and chain's length factor\\
+		$ k_{bt} $ & lubrication factor\\
+		$ k_c $ & rating factor\\
+		$ k_d $ & dynamic loads factor\\
+		$ k_{dc} $ & chain tension  factor\\
+		$ k_f $ & loosing factor\\
+		$ k_n $ & coefficient of rotational speed\\
+		$ k_x $ & chain weight factor\\
+		$ k_z $ & coefficient of number of teeth\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ n_{01} $ & experimental rotational speed, $ \unit{rpm} $\\
+	$ n_{ch} $ & rotational speed of a sprocket, $ \unit{rpm} $\\
+	$ P_t $ & calculated power, $ \unit{kW} $\\
+	$ p $ & pitch, $ \unit{mm} $\\
+	$ p_{max} $ & permissible sprocket pitch, $ \unit{mm} $\\
+	$ Q $ & permissible load, $ \unit{N} $\\
+	$ q $ & mass per meter of chain, $ \unit{kg/m} $\\
+	$ s $ & safety factor\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ v $ & instantaneous velocity along the chain, $ \unit{m/s} $\\
+	$ x $ & chain length in pitches, the number of links\\
+	$ x_c $ & an even number of links\\
+	$ z $ & number of teeth of a sprocket\\
+	$ z_{max} $ & maximum number of teeth of the driven sprocket\\
+	$ _1 $  & subscript for driving sprocket\\
+	$ _2 $  & subscript for driven sprocket
+\end{tabular}
+
+\section{Find $ p $}
+Since the driving sprocket is connected to shaft 1, $ n_1 = n_{sh2} = 586\unit{(rpm)} $.
+
+\paragraph{Find $ z $}
+Since $ z_1 $ and $ z_2 $ is preferably an odd number according to p.80:\\
+$ z_1 = 29 - 2u_{ch} = 18.94 \approx 19$\\
+$ z_2 = u_{ch}z_1 = 95.57 \approx 97 \leq z_{max} = 120$\\
+Because $ z_1 \geq 15 $, we use table (5.8) and interpolation to approximate $ p_{max} $. Therefore, $ p_{max} \approx 33.58 \unit{(mm)} $.
+
+\paragraph{Find $ k $}
+Since $ n_{ch} = 586 \approx 600 \unit{(rpm)}$, choose $ n_{01} = 600\unit{(rpm)} $, which is obtained from table (5.5). Then, we calculate $ k_z $ and $ k_n $.\\
+$ k_z = \dfrac{25}{z_1} \approx 1.32$, 
+$ k_n = \dfrac{n_{01}}{n_{ch}} \approx 1.02$\\
+Specifying the chain drive's working condition and ultizing table (5.6) , we find out that $ k_0=k_a=k_{dc}=k_{bt}=1 $, $ k_d=1.25 $, $ k_c=1.3 $.\\
+$\Rightarrow k = k_0k_ak_{dc}k_{bt}k_dk_c = 1.625$
+
+\paragraph{Find $ p $}
+From table (5.5):\\
+$ P_t = P_{ch}kk_zk_n \approx 30.05 \unit{(kW)} \leq 42 \unit{(kW)} \Rightarrow [P] = 42 \unit{(kW)}$\\
+Using the table, we also get the other parameters:\\
+$ p = 31.75 \unit{(mm)}$, $ d_c = 9.55 \unit{(mm)} $, $ B = 27.46 \unit{(mm)} $,\\
+$ d_1=\dfrac{p}{\sin{\dfrac{180^\circ}{z_1}}} \approx 192.9 \unit{(mm)} $, 
+$ d_2=\dfrac{p}{\sin{\dfrac{180^\circ}{z_2}}} \approx  980.49 \unit{(mm)}$\\
+Having $ p = 31.75 \unit{(mm) \leq p_{max}} \approx 33.58 \unit{(mm)} $, we can safely choose the number of chains as 1, which is in agreement with the given figure. Hence, from table (5.2), we obtain the parameters in the section for 1 strand chain drive:\\
+$ Q = 56.7\times10^3\unit{(N)} $, $ q = 2.6\unit{(kg/m)} $\\
+By comparison to the conditions in the sub-table, the choice of $ B $ is satisfactory.
+
+\section{Find $ a $, $ x_c $, and $ i $}
+
+\paragraph{Find $ x_c $}
+$ a_{min} = 30p = 952.5 \unit{(mm)} $, $ a_{max} = 50p = 1587.5 \unit{(mm)}$. Limiting the range of choice for $ a $ in $ [a_{min},a_{max}] $, we can approximate $ a= 1000 \unit{(mm)} $.\\
+$ x = \dfrac{2a}{p} + \dfrac{z_1+z_2}{2} + \dfrac{(z_2-z_1)^2p}{4\pi^2a} \approx 125.89 \Rightarrow x_c = 126 $
+
+\paragraph{Find $ a $}
+From equation (5.13) , we calculate $ a $ again with $ x_c $:\\
+$ a = \dfrac{p}{4}\left(x_c-\dfrac{z_2+z_1}{2}+\sqrt{\left(x_c-\dfrac{z_2+z_1}{2}\right)^2-2\dfrac{(z_2-z_1)^2}{\pi^2}}\right) - 0.003a\approx 998.98 \unit{(mm)}$
+
+\paragraph{Find $ i $} From table (5.9):\\ $i=\dfrac{z_1n_{sh2}}{15x}\approx6<[i]=25 $
+
+
+\section{Strength of chain drive}
+For moderate workload, choose $ k_d = 1.2 $. Let the chain drive be angled $ 30^\circ$ with respect to ground, we obtain $ k_f = 4 $.\\
+$ v_1=\dfrac{n_{ch}pz_1}{6\times10^4}\approx 5.89 \unit{(m/s)}$
+\paragraph{Find $ F_t $, $ F_v $, $ F_0 $}
+We also need to calculate $ F_t $, $ F_v $ and $ F_0 $:\\
+$ F_t = \dfrac{10^3P_{ch}}{v_1} \approx 2329.53 \unit{(N)}$\\
+$ F_v=qv_1^2\approx 90.25 \unit{(N)} $\\
+$ F_0=9.81\times10^{-3}k_fqa \approx101.92\unit{(N)}$
+\paragraph{Validate $ s $} This value must be larger than the permissible safety factor to operate properly.  From equation (5.15):\\ $ s = \dfrac{Q}{k_dF_t+F_0+F_v} \approx 18.98 \geq [s]=13.2 $, where $ [s] $ is chosen from table (5.10). 
+\section{Force on shaft}
+From p.87:\\
+$ F_2 = F_0 + F_v \approx 192.17 \unit{(N)}$\\
+$ F_1 = F_t + F_2 \approx 2521.7 \unit{(N)}$\\
+Choose $ k_x=1.15 $ and follow equation (5.20) :\\
+$ F_r = k_xF_t \approx 2678.96\unit{(N)} $\\
+In summary, we have the following table:
+%\begin{table}[hb]
+%	\centering
+%	\begin{tabular}{|>{\columncolor[HTML]{C0C0C0}}l|p{2.5cm}|}
+%		\hline
+%		$ [P]\unit{(kW)} $ & 42\\\hline
+%		$ z_1 $ & 19\\\hline
+%		$ z_2 $ & 97\\\hline
+%		$ p\unit{(mm)} $ & 31.75\\\hline
+%		$ d_1\unit{(mm)} $ & 192.9\\\hline
+%		$ d_2\unit{(mm)} $ & 980.49\\\hline
+%		$ d_c\unit{(mm)} $ & 9.55\\\hline
+%		$ B\unit{(mm)} $ & 27.46\\\hline
+%		$ x_c$ & 126\\\hline
+%		$ a\unit{(mm)} $ & 998.98\\\hline
+%		$ i $ & 6\\\hline
+%		$ n\unit{(rpm)} $ & 586\\\hline
+%		$ u_{ch} $ & 5.03\\\hline
+%	\end{tabular}
+%	\caption{Table of chain drive specifications}
+%\end{table}
+\newpage
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |p{2.5cm}|p{2.5cm}|}
+		\hline
+		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}driving} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}driven} \\ \hline
+		$ [P] \unit{(kW)} $      & \multicolumn{2}{l|}{\hskip2cm 42}       \\ \hline
+		$ Q \unit{(N)} $      & \multicolumn{2}{l|}{\hskip2cm 56700}      \\ \hline
+		$ p\unit{(mm)} $            & \multicolumn{2}{l|}{\hskip2cm 31.75}           \\ \hline
+		$ i $            & \multicolumn{2}{l|}{\hskip2cm 6}           \\ \hline
+		$ a\unit{(mm)} $              & \multicolumn{2}{l|}{\hskip2cm 998.98}    \\ \hline
+		$ z $                       & 19                       & 97     \\ \hline
+		$ d\unit{(mm)} $              & 192.9                    & 980.49 \\ \hline
+		$ d_c\unit{(mm)} $              & \multicolumn{2}{l|}{\hskip2cm 9.55}    \\ \hline
+		$ B\unit{(mm)} $              & \multicolumn{2}{l|}{\hskip2cm 27.46}    \\ \hline
+		$ v\unit{(m/s)} $              & \multicolumn{2}{l|}{\hskip2cm 5.01}    \\ \hline
+		$ u_{ch} $              & \multicolumn{2}{l|}{\hskip2cm 5}    \\ \hline
+	\end{tabular}
+	\caption{Chain drive specifications}
+\end{table}

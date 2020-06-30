@@ -1,0 +1,74 @@
+\babel@toc {english}{}
+\contentsline {paragraph}{Design parameters}{5}
+\contentsline {chapter}{\numberline {1}Motor Design}{6}
+\contentsline {section}{\numberline {1.1}Nomenclature}{6}
+\contentsline {section}{\numberline {1.2}Calculate $ \eta _{sys} $}{7}
+\contentsline {section}{\numberline {1.3}Calculate $ P_{motor} $}{7}
+\contentsline {section}{\numberline {1.4}Calculate $ n_{motor} $}{7}
+\contentsline {section}{\numberline {1.5}Choose motor}{8}
+\contentsline {section}{\numberline {1.6}Calculate power, rotational speed and torque}{8}
+\contentsline {subsection}{\numberline {1.6.1}Power}{8}
+\contentsline {subsection}{\numberline {1.6.2}Rotational speed}{9}
+\contentsline {subsection}{\numberline {1.6.3}Torque}{9}
+\contentsline {chapter}{\numberline {2}Chain Drive Design}{10}
+\contentsline {section}{\numberline {2.1}Nomenclature}{10}
+\contentsline {section}{\numberline {2.2}Find $ p $}{11}
+\contentsline {paragraph}{Find $ z $}{11}
+\contentsline {paragraph}{Find $ k $}{11}
+\contentsline {paragraph}{Find $ p $}{12}
+\contentsline {section}{\numberline {2.3}Find $ a $, $ x_c $, and $ i $}{12}
+\contentsline {paragraph}{Find $ x_c $}{12}
+\contentsline {paragraph}{Find $ a $}{12}
+\contentsline {paragraph}{Find $ i $}{12}
+\contentsline {section}{\numberline {2.4}Strength of chain drive}{13}
+\contentsline {paragraph}{Find $ F_t $, $ F_v $, $ F_0 $}{13}
+\contentsline {paragraph}{Validate $ s $}{13}
+\contentsline {section}{\numberline {2.5}Force on shaft}{13}
+\contentsline {chapter}{\numberline {3}Gearbox Design (Helix gears)}{15}
+\contentsline {section}{\numberline {3.1}Nomenclature}{15}
+\contentsline {section}{\numberline {3.2}Choose material}{17}
+\contentsline {section}{\numberline {3.3}Calculate $ [\sigma _H] $ and $ [\sigma _F] $}{17}
+\contentsline {subsection}{\numberline {3.3.1}Working cycle of bearing stress}{17}
+\contentsline {subsection}{\numberline {3.3.2}Working cycle of equivalent tensile stress}{18}
+\contentsline {subsection}{\numberline {3.3.3}Aging factor}{18}
+\contentsline {subsection}{\numberline {3.3.4}Calculate $ [\sigma _H] $ and $ [\sigma _F] $}{18}
+\contentsline {section}{\numberline {3.4}Transmission Design}{19}
+\contentsline {subsection}{\numberline {3.4.1}Determine basic parameters}{19}
+\contentsline {subsection}{\numberline {3.4.2}Determine gear meshing parameters}{19}
+\contentsline {paragraph}{Find $ m $}{19}
+\contentsline {paragraph}{Find $ z_1 $, $ z_2 $, $ b_w $}{19}
+\contentsline {paragraph}{Recalculate $ \beta $}{20}
+\contentsline {paragraph}{Find $ x_1 $, $ x_2 $}{20}
+\contentsline {subsection}{\numberline {3.4.3}Other parameters}{20}
+\contentsline {subsection}{\numberline {3.4.4}Contact stress analysis}{21}
+\contentsline {paragraph}{Find $ z_M $}{21}
+\contentsline {paragraph}{Find $ z_H $}{21}
+\contentsline {paragraph}{Find $ z_\epsilon $}{21}
+\contentsline {paragraph}{Find $ K_H $}{21}
+\contentsline {paragraph}{Find $ \sigma _H $}{21}
+\contentsline {subsection}{\numberline {3.4.5}Bending stress analysis}{22}
+\contentsline {paragraph}{Find $ Y_\epsilon $}{22}
+\contentsline {paragraph}{Find $ Y_\beta $}{22}
+\contentsline {paragraph}{Find $ Y_F $}{22}
+\contentsline {paragraph}{Find $ K_F $}{22}
+\contentsline {paragraph}{Find $ \sigma _F $}{22}
+\contentsline {subsection}{\numberline {3.4.6}Force on shafts}{23}
+\contentsline {chapter}{\numberline {4}Shaft Design}{24}
+\contentsline {section}{\numberline {4.1}Nomenclature}{25}
+\contentsline {section}{\numberline {4.2}Choose material}{27}
+\contentsline {section}{\numberline {4.3}Transmission Design}{27}
+\contentsline {subsection}{\numberline {4.3.1}Load on shafts}{27}
+\contentsline {subsubsection}{Applied forces from Gears}{27}
+\contentsline {paragraph}{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}{27}
+\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{28}
+\contentsline {subsubsection}{Applied forces from Chain drives}{28}
+\contentsline {subsection}{\numberline {4.3.2}Preliminary calculations}{28}
+\contentsline {subsection}{\numberline {4.3.3}Identify the distance between bearings and applied forces}{29}
+\contentsline {subsection}{\numberline {4.3.4}Determine shaft diameters and lengths}{30}
+\contentsline {paragraph}{Find reaction forces}{30}
+\contentsline {paragraph}{Draw bending moment - torque diagrams}{31}
+\contentsline {paragraph}{Find equivalent moments}{32}
+\contentsline {paragraph}{Find permissible stress}{33}
+\contentsline {paragraph}{Find standardized diameters at specific locations on the shaft}{33}
+\contentsline {section}{\numberline {4.4}Fatigue Strength Analysis}{34}
+\contentsline {paragraph}{Find $ K_{\sigma } $}{34}
