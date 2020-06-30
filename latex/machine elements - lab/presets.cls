@@ -3,7 +3,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[russian,english]{babel}
-\usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -11,9 +10,30 @@
 \usepackage{setspace}
 \usepackage{newtxtext,newtxmath}
 \usepackage{stackengine}
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=2.4cm]{geometry}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[none]{hyphenat}
+\usepackage{multirow}
 \renewcommand{\baselinestretch}{1.5}
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
-\newcommand{\unit}[1]{\ensuremath{\, (\mathrm{#1})}}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+
+\title{Lab Report}
+\author{Nguyen Quy Khoi}
+\date{30 June 2020}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
