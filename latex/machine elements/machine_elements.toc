@@ -55,13 +55,20 @@
 \contentsline {subsection}{\numberline {3.4.6}Force on shafts}{23}
 \contentsline {chapter}{\numberline {4}Shaft Design}{24}
 \contentsline {section}{\numberline {4.1}Nomenclature}{25}
-\contentsline {section}{\numberline {4.2}Choose material}{26}
-\contentsline {section}{\numberline {4.3}Tranmission Design}{26}
-\contentsline {subsection}{\numberline {4.3.1}Load on shafts}{26}
-\contentsline {subsubsection}{Applied forces from Gears}{26}
-\contentsline {paragraph}{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}{26}
-\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{27}
-\contentsline {subsubsection}{Applied forces from Chain drives}{27}
-\contentsline {subsection}{\numberline {4.3.2}Preliminary calculations}{27}
-\contentsline {subsection}{\numberline {4.3.3}Identify the distance between bearings and applied forces}{28}
-\contentsline {subsection}{\numberline {4.3.4}Determine shaft diameters and lengths}{29}
+\contentsline {section}{\numberline {4.2}Choose material}{27}
+\contentsline {section}{\numberline {4.3}Transmission Design}{27}
+\contentsline {subsection}{\numberline {4.3.1}Load on shafts}{27}
+\contentsline {subsubsection}{Applied forces from Gears}{27}
+\contentsline {paragraph}{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}{27}
+\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{28}
+\contentsline {subsubsection}{Applied forces from Chain drives}{28}
+\contentsline {subsection}{\numberline {4.3.2}Preliminary calculations}{28}
+\contentsline {subsection}{\numberline {4.3.3}Identify the distance between bearings and applied forces}{29}
+\contentsline {subsection}{\numberline {4.3.4}Determine shaft diameters and lengths}{30}
+\contentsline {paragraph}{Find reaction forces}{30}
+\contentsline {paragraph}{Draw bending moment - torque diagrams}{31}
+\contentsline {paragraph}{Find equivalent moments}{32}
+\contentsline {paragraph}{Find permissible stress}{33}
+\contentsline {paragraph}{Find standardized diameters at specific locations on the shaft}{33}
+\contentsline {section}{\numberline {4.4}Fatigue Strength Analysis}{34}
+\contentsline {paragraph}{Find $ K_{\sigma } $}{34}
