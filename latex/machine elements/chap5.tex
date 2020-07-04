@@ -1,0 +1,140 @@
+\chapter{Bearing Design}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ [s] $ & permissible safety factor\\
+	$ [\sigma] $ & permissible static strength, $ \unit{MPa} $\\
+	$ [\tau] $ & permissible torsion, $ \unit{MPa} $\\
+	$ a_w $ & shaft distance, $ \unit{mm} $\\
+	$ b_O $ & rolling bearing width, $ \unit{mm}$\\
+	$ C_d $ & basic dynamic load rating, $ \unit{N} $\\
+	$ cb $ & role of gear on the shaft (active or passive)\\
+	$ cq $ & rotational direction of the shaft\\
+	$ d $ & base shaft diameter, $ \unit{mm} $\\
+	$ d_w $ & gear diameter, $ \unit{mm} $\\
+	$ F_a $ & axial force, $ \unit{N} $\\
+	$ F_r $ & radial force, $ \unit{N} $\\
+	$ F_t $ & tangential force, $ \unit{N} $\\
+	$ F_x $ & applied force, $ \unit{N} $\\	
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ h_n $ & distance between bearing lid and bolt, $ \unit{mm} $\\
+	$ hr $ & tooth direction\\
+	$ K_x $ & surface tension concentration factor\\
+	$ K_y $ & diminish factor\\
+	$ K_\sigma $ & combined influence factor in tension\\
+	$ K_\tau $ & combined influence factor in shear\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ k_d $ & temperature factor\\
+	$ k_t $ & load condition factor\\
+	$ k_\sigma $ & fatigue stress concentration factor in tension\\
+	$ k_\tau $ & fatigue stress concentration factor in shear\\
+	$ L $ & rated life in million revolutions, $ \unit{\text{million rev}} $\\
+	$ L_h $ & rated life in hours, $ \unit{h} $\\
+	$ l $ & length (general), $ \unit{mm} $\\
+	$ l_m $ & hub length (general), $ \unit{mm} $\\
+	$ M $ & moment, $ \unit{N\cdot mm} $\\
+	$ M_e $ & equivalent moment, $ \unit{N\cdot mm} $\\
+	$ M_{max} $ & maximum moment at the cross section, $ \unit{N\cdot mm} $\\
+	$ m $ & load-life exponent\\
+	$ Q $ & equivalent dynamic load, $ \unit{kN} $\\
+	$ q $ & standardized coefficient of shaft diameter\\
+	$ R $ & reaction force, $ \unit{N} $\\
+	$ r $ & shoulder fillet radius, $ \unit{mm} $\\
+	$ \bar{r} $ & position of applied force on the shaft, $\unit{mm}$\\
+	$ S $ & length defined by table (6.1), $ \unit{mm} $\\
+	$ s $ & calculated safety factor\\
+	$ s_\sigma $ & safety factor in tensile stress\\
+	$ s_\tau $ & safety factor in shear stress\\
+	$ T $ & torque at the cross section, $ \unit{N\cdot mm} $\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ W $ & section modulus, $ \unit{mm^3} $\\
+	$ W_O $ & polar section modulus, $ \unit{mm^3} $\\
+	$ X $ & dynamic radial load factor\\
+	$ Y $ & dynamic axial load factor\\
+	$ \alpha $ & contact angle, $ ^\circ $\\
+	$ \alpha_{tw} $ & traverse meshing angle, $ ^\circ $\\
+	$ \beta $ & helix angle, $ ^\circ $\\
+	$ \psi_\sigma $ & mean stress influence factor\\
+	$ \psi_\tau $ & mean shear influence factor\\
+	$ \sigma_{-1} $ & endurance limit at stress ratio of -1, $ \unit{MPa} $\\
+	$ \sigma_a $ & tensile stress amplitude, $ \unit{MPa} $\\
+	$ \sigma_b $ & ultimate strength, $ \unit{MPa} $\\
+	$ \sigma_{ch} $ & yield limit, $ \unit{MPa} $\\
+	$ \sigma_m $ & mean tensile stress, $ \unit{MPa} $\\
+	$ \sigma_{td} $ & static strength, $ \unit{MPa} $\\
+	$ \tau_{-1} $ & endurance limit at shear ratio of -1, $ \unit{MPa} $\\
+	$ \tau_a $ & shear stress amplitude, $ \unit{MPa} $\\
+	$ \tau_m $ & mean shear stress, $ \unit{MPa} $\\
+	$ _{sh1} $ & subscript for shaft 1\\
+	$ _{sh2} $ & subscript for shaft 2\\
+	$ _x $ & subscript for x-axis\\
+	$ _y $ & subscript for y-axis\\
+	$ _z $ & subscript for z-axis\\
+\end{tabular}
+
+\section{Choose bearing type}
+As for the types, we will examine $  \dfrac{F_a}{F_r}  $ at $ A_1 $, $ B_1 $, $ A_2 $ and $ B_2 $ in the 2 shafts from the previous chapter, where $ F_a $ are $ |F_{z12}| $ in case of shaft 1 and $ |F_{z21}| $ in case of shaft 2, which are axial loads; $ F_r $ is the magnitude of reaction force $ R_y $ from the shaft onto a bearing along y-axis, which is essentially a radial load. The larger ratio in a shaft will be our ratio of choice to determine the bearing type.\\
+Taking our results from the shaft design chapter: \vskip2mm
+{\centering
+	\begin{tabular}[ht]{p{6cm}p{7cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		R_{A1y} & -341.74\unit{(N)}\\
+		R_{B1y} & -583.72\unit{(N)}\\
+		F_{z12} & 580.75 \unit{(N)}\\
+		\end{array}
+		\right.
+		$ & and \qquad $
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		R_{A2y} & 3708.15 \unit{(N)}\\
+		R_{B2y} & -462.64 \unit{(N)}\\
+		F_{z21} & -580.75 \unit{(N)}\\
+		\end{array}
+		\right.
+		$
+\end{tabular}}\vskip2mm
+yields\vskip2mm
+{\centering
+	\begin{tabular}[t]{p{6cm}p{7cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		\left| \dfrac{F_{z12}}{R_{A1y}}\right|  & 1.7 \\
+		\left| \dfrac{F_{z12}}{R_{B1y}}\right|  & 0.99 \\
+		\end{array}
+		\right.$
+		& $
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		\left| \dfrac{F_{z21}}{R_{A2y}}\right|  & 0.16 \\
+		\left| \dfrac{F_{z21}}{R_{B2y}}\right|  & 1.26 \\
+		\end{array}
+		\right.$
+\end{tabular}}\vskip2mm
+Since $ 1.7>1 $ and $ 1.26>1 $, the 2 pairs of bearings are double row angular contact ball bearings with $ \alpha_{sh1} = \alpha_{sh2} = 36^\circ $; $ \text{AG} = 0 $ according to the recommendations on p.212 and p.213.
+
+\section{Bearing dimensions}
+\subsection{Calculate basic dynamic load rating}
+\[C_d = Q\sqrt[m]{L}\]
+\subsubsection{Find equivalent dynamic load} Since we only use angular contact ball bearings, the following formula applies:
+\[Q = (XVF_r+YF_a)k_tk_d\]
+Since the inner ring rotates, $ V = 1 $. The design problem also does not give any further information about operating temperature, which gives $ k_t = 1 $. In addition, we get $ k_d = 1 $ from table (11.3) based on the machine's condition (low load and power rating).\\
+From the previous section, $ \alpha_{sh1} = 36^\circ, \alpha_{sh2} = 36^\circ $. Inspecting table (11.4), $ e_{sh1} = e_{sh2} = 0.95 $. These values are then compared with $ \left| \dfrac{F_a}{VF_r} \right| $ to look up the correct column.\\
+For shaft 1, $ \left| \dfrac{F_a}{VF_r} \right| = \left| \dfrac{F_{z12}}{VR_{A1y}} \right| \approx 1.7 > e_{1} \Rightarrow X_{1} = 0.6, Y_{1} = 1.07$.\\
+For shaft 2, $ \left| \dfrac{F_a}{VF_r} \right| = \left| \dfrac{F_{z21}}{VR_{B2y}} \right| \approx 1.26 > e_{2} \Rightarrow X_{2} = 0.6, Y_{2} = 1.07$.\\
+Recall that the forces are in absolute values, the parameters are substituted to the formula to obtain:\\
+$ Q_1 \approx 826.45 \unit{(kN)} $\\
+$ Q_2 \approx 1389.39 \unit{(kN)} $
+
+\subsubsection{Find rated life}
+Equation (11.2) is rearranged to calculate $ L $:
+\[L = L_h60n_{sh}\times10^{-6}\]
+In our transmission system, since the gearbox is a speed reducer working 2 shifts daily, we approximate $ L_h \approx 30000 \unit{(hours)}$ according to table (11.2), which gives:\\
+$ L_1 \approx 5274 \unit{(\text{million rev})} $\\
+$ L_2 \approx 1054.8 \unit{(\text{million rev})} $\\
+Combining the results and letting $ m=3 $ (ball bearings are used in this case) yield:\\
+$ C_{d1} = 14385.63 \unit{(N)} $
