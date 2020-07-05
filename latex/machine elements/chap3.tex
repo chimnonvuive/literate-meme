@@ -1,33 +1,33 @@
 \chapter{Gearbox Design (Helix gears)}
 \section{Nomenclature}
-	\begin{tabular}[t]{lp{6.5cm}}
-		$ [\sigma_H] $ & permissible contact stress, $ \unit{MPa} $\\
-		$ [\sigma_H]_{max} $ & permissible contact stress due to overload, $ \unit{MPa} $\\
-		$ [\sigma_F] $ & permissible bending stress, $ \unit{MPa} $\\
-		$ [\sigma_F]_{max} $ & permissible bending stress due to overload, $ \unit{MPa} $\\
-		$ \text{AG} $ & accuracy grade of gear\\
-		$ a $ & center distance, $ \unit{mm} $\\
-		$ b $ & face width, $ \unit{mm} $\\
-		$ c $ & gear meshing rate\\
-		$ d $ & pitch circle, $ \unit{mm} $\\
-		$ d_a $ & addendum diameter, $ \unit{mm} $\\
-		$ d_b $ & base diameter, $ \unit{mm} $\\
-		$ d_f $ & deddendum diameter, $ \unit{mm} $\\
-		$ F_a $ & axial force, $ \unit{N} $\\
-	\end{tabular}
-	\begin{tabular}[t]{lp{6.5cm}}
-		$ F_r $ & radial force, $ \unit{N} $\\
-		$ F_t $ & tangential force, $ \unit{N} $\\
-		$ H $ & surface roughness, HB\\
-		$ K_d $ & coefficient of gear material\\	
-		$ K_F $ & load factor from bending stress\\
-		$ K_{FC} $ & load placement factor\\
-		$ K_{FL} $ & aging factor due to bending stress\\
-		$ K_{Fv} $ & factor of dynamic load from bending stress at meshing area\\
-		$ K_{F\alpha} $ & factor of load distribution from bending stress on gear teeth\\
-		$ K_{F\beta} $ & factor of load distribution from bending stress on top land\\
-		$ K_H $ & load factor of contact stress\\
-	\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ [\sigma_H] $ & permissible contact stress, $ \unit{MPa} $\\
+	$ [\sigma_H]_{max} $ & permissible contact stress due to overload, $ \unit{MPa} $\\
+	$ [\sigma_F] $ & permissible bending stress, $ \unit{MPa} $\\
+	$ [\sigma_F]_{max} $ & permissible bending stress due to overload, $ \unit{MPa} $\\
+	$ \text{AG} $ & accuracy grade of gear\\
+	$ a $ & center distance, $ \unit{mm} $\\
+	$ b $ & face width, $ \unit{mm} $\\
+	$ c $ & gear meshing rate\\
+	$ d $ & pitch circle, $ \unit{mm} $\\
+	$ d_a $ & addendum diameter, $ \unit{mm} $\\
+	$ d_b $ & base diameter, $ \unit{mm} $\\
+	$ d_f $ & deddendum diameter, $ \unit{mm} $\\
+	$ F_a $ & axial force, $ \unit{N} $\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ F_r $ & radial force, $ \unit{N} $\\
+	$ F_t $ & tangential force, $ \unit{N} $\\
+	$ H $ & surface roughness, HB\\
+	$ K_d $ & coefficient of gear material\\	
+	$ K_F $ & load factor from bending stress\\
+	$ K_{FC} $ & load placement factor\\
+	$ K_{FL} $ & aging factor due to bending stress\\
+	$ K_{Fv} $ & factor of dynamic load from bending stress at meshing area\\
+	$ K_{F\alpha} $ & factor of load distribution from bending stress on gear teeth\\
+	$ K_{F\beta} $ & factor of load distribution from bending stress on top land\\
+	$ K_H $ & load factor of contact stress\\
+\end{tabular}\newpage
 \begin{tabular}[t]{lp{6.5cm}}
 	$ K_{HL} $ & aging factor due to contact stress\\
 	$ K_{Hv} $ & factor of dynamic load from contact stress at meshing area\\
@@ -45,18 +45,20 @@
 	$ N_{HO} $ & working cycle of bearing stress corresponding to $ [\sigma_H] $\\
 	$ S $ & specific length, $ \unit{mm} $\\
 	$ S_F $ & safety factor of bending stress\\
-		$ S_H $ & safety factor of contact stress\\
+	$ S_H $ & safety factor of contact stress\\
 \end{tabular}
 \begin{tabular}[t]{lp{6.5cm}}
-	
-
 	$ T $ & input torque, $ \unit{N\cdot mm} $\\
 	$ v $ & rotational velocity, $ \unit{m/s} $\\
 	$ x $ & gear correction factor\\
 	$ Y_F $ & tooth shape factor\\
+	$ Y_R $ & surface roughness factor of the gear's face\\
+	$ Y_s $ & sensitivity to stress concentration factor\\
 	$ Y_\beta $ & helix angle factor\\
 	$ Y_\varepsilon $ & contact ratio factor\\
 	$ y $ & center displacement factor\\
+	$ Z_R $ & surface roughness factor of the working's area\\
+	$ Z_v $ & speed factor\\
 	$ z_H $ & contact surface's shape factor\\
 	$ z_M $ & material's mechanical properties factor \\
 	$ z_{min} $ & minimum number of teeth corresponding to $ \beta $\\
@@ -67,19 +69,17 @@
 	$ \varepsilon_\alpha $ & traverse contact ratio\\
 	$ \varepsilon_\beta $ & face contact ratio\\
 	$ \beta $ & helix angle, $ ^\circ $\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
 	$ \beta_b $ & base circle helix angle, $ ^\circ $\\
 	$ \psi_{ba} $ & width to shaft distance ratio\\
 	$ \psi_{bd} $ & face width factor \\
 	$ \sigma_b $ & ultimate strength, $ \unit{MPa} $\\
 	$ \sigma_{ch} $ & yield limit, $ \unit{MPa} $\\
-	
-\end{tabular}\newpage
-\begin{tabular}[t]{lp{6.5cm}}
 	$ \sigma_{Flim}^o $ & permissible bending stress corresponding to working cycle, $ \unit{MPa} $\\
-	$ \sigma_{Hlim}^o $ & permissible contact stress corresponding to working cycle, $ \unit{MPa} $\\
 \end{tabular}
 \begin{tabular}[t]{lp{6.5cm}}
-	
+	$ \sigma_{Hlim}^o $ & permissible contact stress corresponding to working cycle, $ \unit{MPa} $\\
 	$ _1 $ & subscript for pinion\\
 	$ _2 $ & subscript for driven gear\\
 	$ _w $ & subscript for variable value after correction\\
@@ -154,7 +154,7 @@ $ \Rightarrow b = \psi_{ba}a_w = 62.5\unit{(mm)}$
 Since $ z_1 $ is rounded, we must find $ \beta $ to obtain the correct angle, ensuring that $ \beta \in (8^\circ, 20^\circ) $. Using equation (6.32):\\
 $ \beta_w = \arccos\dfrac{m(z_1+z_2)}{2a_w} \approx 13.59^\circ$
 
-\paragraph{Find $ x_1 $, $ x_2 $} To find $ x_1 $ and $ x_2 $, we will follow the calculation scheme provided in p.103. Since $ \beta_w \approx 13.59^\circ \in (12,17]$, $ z_{min} = 16$, which leads to $ z_1 $ satisfying condition $ z_1 \geq z_{min} + 2 > 10 $, according to table (6.9). Combined with $ u_{hg} = 5 \geq 3.5 $, we obtain $ x_1 = 0.3 $, $ x_2 = -0.3 $, disregarding the calculation of $ y $.
+\paragraph{Find $ x_1 $, $ x_2 $} To find $ x_1 $ and $ x_2 $, we will follow the calculation scheme provided in p.103. Since $ \beta_w \approx 13.59^\circ \in (10,15]$, $ z_{min} = 11$, which leads to $ z_1 $ satisfying condition $ z_1 \geq z_{min} + 2 > 10 $, according to table (6.9). Combined with $ u_{hg} = 5 \geq 3.5 $, we obtain $ x_1 = 0.3 $, $ x_2 = -0.3 $, disregarding the calculation of $ y $.
 
 \subsection{Basic parameters}
 
@@ -195,7 +195,7 @@ $ [{\sigma}_{Fw2}] = 285.61\unit{(MPa)}$
 \subsection{Contact stress analysis}
 From section 6.3.3. in the text, contact stress applied on a gear surface must satisfy the condition below:
 \[
-	\sigma_H = z_Mz_Hz_\varepsilon\sqrt{2T_{sh1}K_H\dfrac{u_{hg}+1}{bu_{hg}d_{w1}^2}} \leq [{\sigma}_{Hw}]
+\sigma_H = z_Mz_Hz_\varepsilon\sqrt{2T_{sh1}K_H\dfrac{u_{hg}+1}{bu_{hg}d_{w1}^2}} \leq [{\sigma}_{Hw}]
 \]
 
 \paragraph{Find $ z_M $}
@@ -211,14 +211,14 @@ From table (P2.3), using interpolation, we approximate:\\ $ K_{Hv} \approx1.07$,
 From table (6.14), using interpolation, we approximate:\\ $ K_{H\alpha} \approx1.1$, $ K_{F\alpha} \approx1.29 $ \\	
 $ \Rightarrow K_H \approx 1.3 $
 \paragraph{Find $ \sigma_H $} After calculating $ z_M $, $ z_H $, $ z_\varepsilon $, $ K_H $, we get the following result:
-	\[\sigma_H \approx 477.51 \unit{(MPa)}\leq [{\sigma}_{Hw}] \approx 509.09 \unit{(MPa)}\] 
+\[\sigma_H \approx 477.51 \unit{(MPa)}\leq [{\sigma}_{Hw}] \approx 509.09 \unit{(MPa)}\] 
 
 \subsection{Bending stress analysis}
 For safety reasons, the following conditions must be met:
 \[
 \begin{array}{l@{{} \leq {}}l}
-	\sigma_{F1} = 2\dfrac{T_{sh1}K_FY_\varepsilon Y_\beta Y_{F1}}{bd_{w1}m_n} & [\sigma_{Fw1}]\\ 
-	\sigma_{F2} = \dfrac{\sigma_{F1}Y_{F2}}{Y_{F1}} & [\sigma_{Fw2}]
+\sigma_{F1} = 2\dfrac{T_{sh1}K_FY_\varepsilon Y_\beta Y_{F1}}{bd_{w1}m_n} & [\sigma_{Fw1}]\\ 
+\sigma_{F2} = \dfrac{\sigma_{F1}Y_{F2}}{Y_{F1}} & [\sigma_{Fw2}]
 \end{array}
 \]
 
@@ -232,8 +232,8 @@ Using $ K_{F\beta} $, $ K_{F\alpha} $, $ K_{Fv} $ calculated from the sections a
 
 \paragraph{Find $ \sigma_F $} Since $ m_n = m\cos\beta_w \approx 1.46$, substituting all the values, we find out that:
 \begin{align*}
-	\sigma_{F1} \approx 130.83 \unit{(MPa)} & \leq [\sigma_{Fw1}]\approx 297.51 \unit{(MPa)}\\
-	\sigma_{F2} \approx 115.98 \unit{(MPa)} & \leq [\sigma_{Fw2}]\approx 285.61 \unit{(MPa)}
+	\sigma_{F1} \approx 114.11 \unit{(MPa)} & \leq [\sigma_{Fw1}]\approx 297.51 \unit{(MPa)}\\
+	\sigma_{F2} \approx 117.01 \unit{(MPa)} & \leq [\sigma_{Fw2}]\approx 285.61 \unit{(MPa)}
 \end{align*}
 
 \subsection{Force on shafts}

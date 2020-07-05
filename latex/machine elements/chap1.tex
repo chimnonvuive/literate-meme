@@ -14,6 +14,7 @@
 	$ u_{sys} $ & transmission ratio of the system\\
 	$ T_{motor} $ & motor torque, $ \unit{N\cdot mm} $\\
 	$ T_{sh} $ & shaft torque, $ \unit{N\cdot mm} $\\
+	$ \delta_u $ & relative error of $ u_{sys} $\\
 	$ \eta_b $ & bearing efficiency\\
 	$ \eta_c $ & coupling efficiency\\
 	$ \eta_{ch} $ & chain drive efficiency\\
@@ -52,6 +53,9 @@ Recalculating $ u_{sys} $ with the new $ P_{motor} $ and $ n_{motor} $, we obtai
 $ u_{sys} = \dfrac{n_{motor}}{n_{bc}} \approx 25.15	$\\
 Assuming $ u_{hg} = const $:\\
 $ u_{ch} = \dfrac{u_{sys}}{u_{hg}} \approx 5.03$
+\paragraph{Relative error of transmission ratio} The ratio is calculated as follows:
+\[\delta_u=\dfrac{|25.15-25|}{25} \approx 0.6\% \leq  5\%\]
+
 
 \section{Calculate power, rotational speed and torque}
 Let us denote $ P_{sh1} $, $ n_{sh1} $ and $ T_{sh1} $ be the transmitted power, rotational speed and torque onto shaft 1, respectively. Similarly, $ P_{sh2} $, $ n_{sh2} $ and $ T_{sh2} $ will be the transmitted parameters onto shaft 2. These notations will be used throughout the next chapters.

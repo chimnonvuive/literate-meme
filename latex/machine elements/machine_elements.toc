@@ -6,6 +6,7 @@
 \contentsline {section}{\numberline {1.3}Calculate $ P_{motor} $}{8}%
 \contentsline {section}{\numberline {1.4}Calculate $ n_{motor} $}{8}%
 \contentsline {section}{\numberline {1.5}Choose motor}{9}%
+\contentsline {paragraph}{Relative error of transmission ratio}{9}%
 \contentsline {section}{\numberline {1.6}Calculate power, rotational speed and torque}{9}%
 \contentsline {subsection}{\numberline {1.6.1}Power}{9}%
 \contentsline {subsection}{\numberline {1.6.2}Rotational speed}{10}%
@@ -15,14 +16,14 @@
 \contentsline {section}{\numberline {2.2}Choose material}{13}%
 \contentsline {section}{\numberline {2.3}Calculate $ [\sigma _H] $ and $ [\sigma _F] $}{13}%
 \contentsline {subsection}{\numberline {2.3.1}Working cycle of bearing stress}{13}%
-\contentsline {subsection}{\numberline {2.3.2}Working cycle of equivalent tensile stress}{13}%
+\contentsline {subsection}{\numberline {2.3.2}Working cycle of equivalent tensile stress}{14}%
 \contentsline {subsection}{\numberline {2.3.3}Aging factor}{14}%
 \contentsline {subsection}{\numberline {2.3.4}Calculate $ [{\sigma }_H] $, $ [{\sigma }_{F1}] $, $ [{\sigma }_{F2}] $}{14}%
 \contentsline {section}{\numberline {2.4}Transmission Design}{15}%
 \contentsline {subsection}{\numberline {2.4.1}Determine basic parameters}{15}%
 \contentsline {subsection}{\numberline {2.4.2}Determine gear meshing parameters}{15}%
 \contentsline {paragraph}{Find $ m $}{15}%
-\contentsline {paragraph}{Find $ z_1 $, $ z_2 $, $ b_w $}{15}%
+\contentsline {paragraph}{Find $ z_1 $, $ z_2 $, $ b_w $}{16}%
 \contentsline {paragraph}{Correct $ \beta $}{16}%
 \contentsline {paragraph}{Find $ x_1 $, $ x_2 $}{16}%
 \contentsline {subsection}{\numberline {2.4.3}Basic parameters}{16}%
@@ -40,10 +41,38 @@
 \contentsline {paragraph}{Find $ K_F $}{19}%
 \contentsline {paragraph}{Find $ \sigma _F $}{19}%
 \contentsline {subsection}{\numberline {2.4.7}Force on shafts}{19}%
-\contentsline {chapter}{\numberline {3}Bearing Design}{21}%
+\contentsline {chapter}{\numberline {3}Shaft Design}{21}%
 \contentsline {section}{\numberline {3.1}Nomenclature}{21}%
-\contentsline {section}{\numberline {3.2}Choose bearing type}{23}%
-\contentsline {section}{\numberline {3.3}Bearing dimensions}{23}%
-\contentsline {subsection}{\numberline {3.3.1}Calculate basic dynamic load rating}{23}%
-\contentsline {subsubsection}{Find equivalent dynamic load}{24}%
-\contentsline {subsubsection}{Find rated life}{24}%
+\contentsline {section}{\numberline {3.2}Choose material}{23}%
+\contentsline {section}{\numberline {3.3}Transmission Design}{23}%
+\contentsline {subsection}{\numberline {3.3.1}Load on shafts}{23}%
+\contentsline {subsubsection}{Applied forces from Gears}{23}%
+\contentsline {paragraph}{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}{23}%
+\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{24}%
+\contentsline {subsubsection}{Applied forces from Chain drives}{24}%
+\contentsline {subsection}{\numberline {3.3.2}Preliminary calculations}{24}%
+\contentsline {subsection}{\numberline {3.3.3}Identify the distance between bearings and applied forces}{25}%
+\contentsline {subsection}{\numberline {3.3.4}Determine shaft diameters and lengths}{26}%
+\contentsline {paragraph}{Find reaction forces}{26}%
+\contentsline {paragraph}{Draw bending moment - torque diagrams}{27}%
+\contentsline {paragraph}{Find equivalent moments}{27}%
+\contentsline {paragraph}{Find permissible stress}{28}%
+\contentsline {paragraph}{Find standardized diameters at specific locations on the shaft}{28}%
+\contentsline {section}{\numberline {3.4}Fatigue Strength Analysis}{30}%
+\contentsline {paragraph}{Find $ \sigma _{-1}$, $ \tau _{-1} $}{30}%
+\contentsline {paragraph}{Find $ \sigma _{a}, \tau _{a}, \sigma _{m}, \tau _{m} $}{31}%
+\contentsline {paragraph}{Find $ K_{\sigma }, K_\tau $}{31}%
+\contentsline {paragraph}{Find $ s_\sigma $, $ s_\tau $ and $ s $}{32}%
+\contentsline {section}{\numberline {3.5}Static Strength Analysis}{33}%
+\contentsline {chapter}{\numberline {4}Bearing Design}{34}%
+\contentsline {section}{\numberline {4.1}Nomenclature}{34}%
+\contentsline {section}{\numberline {4.2}Choose bearing type}{36}%
+\contentsline {section}{\numberline {4.3}Bearing dimensions}{37}%
+\contentsline {subsection}{\numberline {4.3.1}Calculate basic dynamic load rating}{37}%
+\contentsline {subsubsection}{Find equivalent dynamic load}{37}%
+\contentsline {paragraph}{Find the ratio $ \genfrac {}{}{}0{iF_a}{C_o} $}{37}%
+\contentsline {paragraph}{Compare with $ e $}{37}%
+\contentsline {paragraph}{Find $ X,Y $}{38}%
+\contentsline {paragraph}{Find $ F_{at} $}{38}%
+\contentsline {paragraph}{Find $ Q_1,Q_2 $}{38}%
+\contentsline {subsubsection}{Find rated life}{39}%

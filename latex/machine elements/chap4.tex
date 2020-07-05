@@ -81,13 +81,13 @@ On shaft 1, the motor is labeled 1 and the pinion is labeled 2. On shaft 2, the 
 $ \bar{r}_{12} = -d_{w12}/2 \approx -20.83\unit{(mm)}$, $ \text{hr}_{12} = +1 $, $ \text{cb}_{12} = +1 $, $ \text{cq}_1 = +1 $\\
 $ \bar{r}_{21} = +d_{w21}/2 \approx +104.17\unit{(mm)}$, $ \text{hr}_{21} = -1 $, $ \text{cb}_{21} = -1$, $ \text{cq}_2 = -1$
 \paragraph{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}
-Using the results from the previous chapter: $ \alpha_{tw} \approx 20.53^\circ $, $ \beta = 13.59^\circ $, $ d_{w12}\approx 41.67\unit{(mm)} $
+Using the results from the previous chapter: , $ \beta_w = 13.59^\circ $, $ d_{w12}\approx 41.67\unit{(mm)} $
 \[
 \left\{ 
 \begin{array}{l@{{}={}}l@{{}={}}l}
 F_{t12}& F_{t21}& \dfrac{2T_{sh1}}{d_{w12}}\approx 2402.28\unit{(N)}\\
-F_{r12}& F_{r21}&  \dfrac{F_{t12}\tan\alpha_{tw}}{\cos\beta}\approx 925.46 \unit{(N)}\\
-F_{a12}& F_{a21}& F_{t12}\tan\beta\approx 580.75 \unit{(N)}\\ 
+F_{r12}& F_{r21}&  \dfrac{F_{t12}\tan\alpha}{\cos\beta_w}\approx 925.46 \unit{(N)}\\
+F_{a12}& F_{a21}& F_{t12}\tan\beta_w\approx 580.75 \unit{(N)}\\ 
 \end{array}
 \right.
 \]
@@ -97,9 +97,8 @@ Following the sign convention, we obtain the forces:
 \left\{ 
 \begin{array}{l@{{}={}}l}
 F_{x12}& \dfrac{\bar{r}_{12}}{|\bar{r}_{12}|}\text{cq}_1\text{cb}_{12}F_{t12}\approx -2402.28 \unit{(N)}\\
-F_{y12}& -\dfrac{\bar{r}_{12}}{|\bar{r}_{12}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t12}\approx 925.46 \unit{(N)}\\
-
-F_{z12}& \text{cq}_1\text{cb}_{12}\text{hr}_{12}F_{t12}\tan\beta\approx 580.75 \unit{(N)}\\ 
+F_{y12}& -\dfrac{\bar{r}_{12}}{|\bar{r}_{12}|}\dfrac{\tan\alpha}{\cos\beta_w}F_{t12}\approx 925.46 \unit{(N)}\\
+F_{z12}& \text{cq}_1\text{cb}_{12}\text{hr}_{12}F_{t12}\tan\beta_w\approx 580.75 \unit{(N)}\\ 
 \end{array}
 \right.
 \]
@@ -107,10 +106,8 @@ F_{z12}& \text{cq}_1\text{cb}_{12}\text{hr}_{12}F_{t12}\tan\beta\approx 580.75 \
 \left\{ 
 \begin{array}{l@{{}={}}l}
 F_{x21}& \dfrac{\bar{r}_{21}}{|\bar{r}_{21}|}\text{cq}_2\text{cb}_{21}F_{t21}\approx 2402.28 \unit{(N)}\\
-
-F_{y21}& -\dfrac{\bar{r}_{21}}{|\bar{r}_{21}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t21}\approx -925.46 \unit{(N)}\\
-
-F_{z21}& \text{cq}_2\text{cb}_{21}\text{hr}_{21}F_{t21}\tan\beta\approx -580.75 \unit{(N)}\\ 
+F_{y21}& -\dfrac{\bar{r}_{21}}{|\bar{r}_{21}|}\dfrac{\tan\alpha_{tw}}{\cos\beta_w}F_{t21}\approx -925.46 \unit{(N)}\\
+F_{z21}& \text{cq}_2\text{cb}_{21}\text{hr}_{21}F_{t21}\tan\beta_w\approx -580.75 \unit{(N)}\\ 
 \end{array}
 \right.
 \]
@@ -120,16 +117,17 @@ Assuming the angle between x-axis and $ F_r $ is $ 210^\circ $ and $ F_r \approx
 \[
 \left\{ 
 \begin{array}{l@{{}={}}l}
-F_{x22}& F_{r22}\cos210^\circ\approx -1339.48 \unit{(N)}\\
-F_{y22}& F_{r22}\sin210^\circ\approx -2320.05 \unit{(N)}\\
+F_{x22}& F_{r22}\cos210^\circ\approx -2320.05 \unit{(N)}\\
+F_{y22}& F_{r22}\sin210^\circ\approx -1339.48 \unit{(N)}\\
 \end{array}
 \right.
 \]
 
 \subsection{Preliminary calculations}
-Since shaft 1 and shaft 2 receive input torques $ T_{sh1} $ and $ T_{sh2} $, respectively, $ [\tau_1] = 15\unit{(MPa)}$ and $ [\tau_2]=30\unit{(MPa)} $. Using equation (10.9), we can approximate the base shaft diameters $ d_1 $ and $ d_2 $. Then, from table (10.2), $ d_1 $ and $ d_2 $ are chosen accordingly along with $ b_{O1} $ and $ b_{O2} $:\\
-$ d_1 \geq \sqrt[3]{\dfrac{T_{sh1}}{0.2[\tau_1]}} \approx 25.55 \unit{(mm)}\Rightarrow d_1 = 30 \unit{(mm)}$, $ b_{O1} = 19 \unit{(mm)} $\\
-$ d_2 \geq \sqrt[3]{\dfrac{T_{sh2}}{0.2[\tau_2]}} \approx 34.1 \unit{(mm)}\Rightarrow d_2 = 35\unit{(mm)}$, $ b_{O2} = 21 \unit{(mm)} $
+Since shaft 1 and shaft 2 receive input torques $ T_{sh1} $ and $ T_{sh2} $, respectively, $ [\tau_1] = 15\unit{(MPa)}$ and $ [\tau_2]=30\unit{(MPa)} $. Using equation (10.9), we can approximate the base shaft diameters $ d_1 $ and $ d_2 $:\vskip2mm
+$ d_1 \geq \sqrt[3]{\dfrac{T_{sh1}}{0.2[\tau_1]}} \approx 25.55 \unit{(mm)}$\\
+$ d_2 \geq \sqrt[3]{\dfrac{T_{sh2}}{0.2[\tau_2]}} \approx 34.1 \unit{(mm)}$\vskip2mm
+Recall that our motor is 4A160M2Y3, inspecting table P1.7 we obtain the motor's output shaft diameter is $ 42 \unit{(mm)} $. According to the recommendations on p.189, we limit the chosen range of $ d_1 \geq (0.8\div1.2)\times 42\unit{(mm)} $. For $ d_2 $, the chosen range must be around $ (0.3\div0.35)\times a_w\unit{(mm)}$. Thus, $ d_1 = 35\unit{(mm)} $, $ d_2 = 40\unit{(mm)} $. Consulting table (10.2) gives $ b_{O1} \approx 21\unit{(mm)} $ and $ b_{O2} \approx 23\unit{(mm)} $
 
 \subsection{Identify the distance between bearings and applied forces}
 
@@ -144,11 +142,11 @@ Using equation (10.10), the gear hubs are $ l_{m13} = l_{m12} = 1.5d_1 =  45\uni
 From table (10.3), we choose $ \tilde{k}_1=10\unit{(mm)}$, $ \tilde{k}_2=8\unit{(mm)} $, $ \tilde{k}_3=15\unit{(mm)} $, $ h_n=18\unit{(mm)} $. This parameters apply for both shafts in the system.\\
 Table (10.4) introduces the formulas for several types of gearbox. Since our system only concerns about 1-level gear reducer, the ones below are used:\\
 On shaft 1:\\
-$ l_{12} = -l_{c12} = -\left[ 0.5(l_{m12}+b_{O1})+\tilde{k}_3+h_n  \right] = -65 \unit{(mm)} $\\
-$ l_{13} = 0.5(l_{m13}+b_{O1})+\tilde{k}_1+\tilde{k}_2 = 50 \unit{(mm)} $\\
-$ l_{11} = 2l_{13} = 100 \unit{(mm)}$\\
+$ l_{12} = -l_{c12} = -\left[ 0.5(l_{m12}+b_{O1})+\tilde{k}_3+h_n  \right] = -71.5 \unit{(mm)} $\\
+$ l_{13} = 0.5(l_{m13}+b_{O1})+\tilde{k}_1+\tilde{k}_2 = 59.5 \unit{(mm)} $\\
+$ l_{11} = 2l_{13} = 119 \unit{(mm)}$\\
 On shaft 2:\\
-$ l_{22} = -l_{c22} = -\left[ 0.5(l_{m22}+b_{O2})+\tilde{k}_3+h_n \right] = -69.75 \unit{(mm)} $\\
+$ l_{22} = -l_{c22} = -\left[ 0.5(l_{m22}+b_{O2})+\tilde{k}_3+h_n \right] = -66.75 \unit{(mm)} $\\
 $ l_{23} = 0.5(l_{m23}+b_{O2})+\tilde{k}_1+\tilde{k}_2 = 54.75 \unit{(mm)} $\\
 $ l_{21} = 2l_{23} = 109.5 \unit{(mm)}$
 
@@ -175,29 +173,54 @@ From the diagram, we solve for the reaction forces at $ A_1 $, $ A_2 $, $ B_1 $,
 \]
 we obtain the results:\vskip2mm
 %\begin{table}[ht]
-	{\centering
+{\centering
 	\begin{tabular}[ht]{p{7cm}p{7cm}}
 		$
 		\left\{ 
 		\begin{array}{l@{{} \approx {}}l}
 		R_{A1x} & 1201.14\unit{(N)}\\
-		R_{A1y} & -341.74\unit{(N)}\\
+		R_{A1y} & -352.24\unit{(N)}\\
 		R_{B1x} & 1201.14\unit{(N)}\\
-		R_{B1y} & -583.72\unit{(N)}\\
+		R_{B1y} & -573.22\unit{(N)}\\
 		\end{array}
 		\right.
 		$ & $
 		\left\{ 
 		\begin{array}{l@{{} \approx {}}l}
-		R_{A2x} & 991.57 \unit{(N)}\\
-		R_{A2y} & 3708.15 \unit{(N)}\\
-		R_{B2x} & -2054.37 \unit{(N)}\\
-		R_{B2y} & -462.64 \unit{(N)}\\
+		R_{A2x} & 943.15\unit{(N)}\\
+		R_{A2y} & 3668.4 \unit{(N)}\\
+		R_{B2x} & -2005.96 \unit{(N)}\\
+		R_{B2y} & -422.89 \unit{(N)}\\
 		\end{array}
 		\right.
 		$
-	\end{tabular}}
-%\end{table}
+\end{tabular}}\vskip2mm
+The total bending moments at 8 critical cross sections are also calculated (we use the formula (10.15) to derive $M=\sqrt{M_x^2+M_y^2}$ at each section):\vskip2mm
+{\centering
+	\begin{tabular}[ht]{p{7cm}p{7cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		M_{A1} & 0 \unit{(N\cdot mm)}\\
+		M_{D1}^- & 68531.85 \unit{(N\cdot mm)}\\
+		M_{D1}^+ & 72867.4 \unit{(N\cdot mm)}\\
+		M_{B1} & 0 \unit{(N\cdot mm)}\\
+		M_{C1} & 0 \unit{(N\cdot mm)}\\
+		\end{array}
+		\right.
+		$ &
+		$
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		M_{C2} & 0 \unit{(N\cdot mm)}\\
+		M_{A2} & 191545.76 \unit{(N\cdot mm)}\\
+		M_{D2}^- & 146910 \unit{(N\cdot mm)}\\
+		M_{D2}^+ & 121977.78 \unit{(N\cdot mm)}\\
+		M_{B2} & 0 \unit{(N\cdot mm)}\\
+		\end{array}
+		\right.
+		$
+\end{tabular}}\vskip2mm
 
 \paragraph{Draw bending moment - torque diagrams} Knowing the reaction forces, we can easily draw bending moment and torque diagram for both shafts on 2 major planes (xOz) and (yOz).
 
@@ -215,90 +238,90 @@ we obtain the results:\vskip2mm
 	\label{mshaft2}
 \end{figure}
 
-\paragraph{Find equivalent moments} Knowing $ T_{sh1} $ and $ T_{sh2} $, we calculate equivalent moment $ M_e $ at the 8 points specified using the formula below:
+\paragraph{Find equivalent moments} Knowing $ T_{sh1} $ and $ T_{sh2} $, we calculate equivalent moment $ M_e $ at the 8 cross sections specified using the formula below:
 \[M_e = \sqrt{M_x^2 + M_y^2 + 0.75T_{sh}^2}\]
 
 %\begin{table}[ht]
 %	\centering
-	\begin{tabular}{p{7cm}p{7cm}}
-		$
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		M_{eA1} & 43342.46 \unit{(N\cdot mm)}\\
-		M_{eD1}^- & 76009.11 \unit{(N\cdot mm)}\\
-		M_{eD1}^+ & 79606.79 \unit{(N\cdot mm)}\\
-		M_{eB1} & 43342.46 \unit{(N\cdot mm)}\\
-		M_{eC1} & 43342.46 \unit{(N\cdot mm)}\\
-		\end{array}
-		\right.
-		$ &
-		$
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		M_{eC2} & 205963.35 \unit{(N\cdot mm)}\\
-		M_{eA2} & 278094.61 \unit{(N\cdot mm)}\\
-		M_{eD2}^- & 249875.6 \unit{(N\cdot mm)}\\
-		M_{eD2}^+ & 236037.15 \unit{(N\cdot mm)}\\
-		M_{eB2} & 205963.35 \unit{(N\cdot mm)}\\
-		\end{array}
-		\right.
-		$
-	\end{tabular}\vskip2mm
+\begin{tabular}{p{7cm}p{7cm}}
+	$
+	\left\{ 
+	\begin{array}{l@{{} \approx {}}l}
+	M_{eA1} & 0 \unit{(N\cdot mm)}\\
+	M_{eD1}^- & 81087.5 \unit{(N\cdot mm)}\\
+	M_{eD1}^+ & 84783.4 \unit{(N\cdot mm)}\\
+	M_{eB1} & 43342.46 \unit{(N\cdot mm)}\\
+	M_{eC1} & 43342.46 \unit{(N\cdot mm)}\\
+	\end{array}
+	\right.
+	$ &
+	$
+	\left\{ 
+	\begin{array}{l@{{} \approx {}}l}
+	M_{eC2} & 205963.35 \unit{(N\cdot mm)}\\
+	M_{eA2} & 281266.2 \unit{(N\cdot mm)}\\
+	M_{eD2}^- & 252989.03 \unit{(N\cdot mm)}\\
+	M_{eD2}^+ & 239373.1 \unit{(N\cdot mm)}\\
+	M_{eB2} & 0 \unit{(N\cdot mm)}\\
+	\end{array}
+	\right.
+	$
+\end{tabular}\vskip2mm
 %\end{table}
 
 \paragraph{Find permissible stress}
 $ [\sigma_1] $ and $ [\sigma_2] $ are determined by table (10.5). Since we use quenched 45X steel, $ [\sigma_1] = 67 \unit{(MPa)}$ and $ [\sigma_2] = 64 \unit{(MPa)}$ ($ [\sigma_2] $ is achieved using interpolation).
 
-\paragraph{Find standardized diameters at specific locations on the shaft} Having $ M_e $ and $ [\sigma] $, the next step is to estimate specific diameter at the key points mentioned above using this formula, which only applies for rigid shafts:
-\[d = \sqrt[3]{\dfrac{M_e}{0.1[\sigma]}}\]
+\paragraph{Find standardized diameters at specific locations on the shaft} Having $ M_e $ and $ [\sigma] $, the next step is to estimate specific diameter at the key points mentioned above using equation (10.17) on p.194, which only applies for rigid shafts:
+\[d \geq \sqrt[3]{\dfrac{M_e}{0.1[\sigma]}}\]
 
 \begin{tabular}{p{7cm}p{7cm}}
-		$
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		d_{A1} & 18.63 \unit{(mm)}\\
-		d_{D1} & 22.82 \unit{(mm)}\\
-		d_{B1} & 18.63 \unit{(mm)}\\
-		d_{C1} & 18.63 \unit{(mm)}\\
-		\end{array}
-		\right.
-		$ &
-		$
-		\left\{ 
-		\begin{array}{l@{{} \approx {}}l}
-		d_{C2} & 31.81 \unit{(mm)}\\
-		d_{A2} & 35.16 \unit{(mm)}\\
-		d_{D2} & 33.92 \unit{(mm)}\\
-		d_{B2} & 31.81\unit{(mm)}\\
-		\end{array}
-		\right.
-		$
-	\end{tabular}
+	$
+	\left\{ 
+	\begin{array}{l@{{} \approx {}}l}
+	d_{A1} & 0 \unit{(mm)}\\
+	d_{D1} & 23.66 \unit{(mm)}\\
+	d_{B1} & 18.92 \unit{(mm)}\\
+	d_{C1} & 18.92 \unit{(mm)}\\
+	\end{array}
+	\right.
+	$ &
+	$
+	\left\{ 
+	\begin{array}{l@{{} \approx {}}l}
+	d_{C2} & 32.32 \unit{(mm)}\\
+	d_{A2} & 35.86 \unit{(mm)}\\
+	d_{D2} & 34.61 \unit{(mm)}\\
+	d_{B2} & 0\unit{(mm)}\\
+	\end{array}
+	\right.
+	$
+\end{tabular}
 
 T\text{hr}ough rough calculations, we will choose the diameters according to standards given on p.195 (one applies for bearings while the other is used for the remaining machine elements):
 
-	\begin{tabular}{p{7cm}p{7cm}}
-		$
-		\left\{ 
-		\begin{array}{l@{{} = {}}l}
-		d_{A1} & 20 \unit{(mm)}\\
-		d_{D1} & 24 \unit{(mm)}\\
-		d_{B1} & 20 \unit{(mm)}\\
-		d_{C1} & 19 \unit{(mm)}\\
-		\end{array}
-		\right.
-		$ &
-		$
-		\left\{ 
-		\begin{array}{l@{{} = {}}l}
-		d_{C2} & 32 \unit{(mm)}\\
-		d_{A2} & 40 \unit{(mm)}\\
-		d_{D2} & 34 \unit{(mm)}\\
-		d_{B2} & 35 \unit{(mm)}\\
-		\end{array}
-		\right.
-		$
-	\end{tabular}
+\begin{tabular}{p{7cm}p{7cm}}
+	$
+	\left\{ 
+	\begin{array}{l@{{} = {}}l}
+	d_{A1} & 35 \unit{(mm)}\\
+	d_{D1} & 24 \unit{(mm)}\\
+	d_{B1} & 35 \unit{(mm)}\\
+	d_{C1} & 19 \unit{(mm)}\\
+	\end{array}
+	\right.
+	$ &
+	$
+	\left\{ 
+	\begin{array}{l@{{} = {}}l}
+	d_{C2} & 34 \unit{(mm)}\\
+	d_{A2} & 40 \unit{(mm)}\\
+	d_{D2} & 36 \unit{(mm)}\\
+	d_{B2} & 40 \unit{(mm)}\\
+	\end{array}
+	\right.
+	$
+\end{tabular}
 
 \section{Fatigue Strength Analysis}
 For each critical point, the fatigue strength there must satisfy this condition:
@@ -319,7 +342,7 @@ $ \tau_{-1} \approx 0.58\sigma_{-1} \approx 242.15 \unit{(MPa)} $
 	\item By design, the shafts only rotate in one direction, thus $ \tau_m = \tau_a = \dfrac{T_{sh}}{2W_O} $ (equation (10.23)).
 	\item We also assume the shafts have circular cross section, which makes $ W = \dfrac{\pi d^3}{32} $ and $ W_O = \dfrac{\pi d^3}{16} $ according to table (10.6), where $ d $ is the diameter of a cross section of the shaft.
 \end{enumerate}
-The table below shows the results after calculation:\newpage
+The table below shows the results after calculation:
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{|
@@ -358,7 +381,7 @@ Table (10.10), (10.11) and (10.13) are examined to find $ \dfrac{k_\sigma}{\vare
 %	\label{concentration stress factor}
 %\end{figure}
 
-Final calculation is provided in the table:\newpage
+Final calculation is provided in the table:
 
 \begin{table}[ht]
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -410,7 +433,7 @@ Since the smallest safety factor is at the cross section $ D_1 $, which has the 
 
 \section{Static Strength Analysis}
 Along with fatigue strength, static strength is also considered and every shaft must satisfy the following condition at critical cross sections (equation (10.27)):
-\[\sigma_{td} = \sqrt{\left( \dfrac{M_{max}}{0.1d^3}\right)^2 + 3\left( \dfrac{T_{max}}{0.2d^3}\right) ^2} \leq [\sigma]\]
+\[\sigma_{e} = \sqrt{\left( \dfrac{M_{max}}{0.1d^3}\right)^2 + 3\left( \dfrac{T_{max}}{0.2d^3}\right) ^2} \leq [\sigma]\]
 where $ M_{max}, T_{max} $ are the largest bending moment and torque at the cross section, respectively. Let $ [\sigma] \approx 0.8\sigma_{ch} = 520 \unit{(MPa)}$, the results are in the table below:
 \begin{table}[ht]
 	\centering
@@ -418,7 +441,7 @@ where $ M_{max}, T_{max} $ are the largest bending moment and torque at the cros
 		\hline
 		\rowcolor[HTML]{C0C0C0} 
 		& $A_1$ & $D_1$ & $B_1$ & $C_1$ & $C_2$ & $A_2$ & $D_2$ & $B_2$ \\ \hline
-		\cellcolor[HTML]{C0C0C0}$\sigma_{td}\unit{(MPa)}$ & 54.18 & 57.59 & 54.18 & 63.19 & 62.86 & 43.45 & 63.58 & 48.04 \\ \hline
+		\cellcolor[HTML]{C0C0C0}$\sigma_{e}\unit{(MPa)}$ & 54.18 & 57.59 & 54.18 & 63.19 & 62.86 & 43.45 & 63.58 & 48.04 \\ \hline
 	\end{tabular}
 	\caption{Calculated static strength at critical cross sections}
 \end{table}\\
