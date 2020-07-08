@@ -1,211 +1,62 @@
-\chapter{Gearbox Design (Helix gears)}
+\chapter{Determination of Tightening Coefficient of Threaded Joints}
+
 \section{Nomenclature}
-	\begin{tabular}[t]{lp{7cm}}
-		$ [\sigma_H] $ & permissible contact stress, $ MPa $\\
-		$ [\sigma_F] $ & permissible bending stress, $ MPa $\\
-		$ \sigma_{Hlim}^o $ & permissible contact stress corresponding to working cycle, $ MPa $\\
-		$ \sigma_{Flim}^o $ & permissible bending stress corresponding to working cycle, $ MPa $\\
-		$ \sigma_b $ & ultimate strength, $ MPa $\\
-		$ \sigma_{ch} $ & yield limit, $ MPa $\\
-		$ H $ & surface roughness, $ \text{HB} $\\
-		$ S $ & length, $ mm $\\
-		$ S_H $ & safety factor of contact stress\\
-		$ S_F $ & safety factor of bending stress\\
-		$ N_{HO} $ & working cycle of bearing stress corresponding to $ [\sigma_H] $\\
-	\end{tabular}
-	\begin{tabular}[t]{lp{7cm}}
-		$ K_{HL} $ & aging factor due to contact stress\\
-		$ K_{FL} $ & aging factor due to bending stress\\
-		$ K_{FC} $ & load placement factor\\
-		$ K_{H\alpha} $ & factor of load distribution from contact stress on gear teeth\\
-		$ K_{H\beta} $ & factor of load distribution from contact stress on top land\\
-		$ K_{Hv} $ & factor of dynamic load from contact stress at meshing area\\
-		$ K_H $ & load factor from contact stress\\
-		$ K_{F\alpha} $ & factor of load distribution from bending stress on gear teeth\\
-		$ K_{F\beta} $ & factor of load distribution from bending stress on top land\\
-		$ K_{Fv} $ & factor of dynamic load from bending stress at meshing area\\
-		$ K_F $ & load factor from bending stress\\
-	\end{tabular}\newpage
-\begin{tabular}[t]{lp{7cm}}
-	$ N_{HE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_H] $\\
-	$ N_{FO} $ & working cycle of bearing stress corresponding to $ [\sigma_F] $\\
-	$ N_{FE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_F] $\\
-	$ \text{AG} $ & accuracy grade of gear\\
-	$ z_M $ & material's mechanical properties factor \\
-	$ z_H $ & contact surface's shape factor\\
-	$ z_\epsilon $ & meshing condition factor\\
-	$ z_{min} $ & minimum number of teeth corresponding to $ \beta $\\
-	$ z_v $ & equivalent number of teeth\\
-	$ \epsilon_\alpha $ & horizontal meshing condition factor\\
-	$ \epsilon_\beta $ & vertical meshing condition factor\\
-	$ \alpha $ & base profile angle, following Vietnam standard (TCVN 1065-71), i.e. $ \alpha = 20^\circ $\\
-	$ \alpha_t $ & profile angle of a gear tooth, $ ^\circ $\\
-	$ \alpha_{tw} $ & meshing profile angle, $ ^\circ $\\
-	$ \beta $ & helix angle, $ ^\circ $\\
-	$ \beta_b $ & helix angle at base circle, $ ^\circ $\\
-	$ \psi_{ba} $ & width to shaft distance ratio\\
-	$ \psi_{bd} $ & width to pinion diameter ratio\\
-\end{tabular}
-\begin{tabular}[t]{lp{7cm}}
-	$ K_d $ & coefficient of gear material\\
-	$ Y_\epsilon $ & meshing factor\\
-	$ Y_\beta $ & helix angle factor\\
-	$ Y_F $ & tooth shape factor\\
-	$ c $ & gear meshing rate\\
-	$ a_w $ & center distance, $ mm $\\
-	$ b_w $ & face width, $ mm $\\
-	$ d $ & pitch circle diameter, $ mm $\\
-	$ d_w $ & rolling circle diameter, $ mm $\\
-	$ d_a $ & addendum diameter, $ mm $\\
-	$ d_f $ & deddendum diameter, $ mm $\\
-	$ d_b $ & base diameter, $ mm $\\
-	$ m_H $ & root of fatigue curve in contact stress test\\
-	$ m_F $ & root of fatigue curve in bending stress test\\
-	$ m $ & traverse module, $ mm $\\
-	$ m_n $ & normal module, $ mm $\\
-	$ v $ & rotational velocity, $ m/s $\\
-	$ x $ & gear correction factor\\
-	$ y $ & center displacement factor\\
-	$ _1 $ & subscript for driving gear\\
-	$ _2 $ & subscript for driven gear
+\begin{tabular}{lp{6.5cm}}
+	$ d  $ & nominal diameter of the bolt, $ \unit{mm} $\\
+	$ F_v $ & tightening force, $ \unit{N} $\\
+	$ K $ & tightening coefficient\\
+	$ T_v $ & tightening moment, $ \unit{N\cdot m} $\\
 \end{tabular}
 
-\section{Choose material}
-From table 6.1 , the material of choice for both gears is steel 40X with $ S\leq100\unit{mm} $, $ \text{HB} 250 $, $ \sigma_b = 850\unit{MPa} $, $ \sigma_{ch} = 550 \unit{MPa}$.\\
-Table 6.2  also gives $ \sigma_{Hlim}^o = 2\text{HB} + 70$, $ S_H = 1.1 $, $ \sigma_{Flim}^o = 1.8\text{HB} $, $ S_F = 1.75 $\\
-Therefore, they have the same properties except for their surface roughness $ H $.\\
-For the driving gear, $ H_1=\text{HB}250 \Rightarrow \sigma_{Hlim1}^o = 570\unit{MPa}$, $ \sigma_{Flim1}^o = 450\unit{MPa}$\\
-For the driven gear, $ H_2=\text{HB}240 \Rightarrow \sigma_{Hlim2}^o = 550\unit{MPa}$, $ \sigma_{Flim2}^o = 432\unit{MPa}$
-\section{Calculate $ [\sigma_H] $ and $ [\sigma_F] $}
-\subsection{Working cycle of bearing stress}
-Using equation (6.5) :\\
-$ N_{HO1} = 30H_1^{2.4} = 17.07\times10^6\unit{cycles}$\\
-$ N_{HO2} = 30H_2^{2.4} = 15.4749\times10^6\unit{cycles}$
-\subsection{Working cycle of equivalent tensile stress}
-Since $ H_1,H_2\leq\text{HB}350 $, $ m_H=6 $, $ m_F=6 $.\\
-Both gears meshed indefinitely, thus $ c=1 $.\\ Applying equation (6.7)  and $ T_1 $, $ T_2 $, $ t_1 $, $ t_2 $ from the initial parameters:\\
-$ N_{HE1} = 60c\left[ \left( \dfrac{T_1}{T}\right)^3n_1t_1 + \left( \dfrac{T_2}{T}\right)^3n_2t_2\right] \approx 5.73\times10^6\unit{cycles}$ ($ n_1=n_2=n_{sh1} $)\\
-$ N_{HE2} = 60c\left[ \left( \dfrac{T_1}{T}\right)^3n_1t_1 + \left( \dfrac{T_2}{T}\right)^3n_2t_2\right] \approx 1.15\times10^6\unit{cycles}$ ($ n_1=n_2=n_{sh2} $)\\
-$ N_{FE1} = 60c\left[ \left( \dfrac{T_1}{T}\right)^{m_F}n_1t_1 + \left( \dfrac{T_2}{T}\right)^{m_F}n_2t_2\right] \approx 3.35\times10^6\unit{cycles}$ ($ n_1=n_2=n_{sh1} $)\\
-$ N_{FE2} = 60c\left[ \left( \dfrac{T_1}{T}\right)^{m_F}n_1t_1 + \left( \dfrac{T_2}{T}\right)^{m_F}n_2t_2\right] \approx 0.67\times10^6\unit{cycles}$ ($ n_1=n_2=n_{sh2} $)\\
-\subsection{Aging factor}
-For steel, $ N_FO = 4\times10^6\unit{MPa}$. Applying equation (6.3) and (6.4)  yield:\\
-$K_{HL1} = \sqrt[m_H]{N_{HO1}/N_{HE1}} \approx 1.2$\\
-$ K_{HL2} = \sqrt[m_H]{N_{HO2}/N_{HE2}} \approx 1.54$\\
-$ K_{FL1} = \sqrt[m_F]{N_{FO1}/N_{FE1}} \approx 1.03$\\
-$ K_{FL2} = \sqrt[m_F]{N_{FO2}/N_{FE2}} \approx 1.35$
-\subsection{Calculate $ [\sigma_H] $ and $ [\sigma_F] $}
-Since the motor works in one direction, $ K_{FC} = 1$\\
-$ [\sigma_{H1}] = \sigma_{Hlim1}^oK_{HL1}/S_{H1} \approx 621.61\unit{MPa}$\\
-$ [\sigma_{H2}] = \sigma_{Hlim2}^oK_{HL2}/S_{H2} \approx 771.63\unit{MPa}$\\
-$ [\sigma_{F1}] = \sigma_{Flim1}^oK_{FC1}K_{FL1}/S_{F1} \approx 264.85\unit{MPa}$\\
-$ [\sigma_{F2}] = \sigma_{Flim2}^oK_{FC2}K_{FL2}/S_{F2} \approx 332.48\unit{MPa}$\\
-$ [\sigma_H]_{max} = \dfrac{1}{2}\left( [\sigma_{H1}]+[\sigma_{H2}]\right)  \approx 696.62\unit{MPa}\leq 1.25[\sigma_H]_{min} = 1.25[\sigma_{H1}]$\\
-Permissible bending stress during overload:\\
-$ [\sigma_F]_{max} = [\sigma_{F2}] = 0.8\sigma_{ch} \approx 440\unit{MPa} $
-\section{Transmission Design}
-\subsection{Determine basic parameters}
-Examine table 6.5  gives $ K_a = 43 $\\
-Assuming symmetrical design, table 6.6  also gives $ \psi_{ba} = 0.5$\\
-$ \Rightarrow \psi_{bd} = 0.53\psi_{ba}(u_{hg}+1) = 1.59$\\
-From table 6.7 , using interpolation we approximate $ K_{H\beta} \approx 1.108 $, $ K_{F\beta} \approx 1.2558 $\\
-Since the gear system only consists of involute gears and it is also a speed reducer gearbox, we estimate $ a_w $ using equation (6.15a)  before following SEV229-75 standard:\\
-$ a_{w} = K_a(u_{hg}+1)\sqrt[3]{\dfrac{T_{sh1}K_{H\beta}}{[\sigma_H]^2u_{hg}\psi_{ba}}} = 83.84\unit{mm}$
-\subsection{Determine gear meshing parameters}
-\paragraph{Find $ m $} Applying equation (6.17)  and choose $ m $ from table (6.8) :\\
-$ m = (0.01\div0.02)a_w = (0.84\div1.68) \unit{mm} \Rightarrow m=1.5\unit{mm}$
-\paragraph{Find $ z_1 $, $ z_2 $, $ a_w $} We have $ \beta = \alpha = 20^\circ $. Combining equation (6.18) and (6.20), we come up with the formula to calculate $ z_1 $. From the result, $ z_1 $ is rounded to the nearest odd number (preferably a prime number).\\
-$ z_1 = \dfrac{2a_w\cos\beta}{m(u+1)} \approx 17.51 \approx 17$\\
-$ z_2 = u_{hg}z_1 = 85 $\\
-According to SEV229-75 standard, we choose $ a_w = 80\unit{mm}$\\
-$ \Rightarrow b_w = \psi_{ba}a_w = 40\unit{mm}$ 
-\paragraph{Find $ x_1 $, $ x_2 $} Let $ \beta = 20^\circ $, $ z_{min} = 15$. Knowing that $ y = \dfrac{a_w}{m} - \dfrac{z_1+z_2}{2} = 0$, we conclude $ z_1$ must not be smaller than $17$ as mentioned by table 6.9 . Hence, there is no need for correction ($ x_1=x_2=0 $) and $ z_1 = 17 $ satisfy the condition.
-\paragraph{Find $ \alpha_{tw} $} Since $ y=0 \Rightarrow \alpha_{tw}=\alpha_t= \tan^{-1}\dfrac{\tan\alpha}{\cos\beta} \approx 21.17^\circ$ (p.105)
-\subsection{Other parameters}
-\begin{tabular}[t]{p{8cm}}
-	$ \alpha_t = \tan^{-1}\dfrac{\tan\alpha}{\cos\beta} \approx 21.17^\circ $\\
-	$ d_1 = \dfrac{mz_1}{\cos\beta} \approx 27.14\unit{mm} $\\
-	$ d_2 = \dfrac{mz_2}{\cos\beta} \approx 135.68\unit{mm} $\\
-	$ d_{a1} = d_1 + 2m \approx 30.14\unit{mm}$\\
-	$ d_{a2} = d_2 + 2m \approx 138.68\unit{mm}$\\
-	$ d_{f1} = d_1 - 2.5m \approx 23.39\unit{mm}$\\
-\end{tabular}
-\begin{tabular}[t]{p{8cm}}
-	$ d_{f2} = d_2 - 2.5m \approx 131.93\unit{mm}$\\
-	$ d_{b1} = d_1\cos\alpha \approx 25.3\unit{mm}$\\
-	$ d_{b2} = d_2\cos\alpha \approx 126.52\unit{mm}$\\
-	$ d_{w1} = d_1 \approx 27.14\unit{mm}$\\
-	$ d_{w2} = d_2 \approx 135.68\unit{mm} $\\
-	$ v = \dfrac{\pi d_1n_1}{6\times10^4} \approx 4.16\unit{m/s}$
-\end{tabular}
+\section{Aim}
+\begin{enumerate}
+	\item Understand deeply the theory of screw coupling.
+	\item Use the wrench to determine the $ T_v $.
+	\item Understand the principle and use load cell to measure the $ F_v $ on the	bolt;
+	\item Determine $ K = \dfrac{1000T_v}{Vd} $ and understand the relationship between $ T_v $ and $ F_v $, as well as the factors of assembling condition of the joint.
+\end{enumerate}
 
-\subsection{Contact stress analysis}
-From section 6.3.3. in the text, contact stress applied on a gear surface must satisfy the condition below:
-\begin{equation}
-	\sigma_H = z_Mz_Hz_\epsilon\sqrt{2T_{sh1}K_H\dfrac{u_{hg}+1}{b_wu_{hg}d_{w1}^2}} \leq [\sigma_H]
-\end{equation}
+\section{Technical rules on safety}
+Students must comply with the technical rules on safety in the laboratory.
 
-\paragraph{Find $ z_M $}
-$ z_M = 274 $, according to table 6.5 
-\paragraph{Find $ z_H $}
-Since correction is unused in our calculation:\\
-$ \beta_b = \arctan\left( \cos\alpha_t\tan\beta\right) \approx 18.75^\circ \Rightarrow z_H = \sqrt{2\dfrac{\cos\beta_b}{\sin(2\alpha_t)}} \approx 1.68$
-\paragraph{Find $ z_\epsilon $} Obtaining $ z_\epsilon $ through calculations:\\
-$ \epsilon_\alpha = \dfrac{\sqrt{d_{a1}^2-d_{b1}^2}+\sqrt{d_{a2}^2-d_{b2}^2}-2a_w\sin\alpha_{t}}{2\pi m\dfrac{\cos\alpha_t}{\cos\beta}} \approx 1.64$\\
-$ \epsilon_\beta = b_w\dfrac{\sin\beta}{m\pi} \approx 2.9>1 \Rightarrow z_\epsilon = \epsilon_\alpha^{-0.5} \approx 0.78$
-\paragraph{Find $ K_H $} We find $ K_H $ using equation $ K_H = K_{H\beta}K_{H\alpha}K_{Hv} $\\
-From table 6.13, $ v\leq10\unit{m/s}\Rightarrow \text{AG} = 8 $ \\
-From table P2.3, using interpolation, we approximate:\\ $ K_{Hv} \approx1.0417$, $ K_{Fv} \approx1.1145$\\
-From table 6.14, using interpolation, we approximate:\\ $ K_{H\alpha} \approx1.0766$, $ K_{F\alpha} \approx1.253 $ \\	
-$ \Rightarrow K_H \approx 1.24 $
-\paragraph{Find $ \sigma_H $} After calculating $ z_M $, $ z_H $, $ z_\epsilon $, $ K_H $, we get the following result:
-	\[\sigma_H \approx 699.12\unit{MPa}\leq [\sigma_H] \approx 696.62\unit{MPa}\] 
-	Since $ \sigma_H $ and $ [\sigma_H] $ are almost equal to each other, i.e $ \left\| \sigma_H - [\sigma_H]\right\| < 4\%$, the assumed parameters are appropriate.
+\section{Experimental report}
 
-
-\subsection{Bending stress analysis}
-For safety reasons, the following conditions must be met:
-\begin{align}
-	\sigma_{F1} = 2\dfrac{T_{sh1}K_FY_\epsilon Y_\beta Y_{F1}}{b_wd_{w1}m_n} & \leq [\sigma_{F1}] \label{scond1}\\
-	\sigma_{F2} = \dfrac{\sigma_{F1}Y_{F2}}{Y_{F1}} & \leq [\sigma_{F2}] \label{scond2}
-\end{align}
-\paragraph{Find $ Y_\epsilon $} Knowing that $ \epsilon_\alpha \approx 1.64 $, we can calculate $ Y_\epsilon = \epsilon_\alpha^{-1} \approx 0.61 $
-\paragraph{Find $ Y_\beta $} Since $ \beta = 20^\circ \Rightarrow Y_\beta = 1-\dfrac{\beta}{140}\approx0.86$
-\paragraph{Find $ Y_F $} Using formula $ z_v = z\cos^{-3}(\beta) $ and table 6.18:\\
-$ z_{v1} = z_1\cos^{-3}(\beta) \approx 20.49 \Rightarrow Y_{F1} \approx 4.06$\\
-$ z_{v2} = z_2\cos^{-3}(\beta) \approx 102.44 \Rightarrow Y_{F2} \approx 3.6 $
-\paragraph{Find $ K_F $}
-Using $ K_{F\beta} $, $ K_{F\alpha} $, $ K_{Fv} $ calculated from the sections above, we derive:\\ $ K_F = K_{F\beta}K_{F\alpha}K_{Fv} \approx 1.75 $
-\paragraph{Find $ \sigma_F $} Substituting all the values, we find out that:
-\begin{align*}
-	\sigma_{F1} \approx 182.39\unit{MPa} & \leq [\sigma_{F1}]\approx264.85\unit{MPa}\\
-	\sigma_{F2} \approx 161.69\unit{MPa} & \leq [\sigma_{F2}]\approx332.48\unit{MPa}
-\end{align*}
-The calculated results are appropriate.\\
-Through calculations, there is no correction needed, i.e. $ y=0 $. Thus, the specifications will not include corrections.\newpage
-In summary, we have the following table:
+\subsection{Determine the parameters of threaded joint and measuring tools}
+\subsection{Experimental results}
 \begin{table}[ht]
 	\centering
-	\begin{tabular}[t]{|
-			>{\columncolor[HTML]{C0C0C0}}l |p{2.5cm}|p{2.5cm}|}
-		\hline
-		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}pinion} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}driving gear} \\ \hline
-		$ H\unit{HB} $              & 250                      & 240    \\ \hline
-		$ [\sigma_H]\unit{MPa} $    & 621.61                   & 771.63 \\ \hline
-		$ [\sigma_F]\unit{MPa} $    & 264.85                   & 332.48 \\ \hline
-		$ [\sigma_H]\unit{MPa} $    & \multicolumn{2}{l|}{\hskip2cm 696.62}       \\ \hline
-		$ \sigma_F\unit{MPa} $      & 182.39                   & 161.69 \\ \hline
-		$ \sigma_H\unit{MPa} $      & \multicolumn{2}{l|}{\hskip2cm 699.12}       \\ \hline
-		$ \alpha_{tw}\unit{^\circ} $ & \multicolumn{2}{l|}{\hskip2cm 21.17}        \\ \hline
-		$ \beta\unit{^\circ} $ & \multicolumn{2}{l|}{\hskip2cm 20}        \\ \hline
-		$ a_w\unit{mm} $            & \multicolumn{2}{l|}{\hskip2cm 80}           \\ \hline
-		$ b_w\unit{mm} $            & \multicolumn{2}{l|}{\hskip2cm 40}           \\ \hline
-		$ m\unit{mm} $              & \multicolumn{2}{l|}{\hskip2cm 1.5}    \\ \hline
-		$ z $                       & 17                       & 85     \\ \hline
-		$ d\unit{mm} $              & 27.14                    & 135.68 \\ \hline
-		$ d_a\unit{mm} $            & 30.14                    & 138.68 \\ \hline
-		$ d_f\unit{mm} $            & 23.39                    & 131.93 \\ \hline
-		$ d_b\unit{mm} $            & 25.3                     & 126.52 \\ \hline
+	\rowcolors{5}{}{lightgray!20}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{crrr}
+		\toprule
+		&
+		\multicolumn{3}{c}{Nominal diameter $d=8\unit{(mm)}$} \\ \cmidrule{2-4} 
+		\multirow{-2}{*}{No.} &
+		\multicolumn{1}{c}{$T_v$} &
+		\multicolumn{1}{c}{$F_v$} &
+		\multicolumn{1}{c}{$K$} \\
+		& \multicolumn{1}{c}{$ \unit{(N\cdot mm)} $} & \multicolumn{1}{c}{$ \unit{(N)} $} & \\
+		\midrule
+		1                   &  16.5                 &       28.75            &  \\
+		2                  &     17.6              &       324.3             &  \\
+		3                   &      19.1             &         393.8          &  \\
+		4                   &   22.4                &      4872             &  \\
+		5                   &   27.9                &        622.9           &  \\
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{C0C0C0}Average value} &  \\ \hline
 	\end{tabular}
-	\caption{Gearbox specifications}
-\end{table} 
+	\caption{The experimental results}
+	\label{tab:my-table}
+\end{table}
+\subsection{$ K - T_v$ diagram }
+\subsection{Compare theoretical results with experimental results}
+Using formula $ K = \dfrac{T_v}{V_d} = 0.5\left(\dfrac{d_2}{d}\right)\left[\left(\dfrac{D_{tb}}{d_2}\right)f + \tan(\gamma+\rho')\right]$
+
+\section{Discussion and conclusions}
+\section{Review questions}
+\begin{enumerate}
+	\item Show the role and importance of finding $ F_v $ and $ T_v $ in reality.\\
+	\item Explain the meaning of $ K $.\\
+	\item Explain the principles of ultrasonic operation and force measuring tool.\\
+	\item Determine $ K $ according to the theory of screw coupling.\\
+	\item Compare $ K $ in cases of with and without lubrication to the joints. Then draw your conclusions.\\
+\end{enumerate}

@@ -1,118 +1,123 @@
-\chapter{Shaft Design}
+\chapter{Determination of External Force Coefficient of  External Threaded Joints}
 \section{Nomenclature}
+	\begin{tabular}[t]{lp{7cm}}
+		$ A $ & area of the raw section, $ \unit{mm^2} $\\
+		$ F $ & applied force, $ \unit{N} $\\
+		$ F_H $ & horizontal component of $ F $, $ \unit{N} $\\
+		$ F_V $ & vertical component of $ F $, $ \unit{N} $\\
+		$ J_{x'x'} $ & moment of inertia along XX-axis, $ \unit{kg\cdot mm^2} $\\
+		$ k $ & safety factor\\
+		$ V $ & tightening force, $ \unit{N} $\\
+		$ V_{max} $ & maximum tightening force, $ \unit{N} $\\
+		
+	\end{tabular}
 \begin{tabular}[t]{lp{7cm}}
-	$ [\sigma_H] $ & permissible contact stress, $ MPa $\\
-	$ [\sigma_H]_{max} $ & permissible contact stress due to overloading, $ MPa $\\
-	$ [\sigma_F]_{max} $ & permissible bending stress due to overloading, $ MPa $\\
-	$ [\sigma_{FO}] $ & permissible bending stress corresponding to $ 10^6 $ cycles, $ MPa $\\
-	$ v_s $ & translational velocity, $ m/s $\\
-	$ \sigma_b $ & ultimate strength, $ MPa $\\
-	$ \sigma_{ch} $ & yield limit, $ MPa $\\
-	$ N_{FE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_F] $\\
-	$ K_{FL} $ & aging factor due to bending stress\\
-	$ a_w $ & shaft distance, $ mm $\\
-	$ z $ & number of teeth of worm wheel\\
-	$ d $ & worm wheel diameter, $ mm $\\
-	
+	$ W $ & bending moment of the raw section, $ \unit{N\cdot mm} $\\
+	$ y_{max} $ & maximum distance, $ \unit{mm} $\\
+	$ z $ & a coefficient\\
+	$ \alpha $ & contact angle, $ \unit{^\circ} $\\
+	$ \chi $ & external force coefficient\\
+	$ \bar{\chi} $ & average value of $ \chi $\\
+	$ \Delta F $ & force difference between each experiment, $ \unit{N} $
 \end{tabular}
-\begin{tabular}[t]{lp{7cm}}
-	$ q $ & standardized coefficient of shaft diameter\\
-	$ T $ & torque on shaft
-\end{tabular}
-\section{Choose material}
-For moderate load, we will use quenched steel 40X to design the shafts. From table 6.1, the specifications are as follows: $ S \leq 100\unit{mm} $, HB260, $ \sigma_b = 850\unit{MPa}$, $ \sigma_{ch} = 550\unit{MPa}$. 
 
-%\section{Determine permissible stress}
-%
-%\subsection{Find $ [\sigma_H] $}
-%Since $v_{s1} \approx 4.42 \unit{m/s} < 5\unit{m/s}$ and $v_{s2} \approx 1.48 \unit{m/s} < 2\unit{m/s}$, table 7.2 is used to find $ [\sigma_H] $. From the results above, we choose:\\
-%$ [\sigma_{H1}] \approx 191.3259 \unit{MPa}$\\
-%$ [\sigma_{H2}] \approx 141.7534 \unit{MPa}$
-%
-%\subsection{Find $ [\sigma_F] $}
-%Following p.149, for shaft 1 and 2, we use the formulas:
-%\begin{equation}
-%	[\sigma_{F1}] = [\sigma_{FO1}]K_{FL1}
-%\end{equation}
-%Since shaft 1 is quenched, we can increase $ [\sigma_{FO1}] $ and $ [\sigma_{FO2}] $ by $ 25\% $:\\
-%$ [\sigma_{FO2}] = (0.25\sigma_{b2} + 0.08\sigma_{ch2})\times125\% \approx 207.5\unit{MPa} $\\
-%$ [\sigma_{FO1}] = (0.25\sigma_{b1} + 0.08\sigma_{ch1})\times125\% \approx 78.88\unit{MPa} $\\
-%$ N_{FE1} = 60\left[ \left( \dfrac{T_1}{T}\right)^9n_{sh1}t_1 + \left( \dfrac{T_2}{T}\right)^9n_{sh1}t_2\right] \approx 2.54\times10^6 \unit{cycles} \in [10^6,25\times10^7] $\\
-%$ K_{FL1} = \sqrt[9]{\dfrac{10^6}{N_{FE1}}} \approx 0.9$\\
-%From calculations, 
-%\begin{equation}
-%	\Rightarrow[\sigma_{F1}] \approx 187.12 \unit{MPa}
-%\end{equation}
-%For shaft 2, the following equation applies:
-%\begin{equation}
-%	[\sigma_{F2}] = 0.12\sigma_{bu2}
-%\end{equation}
-%Substituting the values yields $ [\sigma_{F2}] \approx 38.4\unit{MPa}$
+\section{Aim}
+\begin{enumerate}
+	\item Help students understand clearly about the method of determination of the
+	external force coefficient by theory.
+	\item Help students calculate the tightening force in the case of force acting in any
+	direction.
+	\item Help students approach to the methods, instruments and determine the tightening
+	force, deal with the experimental results to determine the external force
+	coefficient.
+\end{enumerate}
 
-%\subsection{Permissible stress due to overloading}
-%Since $v_{s1} \approx 4.42 \unit{m/s} < 5 \unit{m/s}$, we apply the following equations:
-%\begin{align}
-%	[\sigma_{H1}]_{max} &= 2\sigma_{b1} = 400\unit{MPa}\\
-%	[\sigma_{F1}]_{max} &= 0.8\sigma_{ch1} = 160\unit{MPa}
-%\end{align}
-%Also $v_{s2} \approx 1.48 \unit{m/s} < 2 \unit{m/s}$, we apply the following equations:
-%\begin{align}
-%	[\sigma_{H2}]_{max} &= 1.5[\sigma_{H2}] \approx 212.63\unit{MPa}\\
-%	[\sigma_{F2}]_{max} &= 0.6\sigma_{b2} = 90\unit{MPa}
-%\end{align}
+\section{Technical rules on safety}
+Students must comply with the technical rules on safety in the laboratory.
 
-\section{Tranmission Design}
-\subsection{Load on shafts}
-Following p.186, the sign convention of the book will be used in this section. On shaft 1, the motor is 1 and the pinion is 2. On shaft 2, the driven gear is 1 and the driving sprocket is 2. Therefore, we obtain:\\
-$ r_{12} = d_{12}/2 \approx 13.57\unit{mm}$, $ hr_{12} = +1 $, $ cb_{12} = +1 $, $ cq_1 = +1 $\\
-$ r_{21} = d_{21}/2 \approx 67.84\unit{mm}$, $ hr_{21} = +1 $, $ cb_{21} = -1$, $ cq_2 = -1$
-\paragraph{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}
-Using the results from the previous chapter, we obtain $ \alpha_{tw} \approx 21.17^\circ $, $ \beta = 20^\circ $, $ d_{w12} = d_{12} \approx 27.14\unit{mm} $
-\[
-\left\{ 
-\begin{array}{l@{{}={}}l@{{}={}}l}
-F_{t12}& F_{t21}& \dfrac{2T_{sh1}}{d_{w12}}=2769.03\unit{N}\\
-F_{r12}& F_{r21}&  \dfrac{F_{t12}\tan\alpha_{tw}}{\cos\beta}=1141.36\unit{N}\\
-F_{a12}& F_{a21}& F_{t12}\tan\beta =1007.84\unit{N}\\ 
-\end{array}
-\right.
-\]
-\paragraph{Find direction of $ F_{t} $, $ F_r $, $ F_a $}
-Following the sign convention, we obtain the forces:
-\[
-\left\{ 
-\begin{array}{l@{{}={}}l}
-F_{x12}& \dfrac{r_{12}}{|r_{12}|}cq_1cb_{12}F_{t12}\approx2769.03\unit{N}\\
-
-F_{y12}& -\dfrac{r_{12}}{|r_{12}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t12}\approx-1141.36\unit{N}\\
-
-F_{z12}& cq_1cb_{12}hr_{12}F_{t12}\tan\beta\approx1007.84\unit{N}\\ 
-\end{array}
-\right.
-\]
-\[
-\left\{ 
-\begin{array}{l@{{}={}}l}
-F_{x21}& \dfrac{r_{21}}{|r_{21}|}cq_2cb_{21}F_{t21}\approx2769.03\unit{N}\\
-
-F_{y21}& -\dfrac{r_{21}}{|r_{21}|}\dfrac{\tan\alpha_{tw}}{\cos\beta}F_{t21}\approx-1141.36\unit{N}\\
-
-F_{z21}& cq_2cb_{21}hr_{21}F_{t21}\tan\beta\approx1007.84\unit{N}\\ 
-\end{array}
-\right.
-\]
-Assuming $ \alpha = 150^\circ $ and combining with $ F_r \approx 2539.28\unit{N} $ from chapter 2, we get the direction of $ F_r $ onto shaft 2:
-\[
-\left\{ 
-\begin{array}{l@{{}={}}l}
-F_{x22}& F_{r22}\cos\alpha\approx-2199.08\unit{N}\\
-
-F_{y22}& F_{r22}\sin\alpha\approx1269.64\unit{N}\\
-\end{array}
-\right.
-\]
-
-%\paragraph{Find $ a_w $} On p.149, the following formula is used:
-%\begin{equation}
-%	a_w = (z_2+q)\sqrt[3]{\left( \dfrac{170}{z_2[\sigma_H]}\right) ^2 \dfrac{T_2K_H}{q}}
-%\end{equation}
+\section{Experimental report}
+Each group conducts the experiment with the given $ \alpha $ and $ F $\\
+$ \alpha = -5^\circ $\\
+$ F = 303.6\unit{(N)} $\\
+$ \Delta F = 15\unit{(N)} $
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=120mm]{modelexp4.png}
+	\caption{Model of experimental calculation}
+	\label{exp4fig}
+\end{figure}
+\subsection{Theoretical calculation of the external force coefficient}
+Measuring the size of bolts and assembled details to determine the external force
+coefficient by using theory.
+\subsection{Calculating $ V $}
+\begin{equation}
+	V = \dfrac{k}{z}\left(F_V+\dfrac{MA}{W}\right) = \dfrac{k}{z}\left(F_V+\dfrac{MA_{yc}}{J}\right)(1-\chi)
+	\label{safety3}
+\end{equation}
+\begin{equation}
+	V = \dfrac{kF_H+(1-\chi)fF_V}{f_z}
+	\label{tight_force}
+\end{equation}
+According to formulas (1) and (2), selecting V max for these two values.\\
+Note: The tightening force for surfaces not separated is defined by the formula:
+\[V = \dfrac{k}{z}\left(\dfrac{(F_Vl_1\pm F_Hl_2)Ay_{max}}{J_{x'x'}}-F_V\right)(1-\chi)\]
+\begin{tabular}{ll}
+	where & $ J_{x'x'} = \dfrac{(a-b)(b^3-c^3)}{12} $\\
+	& $ A = (a-d)(b-c) $\\
+	& $ y_{max} = \dfrac{b}{2} $\\
+\end{tabular}\vskip2mm
+Tightening the bolt with the tightening force $ V = V_{max} $ (using equations \ref{safety3} and \ref{tight_force}) and
+checking by measuring device.
+\subsection{Measured results and process}
+We increase the load by hydraulic cylinder 5 to reach values: $ F_1 $, $ F_2 $, ..., $ F_N $. They occur on the display screen (these values are less than $ F $) and fill in column 2 of Table \ref{dataexp4}. The values $ F_i = F - i\Delta F $.\\
+Write down the value of tightening moment, tightening force $ V_{tni} $ by load cell method
+and put them into columns 3, 4 of Tables \ref{dataexp4}.
+\subsection{Calculate the external force}
+Calculate the following values:
+\begin{enumerate}
+	\item $ F_{Vi} = F_i\sin\alpha $
+	\item $ F_{Hi} = F_i\cos\alpha $
+	\item $ M_i = F_{Hi}l_1\pm F_{Vi}l_2 $
+\end{enumerate}
+and put these values into column 5, 6 of table \ref{dataexp4}.\\
+In this experiment, $ l_2 = 0 $ and $ Y_i = \dfrac{e}{2} $, therefore $ M_i = F_{Hi}l_1 $
+\[V_{tni} = V_0 + \chi\left( \dfrac{F_{Vi}}{z} + \dfrac{M_1Y_1}{\sum z_iY_i^2}\right) = V_0 + \chi\left(\dfrac{F_{Vi}}{z} + \dfrac{F_{Hi}l_1\pm F_{Vi}l_2}{2e}\right)\]
+where $ i=1,2,...,N $\\
+Here, $ \chi $ is determined by the formula:
+\[\chi_i = \dfrac{V_{tni}-V_{tn1}}{\dfrac{F_{Vi}-F_{V1}}{z} + \dfrac{(F_{Hi}-F_{H1})l_1+(F_{Vi}- F_{H1})l_2}{2e}}\]
+According to the experimental model, $ z=4 $, $ e=200\unit{(mm)} $, $ l_1= \unit{(mm)}$, $ l_2 = \unit{(mm)} $ and then write down the results into column 7 of table \ref{dataexp4}.\\
+Therefore, the average value of external force coefficient through $ N $ measuring times
+\begin{equation}
+	\bar{\chi} = \dfrac{\chi_1+\chi_2+...+\chi_{N-1}}{N-1}
+\end{equation}
+\begin{table}[h!t]
+	\centering
+	\rowcolors{3}{}{lightgray!20}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}[ht]{crrrrr}
+		\toprule
+		\multirow{2}{*}{No.} & \md{$ F_i $} & \md{$ V_{tni} $} & \md{$ F_{Vi} $} & \md{$ F_{Hi} $} & \md{$ \chi_i $} \\
+		& \md{$ \unit{(N)} $} & \md{$ \unit{(N)} $} &\md{ $ \unit{(N)} $} & \md{$ \unit{(N)} $} & \\
+		\midrule
+		\rule[-1ex]{0pt}{2.5ex} 1 & 303.2 & 3025 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 2 & 287.8 & 3097 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 3 & 271.4 & 3221 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 4 & 257.8 & 3304 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 5 & 242.8 & 3426 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 6 & 227.8 & 3525 &  &  &  \\
+		\bottomrule
+	\end{tabular}
+	\caption{The experimental results}
+	\label{dataexp4}
+\end{table}\vskip2mm
+From the experimental results, plot the curve illustrated the relationship
+between $ \chi_i $ and $ F_i $.
+\subsection{Discussion and conclusions}
+Comparing the theoretical results with experimental results and then drawing conclusions.
+\subsection{Review questions}
+\begin{enumerate}
+	\item The role and importance of determining the tightening force and the tightening	moment in reality.\\
+	\item The meaning of $ \chi $ and determining this coefficient by the fundamental theory.\\
+	\item Determining the required tightening force of the bolt to avoid segregation and slip.\\
+	\item Comparing the tightening coefficient in the cases of the joint with and without lubrication, and then drawing conclusions.\\
+\end{enumerate}

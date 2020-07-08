@@ -13,7 +13,7 @@
 	$ F_a $ & axial force, $ \unit{N} $\\
 	$ F_r $ & radial force, $ \unit{N} $\\
 	$ F_t $ & tangential force, $ \unit{N} $\\
-	$ F_x $ & applied force, $ \unit{N} $\\	
+	$ F $ & applied force, $ \unit{N} $\\	
 \end{tabular}
 \begin{tabular}[t]{lp{6.5cm}}
 	$ h_n $ & distance between bearing lid and bolt, $ \unit{mm} $\\
@@ -142,13 +142,13 @@ Using equation (10.10), the gear hubs are $ l_{m13} = l_{m12} = 1.5d_1 =  45\uni
 From table (10.3), we choose $ \tilde{k}_1=10\unit{(mm)}$, $ \tilde{k}_2=8\unit{(mm)} $, $ \tilde{k}_3=15\unit{(mm)} $, $ h_n=18\unit{(mm)} $. This parameters apply for both shafts in the system.\\
 Table (10.4) introduces the formulas for several types of gearbox. Since our system only concerns about 1-level gear reducer, the ones below are used:\\
 On shaft 1:\\
-$ l_{12} = -l_{c12} = -\left[ 0.5(l_{m12}+b_{O1})+\tilde{k}_3+h_n  \right] = -71.5 \unit{(mm)} $\\
-$ l_{13} = 0.5(l_{m13}+b_{O1})+\tilde{k}_1+\tilde{k}_2 = 59.5 \unit{(mm)} $\\
-$ l_{11} = 2l_{13} = 119 \unit{(mm)}$\\
+$ l_{12} = -l_{c12} = -\left[ 0.5(l_{m12}+b_{O1})+\tilde{k}_3+h_n  \right] = -69.75 \unit{(mm)} $\\
+$ l_{13} = 0.5(l_{m13}+b_{O1})+\tilde{k}_1+\tilde{k}_2 = 54.75 \unit{(mm)} $\\
+$ l_{11} = 2l_{13} = 109.5 \unit{(mm)}$\\
 On shaft 2:\\
-$ l_{22} = -l_{c22} = -\left[ 0.5(l_{m22}+b_{O2})+\tilde{k}_3+h_n \right] = -66.75 \unit{(mm)} $\\
-$ l_{23} = 0.5(l_{m23}+b_{O2})+\tilde{k}_1+\tilde{k}_2 = 54.75 \unit{(mm)} $\\
-$ l_{21} = 2l_{23} = 109.5 \unit{(mm)}$
+$ l_{22} = -l_{c22} = -\left[ 0.5(l_{m22}+b_{O2})+\tilde{k}_3+h_n \right] = -74.5 \unit{(mm)} $\\
+$ l_{23} = 0.5(l_{m23}+b_{O2})+\tilde{k}_1+\tilde{k}_2 = 59.5 \unit{(mm)} $\\
+$ l_{21} = 2l_{23} = 119 \unit{(mm)}$
 
 % this part is incorrect
 \subsection{Determine shaft diameters and lengths}
@@ -226,14 +226,14 @@ The total bending moments at 8 critical cross sections are also calculated (we u
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=160mm]{mshaft1.png}
+	\includegraphics[width=150mm]{mshaft1.png}
 	\caption{Bending moment-torque diagram of shaft 1}
 	\label{mshaft1}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=153mm]{mshaft2.png}
+	\includegraphics[width=150mm]{mshaft2.png}
 	\caption{Bending moment-torque diagram of shaft 2}
 	\label{mshaft2}
 \end{figure}
