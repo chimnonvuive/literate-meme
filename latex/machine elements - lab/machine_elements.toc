@@ -1,54 +1,54 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Slip coefficient and Slip curve of Belt drive}{6}%
-\contentsline {section}{\numberline {1.1}Nomenclature}{6}%
-\contentsline {section}{\numberline {1.2}Aim}{7}%
-\contentsline {section}{\numberline {1.3}Technical rules on safety}{7}%
-\contentsline {section}{\numberline {1.4}Conducting and dealing with experimental results}{7}%
-\contentsline {subsection}{\numberline {1.4.1}Determine the parameters for the experimental model}{7}%
-\contentsline {subsection}{\numberline {1.4.2}Measure and deal with the measured results of $ F_0 $}{8}%
-\contentsline {subsection}{\numberline {1.4.3}Measure and deal with the measured results in order to determine the $ \tilde {\xi } $ and $ \phi $.}{8}%
-\contentsline {subsection}{\numberline {1.4.4}Establish a graph of slip curve}{8}%
-\contentsline {section}{\numberline {1.5}Discussion and conclusions}{9}%
-\contentsline {section}{\numberline {1.6}Review questions}{10}%
-\contentsline {chapter}{\numberline {2}Determination of Tensile Force of Bolts}{11}%
-\contentsline {section}{\numberline {2.1}Nomenclature}{11}%
-\contentsline {section}{\numberline {2.2}Aim}{12}%
-\contentsline {section}{\numberline {2.3}Safety Procedures}{12}%
-\contentsline {section}{\numberline {2.4}Experimental Report}{12}%
-\contentsline {section}{\numberline {2.5}Data plot}{12}%
-\contentsline {chapter}{\numberline {3}Determination of Tightening Coefficient of Threaded Joints}{14}%
-\contentsline {section}{\numberline {3.1}Nomenclature}{14}%
-\contentsline {section}{\numberline {3.2}Aim}{14}%
-\contentsline {section}{\numberline {3.3}Technical rules on safety}{15}%
-\contentsline {section}{\numberline {3.4}Experimental report}{15}%
-\contentsline {subsection}{\numberline {3.4.1}Determine the parameters of threaded joint and measuring tools}{15}%
-\contentsline {subsection}{\numberline {3.4.2}Experimental results}{15}%
-\contentsline {subsection}{\numberline {3.4.3}$ K - T_v$ diagram }{15}%
-\contentsline {subsection}{\numberline {3.4.4}Compare theoretical results with experimental results}{15}%
-\contentsline {section}{\numberline {3.5}Discussion and conclusions}{16}%
-\contentsline {section}{\numberline {3.6}Review questions}{16}%
-\contentsline {chapter}{\numberline {4}Determination of External Force Coefficient of External Threaded Joints}{17}%
-\contentsline {section}{\numberline {4.1}Nomenclature}{17}%
-\contentsline {section}{\numberline {4.2}Aim}{18}%
-\contentsline {section}{\numberline {4.3}Technical rules on safety}{18}%
-\contentsline {section}{\numberline {4.4}Experimental report}{18}%
-\contentsline {subsection}{\numberline {4.4.1}Theoretical calculation of the external force coefficient}{18}%
-\contentsline {subsection}{\numberline {4.4.2}Calculating $ V $}{18}%
-\contentsline {subsection}{\numberline {4.4.3}Measured results and process}{20}%
-\contentsline {subsection}{\numberline {4.4.4}Calculate the external force}{20}%
-\contentsline {subsection}{\numberline {4.4.5}Discussion and conclusions}{21}%
-\contentsline {subsection}{\numberline {4.4.6}Review questions}{22}%
-\contentsline {chapter}{\numberline {5}Applying Computer Software in Calculating Machine Elements}{23}%
-\contentsline {section}{\numberline {5.1}Nomenclature}{23}%
-\contentsline {section}{\numberline {5.2}Aim}{23}%
-\contentsline {section}{\numberline {5.3}Technical rules on safety}{24}%
-\contentsline {section}{\numberline {5.4}Experimental report}{24}%
-\contentsline {subsection}{\numberline {5.4.1}Problem}{24}%
-\contentsline {subsubsection}{Initial data}{24}%
-\contentsline {subsection}{\numberline {5.4.2}Results}{27}%
-\contentsline {subsubsection}{The distribution table of transmission ratio}{27}%
-\contentsline {subsubsection}{Table of gear drive parameters}{27}%
-\contentsline {subsubsection}{The belt drive parameters table}{28}%
-\contentsline {subsubsection}{The chain drive parameters table}{28}%
-\contentsline {section}{\numberline {5.5}Discussion and conclusions}{28}%
-\contentsline {section}{\numberline {5.6}Review questions}{28}%
+\contentsline {chapter}{\numberline {1}Slip coefficient and Slip curve of Belt drive}{6}
+\contentsline {section}{\numberline {1.1}Nomenclature}{6}
+\contentsline {section}{\numberline {1.2}Aim}{7}
+\contentsline {section}{\numberline {1.3}Technical rules on safety}{7}
+\contentsline {section}{\numberline {1.4}Conducting and dealing with experimental results}{7}
+\contentsline {subsection}{\numberline {1.4.1}Determine the parameters for the experimental model}{7}
+\contentsline {subsection}{\numberline {1.4.2}Measure and deal with the measured results of $ F_0 $}{8}
+\contentsline {subsection}{\numberline {1.4.3}Measure and deal with the measured results in order to determine the $ \mathaccentV {tilde}07E{\xi } $ and $ \phi $.}{8}
+\contentsline {subsection}{\numberline {1.4.4}Establish a graph of slip curve}{9}
+\contentsline {section}{\numberline {1.5}Discussion and conclusions}{10}
+\contentsline {section}{\numberline {1.6}Review questions}{10}
+\contentsline {chapter}{\numberline {2}Determination of Tensile Force of Bolts}{11}
+\contentsline {section}{\numberline {2.1}Nomenclature}{11}
+\contentsline {section}{\numberline {2.2}Aim}{12}
+\contentsline {section}{\numberline {2.3}Safety Procedures}{12}
+\contentsline {section}{\numberline {2.4}Experimental Report}{12}
+\contentsline {section}{\numberline {2.5}Data plot}{13}
+\contentsline {chapter}{\numberline {3}Determination of Tightening Coefficient of Threaded Joints}{15}
+\contentsline {section}{\numberline {3.1}Nomenclature}{15}
+\contentsline {section}{\numberline {3.2}Aim}{15}
+\contentsline {section}{\numberline {3.3}Technical rules on safety}{16}
+\contentsline {section}{\numberline {3.4}Experimental report}{16}
+\contentsline {subsection}{\numberline {3.4.1}Determine the parameters of threaded joint and measuring tools}{16}
+\contentsline {subsection}{\numberline {3.4.2}Experimental results}{16}
+\contentsline {subsection}{\numberline {3.4.3}$ K - T_v$ diagram }{17}
+\contentsline {subsection}{\numberline {3.4.4}Compare theoretical results with experimental results}{17}
+\contentsline {section}{\numberline {3.5}Discussion and conclusions}{17}
+\contentsline {section}{\numberline {3.6}Review questions}{17}
+\contentsline {chapter}{\numberline {4}Determination of External Force Coefficient of External Threaded Joints}{18}
+\contentsline {section}{\numberline {4.1}Nomenclature}{18}
+\contentsline {section}{\numberline {4.2}Aim}{19}
+\contentsline {section}{\numberline {4.3}Technical rules on safety}{19}
+\contentsline {section}{\numberline {4.4}Experimental report}{19}
+\contentsline {subsection}{\numberline {4.4.1}Theoretical calculation of the external force coefficient}{19}
+\contentsline {subsection}{\numberline {4.4.2}Calculating $ V $}{20}
+\contentsline {subsection}{\numberline {4.4.3}Measured results and process}{21}
+\contentsline {subsection}{\numberline {4.4.4}Calculate the external force}{21}
+\contentsline {subsection}{\numberline {4.4.5}Discussion and conclusions}{23}
+\contentsline {subsection}{\numberline {4.4.6}Review questions}{23}
+\contentsline {chapter}{\numberline {5}Applying Computer Software in Calculating Machine Elements}{24}
+\contentsline {section}{\numberline {5.1}Nomenclature}{24}
+\contentsline {section}{\numberline {5.2}Aim}{24}
+\contentsline {section}{\numberline {5.3}Technical rules on safety}{25}
+\contentsline {section}{\numberline {5.4}Experimental report}{25}
+\contentsline {subsection}{\numberline {5.4.1}Problem}{25}
+\contentsline {subsubsection}{Initial data}{25}
+\contentsline {subsection}{\numberline {5.4.2}Results}{28}
+\contentsline {subsubsection}{The distribution table of transmission ratio}{28}
+\contentsline {subsubsection}{Table of gear drive parameters}{28}
+\contentsline {subsubsection}{The belt drive parameters table}{29}
+\contentsline {subsubsection}{The chain drive parameters table}{29}
+\contentsline {section}{\numberline {5.5}Discussion and conclusions}{29}
+\contentsline {section}{\numberline {5.6}Review questions}{29}
