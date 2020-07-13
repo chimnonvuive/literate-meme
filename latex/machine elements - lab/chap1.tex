@@ -74,15 +74,12 @@ Filling out the measured results in table \ref{dataexp1} and calculate the coeff
 	\caption{Experimental results of the slip coefficient}
 	\label{dataexp1}
 \end{table}\\
-Averaging the values of $ \xi $ yields $ \bar{\xi} \approx 0.0198$
-\subsection{Establish a graph of slip curve}
-From the data above, we can approximate the best fitted line through the data points (assuming linearity since $ \phi $ does not reach critical value)
-\begin{figure}[ht]
+Averaging the values of $ \xi $ yields $ \bar{\xi} \approx 0.0198$. From the data above, we can approximate the best fitted line through the data points (assuming linearity since $ \phi $ does not reach critical value)
+\begin{figure}
 	\centering
-	\includegraphics{Exp1.png}
-	\caption{The clip curve is established by the experimental data.}
+	\includegraphics[width=150mm]{Exp1.png}
+	\caption{The slip curve is established by the experimental data.}
 \end{figure}
-\newpage
 
 \section{Discussion and conclusions}
 In summary:
@@ -99,8 +96,26 @@ In summary:
 \end{itemize}
 \section{Review questions}
 \begin{enumerate}
-	\item Define the types of slip in the belt drive.
-	\item The method determining the slip coefficient in the belt drive.
-	\item  The relationship between $ F_t $ and $ F_0 $
-	\item Present the formula determining $ \phi $ and the $ \phi_{crit} $ of the kinds of belt drives.
+	\item \emph{Define the types of slip in the belt drive.}\\
+	There are 3 types of slip:
+	\begin{itemize}
+		\item \textbf{Geometry slip}, which depends on the geometrical profile of the cross section of belts. For flat belts, geometry slip is nonexistent while V-belt does. However, this type of slip does not have much effect on impeding the movement of belts, hence is often disregarded in calculations.
+		\item \textbf{Creep}, whose cause is the elasticity of belt materials. Its value is often small (around $ 0.01 $ to $ 0.03 $), which is negligible. As a result, the velocity ratio of belt drive depends on the transmission power of the system.
+		\item \textbf{Slip} happens due to overload. This type of slip has a negative effect on the belt drive that inhibits velocity transmission from the driving pulley to the driven pulley. Thus, we have to take into consideration slip while designing a belt drive. In addition, elasticity of belt material also contributes to slip, though the amount is insignificant (around $ 0.01 $ to $ 0.03 $).
+	\end{itemize}
+	\item \emph{The method determining the slip coefficient in the belt drive.}\\
+	Given the diameters $ d_1 $ and $ d_2 $ along with the rotational speeds $ n_1 $ and $ n_2 $, we calculate the slip coefficient using equation:
+	\[\xi = 1 - \dfrac{d_2n_2}{d_1n_1}\]
+	\item  \emph{The relationship between $ F_t $ and $ F_0 $.}\\
+	From theory we have learned,
+	\[\left\{\begin{array}{ll}
+	F_0 & = F_1 - \frac{F_t}{2}\\
+	F_0 & = F_2 + \frac{F_t}{2}
+	\end{array}\right.\]
+	\begin{tabular}{ll}
+		Where & $ F_1 $ is the tension on the tight side, $ \unit{N} $\\
+		& $ F_2 $ is the tension on the slack side, $ \unit{N} $
+	\end{tabular}
+	\item \emph{Present the formula determining $ \phi $ and the $ \phi_{crit} $ of the kinds of belt drives.}
+	
 \end{enumerate}

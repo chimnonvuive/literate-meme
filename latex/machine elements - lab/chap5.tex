@@ -1,12 +1,5 @@
 \chapter{Applying Computer Software in Calculating Machine Elements}
-\section{Nomenclature}
-\begin{tabular}[t]{lp{7cm}}
-		
-\end{tabular}
-\begin{tabular}[t]{lp{7cm}}
-	$ q $ & standardized coefficient of shaft diameter\\
-	$ T $ & torque on shaft
-\end{tabular}
+
 \section{Aim}
 Helping students understand the method, how to use the design software to select and test the general machine elements.
 \section{Technical rules on safety}
@@ -14,7 +7,7 @@ Students must comply with the technical rules on safety in the laboratory.
 \section{Experimental report}
 \subsection{Problem}
 Given the transmission system as shown in below figure.
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 	\includegraphics[width=150mm]{system.png}
 	\caption{Transmission system for the blender}
@@ -49,6 +42,8 @@ Given the transmission system as shown in below figure.
 		\cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15} & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $\\\midrule
 		\endfirsthead
 		& $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $\\\midrule\endhead
+		\bottomrule\endfoot
+		\bottomrule\caption{Projects}\endlastfoot
 		\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}1 &2.5&2&2 & 3 &{\cellcolor[HTML]{C0C0C0}}31 & 6.5&4&2&3  &{\cellcolor[HTML]{C0C0C0}}61&12&3&2&4\\
 		{\cellcolor[HTML]{C0C0C0}}2 &2.5&2&2.24&4&{\cellcolor[HTML]{C0C0C0}}32&7&3&2.24&3   &{\cellcolor[HTML]{C0C0C0}}62&12&4&2.24&2\\
 		\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}3 &2.5&4&2.5&4 &{\cellcolor[HTML]{C0C0C0}}33&7&4&2.5&4    &{\cellcolor[HTML]{C0C0C0}}63&12.5&3&2.5&3\\
@@ -79,40 +74,40 @@ Given the transmission system as shown in below figure.
 		{\cellcolor[HTML]{C0C0C0}}28&6&4&3.15&3&  {\cellcolor[HTML]{C0C0C0}}58&11&4&3.15&3&  {\cellcolor[HTML]{C0C0C0}}88&15.5&3&3.15&4\\
 		\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}29&6&4&3.55&3&  {\cellcolor[HTML]{C0C0C0}}59&11&3&3.55&3&  {\cellcolor[HTML]{C0C0C0}}89&16&4&3.55&2\\
 		{\cellcolor[HTML]{C0C0C0}}30&6.5&2&4&3&   {\cellcolor[HTML]{C0C0C0}}60&11.5&2&4&4&   {\cellcolor[HTML]{C0C0C0}}90&16&4&4&3\\
-		\bottomrule
-		\caption{Projects}
 		\label{project}
 	\end{longtable}
 \end{center}
 
 \subsection{Results}
 \subsubsection{The distribution table of transmission ratio}
-\FloatBarrier
-\begin{table}[h!t]
-	\centering
+\begin{center}
 	\rowcolors{3}{}{lightgray!20}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{lrrrr}
+	\begin{longtable}{lrrrr}
 		\toprule
 		\multirow{2}{*}{Parameters} & \multicolumn{4}{c}{Shaft}\\
-		\cmidrule{2-5}  &Motor & I & II & III\\\midrule
+		\cmidrule{2-5}  &Motor & I & II & III\\\midrule\endfirsthead
+		\bottomrule\caption{Table of transmission ratio}\endlastfoot
 		$ P\unit{(kW)} $ & 4.758 & 4.475 & 4.253 & 4\\
 		$ u $ & $ 1\rightarrow1 $ & $ 1\rightarrow3 $ & $ 3\rightarrow2.5 $ & $ 2.5\rightarrow4 $\\
 		$ n\unit{(rpm)} $ & 1420 & 473.33 & 189.33 & 47.33 \\
-		$ T\unit{(N\cdot mm)} $ & 31999 & 90288 & 214526 & 807099\\
-		\bottomrule
-	\end{tabular}
-	\caption{Table of transmission ratio}
-\end{table}\FloatBarrier
+		$ T\unit{(N\cdot mm)} $ & 31999 & 90288 & 214526 & 807099
+	\end{longtable}
+\end{center}
+
 \subsubsection{Table of gear drive parameters}
-\begin{table}[h!t]
-	\centering
+\begin{center}
 	\rowcolors{1}{}{lightgray!20}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{clr}
+	\begin{longtable}{clr}
 		\toprule
 		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
-		\midrule
+		\midrule\endfirsthead
+		\toprule
+		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
+		\midrule\endhead
+		\bottomrule\endfoot
+		\bottomrule
+		\caption{Design specifications of the gear drive}
+		\endlastfoot
 		1 & Selected material & EN C60\\
 		2 & Center distance & $ a=160\unit{(mm)} $\\
 		3 & Module & $ m=4\unit{(mm)} $\\
@@ -124,23 +119,52 @@ Given the transmission system as shown in below figure.
 		9 & Face width & $ b_2=60\unit{(mm)} $\\
 		10 & Radial force & $ F_r=714.346\unit{(N)} $\\
 		11 & Tangential force & $ F_t=1962.649\unit{(N)} $\\
-		12 & Gear speed & $ v=2.28\unit{(m/s)} $\\
-		\bottomrule
-	\end{tabular}
-\end{table}
-\newpage\subsubsection{The belt drive parameters table}
-\begin{table}[h!t]
+		12 & Gear speed & $ v=2.28\unit{(m/s)} $
+	\end{longtable}
+\end{center}
+\begin{figure}
 	\centering
+	\includegraphics[width=150mm]{geardesign.png}
+	\caption{Gear design tab}
+	\label{geardesign}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{gearcalculation.png}
+	\caption{Gear calculation tab}
+	\label{gearcalculation}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{gearfactor.png}
+	\caption{Gear factors tab}
+	\label{gearfactor}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{gear.png}
+	\caption{Gear drive model}
+	\label{gear}
+\end{figure}
+
+\subsubsection{The belt drive parameters table}
+\begin{center}
 	\rowcolors{1}{}{lightgray!20}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{clr}
+	\begin{longtable}{clr}
 		\toprule
 		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
-		\midrule
+		\midrule\endfirsthead
+		\toprule
+		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
+		\midrule\endhead
+		\bottomrule\endfoot
+		\bottomrule
+		\caption{Design specifications of the belt drive}
+		\endlastfoot
 		1 & Belt type & V-Belt DIN 2215 (17x2240)\\
 		2 & Number of belt & $ z=3 $\\
 		3 & Belt speed & $ v=13.383\unit{(m/s)} $\\
-		4 & Initial tensile force & \\
+		4 & Initial tensile force & $ F_v=700.197\unit{(N)} $\\
 		5 & Tensile force on each side & $ F_t=125.165\unit{(N)} $\\
 		6 & Tensile force on the tight side & $ F_1=553.254\unit{(N)} $\\
 		7 & Tensile force on the slack side & $ F_2=197.734\unit{(N)} $\\
@@ -150,19 +174,41 @@ Given the transmission system as shown in below figure.
 		11 & Belt length & $ L_d=2283\unit{(mm)} $\\
 		12 & Pulley width & $ B=63\unit{(mm)} $\\
 		13 & Center distance & $ C=572.572\unit{(mm)} $\\
-		\bottomrule
-	\end{tabular}
-\end{table}
-\subsubsection{The chain drive parameters table}
-
-\begin{table}[h!t]
+	\end{longtable}
+\end{center}
+\begin{figure}
 	\centering
-	\rowcolors{1}{}{lightgray!20}
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{clr}
+	\includegraphics[width=150mm]{beltdesign.png}
+	\caption{Belt design tab}
+	\label{beltdesign}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{beltcalculation.png}
+	\caption{Belt calculation tab}
+	\label{beltcalculation}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{belt.png}
+	\caption{Belt drive model}
+	\label{belt}
+\end{figure}
+
+\subsubsection{The chain drive parameters table}
+\begin{center}
+	\rowcolors{2}{}{lightgray!20}
+	\begin{longtable}{clr}
 		\toprule
 		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
-		\midrule
+		\midrule\endfirsthead
+		\toprule
+		No. & \multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Result}\\
+		\midrule\endhead
+		\bottomrule\endfoot
+		\bottomrule
+		\caption{Design specifications of the chain drive}
+		\endlastfoot
 		1 & Chain type & Roller Chain 16B-3-106\\
 		2 & Number of chains & $ k=3 $\\
 		3 & Number of chain links & $ X=106 $\\
@@ -174,11 +220,27 @@ Given the transmission system as shown in below figure.
 		9 & Center distance &$ C= 626.966\unit{(mm)}$ \\
 		10 & Drivsing sprocket diameter & $ D_{p} =170.421\unit{(mm)}$ \\
 		11 & Driven sprocket diameter & $ D_{p} =679.304\unit{(mm)}$\\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
+	\end{longtable}
+\end{center}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{chaindesign.png}
+	\caption{Chain design tab}
+	\label{chaindesign}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{chaincalculation.png}
+	\caption{Chain calculation tab}
+	\label{chaincalculation}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{chain.png}
+	\caption{Chain drive model}
+	\label{chain}
+\end{figure}
 
 \section{Discussion and conclusions}
-Students compare the computational results in Inventor software with the theoretical results. Then draw conclusions when we use Inventor software.
-\section{Review questions}
+Students compare the computational results in Inventor software with the theoretical results. Then draw conclusions when we use Inventor software.\\
+Calculation results from Autodesk Inventor are mostly similar to theoretical calculation. The software is a convenient tool for calculating and designing machine parts, which also provides a complete machine detail modules. The users can easily input and adjust the parameters and use the built-in libraries from the software.

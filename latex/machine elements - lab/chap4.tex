@@ -40,9 +40,9 @@ Each group conducts the experiment with the given $ \alpha $ and $ F $\\
 $ \alpha = -5^\circ $\\
 $ F = 303.6\unit{(N)} $\\
 $ \Delta F = 15\unit{(N)} $
-\begin{figure}[ht]
+\begin{figure}
 	\centering
-	\includegraphics[width=120mm]{modelexp4.png}
+	\includegraphics[width=150mm]{modelexp4.png}
 	\caption{Model of experimental calculation}
 	\label{exp4fig}
 \end{figure}
@@ -58,7 +58,7 @@ coefficient by using theory.
 	V = \dfrac{kF_H+(1-\chi)fF_V}{f_z}
 	\label{tight_force}
 \end{equation}
-According to formulas (1) and (2), selecting V max for these two values.\\
+According to formulas (\ref{safety3}) and (\ref{tight_force}), selecting V max for these two values.\\
 Note: The tightening force for surfaces not separated is defined by the formula:
 \[V = \dfrac{k}{z}\left(\dfrac{(F_Vl_1\pm F_Hl_2)Ay_{max}}{J_{x'x'}}-F_V\right)(1-\chi)\]
 \begin{tabular}{ll}
@@ -85,7 +85,7 @@ In this experiment, $ l_2 = 0 $ and $ Y_i = \dfrac{e}{2} $, therefore $ M_i = F_
 where $ i=1,2,...,N $\\
 Here, $ \chi $ is determined by the formula:
 \[\chi_i = \dfrac{V_{tni}-V_{tn1}}{\dfrac{F_{Vi}-F_{V1}}{z} + \dfrac{(F_{Hi}-F_{H1})l_1+(F_{Vi}- F_{H1})l_2}{2e}}\]
-According to the experimental model, $ z=4 $, $ e=200\unit{(mm)} $, $ l_1= \unit{(mm)}$, $ l_2 = \unit{(mm)} $ and then write down the results into column 7 of table \ref{dataexp4}.\\
+According to the experimental model, $ z=4 $, $ e=200\unit{(mm)} $, $ l_1= 300\unit{(mm)}$, $ l_2 = 100\unit{(mm)} $ and then write down the results into column 7 of table \ref{dataexp4}.\\
 Therefore, the average value of external force coefficient through $ N $ measuring times
 \begin{equation}
 	\bar{\chi} = \dfrac{\chi_1+\chi_2+...+\chi_{N-1}}{N-1}
@@ -99,25 +99,45 @@ Therefore, the average value of external force coefficient through $ N $ measuri
 		\multirow{2}{*}{No.} & \md{$ F_i $} & \md{$ V_{tni} $} & \md{$ F_{Vi} $} & \md{$ F_{Hi} $} & \md{$ \chi_i $} \\
 		& \md{$ \unit{(N)} $} & \md{$ \unit{(N)} $} &\md{ $ \unit{(N)} $} & \md{$ \unit{(N)} $} & \\
 		\midrule
-		\rule[-1ex]{0pt}{2.5ex} 1 & 303.2 & 3025 &  &  &  \\
-		\rule[-1ex]{0pt}{2.5ex} 2 & 287.8 & 3097 &  &  &  \\
-		\rule[-1ex]{0pt}{2.5ex} 3 & 271.4 & 3221 &  &  &  \\
-		\rule[-1ex]{0pt}{2.5ex} 4 & 257.8 & 3304 &  &  &  \\
-		\rule[-1ex]{0pt}{2.5ex} 5 & 242.8 & 3426 &  &  &  \\
-		\rule[-1ex]{0pt}{2.5ex} 6 & 227.8 & 3525 &  &  &  \\
+		\rule[-1ex]{0pt}{2.5ex} 1 & 303.2 & 3025 & -26.43 & 302.05 & 0 \\
+		\rule[-1ex]{0pt}{2.5ex} 2 & 287.8 & 3097 & -25.08 & 286.71 & 0.12 \\
+		\rule[-1ex]{0pt}{2.5ex} 3 & 271.4 & 3221 & -23.65 & 270.37 & 0.23 \\
+		\rule[-1ex]{0pt}{2.5ex} 4 & 257.8 & 3304 & -22.47 & 256.82 & 0.16 \\
+		\rule[-1ex]{0pt}{2.5ex} 5 & 242.8 & 3426 & -21.16 & 241.88 & 0.25 \\
+		\rule[-1ex]{0pt}{2.5ex} 6 & 227.8 & 3525 & -19.85 & 226.93 & 0.22 \\
 		\bottomrule
 	\end{tabular}
 	\caption{The experimental results}
 	\label{dataexp4}
 \end{table}\vskip2mm
-From the experimental results, plot the curve illustrated the relationship
-between $ \chi_i $ and $ F_i $.
-\subsection{Discussion and conclusions}
+From the experimental results, plot the curve illustrated the relationship between $ \chi_i $ and $ F_i $.
+\begin{figure}
+	\centering
+	\includegraphics[width=150mm]{exp4.png}
+	\caption{Relation between $ F $ and $ \chi $}
+	\label{label}
+\end{figure}
+\section{Discussion and conclusions}
 Comparing the theoretical results with experimental results and then drawing conclusions.
-\subsection{Review questions}
+Possible causes of error:
+\begin{itemize}
+	\item Worn condition of the bolt affects the friction coefficient and thread angle.
+	\item Error of the lab instrument (instability in displaying results), thus the measured values are only relative.
+	\item  Rounding errors through calculations.
+\end{itemize}
+
+\section{Review questions}
 \begin{enumerate}
-	\item The role and importance of determining the tightening force and the tightening	moment in reality.\\
-	\item The meaning of $ \chi $ and determining this coefficient by the fundamental theory.\\
-	\item Determining the required tightening force of the bolt to avoid segregation and slip.\\
-	\item Comparing the tightening coefficient in the cases of the joint with and without lubrication, and then drawing conclusions.\\
+	\item \emph{The role and importance of determining the tightening force and the tightening	moment in reality.}\\
+	As mentioned, an under torqued bolt will deform and be unable to provide as much clamping force as needed. An over torqued bolt will break.
+	\item \emph{The meaning of $ \chi $ and determining this coefficient by the fundamental theory.}\\
+	When the joint is subjected to the external force in the non-sealed surface limitation of assemble plates, the bolt is elongated about $ \Delta l $ in length, the compression deformation of the assemble plates also reduces the same length. This means that only a part of external force $ F(\chi) $ acting on a bolt causes the extension. The other part of external force $ (1-\chi)F $ causes the decrease of the compression deformation of the assemble plates. $ \chi $ is called the external force coefficient . Therefore:
+	\[\Delta l = \chi F \lambda_b = (1-\chi)F\lambda_m\]
+	Where $ \lambda_b, \lambda_m $ are the flexibility of bolt and assembled parts, respectively. As a result:
+	\[\chi = \dfrac{\lambda_m}{\lambda_b+\lambda_m}\]
+	\item \emph{Determining the required tightening force of the bolt to avoid segregation and slip.}\\
+	For assembled machine element avoid segregation and no slip, the bolt needs to be tightened with the tightening force $ V $:
+	\[V = \dfrac{k}{z}\left(F_V+\dfrac{MA}{W}\right) = \dfrac{k}{z}\left(F_V+\dfrac{MA_{yc}}{J}\right)(1-\chi)\]
+	\item \emph{Comparing the tightening coefficient in the cases of the joint with and without lubrication, and then drawing conclusions.}\\
+	With lubrication, the tightening coefficient will decrease and vice versa. Therefore, it can be concluded that the amount of lubrication and the tightening coefficient has an inverse relationship.
 \end{enumerate}
