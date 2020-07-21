@@ -1,0 +1,33 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}HARDNESS TESTING OF METALS}{5}%
+\contentsline {section}{\numberline {1.1}Experimental targets}{5}%
+\contentsline {section}{\numberline {1.2}Theoretical summary}{5}%
+\contentsline {subsection}{\numberline {1.2.1}Brinell Hardness Test}{6}%
+\contentsline {subsection}{\numberline {1.2.2}Rockwell Hardness Tests}{6}%
+\contentsline {subsection}{\numberline {1.2.3}Knoop and Vickers Microindentation Hardness Tests}{7}%
+\contentsline {subsection}{\numberline {1.2.4}Hardness Conversion}{7}%
+\contentsline {section}{\numberline {1.3}Detailed Experiment}{7}%
+\contentsline {subsection}{\numberline {1.3.1}Measure HR}{7}%
+\contentsline {subsection}{\numberline {1.3.2}Measure HB or HV}{8}%
+\contentsline {section}{\numberline {1.4}Measurement results}{9}%
+\contentsline {section}{\numberline {1.5}Analyzing results}{10}%
+\contentsline {paragraph}{Lookup table}{10}%
+\contentsline {paragraph}{Calculate average HV}{10}%
+\contentsline {section}{\numberline {1.6}Conclusion}{11}%
+\contentsline {paragraph}{Explanaon about errors}{11}%
+\contentsline {chapter}{\numberline {2}MICROSTRUCTURE ANALYSIS IN METALLIC MATERIALS}{13}%
+\contentsline {section}{\numberline {2.1}Experimental targets}{13}%
+\contentsline {section}{\numberline {2.2}Theoretical summary}{13}%
+\contentsline {section}{\numberline {2.3}Detailed experiment}{14}%
+\contentsline {section}{\numberline {2.4}Microstructure before and after etching}{15}%
+\contentsline {section}{\numberline {2.5}Conclusion}{15}%
+\contentsline {chapter}{\numberline {3}QUENCHING PROCESS}{18}%
+\contentsline {section}{\numberline {3.1}Experimental targets}{18}%
+\contentsline {section}{\numberline {3.2}Theoretical summary}{18}%
+\contentsline {paragraph}{Low tempering}{19}%
+\contentsline {paragraph}{Low tempering}{19}%
+\contentsline {paragraph}{Low tempering}{19}%
+\contentsline {section}{\numberline {3.3}Detailed experiment}{19}%
+\contentsline {section}{\numberline {3.4}Measurement results}{19}%
+\contentsline {section}{\numberline {3.5}Relationship}{21}%
+\contentsline {section}{\numberline {3.6}Conclusion}{21}%

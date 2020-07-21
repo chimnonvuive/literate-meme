@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  19 JUL 2020 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  21 JUL 2020 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**machine_elements.tex
-(./machine_elements.tex
+**lab_report.tex
+(./lab_report.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (./presets.cls
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -50,6 +50,31 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/02/14 3.40 The Babel package
@@ -367,20 +392,6 @@ Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
 \Gin@req@height=\dimen146
 \Gin@req@width=\dimen147
 )
@@ -443,10 +454,7 @@ Package: newtxmath 2020/01/25 v1.624
 `newtxmath' v1.624, 2020/01/25 Math macros based originally on txfonts (msharpe
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-))
+)
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
@@ -747,14 +755,13 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count289
 \l__pdf_internal_box=\box59
 )
-(./machine_elements.aux)
-\openout1 = `machine_elements.aux'.
+(./lab_report.aux)
+\openout1 = `lab_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 3.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -883,17 +890,16 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 35.83pt on input line 37.
+(Font)              scaled to size 35.83pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 35.83pt on input line 37.
+(Font)              scaled to size 35.83pt on input line 34.
 
-(./machine_elements.toc
+(./lab_report.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 2.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
 e 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -931,15 +937,9 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [1
 
-]
-Overfull \hbox (2.60011pt too wide) in paragraph at lines 23--23
- [][] []\T1/ntxtlf/m/n/14.4 Determine the pa-ram-e-ters of threaded joint and m
-ea-sur-ing 
- []
-
-)
+])
 \tf@toc=\write3
-\openout3 = `machine_elements.toc'.
+\openout3 = `lab_report.toc'.
 
 
 
@@ -948,18 +948,17 @@ Make it at least 17.0pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] [3] (./machine_elements.lot)
+[2] (./lab_report.lot)
 \tf@lot=\write4
-\openout4 = `machine_elements.lot'.
+\openout4 = `lab_report.lot'.
 
- [4
+ [3
 
-] (./machine_elements.lof)
+] (./lab_report.lof)
 \tf@lof=\write5
-\openout5 = `machine_elements.lof'.
+\openout5 = `lab_report.lof'.
 
- (./chap1.tex
-[5
+ (./chap1.tex [4
 
 ]
 Chapter 1.
@@ -967,264 +966,142 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
-
-Overfull \hbox (34.81448pt too wide) in paragraph at lines 3--28
-[] [] 
- []
-
-[6
-
-]
-Overfull \hbox (16.8516pt too wide) in paragraph at lines 39--39
-[]\T1/ntxtlf/b/n/20.74 Conducting and deal-ing with ex-per-i-men-tal re-sults 
- []
-
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 40.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 42.
+e 4.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
- [7]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 57.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.5pt on input line 57.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.4pt on input line 57.
-<Exp1.png, id=40, 433.62pt x 289.08pt>
-File: Exp1.png Graphic file (type png)
-<use Exp1.png>
-Package pdftex.def Info: Exp1.png  used on input line 80.
-(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
- [8]
+(Font)              scaled to size 14.4pt on input line 4.
+
+Overfull \hbox (24.9902pt too wide) in paragraph at lines 4--5
+[]\T1/ntxtlf/m/n/14.4 Understand the prin-ci-ple of Brinell, Rock-well and Vick
+er hard-ness mea-sure-ment
+ []
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 10.
+[5
+
+] [6] [7] [8]
+<2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png, id=39, 
+1257.69875pt x 801.99625pt>
+File: 2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png Gra
+phic file (type png)
+<use 2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png>
+Package pdftex.def Info: 2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4
+d3397925039.png  used on input line 26.
+(pdftex.def)             Requested size: 426.79134pt x 272.1489pt.
+<109267072_710156266492754_8636426261719016576_n.png, id=40, 374.39874pt x 281.
+05pt>
+File: 109267072_710156266492754_8636426261719016576_n.png Graphic file (type pn
+g)
+<use 109267072_710156266492754_8636426261719016576_n.png>
+Package pdftex.def Info: 109267072_710156266492754_8636426261719016576_n.png  u
+sed on input line 33.
+(pdftex.def)             Requested size: 426.79134pt x 320.39603pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 14.4pt on input line 99.
- [9 <./Exp1.png>] [10]) (./chap2.tex [11]
+(Font)              scaled to size 14.4pt on input line 56.
+<2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png, id=41, 
+1142.2675pt x 185.69376pt>
+File: 2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png Gra
+phic file (type png)
+<use 2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png>
+Package pdftex.def Info: 2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm c
+ba70144e432.png  used on input line 59.
+(pdftex.def)             Requested size: 426.79134pt x 69.37997pt.
+ [9
+
+ <./2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png>] [10
+ <./109267072_710156266492754_8636426261719016576_n.png (PNG copy)> <./2020-07-
+19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png>] [11]) (./chap2.
+tex [12]
 Chapter 2.
-[12
+[13
 
 ]
-<Exp2cb.png, id=60, 433.62pt x 289.08pt>
-File: Exp2cb.png Graphic file (type png)
-<use Exp2cb.png>
-Package pdftex.def Info: Exp2cb.png  used on input line 46.
-(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
-<Exp2sb.png, id=61, 433.62pt x 289.08pt>
-File: Exp2sb.png Graphic file (type png)
-<use Exp2sb.png>
-Package pdftex.def Info: Exp2sb.png  used on input line 51.
-(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
- [13] [14 <./Exp2cb.png> <./Exp2sb.png>]) (./chap3.tex [15]
+Overfull \hbox (14.40636pt too wide) in paragraph at lines 16--17
+[]\T1/ntxtlf/b/n/14.4 Etching: \T1/ntxtlf/m/n/14.4 Mi-cro-scopic ex-am-i-na-tio
+n of a prop-erly pol-ished, un-etched spec-i-men
+ []
+
+
+Overfull \hbox (33.4142pt too wide) in paragraph at lines 21--22
+[]\T1/ntxtlf/m/n/14.4 Coarse grind-ing: Use sand pa-per from small to big num-b
+er (80,100,150,180,400). 
+ []
+
+[14]
+<1852158-1852269.png, id=66, 1371.1225pt x 770.88pt>
+File: 1852158-1852269.png Graphic file (type png)
+<use 1852158-1852269.png>
+Package pdftex.def Info: 1852158-1852269.png  used on input line 31.
+(pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
+<1852158-1852269-2.png, id=67, 1371.1225pt x 770.88pt>
+File: 1852158-1852269-2.png Graphic file (type png)
+<use 1852158-1852269-2.png>
+Package pdftex.def Info: 1852158-1852269-2.png  used on input line 36.
+(pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
+ [15 <./1852158-1852269.png>]
+Overfull \hbox (17.21425pt too wide) in paragraph at lines 49--50
+[]\T1/ntxtlf/m/n/14.4 After im-preg-na-tion, the sur-face be-comes blur be-caus
+e of porous at mi-cro-scopic
+ []
+
+[16 <./1852158-1852269-2.png>]) (./chap3.tex [17]
 Chapter 3.
-
-Underfull \hbox (badness 5036) in paragraph at lines 5--6
-[]|\T1/ntxtlf/m/n/14.4 outer di-am-e-ter of the nut
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 14--15
-[]|\T1/ntxtlf/m/n/14.4 tightening co-ef-fi-cient through
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]|\T1/ntxtlf/m/n/14.4 force mo-ment act-ing on
- []
-
-
-Overfull \hbox (7.40356pt too wide) in paragraph at lines 4--23
-[] [] 
- []
-
-[16
+[18
 
 ]
-Overfull \hbox (26.3626pt too wide) in paragraph at lines 29--30
-[]\T1/ntxtlf/m/n/14.4 Determine $\OML/ntxmi/m/it/14.4 K[] \U/ntxmia/m/it/14.4 =
- [] = [] []$ \T1/ntxtlf/m/n/14.4 and un-der-stand
- []
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 11.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.9pt on input line 11.
+ [19] [20
 
-
-Overfull \hbox (14.54044pt too wide) in paragraph at lines 37--37
-[]\T1/ntxtlf/b/n/17.28 Determine the pa-ram-e-ters of threaded joint and mea-su
-r-ing
- []
-
-[17]
-<exp3.png, id=79, 433.62pt x 289.08pt>
-File: exp3.png Graphic file (type png)
-<use exp3.png>
-Package pdftex.def Info: exp3.png  used on input line 74.
-(pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
- [18
-
-] [19 <./exp3.png>]
-Overfull \hbox (9.48146pt too wide) in paragraph at lines 103--105
-\T1/ntxtlf/m/n/14.4 tight-en-ing mo-ment and tight-en-ing force in re-al-ity, i
-n-clud-ing fric-tion, bend-ing,
- []
-
-[20]) (./chap4.tex [21]
-Chapter 4.
-
-Underfull \hbox (badness 4316) in paragraph at lines 15--16
-[]|\T1/ntxtlf/m/n/14.4 bending mo-ment of the raw
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 21--22
-[]|\T1/ntxtlf/m/n/14.4 force dif-fer-ence be-tween each
- []
-
-
-Overfull \hbox (41.98286pt too wide) in paragraph at lines 3--23
-[] [] 
- []
-
-[22
 
 ]
-<modelexp4.png, id=97, 377.2494pt x 428.3202pt>
-File: modelexp4.png Graphic file (type png)
-<use modelexp4.png>
-Package pdftex.def Info: modelexp4.png  used on input line 45.
-(pdftex.def)             Requested size: 426.79134pt x 484.604pt.
- [23] [24 <./modelexp4.png (PNG copy)>] [25]
-<exp4.png, id=108, 433.62pt x 289.08pt>
-File: exp4.png Graphic file (type png)
-<use exp4.png>
-Package pdftex.def Info: exp4.png  used on input line 116.
+<Hardness.png, id=89, 433.62pt x 289.08pt>
+File: Hardness.png Graphic file (type png)
+<use Hardness.png>
+Package pdftex.def Info: Hardness.png  used on input line 42.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
- [26] [27 <./exp4.png>]
-[28]) (./chap5.tex [29]
-Chapter 5.
-<system.png, id=122, 649.4664pt x 361.35pt>
-File: system.png Graphic file (type png)
-<use system.png>
-Package pdftex.def Info: system.png  used on input line 12.
-(pdftex.def)             Requested size: 426.79134pt x 237.46617pt.
-[30
+<Hardness2.png, id=90, 505.89pt x 361.35pt>
+File: Hardness2.png Graphic file (type png)
+<use Hardness2.png>
+Package pdftex.def Info: Hardness2.png  used on input line 47.
+(pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
 
-] [31 <./system.png (PNG copy)>]
-
-! LaTeX Error: Environment landscape undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \begin{landscape}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[32]
-
-! LaTeX Error: \begin{document} ended by \end{landscape}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 \end{landscape}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[33]
-Overfull \vbox (15.24747pt too high) has occurred while \output is active []
-
-
-[34]
-<geardesign.png, id=139, 600.74437pt x 371.13657pt>
-File: geardesign.png Graphic file (type png)
-<use geardesign.png>
-Package pdftex.def Info: geardesign.png  used on input line 127.
-(pdftex.def)             Requested size: 426.79134pt x 263.6787pt.
-<gearcalculation.png, id=140, 541.27219pt x 498.36188pt>
-File: gearcalculation.png Graphic file (type png)
-<use gearcalculation.png>
-Package pdftex.def Info: gearcalculation.png  used on input line 133.
-(pdftex.def)             Requested size: 426.79134pt x 392.97154pt.
-<gearfactor.png, id=141, 529.22719pt x 540.51938pt>
-File: gearfactor.png Graphic file (type png)
-<use gearfactor.png>
-Package pdftex.def Info: gearfactor.png  used on input line 139.
-(pdftex.def)             Requested size: 426.79134pt x 435.89659pt.
-<gear.png, id=142, 919.93687pt x 693.34032pt>
-File: gear.png Graphic file (type png)
-<use gear.png>
-Package pdftex.def Info: gear.png  used on input line 145.
-(pdftex.def)             Requested size: 426.79134pt x 321.66992pt.
- [35 <./geardesign.png>]
-<beltdesign.png, id=147, 407.27156pt x 453.19313pt>
-File: beltdesign.png Graphic file (type png)
-<use beltdesign.png>
-Package pdftex.def Info: beltdesign.png  used on input line 181.
-(pdftex.def)             Requested size: 426.79134pt x 474.93327pt.
-<beltcalculation.png, id=148, 442.65375pt x 557.83406pt>
-File: beltcalculation.png Graphic file (type png)
-<use beltcalculation.png>
-Package pdftex.def Info: beltcalculation.png  used on input line 187.
-(pdftex.def)             Requested size: 426.79134pt x 537.87239pt.
-<belt.png, id=149, 679.78969pt x 598.48593pt>
-File: belt.png Graphic file (type png)
-<use belt.png>
-Package pdftex.def Info: belt.png  used on input line 193.
-(pdftex.def)             Requested size: 426.79134pt x 375.74223pt.
-<chaindesign.png, id=150, 490.83376pt x 500.62032pt>
-File: chaindesign.png Graphic file (type png)
-<use chaindesign.png>
-Package pdftex.def Info: chaindesign.png  used on input line 227.
-(pdftex.def)             Requested size: 426.79134pt x 435.31464pt.
-<chaincalculation.png, id=151, 692.5875pt x 466.74374pt>
-File: chaincalculation.png Graphic file (type png)
-<use chaincalculation.png>
-Package pdftex.def Info: chaincalculation.png  used on input line 233.
-(pdftex.def)             Requested size: 426.79134pt x 287.62613pt.
-<chain.png, id=152, 749.80125pt x 630.85687pt>
-File: chain.png Graphic file (type png)
-<use chain.png>
-Package pdftex.def Info: chain.png  used on input line 239.
-(pdftex.def)             Requested size: 426.79134pt x 359.0916pt.
-)
-Overfull \hbox (9.41092pt too wide) in paragraph at lines 245--45
-\T1/ntxtlf/m/n/14.4 Students com-pare the com-pu-ta-tional re-sults in In-ven-t
-or soft-ware with the the-o-ret-i-cal
+Overfull \hbox (1.90683pt too wide) in paragraph at lines 53--54
+\T1/ntxtlf/m/n/14.4 The hard-ness of the sam-ple in-creases grad-u-ally as it c
+ools in the en-vi-ron-ment
  []
 
-[36] [37 <./gearcalculation.png>] [38 <./gearfactor.png>] [39 <./gear.png>]
-[40 <./beltdesign.png>] [41 <./beltcalculation.png>] [42 <./belt.png>] [43 <./c
-haindesign.png>] [44 <./chaincalculation.png>] [45 <./chain.png>]
-(./machine_elements.aux) ) 
+[21
+
+ <./Hardness.png>]) [22 <./Hardness2.png>] (./lab_report.aux) ) 
 Here is how much of TeX's memory you used:
- 8531 strings out of 481239
- 112285 string characters out of 5920377
- 407942 words of memory out of 5000000
- 23527 multiletter control sequences out of 15000+600000
- 611803 words of font info for 126 fonts, out of 8000000 for 9000
+ 8434 strings out of 481239
+ 112018 string characters out of 5920377
+ 363944 words of memory out of 5000000
+ 23450 multiletter control sequences out of 15000+600000
+ 600234 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,74p,866b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive/t
-exmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/share/texlive/texmf-dis
-t/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb
-.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/f
-onts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx
-/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on machine_elements.pdf (46 pages, 1802528 bytes).
+ 46i,11n,74p,965b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texl
+ive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texmf/fonts/en
+c/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx
+/ntx-ec-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf
+-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></u
+sr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/typ
+e1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on lab_report.pdf (23 pages, 3167894 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 130 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
