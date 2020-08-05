@@ -1,4 +1,4 @@
-params = readtable('parameters'); disp(params)
+params = readtable('parameters.txt'); disp(params)
 alpha = deg2rad(params{1,1});     xOB = pi/2 - alpha/2;
 beta  = deg2rad(params{1,2});     xOD = pi/2 + alpha/2; 
 n1 = params{1,3}; omg1 = convangvel(n1, 'rpm', 'rad/s');
