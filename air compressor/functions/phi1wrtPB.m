@@ -1,6 +1,8 @@
 function [phi1] = phi1wrtPB(sB)
     
     params = readtable('parameters');
+    rs = readtable('outputs/lib_pos.txt');
+    
     alpha = params{1,1}*pi/180;     xOB = pi/2 - alpha/2;
     HB = params{1,4}*1e-3;      OA = HB/2;
     AB = params{1,5}*1e-3;
@@ -12,31 +14,17 @@ function [phi1] = phi1wrtPB(sB)
     c = sB(crest1:crest2);
     trough = find(c == min(c),1,'first') + crest1;
     
-    rs = readtable('outputs/lib_pos.txt');
     rAs = rs{:,1} + rs{:,5}*1j;
     rBs = rs{:,2} + rs{:,6}*1j;
     rCs = rs{:,3} + rs{:,7}*1j;
     rDs = rs{:,4} + rs{:,8}*1j;
 
-%     vs = readtable('outputs/lib_vel.txt');
-%     vAs = vs{:,1} + vs{:,5}*1j;
-%     vBs = vs{:,2} + vs{:,6}*1j;
-%     vCs = vs{:,3} + vs{:,7}*1j;
-%     vDs = vs{:,4} + vs{:,8}*1j;
-% 
-%     as = readtable('outputs/lib_acc.txt');
-%     aAs = as{:,1} + as{:,5}*1j;
-%     aBs = as{:,2} + as{:,6}*1j;
-%     aCs = as{:,3} + as{:,7}*1j;
-%     aDs = as{:,4} + as{:,8}*1j;
-% 
-%     alps = readtable('outputs/lib_ang_acc.txt');
-%     alp2s = alps{:,1}; alp4s = alps{:,2};
     len_rs = length(rAs);
     dp1 = fix(xOB*len_rs/2/pi);
     dp2 = fix((xOB+pi)*len_rs/2/pi);
+    
     % rA rotates from 45 deg to -135 deg
-    rA1 = rAs(dp1+1:dp2);
+    rA1 = rAs(dp1+1:dp2); length(rA1);
     rB1 = rBs(dp1+1:dp2);
     rC1 = rCs(dp1+1:dp2);
     rD1 = rDs(dp1+1:dp2);
@@ -67,5 +55,4 @@ function [phi1] = phi1wrtPB(sB)
         end
     end
     phi1 = angle(rAs_);
-%     animation(rAs_,rBs_,rCs_,rDs_);
 end
