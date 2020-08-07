@@ -1,5 +1,11 @@
-function animation(rAs, rBs, rCs, rDs)
-    figure
+function animation()
+
+    rs = readtable('outputs/lib_pos.txt');
+    rAs = rs{:,1} + rs{:,5}*1j;
+    rBs = rs{:,2} + rs{:,6}*1j;
+    rCs = rs{:,3} + rs{:,7}*1j;
+    rDs = rs{:,4} + rs{:,8}*1j;
+    
     sys(length(rAs)) = struct('cdata',[],'colormap',[]);
     
 %     v = VideoWriter('./outputs/animation.avi');

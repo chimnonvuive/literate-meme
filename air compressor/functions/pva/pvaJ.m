@@ -1,101 +1,96 @@
 function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
 
     params = readtable('parameters');
-    alpha = params{1,1}*pi/180;     xOB = pi/2 - alpha/2;
-    beta  = params{1,2}*pi/180;     xOD = pi/2 + alpha/2; 
-    n1 = params{1,3}; omg1 = n1*pi/30;
+    load('./outputs/functions.mat');
+    
+    n1 = params{1,3}; omg1 = convangvel(n1, 'rpm', 'rad/s');
+    omg1 = [0, 0, omg1];
     HB = params{1,4}*1e-3;      OA = HB/2;      AC = OA;
-    AB = params{1,5}*1e-3;      BC = sqrt(AC^2+AB^2-2*AC*AB*cos(beta));
-    CD = params{1,6}*1e-3;
+    AB = params{1,5}*1e-3;
 
-    m1 = params{1,7};         J1 = params{1,13};
-    m2 = params{1,8};         J2 = params{1,14};
-    m3 = params{1,9};         J3 = params{1,15};
-    m4 = params{1,10};        J4 = params{1,16};
-    m5 = params{1,11};        J5 = params{1,17};
+    m1 = params{1,6};         J1 = params{1,12};
+    m2 = params{1,7};         J2 = params{1,13};
+    m3 = params{1,8};         J3 = params{1,14};
+    m4 = params{1,9};         J4 = params{1,15};
+    m5 = params{1,10};        J5 = params{1,16};
+    
+    mAC = AC/(AB+AC)*m2;
+    mAB = AB/(AB+AC)*m2;
     
     iter = length(phis);
-    rAs  = zeros(iter, 1); vAs  = zeros(iter, 1); aAs  = zeros(iter, 1);
-    rBs  = zeros(iter, 1); vBs  = zeros(iter, 1); aBs  = zeros(iter, 1);
-    rCs  = zeros(iter, 1); vCs  = zeros(iter, 1); aCs  = zeros(iter, 1);
-    rDs  = zeros(iter, 1); vDs  = zeros(iter, 1); aDs  = zeros(iter, 1);
-    alp2s = zeros(iter, 1); Js = zeros(iter,1);
-    alp4s = zeros(iter, 1);
+    rAs  = zeros(iter, 3); vAs  = zeros(iter, 3); aAs  = zeros(iter, 3);
+    rBs  = zeros(iter, 3); vBs  = zeros(iter, 3); aBs  = zeros(iter, 3);
+    rCs  = zeros(iter, 3); vCs  = zeros(iter, 3); aCs  = zeros(iter, 3);
+    rDs  = zeros(iter, 3); vDs  = zeros(iter, 3); aDs  = zeros(iter, 3);
+    
+    omg2s = zeros(iter, 3);
+    omg4s = zeros(iter, 3);
+    alp2s = zeros(iter, 3);
+    alp4s = zeros(iter, 3);
+    Js = zeros(iter,1);
     
     for i = 1:iter
-        rA = OA*exp(1i*phis(i));
-        [~,~,~,OB] = CPA2(xOB, AB, rA);
-        rB = OB*exp(1i*xOB);
-        [xAC,~,~,~] = CPA4(AC, BC, rB-rA);
-        rC = rA + AC*exp(1i*xAC);
-        [~,~,~,OD] = CPA2(xOD, CD, rC);
-        rD = OD*exp(1i*xOD);
-         rDs(i) = rD;
-         rCs(i) = rC;
-
-        vA = vel(rA, 0, omg1);
-        [v3_T, omg2] = vCPA2(-vA, rB, rB-rA, 0, 0);
-        vB = vel(rB, v3_T, 0);
-        [vC_T, omgC] = vCPA1(-vA, rC, rC-rA, 0, omg2);
-        vC = vel(rC, vC_T, omgC);
-        [v5_T, omg4] = vCPA2(-vC, rD, rD-rC, 0, 0);
-        vD = vel(rD, v5_T, 0);
-        
-        centerCA = (rC+rA)/2;
-        centerAB = rA*0/OA; % Use Solidworks to find COM
-        rS2 = centerCA+(centerAB-centerCA)*AC/AB;
-        rS4 = (rC+rD)/2;   
-
-        vS2 = vel(rS2, 0, omg2);
-        vS4 = vel(rS4, 0, omg4);
-        
-        aA = acc(rA, 0, omg1, 0, 0);
-        [a3_T, alp2] = aCPA2(-aA, rB, rB-rA, v3_T, 0, 0, omg2, 0, 0);
-        aB = acc(rB, v3_T, 0, a3_T, 0);
-        [aC_T, alpC] = aCPA1(-aA, rC, rC-rA, vC_T, omgC, 0, omg2, 0, alp2);
-        aC = acc(rC, vC_T, omgC, aC_T, alpC);
-        [a5_T, alp4] = aCPA2(-aC, rD, rD-rC, v5_T, 0, 0, omg4, 0, 0);
-        aD = acc(rD, v5_T, 0, a5_T, 0);
-        
-    %     ----- save positions of A, B, C, D -----
-        rAs(i) = rA; rBs(i) = rB; rCs(i) = rC; rDs(i) = rD;
-    %     sys(i, 1, :) = [link1, link2_AB, link2_AC, link2_BC, link4];
-
-    %     ----- save velocities of A, B, C, D -----
-        vAs(i) = vA; vBs(i) = vB; vCs(i) = vC; vDs(i) = vD;
-
-    %     ----- save accelerations of A, B, C, D -----
-        aAs(i) = aA; aBs(i) = aB; aCs(i) = aC; aDs(i) = aD;
-        alp2s(i) = alp2; alp4s(i) = alp4;
-        
-        Js(i) = J1 + J2*(omg2/omg1)^2 + m2*(abs(vS2)/omg1)^2 + ...
-            m3*(abs(vB)/omg1)^2 + J4*(omg4/omg1)^2 + ...
-            m4*(abs(vS4)/omg1)^2 + m5*(abs(vD)/omg1)^2;
+        rAs(i, :) = fpA(phis(i));
+        rBs(i, :) = fpB(phis(i));
+        rCs(i, :) = fpC(phis(i));
     end
-    rs = [rAs, rBs, rCs, rDs];
-    vs = [vAs, vBs, vCs, vDs];
-    as = [aAs, aBs, aCs, aDs];
-    writematrix([real(rs), imag(rs)], './outputs/lib_pos.txt');
-    writematrix([real(vs), imag(vs)], './outputs/lib_vel.txt');
-    writematrix([real(as), imag(as)], './outputs/lib_acc.txt');
-    writematrix([alp2s, alp4s], './outputs/lib_ang_acc.txt');
+    
+    % Find CD (at time t0 when OA is perpendicular to Ox)
+    rA_perp = [0, OA, 0];
+    dist = euclidean(rA_perp, rAs);
+    index = find(dist == min(dist));
+    rB_perp = rBs(index, :);
+    rD_perp = [-rB_perp(1), rB_perp(2), 0];
+    CD = min(euclidean(rD_perp, rCs));
+    
+    for i = 1:iter
+        rDs(i, :) = fpD(phis(i), CD);
+        
+    %     ----- save velocities of A, B, C, D -----
+        
+        vAs(i, :) = fvA(phis(i));
+        vBs(i, :) = fvB(phis(i));
+        vCs(i, :) = fvC(phis(i));
+        vDs(i, :) = fvD(phis(i), CD);
+        
+    %     ----- save accelerations of A, B, C, D -----
+     
+        aAs(i, :) = faA(phis(i));
+        aBs(i, :) = faB(phis(i));
+        aCs(i, :) = faC(phis(i));
+        aDs(i, :) = faD(phis(i), CD);
+        
+        vAC = (vAs(i, :) + vCs(i, :))/2;
+        vAB = (vAs(i, :) + vBs(i, :))/2;
+        v2 = (mAC*vAC + mAB*vAB)/m2;
+        v3 = vBs(i, :);
+        v4 = (rCs(i, :) + rDs(i, :))/2;
+        v5 = vDs(i, :);
+                
+        omg2s(i, :) = fomg2(phis(i)); omg2 = omg2s(i, :);
+        omg4s(i, :) = fomg4(phis(i), CD);
+        alp2s(i, :) = falp2(phis(i)); omg4 = omg4s(i, :);
+        alp4s(i, :) = falp4(phis(i), CD);
+
+         Js(i) = (J1*dot(omg1, omg1) +                 ...
+                  J2*dot(omg2, omg2) + m2*dot(v2, v2) +...
+                                       m3*dot(v3, v3) +...
+                  J4*dot(omg4, omg4) + m4*dot(v4, v4) +...
+                                     + m5*dot(v5, v5) )/dot(omg1, omg1);
+    end
+    
+    rs = [rAs(:,1), rBs(:,1), rCs(:,1), rDs(:,1),...
+        rAs(:,2), rBs(:,2), rCs(:,2), rDs(:,2)];
+    vs = [vAs(:,1), vBs(:,1), vCs(:,1), vDs(:,1),...
+        vAs(:,2), vBs(:,2), vCs(:,2), vDs(:,2)];
+    as = [aAs(:,1), aBs(:,1), aCs(:,1), aDs(:,1),...
+        aAs(:,2), aBs(:,2), aCs(:,2), aDs(:,2)];
+    
+    writematrix(CD, './outputs/CD.txt');
+    writematrix(rs, './outputs/lib_pos.txt');
+    writematrix(vs, './outputs/lib_vel.txt');
+    writematrix(as, './outputs/lib_acc.txt');
+    writematrix([omg2s(:,3), omg4s(:,3)], './outputs/lib_ang_vel.txt');
+    writematrix([alp2s(:,3), alp4s(:,3)], './outputs/lib_ang_acc.txt');
     writematrix(Js, './outputs/lib_J.txt');
 end
-
-% ----- plot velocity + acceleration -----
-% figure, hold on, xlabel('\phi (deg)'), ylabel('velocity (mm/s)')
-% plot(phis, vBs, 'b')
-% plot(phis, vDs, 'r'), legend('|v_B|', '|v_D|')
-% figure, hold on, xlabel('\phi (deg)'), ylabel('acceleration (mm/s^2)')
-% plot(phis, aBs, 'b')
-% plot(phis, aDs, 'r'), legend('|a_B|', '|a_D|')
-
-% % -----  find minimum CD ------
-% rA_T = OA*exp(1i*xOB);
-% [~,~,~,OB] = CPA2(xOB, AB, rA_T);
-% rB_T = OB*exp(1i*xOB);
-% rD_T = -real(rB_T) + 1i*imag(rB_T);
-% CD = min(abs(rD_T-rCs)); % the script gives CD = 94.8311
-% 
-% % ----- find HD -----
-% HD = max(abs(rDs)) - min(abs(rDs)); % the script gives HD = 39.0074

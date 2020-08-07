@@ -1,23 +1,23 @@
-params = readtable('parameters.txt'); disp(params)
-alpha = deg2rad(params{1,1});     xOB = pi/2 - alpha/2;
-beta  = deg2rad(params{1,2});     xOD = pi/2 + alpha/2; 
+params = readtable('parameters.txt');
+disp(params)
+alpha = deg2rad(params{1,1});
+beta = deg2rad(params{1,2});
 n1 = params{1,3}; omg1 = convangvel(n1, 'rpm', 'rad/s');
 HB = params{1,4}*1e-3;      OA = HB/2;      AC = OA;
 AB = params{1,5}*1e-3;      BC = sqrt(AC^2+AB^2-2*AC*AB*cos(beta));
-CD = params{1,6}*1e-3;
-g  = params{1,12};
-m1 = params{1,7};   Q1 = -1j*m1*g;      J1 = params{1,13};
-m2 = params{1,8};   Q2 = -1j*m2*g;      J2 = params{1,14};
-m3 = params{1,9};   Q3 = -1j*m3*g;      J3 = params{1,15};
-m4 = params{1,10};  Q4 = -1j*m4*g;      J4 = params{1,16};
-m5 = params{1,11};  Q5 = -1j*m5*g;      J5 = params{1,17};
-delta = params{1,18};   muE = 1;    muJ = 1;
-d_piston = params{1,19}*1e-3;   A_piston = d_piston^2*pi/4;
+delta = params{1,17};   muE = 1;    muJ = 1;
+A_piston = params{1,18}*1e-6;
 
-iter = 20000;
+formulate(omg1, alpha, OA, AC, AB, BC, params{1,7});
+
+iter = 2000;
 J = pvaJ(linspace(0,2*pi,iter));
+
+%%
 % For FB, Ad
-sP_B = readtable('./outputs/sP_B.csv'); sB = sP_B{:,1}*1e-3; PB = sP_B{:,2};
+sP_B = readtable('./outputs/sP_B.csv');
+sB = sP_B{:,1}*1e-3;
+PB = sP_B{:,2};
 phi1 = radk2pi(phi1wrtPB(sB));
 Md = Mdwrtphi(phi1, PB);
 FB = PB*A_piston;
@@ -39,7 +39,9 @@ FB_phi = [phi, FB];
 phi_Js = [linspace(0,4*pi,iter*2)', [J;J]];
 
 % Find Ac
-sP_D = readtable('./outputs/sP_D.csv'); sD = sP_D{:,1}/1000; PD = sP_D{:,2};
+sP_D = readtable('./outputs/sP_D.csv');
+sD = sP_D{:,1}*1e-3;
+PD = sP_D{:,2};
 phi2 = radk2pi(phi1wrtPD(sD));
 Mc = Mcwrtphi(phi2, PD);
 rad2_2T = [phi2; phi2+2*pi; phi2+4*pi; phi2+6*pi];
@@ -75,33 +77,34 @@ pointA=E-tan(psi_max)*J;
 pointB=E-tan(psi_min)*J;
 a=max(pointA);
 b=min(pointB);
-x_td = linspace(-0.1,0.15,26);
+x_td = linspace(-0.1,0.15,10);
 ytmax=tan(psi_max)*x_td+a;
 ytmin=tan(psi_min)*x_td+b;
-Jd=muJ*(a-b/3)/(tan(psi_max)-tan(psi_min))+phi_Js(1,2);
+Jd=muJ*(a-b)/(tan(psi_max)-tan(psi_min))+phi_Js(1,2);
 
 %% Plotting diagrams
 
-% % FOR PB_s and PD_s
-% plot(sB,P_B);
-% plot(sD,PofD);
-% 
+% FOR PB_s and PD_s
+plot(sB,PB);
+plot(sD,PD);
+%% 
 % % FOR FB and FD
-% plot(phi_unique,FB_unique);
-% plot(phi_unique,FD_unique);
-% 
-% % FOR MOMENT DONG, MOMENT CAN
+hold on
+plot(phi,FB,'r-');
+plot(phi,FD,'k-');
+legend
+%% 
+% FOR MOMENT DONG, MOMENT CAN
 % plot(phi,Md);
-% plot(phi,Mc);
-% 
-% % FOR CONG DONG, CONG CAN
-% plot(phi_Ad(:,1),phi_Ad(:,2),'b',phi_Ac(:,1),phi_Ac(:,2),'r');
-% 
-% % FOR E-J and flywheel
-% plot(phi,E,'k');
+plot(phi,Mc);
+%% 
+% FOR CONG DONG, CONG CAN
+plot(phi_Ad(:,1),phi_Ad(:,2),'b',phi_Ac(:,1),phi_Ac(:,2),'r');
+%% 
+% FOR E-J and flywheel
+plot(phi,E,'k');
+%%
 grid on, hold on
 plot(J,E,'k');
-plot(x_td,ytmax,'r',x_td,ytmin,'r');
-
-%% Clear some unecessary data
-clear params sP_B sP_D phi_u phi_Js_u index iter
+plot(x_td,ytmax,'r',x_td,ytmin,'r')
+xlim([min(J)*0.9,max(J)*1.1]), ylim([min(E)*0.9,max(E)*1.05])
