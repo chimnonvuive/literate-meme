@@ -8,9 +8,9 @@ AB = params{1,5}*1e-3;      BC = sqrt(AC^2+AB^2-2*AC*AB*cos(beta));
 delta = params{1,17};   muE = 1;    muJ = 1;
 A_piston = params{1,18}*1e-6;
 
-formulate(alpha, OA, AC, AB, BC);
+formulate(omg1, alpha, OA, AC, AB, BC, params{1,7});
 
-iter = 5000;
+iter = 2000;
 J = pvaJ(linspace(0,2*pi,iter));
 
 %%
@@ -80,28 +80,31 @@ b=min(pointB);
 x_td = linspace(-0.1,0.15,10);
 ytmax=tan(psi_max)*x_td+a;
 ytmin=tan(psi_min)*x_td+b;
-Jd=muJ*(a-b/3)/(tan(psi_max)-tan(psi_min))+phi_Js(1,2);
+Jd=muJ*(a-b)/(tan(psi_max)-tan(psi_min))+phi_Js(1,2);
 
 %% Plotting diagrams
 
-% % FOR PB_s and PD_s
-% plot(sB,P_B);
-% plot(sD,PofD);
-% 
+% FOR PB_s and PD_s
+plot(sB,PB);
+plot(sD,PD);
+%% 
 % % FOR FB and FD
-% plot(phi_unique,FB_unique);
-% plot(phi_unique,FD_unique);
-% 
-% % FOR MOMENT DONG, MOMENT CAN
+hold on
+plot(phi,FB,'r-');
+plot(phi,FD,'k-');
+legend
+%% 
+% FOR MOMENT DONG, MOMENT CAN
 % plot(phi,Md);
-% plot(phi,Mc);
-% 
-% % FOR CONG DONG, CONG CAN
-% plot(phi_Ad(:,1),phi_Ad(:,2),'b',phi_Ac(:,1),phi_Ac(:,2),'r');
-% 
-% % FOR E-J and flywheel
-% plot(phi,E,'k');
-
+plot(phi,Mc);
+%% 
+% FOR CONG DONG, CONG CAN
+plot(phi_Ad(:,1),phi_Ad(:,2),'b',phi_Ac(:,1),phi_Ac(:,2),'r');
+%% 
+% FOR E-J and flywheel
+plot(phi,E,'k');
+%%
 grid on, hold on
 plot(J,E,'k');
 plot(x_td,ytmax,'r',x_td,ytmin,'r')
+xlim([min(J)*0.9,max(J)*1.1]), ylim([min(E)*0.9,max(E)*1.05])

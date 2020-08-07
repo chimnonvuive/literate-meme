@@ -3,6 +3,8 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
     params = readtable('parameters');
     load('./outputs/functions.mat');
     
+    n1 = params{1,3}; omg1 = convangvel(n1, 'rpm', 'rad/s');
+    omg1 = [0, 0, omg1];
     HB = params{1,4}*1e-3;      OA = HB/2;      AC = OA;
     AB = params{1,5}*1e-3;
 
@@ -20,7 +22,9 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
     rBs  = zeros(iter, 3); vBs  = zeros(iter, 3); aBs  = zeros(iter, 3);
     rCs  = zeros(iter, 3); vCs  = zeros(iter, 3); aCs  = zeros(iter, 3);
     rDs  = zeros(iter, 3); vDs  = zeros(iter, 3); aDs  = zeros(iter, 3);
-
+    
+    omg2s = zeros(iter, 3);
+    omg4s = zeros(iter, 3);
     alp2s = zeros(iter, 3);
     alp4s = zeros(iter, 3);
     Js = zeros(iter,1);
@@ -55,32 +59,20 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
         aBs(i, :) = faB(phis(i));
         aCs(i, :) = faC(phis(i));
         aDs(i, :) = faD(phis(i), CD);
-
-        v1 = rAs(i, :)/2;
-        v3 = vBs(i, :);
-        v4 = (rCs(i, :) + rDs(i, :))/2;
-        v5 = vDs(i, :);
         
-        rAC = (rAs(i, :) + rCs(i, :))/2;
-        rAB = (rAs(i, :) + rBs(i, :))/2;
-        r2 = (mAC*rAC + mAB*rAB)/m2;
         vAC = (vAs(i, :) + vCs(i, :))/2;
         vAB = (vAs(i, :) + vBs(i, :))/2;
         v2 = (mAC*vAC + mAB*vAB)/m2;
-        aAC = (aAs(i, :) + aCs(i, :))/2;
-        aAB = (aAs(i, :) + aBs(i, :))/2;
-        a2 = (mAC*aAC + mAB*aAB)/m2;
-        
-        omg1 = omgmat(vAs(i, :)/2, rAs(i, :)/2);
-        omg2 = omgmat(v2, r2);
-        omg4 = omgmat((vCs(i, :) + vDs(i, :))/2,...
-                      (rCs(i, :) + rDs(i, :))/2);
+        v3 = vBs(i, :);
+        v4 = (rCs(i, :) + rDs(i, :))/2;
+        v5 = vDs(i, :);
+                
+        omg2s(i, :) = fomg2(phis(i)); omg2 = omg2s(i, :);
+        omg4s(i, :) = fomg4(phis(i), CD);
+        alp2s(i, :) = falp2(phis(i)); omg4 = omg4s(i, :);
+        alp4s(i, :) = falp4(phis(i), CD);
 
-        alp2s(i, :) = alpmat(a2, r2);
-        alp4s(i, :) = alpmat((aCs(i, :) + aDs(i, :))/2,...
-                             (rCs(i, :) + rDs(i, :))/2);
-
-         Js(i) = (J1*dot(omg1, omg1) + m1*dot(v1, v1) +...
+         Js(i) = (J1*dot(omg1, omg1) +                 ...
                   J2*dot(omg2, omg2) + m2*dot(v2, v2) +...
                                        m3*dot(v3, v3) +...
                   J4*dot(omg4, omg4) + m4*dot(v4, v4) +...
@@ -98,6 +90,7 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
     writematrix(rs, './outputs/lib_pos.txt');
     writematrix(vs, './outputs/lib_vel.txt');
     writematrix(as, './outputs/lib_acc.txt');
+    writematrix([omg2s(:,3), omg4s(:,3)], './outputs/lib_ang_vel.txt');
     writematrix([alp2s(:,3), alp4s(:,3)], './outputs/lib_ang_acc.txt');
     writematrix(Js, './outputs/lib_J.txt');
 end
