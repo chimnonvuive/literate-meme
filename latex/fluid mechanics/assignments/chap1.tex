@@ -1,0 +1,76 @@
+\chapter{Properties of Fluids}
+\subsubsection{Q1.1}
+A steel vessel of $ 1\% $ increase in volume when the pressure is increased by $ 70 \unit{MPa} $. At standard
+condition (pressure $ P = 101.3 \unit{KPa} $), the vessel is filled with $m= 450 \unit{kg} $ of water $ (\rho=1000\unit{kg/m^3}) $. Given bulk modulus of elasticity, $ \kappa= 2.06\times10^9 \unit{Pa} $. Compute the mass of water to add into the vessel to increase the pressure to $ 70\unit{MPa} $.
+\paragraph{Ans:}$ $\\
+$ V = \dfrac{m}{\rho} = \dfrac{450}{1000} = 0.45\unitp{m^3}$\\
+$ \kappa=-V\dfrac{dP}{dV} \Rightarrow dm = \rho dV = -\rho V\dfrac{dP}{\kappa} \\ \text{ \qquad}=-1000\times0.45\times\dfrac{101.3\times10^3-70\times10^6}{2.06\times10^9}=15.27\unitp{kg}$
+\subsubsection{Q1.2}
+Determine the change in volume of $ V_i=3\unit{m^3} $ of air when the pressure increases from $ P_i=100\unit{kPa} $ to $P_f= 500\unit{kPa} $. Air is at $ T=23\unit{^\circ C} $ (assume ideal gas)
+\paragraph{Ans:}$ $\\
+Assume isothermal condition: $ P_iV_i=P_fV_f $\\
+$ \Rightarrow \Delta V = V_f - V_i = \dfrac{P_iV_i}{P_f} - V_i =\dfrac{100\times3}{500} - 3 = -2.4\unitp{m^3}$
+\subsubsection{Q1.3}
+They compress the air into a vessel having volume, $ V_1 = 0.3 \unit{m^3} $ under pressure $ P_1 = 100 \unit{at} $. After a period of leakage, the air pressure in the vessel is lowered to $ P_2 = 90 \unit{at} $. Regardless of the deformation of the vessel, determine the volume of air that is leaked during that period (corresponding to the atmospheric pressure, $1 \unit{atm} $), if the constant temperature and atmospheric pressure are considered to be at $ 1\unit{at} $.
+\paragraph{Ans:}$ $\\
+For ideal gas, $ \kappa = P_2 = -V_1\dfrac{dP}{d_V} \\
+\Rightarrow dV = -\dfrac{V_1}{P_2}dP=-\dfrac{0.3}{90}(90-100-1)=-0.0367\unitp{m^3}$
+\subsubsection{Q1.4}
+A diameter piston $ d=50 \unit{mm} $ moves evenly in a  cylinder $ D=50.1 \unit{mm} $. Determine the decrease in force acting on the piston (as a percentage) when the speed decreases by $ 5\% $.
+\paragraph{Ans:}$ $\\
+Assume constant speed: $ \dfrac{\Delta V}{V_1} = -5\%$\\
+We also have $ \tau = \dfrac{F}{A} = \mu \dfrac{du}{dy} = \mu\dfrac{V}{l}\Rightarrow \dfrac{F_1}{V_1} = \dfrac{F_2}{V_2} = \mu \dfrac{A}{l}$\\
+From the relation: $ \dfrac{\Delta F}{F_1} = \dfrac{\Delta V}{V_1}=-5\%$
+\subsubsection{Q1.5}
+A machine axis having diameter, $ D = 75 \unit{mm} $, with uniform movement with $  V = 0.1 \unit{m/s} $ under the force, $ F = 100\unit{N} $. The lubricating layer thickness, $ l $ in the bearing is $ l=0.07 \unit{mm} $. Length of bearing $ L = 200 \unit{mm} $. Determine oil dynamic viscosity.
+\paragraph{Ans:}$ $\\
+$ A = (D+2l)\pi\times L = (75+2\times0.07)\pi\times200=47211.85\unitp{mm^3} =4.72\times10^{-5}\unitp{m^3}$\\
+$ \tau=\dfrac{F}{A}=\mu\dfrac{V}{l}\Rightarrow\mu=\dfrac{F}{A}\dfrac{l}{V}=\dfrac{100}{4.72\times10^{-5}}\times \dfrac{0.07\times10^{-3}}{0.1}=1.483\unitp{kg/m\cdot s}$
+
+\subsubsection{Q1.9}
+Determine the frictional force at the inner wall of a water supply pipe segment at $T= 20\unit{^\circ C} $, radius $ R = 80\unit{mm} = 0.08\unit{m}$, $L= 10 \unit{m} $. The velocity at the points on the pipe cross-section varies according
+to the following:
+\[u(r)=0.5\left(1-\dfrac{r^2}{R^2}\right)\]
+where $ r $ is the radius of considered point.
+\paragraph{Ans:}$ $\\
+From table at $T= 20\unit{^\circ C} \Rightarrow \mu = 1.002\times10^{-3}\unitp{kg/m\cdot s}$\\
+$ A = 2\pi R L = 2\pi\times 0.08\times 10 = 5.03\unitp{m^2}$\\
+$F = \tau A = \mu \dfrac{du}{dr} A = \mu \dfrac{(-2)R}{R^2} A \\=1.002\times10^{-3} \times \dfrac{(-2)\times0.08}{0.08^2}\times 5.03 = -0.126\unitp{N}$
+
+\subsubsection{Q1.10}
+Determine the gauge pressure inside a water drop of diameter $ d = 2\unit{mm}=0.002\unit{m}$. The temperature of water is $ T=25\unit{^\circ C} $.
+\paragraph{Ans:}$ $\\
+From table at $T= 25\unit{^\circ C} \Rightarrow \sigma_s = 0.072\unitp{N/m}$\\
+$ P_g= \Delta P_{droplet} = \dfrac{2\sigma_s}{d/2} = \dfrac{2\times0.072}{0.002/2}=144\unitp{Pa}$
+
+\subsubsection{Q1.11}
+A gas has a molar mass of $R= 32 \unit{kg/mol} $ under a pressure condition of $ P=5 \unit{at}=490332.5\unit{Pa} $, a temperature of $ T=30\unit{^\circ C} $
+\begin{enumerate}
+	\item Determine the gas density.
+	\item Determine the density of this gas if $ P = const $, while temperature drops to $ T_f=15\unit{^\circ C} $.
+	\item Determine the density of this gas if holding $ T = const $, while the pressure drops to $ P_f = 2 \unit{at} $.
+\end{enumerate}
+\paragraph{Ans:}$ $
+\begin{enumerate}
+	\item $ P=\rho R T\Rightarrow\rho = \dfrac{P}{RT}=\dfrac{32}{490332.5\times(30+273)} = 0.215\times10^{-6}\unitp{kg/m^3} $
+	\item adiabatic condition\\ $  \rho T = \rho_f T_f \Rightarrow \rho_f = \dfrac{\rho T}{T_f} = \dfrac{0.215\times10^{-6}\times(30+273)}{15+273}=0.226\times10^{-6}\unitp{kg/m^3}$
+	\item isothermal condition\\ $  \dfrac{P}{\rho}=\dfrac{P_f}{\rho_f}\Rightarrow\rho_f = \dfrac{\rho P_f}{P} = \dfrac{0.215\times10^{-6}\times2}{5}=0.086\times10^{-6}\unitp{kg/m^3}$ 
+\end{enumerate}
+\subsubsection{Q1.12}
+A liquid is compressed in a cylinder, the water initially has a volume of $ V_o=4\unit{l} $ at normal pressure, $ P_o=1\unit{at}=98066.5\unit{Pa} $. The pressure in the cylinder increases to $ p_1=6\unit{at} $, the water volume decreases by $ 1\unit{cm^3} $.
+\begin{enumerate}
+	\item Compute the bulk modulus of elasticity of water.
+	\item If the pressure in the cylinder increases to $ 20\unit{at} $, calculate the volume of water $ V_f $ in the cylinder.
+	\item Calculate the pressure in the cylinder, if the volume of the water is reduced by $ 0.1\% $.
+\end{enumerate}
+\paragraph{Ans:}$ $
+\begin{enumerate}
+	\item $ \kappa = -V_o\dfrac{dP}{dV} = -4\times10^{-3}\times\dfrac{6\times98066.5}{(-1)\times10^{-6}}= 2.36\times10^9\unitp{Pa}$
+	\item Cylinder increase pressure to $ 20\unit{at}\\ \Rightarrow dV = V_f - 4\times10^{-3}=\dfrac{-20}{6}=-3.33\unitp{cm^3}=-3.33\times10^{-3}\unitp{l}\\
+	\Rightarrow V_f = 3.997\unitp{l}$
+	\item $ dP =P_f-P_o= -\kappa\times\dfrac{dV}{V_o} = -2.36\times10^9\times\dfrac{(-0.1)}{100}=2.36\times10^6\unitp{Pa}\\
+	\Rightarrow P_f = 2.458\unitp{MPa}$
+\end{enumerate}
+\subsubsection{Q1.13}
+The air moving through a narrow tube into a water tank forms a stream of bubbles $ d=3\unit{mm} $ in diameter. Calculate the difference between air pressure in the narrowed section and surrounding water pressure. Give the surface tension of water $ \sigma_s = 0.0728\unit{N/m} $.
+\paragraph{Ans:}$ $
