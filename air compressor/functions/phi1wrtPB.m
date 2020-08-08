@@ -1,11 +1,8 @@
-function [phi1] = phi1wrtPB(sB)
+function [phi1] = phi1wrtPB(sB, OA, AB, alpha)
     
-    params = readtable('parameters');
     rs = readtable('outputs/lib_pos.txt');
     
-    alpha = params{1,1}*pi/180;     xOB = pi/2 - alpha/2;
-    HB = params{1,4}*1e-3;      OA = HB/2;
-    AB = params{1,5}*1e-3;
+    xOB = pi/2 - alpha/2;
 
     mid_sB = fix(length(sB)/2);
     a = sB(1:mid_sB); b = sB(mid_sB+1:end);

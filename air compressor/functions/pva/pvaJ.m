@@ -5,17 +5,13 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
     
     n1 = params{1,3}; omg1 = convangvel(n1, 'rpm', 'rad/s');
     omg1 = [0, 0, omg1];
-    HB = params{1,4}*1e-3;      OA = HB/2;      AC = OA;
-    AB = params{1,5}*1e-3;
+    HB = params{1,4}*1e-3;      OA = HB/2;
 
     m1 = params{1,6};         J1 = params{1,12};
     m2 = params{1,7};         J2 = params{1,13};
     m3 = params{1,8};         J3 = params{1,14};
     m4 = params{1,9};         J4 = params{1,15};
     m5 = params{1,10};        J5 = params{1,16};
-    
-    mAC = AC/(AB+AC)*m2;
-    mAB = AB/(AB+AC)*m2;
     
     iter = length(phis);
     rAs  = zeros(iter, 3); vAs  = zeros(iter, 3); aAs  = zeros(iter, 3);
@@ -60,9 +56,7 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
         aCs(i, :) = faC(phis(i));
         aDs(i, :) = faD(phis(i), CD);
         
-        vAC = (vAs(i, :) + vCs(i, :))/2;
-        vAB = (vAs(i, :) + vBs(i, :))/2;
-        v2 = (mAC*vAC + mAB*vAB)/m2;
+        v2 = (vAs(i, :) + vBs(i, :))/2;
         v3 = vBs(i, :);
         v4 = (rCs(i, :) + rDs(i, :))/2;
         v5 = vDs(i, :);
@@ -86,7 +80,7 @@ function [Js, rAs, rBs, rCs, rDs] = pvaJ(phis)
     as = [aAs(:,1), aBs(:,1), aCs(:,1), aDs(:,1),...
         aAs(:,2), aBs(:,2), aCs(:,2), aDs(:,2)];
     
-    writematrix(CD, './outputs/CD.txt');
+    writetable(table(CD, 'VariableNames', {'CD'}), './outputs/length_cd.txt');
     writematrix(rs, './outputs/lib_pos.txt');
     writematrix(vs, './outputs/lib_vel.txt');
     writematrix(as, './outputs/lib_acc.txt');
