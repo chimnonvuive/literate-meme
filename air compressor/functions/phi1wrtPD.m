@@ -1,9 +1,6 @@
-function [phi1] = phi1wrtPD(sD)
+function [phi1] = phi1wrtPD(sD, OA, AB, alpha)
 
-    params = readtable('parameters');
-    alpha = params{1,1}*pi/180;     xOD = pi/2 + alpha/2; 
-    HB = params{1,4}*1e-3;      OA = HB/2;
-    AB = params{1,5}*1e-3;
+    xOD = pi/2 + alpha/2; 
 
     crest = find(sD == max(sD),1,'first');
 
@@ -12,39 +9,6 @@ function [phi1] = phi1wrtPD(sD)
     rBs = rs{:,2} + rs{:,6}*1j;
     rCs = rs{:,3} + rs{:,7}*1j;
     rDs = rs{:,4} + rs{:,8}*1j;
-
-%     vs = readtable('outputs/lib_vel.txt');
-%     vAs = vs{:,1} + vs{:,5}*1j;
-%     vBs = vs{:,2} + vs{:,6}*1j;
-%     vCs = vs{:,3} + vs{:,7}*1j;
-%     vDs = vs{:,4} + vs{:,8}*1j;
-% 
-%     as = readtable('outputs/lib_acc.txt');
-%     aAs = as{:,1} + as{:,5}*1j;
-%     aBs = as{:,2} + as{:,6}*1j;
-%     aCs = as{:,3} + as{:,7}*1j;
-%     aDs = as{:,4} + as{:,8}*1j;
-% 
-%     alps = readtable('outputs/lib_ang_acc.txt');
-%     alp2s = alps{:,1}; alp4s = alps{:,2};
-
-
-    % rA rotates from 135 deg to -45 deg
-%     rA1 = [rAs(17501:20000);rAs(1:7500)]/1e3;
-%     rB1 = [rBs(17501:20000);rBs(1:7500)]/1e3;
-%     rC1 = [rCs(17501:20000);rCs(1:7500)]/1e3;
-%     rD1 = [rDs(17501:20000);rDs(1:7500)]/1e3;
-%     
-%     rA1 = [rAs(12501:20000);rAs(1:2500)]/1e3;
-%     rB1 = [rBs(12501:20000);rBs(1:2500)]/1e3;
-%     rC1 = [rCs(12501:20000);rCs(1:2500)]/1e3;
-%     rD1 = [rDs(12501:20000);rDs(1:2500)]/1e3;
-% 
-%     % rA rotates from -45 deg to 135 deg
-%     rA2 = rAs(2501:12500)/1e3;
-%     rB2 = rBs(2501:12500)/1e3;
-%     rC2 = rCs(2501:12500)/1e3;
-%     rD2 = rDs(2501:12500)/1e3;
     
     len_rs = length(rAs);
     dp1 = fix(xOD*len_rs/2/pi);

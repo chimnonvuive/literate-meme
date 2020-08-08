@@ -1,19 +1,16 @@
-function formulate(omg1, alpha, OA, AC, AB, BC, m2)
+function formulate(omg1, alpha, OA, AC, AB, BC)
 
     syms x y phi(t) t CD theta
     
     xOB = pi/2 - alpha/2;
     xOD = pi/2 + alpha/2;
     
-    mAC = AC/(AB+AC)*m2;
-    mAB = AB/(AB+AC)*m2;
-    
     old = {diff(phi, t, 2), diff(phi), phi};
     new = {0, omg1, theta};
     
     rA = OA*[cos(phi(t)), sin(phi(t)), 0];
-    vA = diff(rA);
-    aA = diff(vA);
+    vA = diff(rA, t);
+    aA = diff(vA, t);
     fpA = matlabFunction(subs(rA, old, new));
     fvA = matlabFunction(subs(vA, old, new));
     faA = matlabFunction(subs(aA, old, new));
@@ -23,8 +20,8 @@ function formulate(omg1, alpha, OA, AC, AB, BC, m2)
     eq2 = y/x == tan(xOB);
     sol = solve([eq1, eq2], [x, y]);
     rB = simplify(subs(rB, [x, y], [sol.x(2), sol.y(2)]));
-    vB = diff(rB);
-    aB = diff(vB);
+    vB = diff(rB, t);
+    aB = diff(vB, t);
     fpB = matlabFunction(subs(rB, old, new));
     fvB = matlabFunction(subs(vB, old, new));
     faB = matlabFunction(subs(aB, old, new));
@@ -34,8 +31,8 @@ function formulate(omg1, alpha, OA, AC, AB, BC, m2)
     eq2 = (rB(1)-rC(1))^2 + (rB(2)-rC(2))^2 == BC^2;
     sol = solve([eq1, eq2], [x, y]);
     rC = simplify(subs(rC, [x, y], [sol.x(2), sol.y(2)]));
-    vC = diff(rC);
-    aC = diff(vC);
+    vC = diff(rC, t);
+    aC = diff(vC, t);
     fpC = matlabFunction(subs(rC, old, new));
     fvC = matlabFunction(subs(vC, old, new));
     faC = matlabFunction(subs(aC, old, new));
@@ -51,20 +48,22 @@ function formulate(omg1, alpha, OA, AC, AB, BC, m2)
     fvD = matlabFunction(subs(vD, old, new), 'Vars', [theta, CD]);
     faD = matlabFunction(subs(aD, old, new), 'Vars', [theta, CD]);
     
-    rAC = simplify(rA-rC); rAB = simplify(rA-rB);
-    p2 = (mAC*rAC + mAB*rAB)/m2;
-    phi2 = simplify(atan((p2(2)-rA(2))/(p2(1)-rA(1))));
-    omg2 = diff(phi2);
-    alp2 = diff(omg2);
+    omg2 = [0, 0, x];
+    eq = vB == cross(omg2, rB-rA) + vA;
+    sol = solve(eq, x);
+    omg2 = subs(omg2, x, sol);
+    alp2 = diff(omg2, t);
     fomg2 = matlabFunction(subs(omg2, old, new));
     falp2 = matlabFunction(subs(alp2, old, new));
-    p4 = (rC+rD)/2;
-    phi4 = simplify(atan((p4(2)-rC(2))/(p4(1)-rC(1))));
-    omg4 = diff(phi4, t);
+    
+    omg4 = [0, 0, x];
+    eq = vD == cross(omg4, rD-rC) + vC;
+    sol = solve(eq, x);
+    omg4 = subs(omg4, x, sol);
     alp4 = diff(omg4, t);
     fomg4 = matlabFunction(subs(omg4, old, new), 'Vars', [theta, CD]);
     falp4 = matlabFunction(subs(alp4, old, new), 'Vars', [theta, CD]);
-    
+        
     save('./outputs/functions.mat', 'fpA', 'fpB', 'fpC', 'fpD',...
         'fvA', 'fvB', 'fvC', 'fvD', 'faA', 'faB', 'faC', 'faD',...
         'fomg2', 'fomg4', 'falp2', 'falp4');
