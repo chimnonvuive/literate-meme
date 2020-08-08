@@ -34,8 +34,8 @@
 \contentsline {subsection}{\numberline {4.4.2}Calculating $ V $}{23}%
 \contentsline {subsection}{\numberline {4.4.3}Measured results and process}{25}%
 \contentsline {subsection}{\numberline {4.4.4}Calculate the external force}{25}%
-\contentsline {section}{\numberline {4.5}Discussion and conclusions}{27}%
-\contentsline {section}{\numberline {4.6}Review questions}{28}%
+\contentsline {section}{\numberline {4.5}Discussion and conclusions}{26}%
+\contentsline {section}{\numberline {4.6}Review questions}{27}%
 \contentsline {chapter}{\numberline {5}Applying Computer Software in Calculating Machine Elements}{30}%
 \contentsline {section}{\numberline {5.1}Aim}{30}%
 \contentsline {section}{\numberline {5.2}Technical rules on safety}{30}%

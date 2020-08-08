@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.22)  23 JUL 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  8 AUG 2020 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,9 +312,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 108.
+(babel)             (\language69) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
@@ -749,8 +749,14 @@ s
 \f@nch@O@erf=\skip74
 \f@nch@O@olf=\skip75
 \f@nch@O@orf=\skip76
-))
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+)
+(/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen176
+\PaperHeight=\dimen177
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count289
 \l__pdf_internal_box=\box59
@@ -811,13 +817,13 @@ LaTeX Font Info:    ... okay on input line 3.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count290
-\scratchdimen=\dimen176
+\scratchdimen=\dimen178
 \scratchbox=\box60
 \nofMPsegments=\count291
 \nofMParguments=\count292
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count293
-\MPscratchDim=\dimen177
+\MPscratchDim=\dimen179
 \MPnumerator=\count294
 \makeMPintoPDFobject=\count295
 \everyMPtoPDFconversion=\toks34
@@ -843,23 +849,23 @@ e
 * modes: 
 * h-part:(L,W,R)=(68.28644pt, 460.935pt, 68.28644pt)
 * v-part:(T,H,B)=(68.28644pt, 708.47397pt, 68.28644pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=460.935pt
-* \textheight=708.47397pt
-* \oddsidemargin=-3.98355pt
-* \evensidemargin=-3.98355pt
-* \topmargin=-42.98355pt
-* \headheight=14.0pt
-* \headsep=25.0pt
+* \paperwidth=598.14806pt
+* \paperheight=845.90042pt
+* \textwidth=484.33705pt
+* \textheight=589.82567pt
+* \oddsidemargin=71.13188pt
+* \evensidemargin=42.67912pt
+* \topmargin=56.9055pt
+* \headheight=56.9055pt
+* \headsep=42.67912pt
 * \topskip=14.0pt
-* \footskip=30.0pt
+* \footskip=42.67912pt
 * \marginparwidth=15.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
+* \hoffset=-72.26999pt
+* \voffset=-72.26999pt
 * \mag=1000
 * \@twocolumnfalse
 * \@twosidefalse
@@ -888,7 +894,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 17.28pt on input line 17.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>] [2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 35.83pt on input line 35.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
@@ -941,14 +947,8 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 \tf@toc=\write3
 \openout3 = `lab_report.toc'.
 
-
-
-Package Fancyhdr Warning: \headheight is too small (14.0pt): 
-Make it at least 17.0pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[2] (./lab_report.lot)
+ [2]
+(./lab_report.lot)
 \tf@lot=\write4
 \openout4 = `lab_report.lot'.
 
@@ -974,16 +974,17 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 4.
 
-Overfull \hbox (24.9902pt too wide) in paragraph at lines 4--5
+Overfull \hbox (1.58815pt too wide) in paragraph at lines 4--5
 []\T1/ntxtlf/m/n/14.4 Understand the prin-ci-ple of Brinell, Rock-well and Vick
 er hard-ness mea-sure-ment
  []
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 10.
 [5
 
-] [6] [7] [8]
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 10.
+ [6] [7]
 <2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png, id=39, 
 1257.69875pt x 801.99625pt>
 File: 2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png Gra
@@ -992,7 +993,9 @@ phic file (type png)
 Package pdftex.def Info: 2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4
 d3397925039.png  used on input line 26.
 (pdftex.def)             Requested size: 426.79134pt x 272.1489pt.
-<109267072_710156266492754_8636426261719016576_n.png, id=40, 374.39874pt x 281.
+ [8] [9 <./2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.pn
+g>]
+<109267072_710156266492754_8636426261719016576_n.png, id=46, 374.39874pt x 281.
 05pt>
 File: 109267072_710156266492754_8636426261719016576_n.png Graphic file (type pn
 g)
@@ -1002,7 +1005,7 @@ sed on input line 33.
 (pdftex.def)             Requested size: 426.79134pt x 320.39603pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 14.4pt on input line 56.
-<2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png, id=41, 
+<2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png, id=47, 
 1142.2675pt x 185.69376pt>
 File: 2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png Gra
 phic file (type png)
@@ -1010,81 +1013,73 @@ phic file (type png)
 Package pdftex.def Info: 2020-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm c
 ba70144e432.png  used on input line 59.
 (pdftex.def)             Requested size: 426.79134pt x 69.37997pt.
- [9
+ [10
 
- <./2020-07-19 14.04.25 oemmndcbldboiebfnladdacbdfmadadm 4d3397925039.png>] [10
- <./109267072_710156266492754_8636426261719016576_n.png (PNG copy)> <./2020-07-
-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png>] [11]) (./chap2.
-tex [12]
+ <./109267072_710156266492754_8636426261719016576_n.png (PNG copy)>] [11 <./202
+0-07-19 14.08.38 oemmndcbldboiebfnladdacbdfmadadm cba70144e432.png>] [12]) (./c
+hap2.tex [13]
 Chapter 2.
-[13
 
-]
-Overfull \hbox (14.40636pt too wide) in paragraph at lines 16--17
-[]\T1/ntxtlf/b/n/14.4 Etching: \T1/ntxtlf/m/n/14.4 Mi-cro-scopic ex-am-i-na-tio
-n of a prop-erly pol-ished, un-etched spec-i-men
+Overfull \hbox (19.40065pt too wide) in paragraph at lines 5--6
+[]\T1/ntxtlf/m/n/14.4 To un-der-stand what mi-croscopy is, and how it can be us
+ed to ob-serve Mi-crostruc-ture
  []
 
+[14
 
-Overfull \hbox (33.4142pt too wide) in paragraph at lines 21--22
+] [15]
+Overfull \hbox (10.01215pt too wide) in paragraph at lines 21--22
 []\T1/ntxtlf/m/n/14.4 Coarse grind-ing: Use sand pa-per from small to big num-b
 er (80,100,150,180,400). 
  []
 
-[14]
-<1852158-1852269.png, id=66, 1371.1225pt x 770.88pt>
+<1852158-1852269.png, id=72, 1371.1225pt x 770.88pt>
 File: 1852158-1852269.png Graphic file (type png)
 <use 1852158-1852269.png>
 Package pdftex.def Info: 1852158-1852269.png  used on input line 31.
 (pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
-<1852158-1852269-2.png, id=67, 1371.1225pt x 770.88pt>
+<1852158-1852269-2.png, id=73, 1371.1225pt x 770.88pt>
 File: 1852158-1852269-2.png Graphic file (type png)
 <use 1852158-1852269-2.png>
 Package pdftex.def Info: 1852158-1852269-2.png  used on input line 36.
 (pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
- [15 <./1852158-1852269.png>]
-Overfull \hbox (17.21425pt too wide) in paragraph at lines 49--50
-[]\T1/ntxtlf/m/n/14.4 After im-preg-na-tion, the sur-face be-comes blur be-caus
-e of porous at mi-cro-scopic
- []
-
-[16 <./1852158-1852269-2.png>]) (./chap3.tex [17]
+[16] [17 <./1852158-1852269.png>] [18 <./1852158-1852269-2.png>]) (./chap3.tex
+[19]
 Chapter 3.
-[18
+[20
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.5pt on input line 11.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.9pt on input line 11.
- [19] [20
+ [21]
+Overfull \hbox (96.81563pt too wide) in paragraph at lines 25--34
+[][] 
+ []
+
+[22
 
 
 ]
-<Hardness.png, id=89, 433.62pt x 289.08pt>
+<Hardness.png, id=98, 433.62pt x 289.08pt>
 File: Hardness.png Graphic file (type png)
 <use Hardness.png>
 Package pdftex.def Info: Hardness.png  used on input line 42.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
-<Hardness2.png, id=90, 505.89pt x 361.35pt>
+<Hardness2.png, id=99, 505.89pt x 361.35pt>
 File: Hardness2.png Graphic file (type png)
 <use Hardness2.png>
 Package pdftex.def Info: Hardness2.png  used on input line 47.
 (pdftex.def)             Requested size: 426.79134pt x 304.85522pt.
+ [23
 
-Overfull \hbox (1.90683pt too wide) in paragraph at lines 53--54
-\T1/ntxtlf/m/n/14.4 The hard-ness of the sam-ple in-creases grad-u-ally as it c
-ools in the en-vi-ron-ment
- []
-
-[21
-
- <./Hardness.png>]) [22 <./Hardness2.png>] (./lab_report.aux) ) 
+ <./Hardness.png>]) [24 <./Hardness2.png>] (./lab_report.aux) ) 
 Here is how much of TeX's memory you used:
- 8434 strings out of 481239
- 112018 string characters out of 5920377
- 363941 words of memory out of 5000000
- 23450 multiletter control sequences out of 15000+600000
+ 8508 strings out of 481239
+ 112898 string characters out of 5920377
+ 365773 words of memory out of 5000000
+ 23520 multiletter control sequences out of 15000+600000
  600234 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,74p,965b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1098,10 +1093,10 @@ e1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on lab_report.pdf (23 pages, 3167971 bytes).
+Output written on lab_report.pdf (26 pages, 3168585 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

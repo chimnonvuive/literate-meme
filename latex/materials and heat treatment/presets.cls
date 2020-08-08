@@ -26,8 +26,8 @@
 \graphicspath{{images/}}
 \usepackage{parskip}
 \usepackage{fancyhdr}
-%\usepackage{vmargin}
-%\setmarginsrb{3 cm}{2.4 cm}{3 cm}{2.4 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\usepackage{vmargin}
+\setmarginsrb{25mm}{20mm}{15mm}{20mm}{20mm}{1.5 cm}{1 cm}{1.5 cm}
 
 \title{Lab Report}
 \author{Nguyen Quy Khoi}

@@ -16,6 +16,7 @@
 \renewcommand{\baselinestretch}{1.5}
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\unitp}[1]{\ensuremath{\, (\mathrm{#1})}}
 \newcommand{\md}[1]{\multicolumn{1}{c}{#1}}
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
