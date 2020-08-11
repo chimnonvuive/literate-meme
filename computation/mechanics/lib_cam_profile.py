@@ -92,9 +92,15 @@ def RDFD(tn, hn, betan, curve, *args, rise=True):
         S = sp.lambdify(t, S)
     
     if rise is True:
-        return np.array([S(tn), V(tn), A(tn), J(tn)]) * u.dimensionless * h_unit
+        return S(tn) * u.dimensionless * h_unit,\
+            V(tn) * u.dimensionless * h_unit / u.rad,\
+                A(tn) * u.dimensionless * h_unit / u.rad**2,\
+                    J(tn) * u.dimensionless * h_unit / u.rad**3
     else:
-        return -np.array([S(tn)-hn, V(tn), A(tn), J(tn)]) * u.dimensionless * h_unit
+        return (hn-S(tn)) * u.dimensionless * h_unit,\
+            -V(tn) * u.dimensionless * h_unit / u.rad,\
+                -A(tn) * u.dimensionless * h_unit / u.rad**2,\
+                    -J(tn) * u.dimensionless * h_unit / u.rad**3
 
 def RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, rho_min, Rb, b, show=False, savefig=False):
     
@@ -155,7 +161,6 @@ def RadialCamTranslatingRoller(xs, ys, n, Rp, e, show=False, savefig=False):
         np.savetxt('cam_profile.txt',np.array([xn.magnitude, yn.magnitude,
                                    np.zeros(len(xn))]).T,delimiter='\t')
 
-
 def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     
     u = xs._REGISTRY
@@ -206,6 +211,8 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     print(r'Peak velocity: {0:.4f}'.format(max(abs(dys)).to_compact()))
     print(r'Peak acceleration: {0:.4f}'.format(max(abs(ddys)).to_compact()))
     print(r'Peak jerk: {0:.4f}'.format(max(abs(dddys)).to_compact()))
+    
+    np.savetxt('SVAJ.txt',np.array([xn, yn, dyn, ddyn, dddyn]).T,delimiter='\t')
     
     if savefig is True:
         plt.savefig('SVAJ.png',dpi=600)
