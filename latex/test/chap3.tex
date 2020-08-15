@@ -1,0 +1,270 @@
+\chapter{Gearbox Design (Helix gears)}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ [\sigma_H] $ & permissible contact stress, $ \unit{MPa} $\\
+	$ [\sigma_H]_{max} $ & permissible contact stress due to overload, $ \unit{MPa} $\\
+	$ [\sigma_F] $ & permissible bending stress, $ \unit{MPa} $\\
+	$ [\sigma_F]_{max} $ & permissible bending stress due to overload, $ \unit{MPa} $\\
+	$ \text{AG} $ & accuracy grade of gear\\
+	$ a $ & center distance, $ \unit{mm} $\\
+	$ b $ & face width, $ \unit{mm} $\\
+	$ c $ & gear meshing rate\\
+	$ d $ & pitch circle, $ \unit{mm} $\\
+	$ d_a $ & addendum diameter, $ \unit{mm} $\\
+	$ d_b $ & base diameter, $ \unit{mm} $\\
+	$ d_f $ & deddendum diameter, $ \unit{mm} $\\
+	$ F_a $ & axial force, $ \unit{N} $\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ F_r $ & radial force, $ \unit{N} $\\
+	$ F_t $ & tangential force, $ \unit{N} $\\
+	$ H $ & surface roughness, HB\\
+	$ K_d $ & coefficient of gear material\\	
+	$ K_F $ & load factor from bending stress\\
+	$ K_{FC} $ & load placement factor\\
+	$ K_{FL} $ & aging factor due to bending stress\\
+	$ K_{Fv} $ & factor of dynamic load from bending stress at meshing area\\
+	$ K_{F\alpha} $ & factor of load distribution from bending stress on gear teeth\\
+	$ K_{F\beta} $ & factor of load distribution from bending stress on top land\\
+	$ K_H $ & load factor of contact stress\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ K_{HL} $ & aging factor due to contact stress\\
+	$ K_{Hv} $ & factor of dynamic load from contact stress at meshing area\\
+	$ K_{H\alpha} $ & factor of load distribution from contact stress on gear teeth\\
+	$ K_{H\beta} $ & factor of load distribution from contact stress on top land\\
+	$ k_x $ & a coefficient\\
+	$ k_y $ & a coefficient\\
+	$ m $ & traverse module, $ \unit{mm} $\\
+	$ m_F $ & root of fatigue curve in bending stress test\\
+	$ m_H $ & root of fatigue curve in contact stress test\\
+	$ m_n $ & normal module, $ \unit{mm} $\\
+	$ N_{FE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_F] $\\
+	$ N_{FO} $ & working cycle of bearing stress corresponding to $ [\sigma_F] $\\
+	$ N_{HE} $ & working cycle of equivalent tensile stress corresponding to $ [\sigma_H] $\\
+	$ N_{HO} $ & working cycle of bearing stress corresponding to $ [\sigma_H] $\\
+	$ S $ & specific length, $ \unit{mm} $\\
+	$ S_F $ & safety factor of bending stress\\
+	$ S_H $ & safety factor of contact stress\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ T $ & input torque, $ \unit{N\cdot mm} $\\
+	$ v $ & rotational velocity, $ \unit{m/s} $\\
+	$ x $ & gear correction factor\\
+	$ Y_F $ & tooth shape factor\\
+	$ Y_R $ & surface roughness factor of the gear's face\\
+	$ Y_s $ & sensitivity to stress concentration factor\\
+	$ Y_\beta $ & helix angle factor\\
+	$ Y_\varepsilon $ & contact ratio factor\\
+	$ y $ & center displacement factor\\
+	$ Z_R $ & surface roughness factor of the working's area\\
+	$ Z_v $ & speed factor\\
+	$ z_H $ & contact surface's shape factor\\
+	$ z_M $ & material's mechanical properties factor \\
+	$ z_{min} $ & minimum number of teeth corresponding to $ \beta $\\
+	$ z_v $ & virtual number of teeth\\
+	$ z_\varepsilon $ & meshing condition factor\\
+	$ \alpha $ & normal pressure angle, following Vietnam standard (TCVN 1065-71), i.e. $ \alpha = 20^\circ $\\
+	$ \alpha_t $ & traverse pressure angle, $ ^\circ $\\
+	$ \varepsilon_\alpha $ & traverse contact ratio\\
+	$ \varepsilon_\beta $ & face contact ratio\\
+	$ \beta $ & helix angle, $ ^\circ $\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ \beta_b $ & base circle helix angle, $ ^\circ $\\
+	$ \psi_{ba} $ & width to shaft distance ratio\\
+	$ \psi_{bd} $ & face width factor \\
+	$ \sigma_b $ & ultimate strength, $ \unit{MPa} $\\
+	$ \sigma_{ch} $ & yield limit, $ \unit{MPa} $\\
+	$ \sigma_{Flim}^o $ & permissible bending stress corresponding to working cycle, $ \unit{MPa} $\\
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ \sigma_{Hlim}^o $ & permissible contact stress corresponding to working cycle, $ \unit{MPa} $\\
+	$ _1 $ & subscript for pinion\\
+	$ _2 $ & subscript for driven gear\\
+	$ _w $ & subscript for variable value after correction\\
+\end{tabular}
+
+\section{Choose material}
+From table (6.1) , the material of choice for both gears is steel 40X with $ S\leq100\unit{(mm)} $, $ \text{HB} 250 $, $ \sigma_b = 850\unit{(MPa)} $, $ \sigma_{ch} = 550 \unit{(MPa)}$.\\
+Table (6.2)  also gives $ \sigma_{Hlim}^o = 2\text{HB} + 70$, $ S_H = 1.1 $, $ \sigma_{Flim}^o = 1.8\text{HB} $, $ S_F = 1.75 $\\
+Therefore, they have the same properties except for their surface roughness $ H $. The reasoning is given on p.91, where $ H_2 = H_1 - 10 \div 15$ \\
+For the pinion, $ H_1=\text{HB}250 \Rightarrow \sigma_{Hlim1}^o = 570\unit{(MPa)}$, $ \sigma_{Flim1}^o = 450\unit{(MPa)}$\\
+For the driven gear, $ H_2=\text{HB}240 \Rightarrow \sigma_{Hlim2}^o = 550\unit{(MPa)}$, $ \sigma_{Flim2}^o = 432\unit{(MPa)}$
+
+\section{Calculate $ [\sigma_H] $ and $ [\sigma_F] $}
+
+\subsection{Working cycle of bearing stress}
+Using equation (6.5) :\\
+$ N_{HO1} = 30H_1^{2.4} = 17.07\times10^6\unit{(cycles)}$\\
+$ N_{HO2} = 30H_2^{2.4} = 15.4749\times10^6\unit{(cycles)}$
+
+\subsection{Working cycle of equivalent tensile stress}
+Since $ H_1,H_2\leq\text{HB}350 $, $ m_H=6 $, $ m_F=6 $.\\
+Both gears meshed indefinitely, thus $ c=1 $.\\
+From working condition, we calculate:\\
+$ L_h = 8\unit{\left( \dfrac{hours}{shift}\right)}\times2\unit{\left( \dfrac{shifts}{day}\right) }\times300\unit{\left( \dfrac{days}{year}\right)}\times4\unit{(years)}=19200\unit{(hours)}$\\
+Applying equation (6.7)  and $ T_1 $, $ T_2 $, $ t_1 $, $ t_2 $ in the initial parameters:\\
+$ N_{HE1} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] \approx 1.53\times10^9\unit{(cycles)}$\\
+$ N_{HE2} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] \approx 0.31\times10^9\unit{(cycles)}$\\
+$ N_{FE1} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] \approx 0.89\times10^9\unit{(cycles)}$\\
+$ N_{FE2} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] \approx 0.18\times10^9\unit{(cycles)}$
+
+\subsection{Aging factor}
+For steel, $ N_{FO1} = N_{FO2} = 4\times10^6\unit{(MPa)}$. Applying equations (6.3) and (6.4)  yield (if $ K_{HL}, K_{FL} < 1 $, $ K_{HL} = 1$ and $ K_{FL} = 1$ according to the properties given on p.94):\\
+$K_{HL1} = \sqrt[m_H]{N_{HO1}/N_{HE1}} \approx 0.47 < 1 \Rightarrow K_{HL1} = 1$\\
+$ K_{HL2} = \sqrt[m_H]{N_{HO2}/N_{HE2}} \approx 0.61 < 1 \Rightarrow K_{HL2} = 1$\\
+$ K_{FL1} = \sqrt[m_F]{N_{FO1}/N_{FE1}} \approx 0.41 < 1 \Rightarrow K_{FL1} = 1$\\
+$ K_{FL2} = \sqrt[m_F]{N_{FO2}/N_{FE2}} \approx 0.53 < 1 \Rightarrow K_{FL2} = 1$
+
+\subsection{Calculate $ [{\sigma}_H] $, $ [{\sigma}_{F1}] $, $ [{\sigma}_{F2}] $}
+Since the motor works in one direction, $ K_{FC} = 1$. In ideal conditions, we assume $ Z_RZ_VK_{xH} = 1 $ and $ Y_RY_sK_{xF} = 1 $ according to p.92:\\
+$ [{\sigma}_{H1}] = \sigma_{Hlim1}^oK_{HL1}/S_{H1} \approx 518.18 \unit{(MPa)}$\\
+$ [{\sigma}_{H2}] = \sigma_{Hlim2}^oK_{HL2}/S_{H2} \approx 500 \unit{(MPa)}$\\
+$ [{\sigma}_{F1}] = \sigma_{Flim1}^oK_{FC1}K_{FL1}/S_{F1} \approx 257.14\unit{(MPa)}$\\
+$ [{\sigma}_{F2}] = \sigma_{Flim2}^oK_{FC2}K_{FL2}/S_{F2} \approx 246.86 \unit{(MPa)}$\\
+The mean permissible contact stress must be lower than 1.25 times of either $ [{\sigma}_{H1}] $ or $ [{\sigma}_{H2}] $, whichever is smaller:\\
+$ [{\sigma}_H] = \dfrac{1}{2}\left( [{\sigma}_{H1}]+[{\sigma}_{H2}]\right)  \approx 509.09 \unit{(MPa)}\leq 1.25[{\sigma}_H]_{min} = 1.25[{\sigma}_{H2}]$\\
+The permissible contact stress and bending stress due to overload are calculated as follows:\\
+$ [{\sigma}_H]_{max} = 2.8\sigma_{ch} = 1540\unit{(MPa)} $\\
+$ [{\sigma}_F]_{max} = 0.8\sigma_{ch} = 440\unit{(MPa)} $
+
+\section{Transmission Design}
+
+\subsection{Determine basic parameters}
+Examine table (6.5)  gives $ K_a = 43 $\\
+Assuming symmetrical design, table (6.6)  also gives $ \psi_{ba} = 0.5$\\
+$ \Rightarrow \psi_{bd} = 0.53\psi_{ba}(u_{hg}+1) = 1.59$\\
+From table (6.7) , using interpolation, we approximate $ K_{H\beta} \approx 1.108 $, $ K_{F\beta} \approx 1.2558 $\\
+Since the gear system only consists of involute gears and it is also a speed reducer gearbox, we estimate $ a $ using equation (6.15a) gives:\\
+$ a = K_a(u_{hg}+1)\sqrt[3]{\dfrac{T_{sh1}K_{H\beta}}{[{\sigma}_H]^2u_{hg}\psi_{ba}}} \approx 113.7 \unit{(mm)}$\\
+According to SEV229-75 standard, we choose $ a_w = 125 \unit{mm}$
+
+\subsection{Determine gear meshing parameters}
+
+\paragraph{Find $ m $} Applying equation (6.17)  and choose $ m $ from table (6.8) :\\
+$ m = (0.01\div0.02)a_w = 1.25\div2.5 \unit{(mm)} \Rightarrow m=1.5\unit{(mm)}$
+
+\paragraph{Find $ z_1 $, $ z_2 $, $ b_w $} Let $ \beta = 14^\circ $. Combining equation (6.18) and (6.20), we come up with the formula to calculate $ z_1 $. From the result, $ z_1 $ is rounded up to the nearest odd number (preferably a prime number).\\
+$ z_1 = \dfrac{2a_w\cos\beta}{m(u_{hg}+1)} \approx 26.95 \Rightarrow z_1 = 27$\\
+$ z_2 = u_{hg}z_1 = 135 $\\
+$ \Rightarrow b = \psi_{ba}a_w = 62.5\unit{(mm)}$ 
+
+\paragraph{Correct $ \beta $} There are 2 approaches for correction involving the change of either $ \alpha $ or $ \beta $. Because altering $ \alpha $ leads to many other corrections ($ d_1 $, $ d_2 $ and $ a_w $), $ \beta $ will be used instead.\\
+Since $ z_1 $ is rounded, we must find $ \beta $ to obtain the correct angle, ensuring that $ \beta \in (8^\circ, 20^\circ) $. Using equation (6.32):\\
+$ \beta_w = \arccos\dfrac{m(z_1+z_2)}{2a_w} \approx 13.59^\circ$
+
+\paragraph{Find $ x_1 $, $ x_2 $} To find $ x_1 $ and $ x_2 $, we will follow the calculation scheme provided in p.103. Since $ \beta_w \approx 13.59^\circ \in (10,15]$, $ z_{min} = 11$, which leads to $ z_1 $ satisfying condition $ z_1 \geq z_{min} + 2 > 10 $, according to table (6.9). Combined with $ u_{hg} = 5 \geq 3.5 $, we obtain $ x_1 = 0.3 $, $ x_2 = -0.3 $, disregarding the calculation of $ y $.
+
+\subsection{Basic parameters}
+
+\begin{tabular}[t]{p{8cm}}
+	$ d_1 = d_{w1} = \dfrac{mz_1}{\cos\beta} \approx 41.67\unit{(mm)} $\\
+	$ d_2 = d_{w2} = \dfrac{mz_2}{\cos\beta} \approx 208.33 \unit{(mm)} $\\
+	$ d_{a1} = d_1 + 2(1+x_1)m \approx 45.57\unit{(mm)}$\\
+	$ d_{a2} = d_2 + 2(1+x_2)m \approx 210.43\unit{(mm)}$\\
+	$ d_{f1} = d_1 - (2.5-2x_1)m \approx 38.82\unit{(mm)}$\\
+	$ d_{f2} = d_2 - (2.5-2x_2)m \approx 203.68\unit{(mm)}$\\
+\end{tabular}
+\begin{tabular}[t]{p{8cm}}
+	$ d_{b1} = d_1\cos\alpha \approx 39.15\unit{(mm)}$\\
+	$ d_{b2} = d_2\cos\alpha \approx 195.77 \unit{(mm)}$\\
+	$ \alpha_t = \alpha_{tw} = \arctan\dfrac{\tan\alpha}{\cos\beta_w} \approx 20.53^\circ $\\
+	$ v = \dfrac{\pi d_1n_{sh1}}{6\times10^4} \approx 6.39\unit{(m/s)}$
+\end{tabular}
+
+\subsection{Find $ [{\sigma}_{Hw}] $, $ [\sigma_{Fw1}] $ and $ [\sigma_{Fw2}] $}
+In this section, we will try to approximate these parameters based on the factors $ Z_R$, $Z_V$, $K_{xH} $ and $ Y_R$, $Y_s$, $K_{xF} $ to substitute to equation (6.1) and (6.2):
+\[
+\begin{array}{l@{{} = {}}l}
+[\sigma_{Hw}] & [{\sigma}_H]Z_RZ_VK_{xH}\\
+
+[\sigma_{Fw}] & [{\sigma}_F]Y_RY_SK_{xF}\\
+\end{array}
+\]
+Assuming smooth surface condition, $ Z_R = 1 $.\\
+$ Z_V = 0.85v^{0.1} \approx 1.02$ with $ H\leq350 $.\\
+In case of $ v>5\unit{(m/s)} $, $ K_{xH} = 1$.\\
+The pair of gears are properly polished, which makes $ Y_R=1.1 $\\
+$ Y_s = 1.08-0.0695\ln(m) \approx 1.05 $\\
+Since $ d_{a1},d_{a2}\leq400\unit{(mm)} $, $ K_{xF}=1 $, which leads to:\\
+$ [{\sigma}_{Hw}] = 520.93\unit{(MPa)}$\\
+$ [{\sigma}_{Fw1}] = 297.51\unit{(MPa)}$\\
+$ [{\sigma}_{Fw2}] = 285.61\unit{(MPa)}$
+
+\subsection{Contact stress analysis}
+From section 6.3.3. in the text, contact stress applied on a gear surface must satisfy the condition below:
+\[
+\sigma_H = z_Mz_Hz_\varepsilon\sqrt{2T_{sh1}K_H\dfrac{u_{hg}+1}{bu_{hg}d_{w1}^2}} \leq [{\sigma}_{Hw}]
+\]
+
+\paragraph{Find $ z_M $}
+$ z_M = 274 $, according to table (6.5) 
+\paragraph{Find $ z_H $}
+$ \beta_b = \arctan\left( \cos\alpha_t\tan\beta_w\right) \approx 12.76^\circ \Rightarrow z_H = \sqrt{2\dfrac{\cos\beta_{b}}{\sin(2\alpha_{tw})}} \approx 1.72$
+\paragraph{Find $ z_\varepsilon $} Obtaining $ z_\varepsilon $ through calculations:\\
+$ \varepsilon_\alpha = \dfrac{\sqrt{d_{a1}^2-d_{b1}^2}+\sqrt{d_{a2}^2-d_{b2}^2}-2a_w\sin\alpha_{tw}}{2\pi m\dfrac{\cos\alpha_t}{\cos\beta_w}} \approx 1.41$\\
+$ \varepsilon_\beta = b\dfrac{\sin\beta_w}{m\pi} \approx 3.12>1 \Rightarrow z_\varepsilon = \varepsilon_\alpha^{-0.5} \approx 0.86 $
+\paragraph{Find $ K_H $} We find $ K_H $ using equation $ K_H = K_{H\beta}K_{H\alpha}K_{Hv} $\\
+From table (6.13), $ v\leq 10 \unit{(m/s)}\Rightarrow \text{AG} = 8 $ \\
+From table (P2.3), using interpolation, we approximate:\\ $ K_{Hv} \approx1.07$, $ K_{Fv} \approx1.18$\\
+From table (6.14), using interpolation, we approximate:\\ $ K_{H\alpha} \approx1.1$, $ K_{F\alpha} \approx1.29 $ \\	
+$ \Rightarrow K_H \approx 1.3 $
+\paragraph{Find $ \sigma_H $} After calculating $ z_M $, $ z_H $, $ z_\varepsilon $, $ K_H $, we get the following result:
+\[\sigma_H \approx 477.51 \unit{(MPa)}\leq [{\sigma}_{Hw}] \approx 509.09 \unit{(MPa)}\] 
+
+\subsection{Bending stress analysis}
+For safety reasons, the following conditions must be met:
+\[
+\begin{array}{l@{{} \leq {}}l}
+\sigma_{F1} = 2\dfrac{T_{sh1}K_FY_\varepsilon Y_\beta Y_{F1}}{bd_{w1}m_n} & [\sigma_{Fw1}]\\ 
+\sigma_{F2} = \dfrac{\sigma_{F1}Y_{F2}}{Y_{F1}} & [\sigma_{Fw2}]
+\end{array}
+\]
+
+\paragraph{Find $ Y_\varepsilon $} Knowing that $ \varepsilon_\alpha \approx 1.41 $, we can calculate $ Y_\varepsilon = \varepsilon_\alpha^{-1} \approx 0.71 $
+\paragraph{Find $ Y_\beta $} $ Y_\beta = 1-\dfrac{\beta_w}{140}\approx0.9$
+\paragraph{Find $ Y_F $} Using formula $ z_v = z\cos^{-3}(\beta_w) $ and table (6.18):\\
+$ z_{v1} = z_1\cos^{-3}(\beta_w) \approx 29.4 \Rightarrow Y_{F1} \approx 3.54$\\
+$ z_{v2} = z_2\cos^{-3}(\beta_w) \approx 147.01 \Rightarrow Y_{F2} \approx 3.63 $
+\paragraph{Find $ K_F $}
+Using $ K_{F\beta} $, $ K_{F\alpha} $, $ K_{Fv} $ calculated from the sections above, we derive:\\ $ K_F = K_{F\beta}K_{F\alpha}K_{Fv} \approx 1.91 $
+
+\paragraph{Find $ \sigma_F $} Since $ m_n = m\cos\beta_w \approx 1.46$, substituting all the values, we find out that:
+\begin{align*}
+	\sigma_{F1} \approx 114.11 \unit{(MPa)} & \leq [\sigma_{Fw1}]\approx 297.51 \unit{(MPa)}\\
+	\sigma_{F2} \approx 117.01 \unit{(MPa)} & \leq [\sigma_{Fw2}]\approx 285.61 \unit{(MPa)}
+\end{align*}
+
+\subsection{Force on shafts}
+$ F_t = \dfrac{2T_{sh1}}{d_{w1}} \approx 2402.28 \unit{(N)}$\\
+$ F_r = F_t\tan\alpha_{tw} \approx 899.55 \unit{(N)}$\\
+$ F_a = F_t\tan\beta_w\approx 580.75 \unit{(N)}$\\
+In summary, we have the following table:
+\begin{table}[ht]
+	\centering
+	\begin{tabular}[t]{|
+			>{\columncolor[HTML]{C0C0C0}}l |p{2.5cm}|p{2.5cm}|}
+		\hline
+		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}pinion} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}driving gear} \\ \hline
+		$ H\unit{(HB)} $              & 250                      & 240    \\ \hline
+		$ [\sigma_F]\unit{(MPa)} $    & 257.14                   & 246.86 \\ \hline
+		$ [{\sigma}_H]\unit{(MPa)} $    & \multicolumn{2}{l|}{\hskip2cm 509.09}       \\ \hline
+		$ [\sigma_H]_{max}\unit{(MPa)} $    & \multicolumn{2}{l|}{\hskip2cm 1540}       \\ \hline
+		$ [\sigma_F]_{max}\unit{(MPa)} $    & \multicolumn{2}{l|}{\hskip2cm 440}       \\ \hline
+		$ a_w\unit{(mm)} $            & \multicolumn{2}{l|}{\hskip2cm 100}           \\ \hline
+		$ b\unit{(mm)} $            & \multicolumn{2}{l|}{\hskip2cm 50}           \\ \hline
+		$ m\unit{(mm)} $              & \multicolumn{2}{l|}{\hskip2cm 1.5}    \\ \hline
+		$ d_w\unit{(mm)} $              & 33.33                    & 166.67 \\ \hline
+		$ d_a\unit{(mm)} $            & 37.23                    & 168.77 \\ \hline
+		$ d_f\unit{(mm)} $            & 30.48                    & 162.02 \\ \hline
+		$ d_b\unit{(mm)} $            & 31.32                     & 156.62 \\ \hline
+		$ u_{hg} $              & \multicolumn{2}{l|}{\hskip2cm 5}    \\ \hline
+		$ v\unit{(m/s)} $              & \multicolumn{2}{l|}{\hskip2cm 5}    \\ \hline
+		$ x\unit{(mm)} $                       & 0.3                       & -0.3     \\ \hline
+		$ z $                       & 21                       & 105     \\ \hline
+		$ \alpha_{tw}\unit{(^\circ)} $ & \multicolumn{2}{l|}{\hskip2cm 20.65}        \\ \hline
+		$ \beta_w\unit{(^\circ)} $ & \multicolumn{2}{l|}{\hskip2cm 19.09}        \\ \hline
+	\end{tabular}
+	\caption{Gearbox specifications}
+\end{table}
