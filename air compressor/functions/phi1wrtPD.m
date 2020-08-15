@@ -1,4 +1,4 @@
-function [phi1] = phi1wrtPD(sD, OA, AB, alpha)
+function phi1 = phi1wrtPD(sD, OA, AB, alpha)
 
     xOD = pi/2 + alpha/2; 
 

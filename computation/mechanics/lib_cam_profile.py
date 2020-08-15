@@ -105,6 +105,7 @@ def RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, rho_min, Rb, b, show=Fal
     b = b * ys.units
     Rb_min = rho_min - min(ys + ddys)
     b_min = max(dys)-min(dys)
+    
     if Rb <= Rb_min:
         print('Rb < {0:.4f}. Choose base circle radius = {0:.4f} \
                                                   instead'.format(Rb_min))
@@ -121,12 +122,13 @@ def RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, rho_min, Rb, b, show=Fal
     yn = -np.sign(n.magnitude) * RA * np.sin(sigA)
     
     if show is True:
-        fig, ax = plt.subplots(figsize=(10,8))
+        fig, ax = plt.subplots()
         ax.plot(xn, yn, 'k', label='cam profile')
-        ax.grid()
-        ax.set_aspect('equal')
-        ax.legend()
+        ax.plot(0, 0, 'ro')
+        ax.set_xlabel('abscissa (mm)'), ax.set_ylabel('ordinal (mm)')
+        ax.grid(), ax.set_aspect('equal'), ax.legend()
         plt.tight_layout()
+        plt.savefig('cam profile.png', dpi=600)
         
     if savefig is True:
         np.savetxt('cam_profile.txt',np.array([xn.magnitude, yn.magnitude,
@@ -144,12 +146,15 @@ def RadialCamTranslatingRoller(xs, ys, n, Rp, e, show=False, savefig=False):
     yn = -np.sign(n.magnitude) * R * np.sin(Lambda)
     
     if show is True:
-        fig, ax = plt.subplots(figsize=(10,8))
+        fig, ax = plt.subplots()
         ax.plot(xn, yn, 'k', label='cam profile')
+        ax.set_xlabel('abscissa (mm)')
+        ax.set_ylabel('ordinal (mm)')
         ax.grid()
         ax.set_aspect('equal')
         ax.legend()
         plt.tight_layout()
+        plt.savefig('cam profile.png', dpi=600)
         
     if savefig is True:
         np.savetxt('cam_profile.txt',np.array([xn.magnitude, yn.magnitude,
@@ -160,46 +165,59 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     
     u = xs._REGISTRY
     omg = omg.to(u.rad/u.s)
-    dys = dys*omg
-    ddys = ddys*omg**2
-    dddys = dddys*omg**3
+    # dys = dys*omg
+    # ddys = ddys*omg**2
+    # dddys = dddys*omg**3
     
     xn = compact(xs, u.deg)
-    yn = compact(ys, u.mm)
-    dyn = compact(dys, u.mm/u.s)
-    ddyn = compact(ddys, u.mm/u.s**2)
-    dddyn = compact(dddys, u.mm/u.s**3)
+    # yn = compact(ys, u.mm)
+    # dyn = compact(dys, u.mm/u.s)
+    # ddyn = compact(ddys, u.mm/u.s**2)
+    # dddyn = compact(dddys, u.mm/u.s**3)
     
-    fig, ax = plt.subplots(2,2,figsize=(12,8))
+    # fig, ax = plt.subplots(2,2,figsize=(12,8))
     
-    ax[0][0].plot(xn,yn,label='S',c='k')
-    ax[0][0].set_xticks(np.linspace(0, 360, ticks))
-    ax[0][0].set_xticklabels(np.linspace(0, 360, ticks))
-    ax[0][0].set_xlabel(r'$\theta$, deg')
-    ax[0][0].set_ylabel(r'displacement S, mm')
-    ax[0][0].grid()
+    # ax[0][0].plot(xn,yn,label='S',c='k')
+    # ax[0][0].set_xticks(np.linspace(0, 360, ticks))
+    # ax[0][0].set_xticklabels(np.linspace(0, 360, ticks))
+    # ax[0][0].set_xlabel(r'$\theta$, deg')
+    # ax[0][0].set_ylabel(r'displacement S, mm')
+    # ax[0][0].grid()
     
-    ax[0][1].plot(xn,dyn,label='V',c='k')
-    ax[0][1].set_xticks(np.linspace(0, 360, ticks))
-    ax[0][1].set_xticklabels(np.linspace(0, 360, ticks))
-    ax[0][1].set_xlabel(r'$\theta$, deg')
-    ax[0][1].set_ylabel(r'velocity V, mm/s')
-    ax[0][1].grid()
+    # ax[0][1].plot(xn,dyn,label='V',c='k')
+    # ax[0][1].set_xticks(np.linspace(0, 360, ticks))
+    # ax[0][1].set_xticklabels(np.linspace(0, 360, ticks))
+    # ax[0][1].set_xlabel(r'$\theta$, deg')
+    # ax[0][1].set_ylabel(r'velocity V, mm/s')
+    # ax[0][1].grid()
     
-    ax[1][0].plot(xn,ddyn,label='A',c='k')
-    ax[1][0].set_xticks(np.linspace(0, 360, ticks))
-    ax[1][0].set_xticklabels(np.linspace(0, 360, ticks))
-    ax[1][0].set_xlabel(r'$\theta$, deg')
-    ax[1][0].set_ylabel(r'acceleration A, mm/s$^2$')
-    ax[1][0].grid()
+    # ax[1][0].plot(xn,ddyn,label='A',c='k')
+    # ax[1][0].set_xticks(np.linspace(0, 360, ticks))
+    # ax[1][0].set_xticklabels(np.linspace(0, 360, ticks))
+    # ax[1][0].set_xlabel(r'$\theta$, deg')
+    # ax[1][0].set_ylabel(r'acceleration A, mm/s$^2$')
+    # ax[1][0].grid()
     
-    ax[1][1].plot(xn,dddyn,label='J',c='k')
-    ax[1][1].set_xticks(np.linspace(0, 360, ticks))
-    ax[1][1].set_xticklabels(np.linspace(0, 360, ticks))
-    ax[1][1].set_xlabel(r'$\theta$, deg')
-    ax[1][1].set_ylabel(r'jerk J, mm/s$^3$')
-    ax[1][1].grid()
+    # ax[1][1].plot(xn,dddyn,label='J',c='k')
+    # ax[1][1].set_xticks(np.linspace(0, 360, ticks))
+    # ax[1][1].set_xticklabels(np.linspace(0, 360, ticks))
+    # ax[1][1].set_xlabel(r'$\theta$, deg')
+    # ax[1][1].set_ylabel(r'jerk J, mm/s$^3$')
+    # ax[1][1].grid()
 
+    # plt.tight_layout()
+    
+    
+    fig, ax = plt.subplots()
+    a = ys.magnitude+ddys.magnitude
+    ax.plot(xn,a,label='A',c='k')
+    ax.plot(xn[np.where(a==min(a))],min(a),'ro')
+    ax.set_xticks(np.linspace(0, 360, ticks))
+    ax.set_xticklabels(np.linspace(0, 360, ticks))
+    ax.set_xlabel(r'$\theta$, deg')
+    ax.set_ylabel(r'$s+\frac{ds^2}{d\phi}$, mm')
+    ax.grid()
+    
     plt.tight_layout()
     
     print(r'Peak displacement: {0:.4f}'.format(max(abs(ys)).to_compact()))
