@@ -1,0 +1,185 @@
+\chapter{Bearing Design}
+\section{Nomenclature}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ b_O $ & rolling bearing width, $ \unit{mm}$\\
+	$ C $ & standardized dynamic load rating, $ \unit{N} $\\
+	$ C_d $ & basic dynamic load rating, $ \unit{N} $\\
+	$ d $ & diameter, $ \unit{mm} $\\
+	$ F_a $ & axial force, $ \unit{kN} $\\
+	$ F_r $ & radial force, $ \unit{kN} $\\
+	$ F_t $ & tangential force, $ \unit{kN} $\\
+	$ F $ & applied force, $ \unit{kN} $\\
+	$ h_n $ & distance between bearing lid and bolt, $ \unit{mm} $\\
+	$ hr $ & tooth direction\\
+	$ k_d $ & temperature factor\\
+	$ k_t $ & load condition factor\\
+	
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ L $ & rated life in million revolutions, $ \unit{\text{million rev}} $\\
+	$ L_h $ & rated life in hours, $ \unit{h} $\\
+	$ l $ & length (general), $ \unit{mm} $\\
+	$ l_m $ & hub length (general), $ \unit{mm} $\\
+	$ M $ & moment, $ \unit{N\cdot mm} $\\
+	$ M_e $ & equivalent moment, $ \unit{N\cdot mm} $\\
+	$ M_{max} $ & maximum moment at the cross section, $ \unit{N\cdot mm} $\\
+	$ m $ & load-life exponent\\
+	$ Q $ & equivalent dynamic load, $ \unit{kN} $\\
+	$ q $ & standardized coefficient of shaft diameter\\
+	$ R $ & reaction force, $ \unit{N} $\\
+\end{tabular}\newpage
+\begin{tabular}[t]{lp{6.5cm}}
+	$ T $ & torque at the cross section, $ \unit{N\cdot mm} $\\
+	$ X $ & dynamic radial load factor\\
+	$ Y $ & dynamic axial load factor\\
+	$ \alpha $ & contact angle, $ ^\circ $\\
+	
+\end{tabular}
+\begin{tabular}[t]{lp{6.5cm}}
+	$ _{sh1} $ & subscript for shaft 1\\
+	$ _{sh2} $ & subscript for shaft 2\\
+	$ _x $ & subscript for x-axis\\
+	$ _y $ & subscript for y-axis\\
+	$ _z $ & subscript for z-axis\\
+\end{tabular}
+
+\section{Choose bearing type}
+As for the types, we will examine $  \dfrac{F_a}{F_r}  $ at $ A_1 $, $ B_1 $, $ A_2 $ and $ B_2 $ in the 2 shafts from the previous chapter, where $ F_a $ is the output axial force $ |F_{z12}| = |F_{z21}| \approx 580.75 \unit{(N)} $; $ F_r $ is the magnitude of combined reaction force $ \sqrt{R_x^2+R_y^2} $ from the shaft onto the bearing, which is essentially a radial load. The larger ratio in a shaft will be our ratio of choice to determine the bearing type.\\
+Taking our results from the chapter 4: \vskip2mm
+{\centering
+	\begin{tabular}[ht]{p{7.5cm}p{7.5cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} = {}}l}
+		F_{rA1} & \sqrt{R_{A1x}^2+R_{A1y}^2}  \approx  1.2\unit{(kN)}\\
+		F_{rB1} & \sqrt{R_{B1x}^2+R_{B1y}^2}  \approx  1.33\unit{(kN)}\\
+		F_{aA1} & |F_{z12}|  \approx  0.58 \unit{(kN)}\\
+		F_{aB1} & |F_{z12}|  \approx  0.58 \unit{(kN)}\\
+		\end{array}
+		\right.
+		$ & $
+		\left\{ 
+		\begin{array}{l@{{} = {}}l}
+		F_{rA2} & \sqrt{R_{A2x}^2+R_{A2y}^2}  \approx  3.79\unit{(kN)}\\
+		F_{rB2} & \sqrt{R_{B2x}^2+R_{B2y}^2}  \approx  2.05\unit{(kN)}\\
+		F_{aA2} & |F_{z21}|  \approx  0.58 \unit{(kN)}\\
+		F_{aB2} & |F_{z21}|  \approx  0.58 \unit{(kN)}\\
+		\end{array}
+		\right.
+		$
+\end{tabular}}\vskip2mm
+
+
+yields\vskip2mm
+{\centering
+	\begin{tabular}[t]{p{7cm}p{7cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		\dfrac{F_{aA1}}{F_{rA1}} & 0.46 \\
+		\dfrac{F_{aB1}}{F_{rB1}} & 0.44 \\
+		\end{array}
+		\right.$
+		& $
+		\left\{ 
+		\begin{array}{l@{{} \approx {}}l}
+		\dfrac{F_{aA2}}{F_{rA2}} & 0.15 \\
+		\dfrac{F_{aB2}}{F_{rB2}} & 0.28 \\
+		\end{array}
+		\right.$
+\end{tabular}}\vskip2mm
+Since $ 0.46>0.3 $ and $ 0.28\leq0.3 $, the pair of bearings on shaft 1 is single-row angular contact ball bearings with $ \alpha_{sh1} = 12^\circ$ and the remaining pair is single-row deep-groove bearings ($ \alpha_{sh2} = 0^\circ $); $ \text{AG} = 0 $ according to the recommendations on p.212 and p.213.\\
+We also have dimensions at the cross sections $ A_1 $, $ B_1 $, $ A_2 $, $ B_2 $ from the previous chapter:\vskip2mm
+{\centering
+	\begin{tabular}[t]{p{6cm}p{7cm}}
+		$
+		\left\{ 
+		\begin{array}{l@{{} = {}}l}
+		b_{O1} & 21\unit{(mm)}\\
+		d_{A1} & 35\unit{(mm)}\\
+		d_{B1} & 35\unit{(mm)}\\
+		\end{array}
+		\right.$
+		& $
+		\left\{ 
+		\begin{array}{l@{{} = {}}l}
+		b_{O2} & 23\unit{(mm)}\\
+		d_{A2} & 40\unit{(mm)}\\
+		d_{B2} & 40\unit{(mm)}\\
+		\end{array}
+		\right.$
+\end{tabular}}\vskip2mm
+From these parameters, we will look up the tables at the end of the text. The pair of single-row angular contact ball bearings of choice is 46307, which is suitable for shaft 1 and $ C_{o1} = 25.2\unit{(kN)} $. On shaft 2, the pair of single-row deep-grove bearings are type 308, where $ C_{o2}=21.7\unit{(kN)} $.
+
+\section{Bearing dimensions}
+\subsection{Calculate basic dynamic load rating}
+\[C_d = Q_e\sqrt[m]{L}\]
+\subsubsection{Find equivalent dynamic load} Since we only use ball bearings, the following formula applies:
+\[Q = (XVF_r+YF_{at})k_tk_d\]
+Since the inner ring rotates, $ V = 1 $ and the $\dfrac{F_a}{VF_r}=\dfrac{F_a}{F_r}$, meaning that the ratios in the section above will be used to examine $X$ and $Y$.\\
+The design problem also does not give any further information about operating temperature, which gives $ k_t = 1 $. In addition, we get $ k_d = 1 $ from table (11.3) based on the machine's condition (low load and power rating).
+\paragraph{Find the ratio $ \dfrac{iF_a}{C_o} $} This ratio is calculated and applied for 2 shafts ($ i = 1 $ for single-row bearings in our case):\\
+For shaft 1, $ \dfrac{F_a}{C_{o1}} \approx 0.027$\\
+For shaft 2, $ \dfrac{F_a}{C_{o2}}  \approx  0.023$
+\paragraph{Compare with $ e $}
+From the previous section, $ \alpha_{sh1} = 12^\circ, \alpha_{sh2} = 0^\circ $. Inspecting table (11.4) and by interpolation, $ e_{sh1} \approx  0.33$, $e_{sh2}  \approx 0.22 $. These values are then compared to $ \left| \dfrac{F_a}{VF_r} \right| $ to look up the correct column.
+\paragraph{Find $ X,Y $} Table (11.3) and interpolation are used in finding these values:\vskip2mm
+For shaft 1, $ \left| \dfrac{F_a}{VF_r} \right| = \left| \dfrac{F_{z12}}{VR_{A1y}} \right| \approx 0.46 > e_{1} \Rightarrow X_{1} = 0.56, Y_{1} = 2.1$.\\
+For shaft 2, $ \left| \dfrac{F_a}{VF_r} \right| = \left| \dfrac{F_{z21}}{VR_{B2y}} \right| \approx 0.28 > e_{2} \Rightarrow X_{2}  \approx  0.45, Y_{2}  \approx  1.64$.
+\paragraph{Find $ F_{at} $} For shaft 1, additional radial forces are also applied to the pair of angular contact ball bearings. From table (11.5), the first arrangement is used in the gearbox. Therefore, $ \mathbf{F_{sA1}} \upharpoonleft\upharpoonright \mathbf{F_{z12}} $ and $ \mathbf{F_{sB1}} \upharpoonleft\downharpoonright \mathbf{F_{z12}} $ (the direction of $ \mathbf{F_{z12}} $ can be found at Figure \ref{force on shaft}) Following the sign convention on p.218 and combining with equation (11.8), (11.10), (11.11a) and (11.11b):
+At cross section $ A_1 $:\\
+$ F_{sB1} = e_1F_{rB1}  \approx 0.43\unit{(kN)}$\\
+$ \displaystyle\sum F_{aA1} = F_{sB1} - F_{z12} \approx -0.15 \unit{(kN)}$\\
+At cross section $ B_1 $:\\
+$ F_{sA1} = e_1F_{rA1}  \approx 0.41\unit{(kN)}$\\
+$ \displaystyle\sum F_{aB1} = F_{sA1} + F_{z12} \approx 0.99 \unit{(kN)}$\\
+From equation (11.11a) and (11.11b):\\
+$  \displaystyle\sum F_{aA1} \leq F_{sA1} \Rightarrow F_{atA1} = F_{sA1}  \approx  0.41\unit{(kN)} $\\
+$ \displaystyle \sum F_{aB1} > F_{sB1} \Rightarrow F_{atB1} = \sum F_{aB1}  \approx  0.99\unit{(kN)} $
+
+In contrast, shaft 2 does not have such additional forces since $ \alpha_{sh2} = 0^\circ $. Therefore, $ F_{atA2} = F_{atB2} = |F_{z21}| = 0.58\unit{(kN)} $.
+
+\paragraph{Find $ Q_1,Q_2 $}
+Recall that the forces are in absolute values, the parameters are substituted to the formula to obtain:\\
+$ Q_{A1} \approx 1.56 \unit{(kN)} $\\
+$ Q_{B1} \approx 2.82 \unit{(kN)} $\\
+$ Q_{A2} \approx2.66  \unit{(kN)} $\\
+$ Q_{B2} \approx 1.87 \unit{(kN)} $\\
+We will compare these values and choose the larger load (according to the recommendation on p.219):\\
+$ Q_{A1} < Q_{B1} \Rightarrow Q_1 = Q_{B1}  \approx 2.82 \unit{(kN)}$\\
+$ Q_{A2} > Q_{B2} \Rightarrow Q_2 = Q_{A2}  \approx 2.66 \unit{(kN)}$
+
+\paragraph{Find $ Q_1 $} 
+Modifying equation (11.12), we obtain the equivalent load on 2 shafts (assuming the bearings are ball type):
+\[Q_{e} = Q\sqrt[3]{\left(\dfrac{T_1}{T} \right)^3\dfrac{t_1}{t_1+t_2} + \left(\dfrac{T_2}{T} \right)^3\dfrac{t_2}{t_1+t_2}}\]
+For shaft 1, $ Q_{e1}  \approx 2.17\unit{(kN)}  $\\
+For shaft 2, $ Q_{e2}  \approx 1.88\unit{(kN)}  $
+
+\subsubsection{Verifying condition for $ C_d $}
+\paragraph{Find $ L $}Equation (11.2) is rearranged to calculate $ L $:
+\[L = L_h60n_{sh}\times10^6\]
+The transmission system works for $ 19200\unit{(hours)} $ (the calculation has already been done in chapter 3), which gives:\\
+$ L_1 \approx 3375.36 \unit{(\text{million rev})} $\\
+$ L_2 \approx 675.07 \unit{(\text{million rev})} $
+\paragraph{Find $ C_d $}
+Combining the results and letting $ m=3 $ (ball bearings are used in this case) yield:\\
+$ C_{d1} =32.49 \unit{(kN)} $\\
+$ C_{d2} = 16.53 \unit{(kN)} $
+
+\paragraph{Compare with $ C $}
+From table (P2.15), we obtain the ratios using interpolation (knowing $ n_{sh1} $ and $ n_{sh2} $ and $ L_h=19200\unit{(hours)} $):\\
+$ C_1 \approx  14.96 Q_{e1} \approx 32.39\unit{(kN)} < C_{d1}$\\
+$ C_2 \approx  8.75 Q_{e2} \approx 16.47\unit{(kN)} < C_{d2}$\\
+Since both shafts do not satisfy the condition, we will reduce the rated life $ L_h $ of the bearings in half based on the recommendation on p.220 and repeat the process of verification. The results are:\\
+$ C_1 \approx  26.84 \unit{(kN)} \geq C_{d1} \approx 25.79\unit{(kN)}$\\
+$ C_2 \approx 13.66 \unit{(kN)} \geq C_{d2} \approx 13.12\unit{(kN)}$
+\subsection{Calculate static load rating}
+The bearings are non-rotating, thus we will verify its static load rating using condition (11.18) on p.221:
+\[\left\{\begin{array}{l@{{}={}}l}
+Q_t & X_OF_r+Y_OF_{at}\\
+Q_t & F_r
+\end{array}\right. \leq C_O\]
+For shaft 1, $ X_O=0.5, Y_O=0.47$.\\
+$ Q_{t1}  \approx 0.76 \unit{(kN)} < C_{o1}$\\
+For shaft 2, $X_O =0.6,Y_O=0.5  $.\\
+$ Q_{t2}  \approx 0.64 \unit{(kN)} < C_{o2}$

@@ -127,8 +127,9 @@ def RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, rho_min, Rb, b, show=Fal
     yn = -np.sign(n.magnitude) * RA * np.sin(sigA)
     
     if show is True:
-        fig, ax = plt.subplots(figsize=(10,8))
+        fig, ax = plt.subplots()
         ax.plot(xn, yn, 'k', label='cam profile')
+        ax.plot(0,0,'ro')
         ax.grid()
         ax.set_aspect('equal')
         ax.legend()
@@ -175,7 +176,7 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     ddyn = compact(ddys, u.mm/u.s**2)
     dddyn = compact(dddys, u.mm/u.s**3)
     
-    fig, ax = plt.subplots(2,2,figsize=(12,8))
+    fig, ax = plt.subplots(2,2)
     
     ax[0][0].plot(xn,yn,label='S',c='k')
     ax[0][0].set_xticks(np.linspace(0, 360, ticks))
@@ -191,11 +192,11 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     ax[0][1].set_ylabel(r'velocity V, mm/s')
     ax[0][1].grid()
     
-    ax[1][0].plot(xn,ddyn,label='A',c='k')
+    ax[1][0].plot(xn,ddyn+yn,label='A',c='k')
     ax[1][0].set_xticks(np.linspace(0, 360, ticks))
     ax[1][0].set_xticklabels(np.linspace(0, 360, ticks))
     ax[1][0].set_xlabel(r'$\theta$, deg')
-    ax[1][0].set_ylabel(r'acceleration A, mm/s$^2$')
+    ax[1][0].set_ylabel(r'$s+\frac{ds^2}{d\phi}$, mm')#(r'acceleration A, mm/s$^2$')
     ax[1][0].grid()
     
     ax[1][1].plot(xn,dddyn,label='J',c='k')
@@ -204,7 +205,7 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     ax[1][1].set_xlabel(r'$\theta$, deg')
     ax[1][1].set_ylabel(r'jerk J, mm/s$^3$')
     ax[1][1].grid()
-
+    
     plt.tight_layout()
     
     print(r'Peak displacement: {0:.4f}'.format(max(abs(ys)).to_compact()))
