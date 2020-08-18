@@ -23,6 +23,13 @@
 \contentsline {subsubsection}{Q1.13}{8}{section*.24}%
 \contentsline {paragraph}{Ans:}{8}{section*.25}%
 \contentsline {chapter}{\numberline {2}Pressure and Fluid Statics}{9}{chapter.2}%
-\contentsline {subsubsection}{Q2.1}{9}{section*.26}%
+\contentsline {section}{\numberline {2.1}Formulas}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Problems}{10}{section.2.2}%
+\contentsline {subsubsection}{Q2.1}{10}{section*.26}%
 \contentsline {paragraph}{Ans:}{10}{section*.27}%
-\contentsline {subsubsection}{Q2.2}{10}{section*.28}%
+\contentsline {subsubsection}{Q2.2}{11}{section*.28}%
+\contentsline {paragraph}{Ans:}{11}{section*.29}%
+\contentsline {subsubsection}{Q2.3}{12}{section*.30}%
+\contentsline {paragraph}{Ans:}{12}{section*.31}%
+\contentsline {subsubsection}{Q2.4}{13}{section*.32}%
+\contentsline {paragraph}{Ans:}{13}{section*.33}%
