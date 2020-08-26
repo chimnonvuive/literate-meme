@@ -1,6 +1,16 @@
-function formulate(omg1, alpha, OA, AC, AB, BC)
+function formulate(omg1, OA, AC, AB, BC)
 
     syms x y phi(t) t CD theta
+    
+    params = readtable('parameters.txt');
+    
+    alpha = deg2rad(params{1,1});
+%     g = params{1,11};
+%     m1 = params{1,6};         J1 = params{1,12};    Q1 = -m1*g*[0,1,0];
+%     m2 = params{1,7};         J2 = params{1,13};    Q2 = -m2*g*[0,1,0];
+%     m3 = params{1,8};         J3 = params{1,14};    Q3 = -m3*g*[0,1,0];
+%     m4 = params{1,9};         J4 = params{1,15};    Q4 = -m4*g*[0,1,0];
+%     m5 = params{1,10};        J5 = params{1,16};    Q5 = -m5*g*[0,1,0];
     
     xOB = pi/2 - alpha/2;
     xOD = pi/2 + alpha/2;
@@ -63,7 +73,7 @@ function formulate(omg1, alpha, OA, AC, AB, BC)
     alp4 = diff(omg4, t);
     fomg4 = matlabFunction(subs(omg4, old, new), 'Vars', [theta, CD]);
     falp4 = matlabFunction(subs(alp4, old, new), 'Vars', [theta, CD]);
-        
+
     save('./outputs/functions.mat', 'fpA', 'fpB', 'fpC', 'fpD',...
         'fvA', 'fvB', 'fvC', 'fvD', 'faA', 'faB', 'faC', 'faD',...
         'fomg2', 'fomg4', 'falp2', 'falp4');
