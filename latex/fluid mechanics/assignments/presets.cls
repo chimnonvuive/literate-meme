@@ -40,6 +40,11 @@
 \author{Nguyen Quy Khoi}
 \date{\today}
 
+\newcommand{\vb}[2]{\hat{\bm{#1}}_{\bm{#2}}}
+\newcommand{\ih}{\hat{\mathbf{i}}}
+\newcommand{\jh}{\hat{\mathbf{j}}}
+\newcommand{\kh}{\hat{\mathbf{k}}}
+
 \makeatletter
 \let\thetitle\@title
 \let\theauthor\@author

@@ -8,9 +8,10 @@ u = UnitRegistry()
 slant = 6 * u.deg
 b1, b2, b3 = np.array([55,5,55])*u.deg
 b4 = 360*u.deg - b1 - b2 - b3
-n = 500*u.rpm
+m, n = 500*u.g, 250*u.rpm
+m = m.to(u.kg)
 
-h = 2*np.cos(slant.to(u.rad)) * u.mm
+h = 2 * u.mm
 
 num = 1500
 n1 = int(num*b1/u.deg/360)
@@ -36,7 +37,7 @@ ddys = np.hstack([dds1, ds2, dds3, s4])/u.rad**2
 dddys = np.hstack([ddds1, ds2, ddds3, s4])/u.rad**3
 
 #%%
-# PlotSVAJ(xs, ys, dys, ddys, dddys, n, savefig=True)
-RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, 0, 12, 21, show=True, savefig=True)
+PlotSVAJ(xs, ys, dys, ddys, dddys, n, savefig=0)
+# RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, 0, 12, 21, show=True, savefig=True)
 # RadialCamTranslatingRoller(xs, ys, n, 16.5, 0, show=True)
 

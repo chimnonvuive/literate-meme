@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  15 AUG 2020 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  29 AUG 2020 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,7 +991,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `assignment.out'.
 
-<logo.png, id=20, 1007.765pt x 1027.84pt>
+<logo.png, id=36, 1007.765pt x 1027.84pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 6.
@@ -1116,7 +1116,7 @@ Overfull \hbox (5.75089pt too wide) in paragraph at lines 16--22
 [9
 
 ]
-<2020-08-13 17.00.35 drive.google.com c4c67da5f09f.png, id=123, 723.70375pt x 6
+<2020-08-13 17.00.35 drive.google.com c4c67da5f09f.png, id=143, 723.70375pt x 6
 33.36626pt>
 File: 2020-08-13 17.00.35 drive.google.com c4c67da5f09f.png Graphic file (type 
 png)
@@ -1131,7 +1131,7 @@ di-am-e-ter $\OML/ntxmi/m/it/10 d$\T1/ntxtlf/m/n/10 , con-nect-ing
  []
 
 [10 <./2020-08-13 17.00.35 drive.google.com c4c67da5f09f.png>]
-<2020-08-13 17.45.37 drive.google.com bc14c8504f54.png, id=133, 406.51875pt x 2
+<2020-08-13 17.45.37 drive.google.com bc14c8504f54.png, id=154, 406.51875pt x 2
 20.825pt>
 File: 2020-08-13 17.45.37 drive.google.com bc14c8504f54.png Graphic file (type 
 png)
@@ -1146,7 +1146,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 74.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 74.
-<2020-08-15 15.00.04 drive.google.com a5d89daba201.png, id=141, 405.515pt x 200
+<2020-08-15 15.00.04 drive.google.com a5d89daba201.png, id=161, 405.515pt x 200
 .75pt>
 File: 2020-08-15 15.00.04 drive.google.com a5d89daba201.png Graphic file (type 
 png)
@@ -1165,7 +1165,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
  []
 
 [12 <./2020-08-15 15.00.04 drive.google.com a5d89daba201.png>]
-<2020-08-15 16.48.02 drive.google.com 0b8dc5aedc2f.png, id=151, 271.0125pt x 29
+<2020-08-15 16.48.02 drive.google.com 0b8dc5aedc2f.png, id=171, 271.0125pt x 29
 1.0875pt>
 File: 2020-08-15 16.48.02 drive.google.com 0b8dc5aedc2f.png Graphic file (type 
 png)
@@ -1178,25 +1178,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[13 <./2020-08-15 16.48.02 drive.google.com 0b8dc5aedc2f.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+[13 <./2020-08-15 16.48.02 drive.google.com 0b8dc5aedc2f.png>]) (./chap3.tex
+[14]
+Chapter 3.
 
-(./assignment.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 7.3pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 5.5pt on input line 13.
+[15
+
+] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+[17])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+ (./assignment.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `assignment.out' has not changed.
-(rerunfilecheck)             Checksum: BAD9FEA31180AE82D87BA179DFE55B6C;519.
+(rerunfilecheck)             Checksum: 680A4B6B662313E371B06B0DF0C08D32;963.
  ) 
 Here is how much of TeX's memory you used:
- 15055 strings out of 481239
- 205612 string characters out of 5920377
- 465388 words of memory out of 5000000
- 29917 multiletter control sequences out of 15000+600000
- 602600 words of font info for 89 fonts, out of 8000000 for 9000
+ 15104 strings out of 481239
+ 206067 string characters out of 5920377
+ 466433 words of memory out of 5000000
+ 29930 multiletter control sequences out of 15000+600000
+ 606977 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,49p,860b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,49p,860b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/sh
 are/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive
 /texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/share/texlive/texmf-d
@@ -1207,10 +1227,10 @@ mb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf
 e1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/new
 tx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on assignment.pdf (15 pages, 268422 bytes).
+Output written on assignment.pdf (19 pages, 281076 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 77 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 

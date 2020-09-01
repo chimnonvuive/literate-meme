@@ -165,15 +165,15 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
     
     u = xs._REGISTRY
     omg = omg.to(u.rad/u.s)
-    # dys = dys*omg
-    # ddys = ddys*omg**2
-    # dddys = dddys*omg**3
+    dys = dys*omg
+    ddys = ddys*omg**2
+    dddys = dddys*omg**3
     
     xn = compact(xs, u.deg)
-    # yn = compact(ys, u.mm)
-    # dyn = compact(dys, u.mm/u.s)
-    # ddyn = compact(ddys, u.mm/u.s**2)
-    # dddyn = compact(dddys, u.mm/u.s**3)
+    yn = compact(ys, u.mm)
+    dyn = compact(dys, u.mm/u.s)
+    ddyn = compact(ddys, u.mm/u.s**2)
+    dddyn = compact(dddys, u.mm/u.s**3)
     
     # fig, ax = plt.subplots(2,2,figsize=(12,8))
     
@@ -207,16 +207,31 @@ def PlotSVAJ(xs, ys, dys, ddys, dddys, omg, ticks=5, savefig=False):
 
     # plt.tight_layout()
     
-    
+    # Tc = 493.66e-3*ddyn*dyn/omg.magnitude
+    print(500*max(yn))
+    Tc = 500*yn*dyn/omg.magnitude
     fig, ax = plt.subplots()
-    a = ys.magnitude+ddys.magnitude
-    ax.plot(xn,a,label='A',c='k')
-    ax.plot(xn[np.where(a==min(a))],min(a),'ro')
+    ax.plot(xn,Tc*1e-3,label='Torque',c='k')
+    ax.set_title('Torque on camshaft, $n=250rpm$')
     ax.set_xticks(np.linspace(0, 360, ticks))
     ax.set_xticklabels(np.linspace(0, 360, ticks))
     ax.set_xlabel(r'$\theta$, deg')
-    ax.set_ylabel(r'$s+\frac{ds^2}{d\phi}$, mm')
+    ax.set_ylabel(r'$T_c$, $N\cdot m$')
+    ax.legend()
     ax.grid()
+    # print(max(abs(Tc)))
+    # plt.plot(-50*yn/dyn)
+    # plt.plot(-ddyn/yn)
+    
+    # fig, ax = plt.subplots()
+    # a = ys.magnitude+ddys.magnitude
+    # ax.plot(xn,a,label='A',c='k')
+    # ax.plot(xn[np.where(a==min(a))],min(a),'ro')
+    # ax.set_xticks(np.linspace(0, 360, ticks))
+    # ax.set_xticklabels(np.linspace(0, 360, ticks))
+    # ax.set_xlabel(r'$\theta$, deg')
+    # ax.set_ylabel(r'$s+\frac{ds^2}{d\phi}$, mm')
+    # ax.grid()
     
     plt.tight_layout()
     

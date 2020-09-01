@@ -1,0 +1,65 @@
+\chapter{Fluid Kinematics - Bernoulli and Energy Equations}
+\section{}
+Fluid flow with the velocity described by Eulerian Method as follows:
+\[u=3t;\qquad v =xz; \qquad w= ty^2\]
+\begin{enumerate}
+	\item Is this flow steady or unsteady ?
+	\item Prove that the flow satisfies the continuity equation of incompressible fluid ?
+	\item Determine the acceleration of fluid particle ?
+	\item Find the streamline at time $ t = 1 $ and passing the origin $ O(0,0) $.
+\end{enumerate}
+\paragraph{Ans:}$  $\\
+\begin{enumerate}
+	\item The flow $ V = 3t\ih + xz\jh + ty^2\kh $ depends on time $( u=3t, w=ty^2) $, thus it is unsteady.
+	\item $ \nabla \cdot V=0 $\\
+	$\Leftrightarrow \dfrac{\partial u}{\partial x} + \dfrac{\partial v}{\partial y} + \dfrac{\partial w}{\partial z}=0$\\
+	$ \Leftrightarrow \dfrac{\partial (3t)}{\partial x} + \dfrac{\partial (xz)}{\partial y} + \dfrac{\partial (ty^2)}{\partial z} =0$ (True)\\
+	The flow satisfies the continuity equation of incompressible fluid.
+	\item $ a=a_x\ih+a_y\jh+a_z\kh $\\
+	$ a_x =  \dfrac{\partial u}{\partial t} +u \dfrac{\partial u}{\partial x} + v \dfrac{\partial u}{\partial y} + w \dfrac{\partial u}{\partial z} = 3$\\
+	$ a_y =  \dfrac{\partial v}{\partial t} +u \dfrac{\partial v}{\partial x} + v \dfrac{\partial v}{\partial y} + w \dfrac{\partial v}{\partial z} = 3zt + xy^2t$\\
+	$ a_z =  \dfrac{\partial w}{\partial t} +u \dfrac{\partial w}{\partial x} + v \dfrac{\partial w}{\partial y} + w \dfrac{\partial w}{\partial z} = y^2 + 2xyzt$\\
+	$ \Rightarrow a = 3\ih + (3zt+xy^2t)\jh + (y^2 + 2xyzt)\kh $
+	\item Since we have zero initial condition, it is concluded that $ C=0 $:
+	\paragraph{On $ xy- $plane:}
+	$ \dfrac{dy}{dx} = \dfrac{v}{u} = \dfrac{xz}{3t}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle y=\int\dfrac{xz}{3}dx = \dfrac{x^2z}{6} $
+	\paragraph{On $ yz- $plane:}
+	$ \dfrac{dz}{dy} = \dfrac{w}{v} = \dfrac{ty^2}{xz}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle z=\int\dfrac{y^2}{xz}dy = \dfrac{y^3}{3xz} $
+	\paragraph{On $ xz- $plane:}
+	$ \dfrac{dz}{dx} = \dfrac{w}{u} = \dfrac{ty^2}{3t}=\dfrac{y^2}{3}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle z=\int\dfrac{y^2}{3}dx = \dfrac{xy^2}{3} $
+\end{enumerate}
+
+\section{}
+\section{}
+Plane fluid flow with the velocity described as follows:
+\[u=\dfrac{-y}{b^2};\qquad v =\dfrac{x}{a^2}\]
+\begin{enumerate}
+	\item Prove that the flow satisfies the continuity equation of incompressible fluid ?
+	\item Find the streamlines.
+\end{enumerate}
+\paragraph{Ans:}$  $\\
+\begin{enumerate}
+	\item $ \nabla \cdot V=0 $\\
+	$\Leftrightarrow \dfrac{\partial u}{\partial x} + \dfrac{\partial v}{\partial y} + \dfrac{\partial w}{\partial z}=0$\\
+	$ \Leftrightarrow \dfrac{\partial (\frac{-y}{b^2})}{\partial x} + \dfrac{\partial (\frac{x}{a^2})}{\partial y} + \dfrac{\partial (0)}{\partial z} =0$ (True)\\
+	The flow satisfies the continuity equation of incompressible fluid.
+	\item $ $
+	\paragraph{On $ xy- $plane:}
+	$ \dfrac{dy}{dx} = \dfrac{v}{u} = \dfrac{xz}{3t}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle y=\int\dfrac{xz}{3}dx = \dfrac{x^2z}{6} $
+	\paragraph{On $ yz- $plane:}
+	$ \dfrac{dz}{dy} = \dfrac{w}{v} = \dfrac{ty^2}{xz}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle z=\int\dfrac{y^2}{xz}dy = \dfrac{y^3}{3xz} $
+	\paragraph{On $ xz- $plane:}
+	$ \dfrac{dz}{dx} = \dfrac{w}{u} = \dfrac{ty^2}{3t}=\dfrac{y^2}{3}$\\
+	At time $ t=1\unitp{s} $:\\
+	$\displaystyle z=\int\dfrac{y^2}{3}dx = \dfrac{xy^2}{3} $
+\end{enumerate}
