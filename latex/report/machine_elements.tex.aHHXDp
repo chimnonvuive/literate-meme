@@ -1,0 +1,48 @@
+\documentclass{presets}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\textsc{\Large vietnam national university ho chi minh city}\\
+		\textsc{\Large hcm university of technology}\\
+		\textsc{\Large faculty of mechanical engineering - mechatronics department}\\
+		%		\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+		\textsc{\Large ME2007}\\[0.5 cm]				% Course Code
+		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+		{ \huge \bfseries \thetitle}\\
+		
+		\includegraphics[width=5cm]{logo.png}\\[1.0 cm]	% University Logo
+		\rule{\linewidth}{0.2 mm}\\[1.5cm]
+		
+		\begin{minipage}[t]{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Submitted To:}\\
+				Le Thanh Long\\
+				PhD\\
+				Machine Design Dept.\\
+			\end{flushleft}
+		\end{minipage}~
+		\begin{minipage}[t]{0.4\textwidth}
+			
+			\begin{flushright} \large
+				\emph{Submitted By:} \\
+				Nguyen Quy Khoi\\
+				Phan Quang Minh\\
+				Vuong Tuan Quan\\
+				Nguyen Hoang Duc Minh\\
+				Nguyen Bao Phien\\
+			\end{flushright}
+			
+		\end{minipage}
+		\mbox{}\vfill
+		{\large \today}
+	\end{titlepage}
+	\tableofcontents
+	\listoftables
+	\listoffigures
+%	\input{chap1.tex}
+%	\input{chap2.tex}
+%	\input{chap3.tex}
+%	\input{chap4.tex}
+%	\input{chap5.tex}
+\end{document}

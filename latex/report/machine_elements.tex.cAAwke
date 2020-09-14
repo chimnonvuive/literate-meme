@@ -1,0 +1,47 @@
+\documentclass{presets}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\textsc{\large VIETNAM NATIONAL UNIVERSITY HO CHI MINH CITY}\\
+		\textsc{\large HCM UNIVERSITY OF TECHNOLOGY}\\
+		\textsc{\large FACULTY OF MECHANICAL ENGINEERING - MECHATRONICS DEPARTMENT}\\[3cm]
+		%		\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+%		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+		
+		\includegraphics[width=5cm]{logo.png}\\[2 cm]	% University Logo
+		{ \large engineering intership report}\\[1.5 cm]
+		{ \huge \bfseries \thetitle}\\[3cm]
+%		\rule{\linewidth}{0.2 mm}\\[1.5cm]
+		
+		\begin{minipage}[t]{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Submitted By:}\\
+				\emph{Student ID:}\\
+				\emph{Submitted To:}\\
+				\emph{Internship Office:}\\
+			\end{flushleft}
+		\end{minipage}~
+		\begin{minipage}[t]{0.4\textwidth}
+			
+			\begin{flushright} \large
+				Nguyen Quy Khoi\\
+				1852158\\
+				Nguyen Tan Tien\\
+				DCSELab\\
+			\end{flushright}
+			
+		\end{minipage}
+		\mbox{}\vfill
+		{\large HCMC, \today}
+	\end{titlepage}
+	\tableofcontents
+	\listoftables
+	\listoffigures
+%	\input{chap1.tex}
+%	\input{chap2.tex}
+%	\input{chap3.tex}
+%	\input{chap4.tex}
+%	\input{chap5.tex}
+\end{document}

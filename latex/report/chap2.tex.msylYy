@@ -1,0 +1,43 @@
+\chapter{Internship tasks }
+\section{Objectives}At the moment, the light duty air compressor market mainly use electricity as the power source, which can be inconvenient at remote locations where power grid is difficult to reach. To solve this problem, we will analyze and model a V-twin air compressor with a compressing end and a combustion end. The model is programmed using MATLAB\textsuperscript{\textregistered}
+R2019a.
+\section{Parameters}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{03}
+	\caption{Mechanism of the air compressor}
+	\label{fig:03}
+\end{figure}
+\begin{tabular}{p{9cm}p{5cm}}
+	Valve lift & $ H_C=39\unit{mm} $\\
+	V-angle&$ \alpha=90^\circ $\\
+	Connecting rod dimensions  &$ \dfrac{l_{AB}}{l_{OA}} =5.372,l_{AC}=25mm,\beta=120^\circ$\\
+	Crankshaft 1 weight&$ m_1=1.6262\unit{kg} $\\
+	Center of gravity of link 1&$ S_1\equiv O $\\
+	Moment of inertia of link 1&$ J_{s1}=0.0045585\unit{kg\cdot m^2} $\\
+	Connecting rod 2 weight&$ m_2=0.29597\unit{kg} $\\
+	Center of gravity of link 2&$ l_{AS2}=l_{S2B} $\\
+	Moment of inertia of link 2&$ J_{S2}=0.004874\unit{kg\cdot m^2} $\\
+	Connecting rod 4 weight&$ m_2=0.13865\unit{kg} $\\
+	Center of gravity of link 4&$ l_{CS4}=l_{S4D} $\\
+	Moment of inertia of link 4&$ J_{S4}=0.00011121\unit{kg\cdot m^2} $\\
+	Piston weight&$ m_3=m_5=0.33513\unit{kg} $\\
+	Center of gravity of link 3 and 5&$ S_3\equiv B, S_5\equiv D $\\
+	Piston crown area&$ A=0.01\unit{m^2} $\\
+
+	Maximum operating pressure (The graphs given in figure \ref{fig:2a} and \ref{fig:2b})&$ p_{max}=23\unit{bar} $\\
+	Allowable tolerance factor&$ \delta=1/80 $\\
+	
+\end{tabular}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{2.2a}
+	\caption{Pressure graph at link 3}
+	\label{fig:2a}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{2.2b}
+	\caption{Pressure graph at link 5}
+	\label{fig:2b}
+\end{figure}
