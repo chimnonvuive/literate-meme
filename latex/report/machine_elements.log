@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.22)  15 SEP 2020 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  19 SEP 2020 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -59,9 +59,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 108.
+(babel)             (\language69) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
@@ -746,15 +746,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(68.28644pt, 460.935pt, 68.28644pt)
-* v-part:(T,H,B)=(68.28644pt, 708.47397pt, 68.28644pt)
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=460.935pt
-* \textheight=708.47397pt
-* \oddsidemargin=-3.98355pt
-* \evensidemargin=-3.98355pt
-* \topmargin=-42.98355pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-40.1381pt
 * \headheight=14.0pt
 * \headsep=25.0pt
 * \topskip=14.0pt
@@ -862,7 +862,6 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 ] (./chap1.tex
 [4
 
-
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -873,33 +872,25 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 File: 01.jpg Graphic file (type jpg)
 <use 01.jpg>
 Package pdftex.def Info: 01.jpg  used on input line 5.
-(pdftex.def)             Requested size: 184.37119pt x 168.02199pt.
+(pdftex.def)             Requested size: 273.14923pt x 248.93071pt.
 
-Overfull \hbox (5.83847pt too wide) in paragraph at lines 9--10
-\T1/ntxtlf/m/n/14.4 founded on 04/08/2003 un-der De-ci-sion num-ber 590/QD/DHQG
-/TCCB of Viet-nam
- []
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
-
-Overfull \hbox (17.88315pt too wide) in paragraph at lines 12--13
-\T1/ntxtlf/m/n/14.4 (hard-ware and soft-ware) re-gard-ing dig-i-tal con-trol, s
-ys-tem en-gi-neer-ing; mecha-tron-ics,
- []
-
-<02.jpg, id=215, 657.45625pt x 417.56pt>
-File: 02.jpg Graphic file (type jpg)
-<use 02.jpg>
-Package pdftex.def Info: 02.jpg  used on input line 16.
-(pdftex.def)             Requested size: 322.65309pt x 204.92474pt.
-[5
+ [5
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.19 \end{figure}
-                  <./01.jpg>]) (./chap2.tex
+l.13 \section
+             {The Organizational Structure} <./01.jpg>]
+<02.jpg, id=219, 657.45625pt x 417.56pt>
+File: 02.jpg Graphic file (type jpg)
+<use 02.jpg>
+Package pdftex.def Info: 02.jpg  used on input line 16.
+(pdftex.def)             Requested size: 318.66948pt x 202.39528pt.
+) (./chap2.tex
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
 Make it at least 17.0pt.
@@ -922,17 +913,17 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 File: 03.png Graphic file (type png)
 <use 03.png>
 Package pdftex.def Info: 03.png  used on input line 7.
-(pdftex.def)             Requested size: 230.4675pt x 161.82132pt.
+(pdftex.def)             Requested size: 227.62206pt x 159.81982pt.
 <2.2a.png, id=227, 199.071pt x 149.4675pt>
 File: 2.2a.png Graphic file (type png)
 <use 2.2a.png>
 Package pdftex.def Info: 2.2a.png  used on input line 38.
-(pdftex.def)             Requested size: 322.65309pt x 242.26372pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.27373pt.
 <2.2b.png, id=228, 199.071pt x 149.4675pt>
 File: 2.2b.png Graphic file (type png)
 <use 2.2b.png>
 Package pdftex.def Info: 2.2b.png  used on input line 44.
-(pdftex.def)             Requested size: 322.65309pt x 242.26372pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.27373pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -950,27 +941,27 @@ nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.62 \end{equation}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.2.3}) has been already used, duplicate ignored
+l.57 \section
+             {Displacement analysis}pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.62 \end{equation}
-                    <./2.2a.png (PNG copy)> <./2.2b.png (PNG copy)>]
+l.57 \section
+             {Displacement analysis} <./2.2a.png (PNG copy)> <./2.2b.png (PNG c
+opy)>]
 <04.png, id=254, 822.07124pt x 587.94656pt>
 File: 04.png Graphic file (type png)
 <use 04.png>
 Package pdftex.def Info: 04.png  used on input line 102.
-(pdftex.def)             Requested size: 368.74939pt x 263.7302pt.
+(pdftex.def)             Requested size: 364.19667pt x 260.4736pt.
 <05.png, id=256, 356.0803pt x 266.49562pt>
 File: 05.png Graphic file (type png)
 <use 05.png>
 Package pdftex.def Info: 05.png  used on input line 109.
-(pdftex.def)             Requested size: 322.65309pt x 241.48665pt.
- [10]
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
-}) has been already used, duplicate ignored
+(pdftex.def)             Requested size: 318.66948pt x 238.506pt.
+ [10] [11pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -989,12 +980,12 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 File: 06.png Graphic file (type png)
 <use 06.png>
 Package pdftex.def Info: 06.png  used on input line 140.
-(pdftex.def)             Requested size: 322.65309pt x 242.26372pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.27373pt.
 <07.png, id=295, 421.4655pt x 316.3455pt>
 File: 07.png Graphic file (type png)
 <use 07.png>
 Package pdftex.def Info: 07.png  used on input line 167.
-(pdftex.def)             Requested size: 322.65309pt x 242.19177pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.199pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1003,7 +994,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: 08.png Graphic file (type png)
 <use 08.png>
 Package pdftex.def Info: 08.png  used on input line 175.
-(pdftex.def)             Requested size: 368.74939pt x 201.87216pt.
+(pdftex.def)             Requested size: 364.19667pt x 199.37718pt.
 [13
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) 
@@ -1030,12 +1021,12 @@ l.185 \end{equation}
 File: 09.png Graphic file (type png)
 <use 09.png>
 Package pdftex.def Info: 09.png  used on input line 237.
-(pdftex.def)             Requested size: 322.65309pt x 241.48665pt.
+(pdftex.def)             Requested size: 318.66948pt x 238.506pt.
 <10.png, id=323, 356.0803pt x 265.74281pt>
 File: 10.png Graphic file (type png)
 <use 10.png>
 Package pdftex.def Info: 10.png  used on input line 243.
-(pdftex.def)             Requested size: 322.65309pt x 240.80449pt.
+(pdftex.def)             Requested size: 318.66948pt x 237.83224pt.
  [15] [16pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.9}) has been already used, duplicate ignored
 
@@ -1053,85 +1044,95 @@ l.248 \clearpage
 File: 12.png Graphic file (type png)
 <use 12.png>
 Package pdftex.def Info: 12.png  used on input line 252.
-(pdftex.def)             Requested size: 184.37119pt x 137.11496pt.
+(pdftex.def)             Requested size: 182.09486pt x 135.42538pt.
 <11.png, id=347, 341.3115pt x 255.9015pt>
 File: 11.png Graphic file (type png)
 <use 11.png>
 Package pdftex.def Info: 11.png  used on input line 268.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
- [17
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<13.png, id=348, 341.3115pt x 255.9015pt>
+File: 13.png Graphic file (type png)
+<use 13.png>
+Package pdftex.def Info: 13.png  used on input line 278.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<14.png, id=349, 341.3115pt x 255.9015pt>
+File: 14.png Graphic file (type png)
+<use 14.png>
+Package pdftex.def Info: 14.png  used on input line 288.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<15.png, id=351, 341.3115pt x 255.9015pt>
+File: 15.png Graphic file (type png)
+<use 15.png>
+Package pdftex.def Info: 15.png  used on input line 296.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+[17
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.275 \end{equation}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.2.12}) has been already used, duplicate ignored
+l.301 \begin{equation}
+                      \label{23} <./12.png>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.275 \end{equation}
-                     <./12.png> <./11.png>]
-<13.png, id=355, 341.3115pt x 255.9015pt>
-File: 13.png Graphic file (type png)
-<use 13.png>
-Package pdftex.def Info: 13.png  used on input line 278.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
-<14.png, id=356, 341.3115pt x 255.9015pt>
-File: 14.png Graphic file (type png)
-<use 14.png>
-Package pdftex.def Info: 14.png  used on input line 288.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
-<15.png, id=358, 341.3115pt x 255.9015pt>
-File: 15.png Graphic file (type png)
-<use 15.png>
-Package pdftex.def Info: 15.png  used on input line 296.
-(pdftex.def)             Requested size: 322.65309pt x 241.92972pt.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1038) has occurred while \output is active []
+
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-13}) has been already used, duplicate ignored
+12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.301 \begin{equation}
-                      \label{23}pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.2.14}) has been already used, duplicate ignored
+l.309 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.2.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.301 \begin{equation}
-                      \label{23} <./13.png> <./14.png>] [19pdfTeX warning (ext4
-): destination with the same identifier (name{figure.2.15}) has been already us
-ed, duplicate ignored
+l.309 \begin{equation}
+                       <./11.png> <./13.png>] [19pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.2.14}) has been already used, duplic
+ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.315 \end{equation}\clearpage
-                               <./15.png>]
+                              pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.2.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.315 \end{equation}\clearpage
+                               <./14.png> <./15.png>]
 <16.png, id=379, 341.3115pt x 255.9015pt>
 File: 16.png Graphic file (type png)
 <use 16.png>
 Package pdftex.def Info: 16.png  used on input line 319.
-(pdftex.def)             Requested size: 304.21878pt x 228.10695pt.
+(pdftex.def)             Requested size: 300.46277pt x 225.29164pt.
 <17.png, id=380, 341.3115pt x 255.9015pt>
 File: 17.png Graphic file (type png)
 <use 17.png>
 Package pdftex.def Info: 17.png  used on input line 325.
-(pdftex.def)             Requested size: 304.21878pt x 228.10695pt.
+(pdftex.def)             Requested size: 300.46277pt x 225.29164pt.
 <18.png, id=383, 199.071pt x 149.4675pt>
 File: 18.png Graphic file (type png)
 <use 18.png>
 Package pdftex.def Info: 18.png  used on input line 332.
-(pdftex.def)             Requested size: 276.5638pt x 207.65884pt.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
 
-Overfull \hbox (25.45847pt too wide) in paragraph at lines 336--336
-[]\T1/ntxtlf/b/n/20.74 Find the en-ergy equa-tion and cal-cu-late the fly-wheel
-
- []
-
-
-Underfull \vbox (badness 7397) has occurred while \output is active []
+Underfull \vbox (badness 7379) has occurred while \output is active []
 
  [20
 
@@ -1152,7 +1153,7 @@ l.340 \end{equation}
 File: 19.png Graphic file (type png)
 <use 19.png>
 Package pdftex.def Info: 19.png  used on input line 344.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 18}) has been already used, duplicate ignored
 
@@ -1170,12 +1171,12 @@ l.351 \end{equation}
 File: 20.png Graphic file (type png)
 <use 20.png>
 Package pdftex.def Info: 20.png  used on input line 355.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
 <21.png, id=398, 341.3115pt x 255.9015pt>
 File: 21.png Graphic file (type png)
 <use 21.png>
 Package pdftex.def Info: 21.png  used on input line 362.
-(pdftex.def)             Requested size: 276.5638pt x 207.37279pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
  [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 20}) has been already used, duplicate ignored
 
@@ -1189,7 +1190,7 @@ l.372 \end{equation}
                                                   \fi \fi 
 l.372 \end{equation}
                      <./20.png> <./21.png>]
-Overfull \hbox (4.0827pt too wide) in paragraph at lines 372--377
+Overfull \hbox (9.77359pt too wide) in paragraph at lines 372--377
 [] 
  []
 
@@ -1197,12 +1198,12 @@ Overfull \hbox (4.0827pt too wide) in paragraph at lines 372--377
 File: 22.png Graphic file (type png)
 <use 22.png>
 Package pdftex.def Info: 22.png  used on input line 387.
-(pdftex.def)             Requested size: 276.5638pt x 207.65884pt.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
 <23.png, id=409, 443.40656pt x 329.73187pt>
 File: 23.png Graphic file (type png)
 <use 23.png>
 Package pdftex.def Info: 23.png  used on input line 400.
-(pdftex.def)             Requested size: 276.5638pt x 205.67436pt.
+(pdftex.def)             Requested size: 273.14923pt x 203.13356pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1217,7 +1218,7 @@ l.408 	\item T
 File: 24.png Graphic file (type png)
 <use 24.png>
 Package pdftex.def Info: 24.png  used on input line 422.
-(pdftex.def)             Requested size: 368.74939pt x 246.42345pt.
+(pdftex.def)             Requested size: 364.19667pt x 243.38136pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1226,7 +1227,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: 25.png Graphic file (type png)
 <use 25.png>
 Package pdftex.def Info: 25.png  used on input line 435.
-(pdftex.def)             Requested size: 276.5638pt x 207.20247pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.6446pt.
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 3}) has been already used, duplicate ignored
 
@@ -1238,17 +1239,17 @@ l.440 \begin{equation}
 File: 26.png Graphic file (type png)
 <use 26.png>
 Package pdftex.def Info: 26.png  used on input line 451.
-(pdftex.def)             Requested size: 184.37119pt x 233.68834pt.
+(pdftex.def)             Requested size: 182.09486pt x 230.80354pt.
 <27.png, id=430, 199.071pt x 149.4675pt>
 File: 27.png Graphic file (type png)
 <use 27.png>
 Package pdftex.def Info: 27.png  used on input line 458.
-(pdftex.def)             Requested size: 276.5638pt x 207.65884pt.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
 <28.png, id=431, 467.2pt x 350.4pt>
 File: 28.png Graphic file (type png)
 <use 28.png>
 Package pdftex.def Info: 28.png  used on input line 464.
-(pdftex.def)             Requested size: 276.5638pt x 207.42392pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.86287pt.
 ) (./chap3.tex [25pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.24}) has been already used, duplicate ignored
 
@@ -1292,26 +1293,26 @@ Chapter 3.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 14.4pt on input line 5.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
  [29
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./machine_elements.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `machine_elements.out' has not changed.
-(rerunfilecheck)             Checksum: EF65FF5850B64ED08D72619A3E94A37D;1650.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+(rerunfilecheck)             Checksum: 5D365A87C6F164B8B4719A7E5D424CCA;1665.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 11907 strings out of 481239
- 165755 string characters out of 5920377
- 445522 words of memory out of 5000000
- 26711 multiletter control sequences out of 15000+600000
+ 11899 strings out of 481239
+ 165661 string characters out of 5920377
+ 444511 words of memory out of 5000000
+ 26703 multiletter control sequences out of 15000+600000
  592621 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,74p,982b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,49p,982b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fon
 ts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
@@ -1321,7 +1322,7 @@ NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share
 c/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/tx
 exs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on machine_elements.pdf (29 pages, 1546773 bytes).
+Output written on machine_elements.pdf (29 pages, 1547197 bytes).
 PDF statistics:
  521 PDF objects out of 1000 (max. 8388607)
  425 compressed objects within 5 object streams

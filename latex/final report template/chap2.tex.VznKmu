@@ -1,0 +1,150 @@
+\chapter{Internship tasks }
+\section{Problem}
+At the moment, the light duty air compressor market mainly use electricity as the power source, which can be inconvenient at remote locations where power grid is difficult to reach. To solve this problem, we will analyze and model a V-twin air compressor with a compression end and a combustion end. The model is programmed using MATLAB\textsuperscript{\textregistered}
+R2019a.
+\section{Parameters}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{03}
+	\caption{Mechanism of the air compressor}
+	\label{fig:03}
+\end{figure}
+\begin{tabular}{p{8cm}p{7.5cm}}
+	Piston lift & $ H_C=39\unit{mm} $\\
+	V-angle&$ \alpha=90^\circ $\\
+	Connecting rod dimensions  &$ \dfrac{l_{AB}}{l_{OA}} =5.372,l_{AC}=25mm$, $\beta=120^\circ$\\
+	Crankshaft 1 weight&$ m_1=1.6262\unit{kg} $\\
+	Center of gravity of link 1&$ S_1\equiv O $\\
+	Moment of inertia of link 1&$ J_{s1}=0.0045585\unit{kg\cdot m^2} $\\
+	Connecting rod 2 weight&$ m_2=0.29597\unit{kg} $\\
+	Center of gravity of link 2&$ l_{AS2}=l_{S2B} $\\
+	Moment of inertia of link 2&$ J_{S2}=0.004874\unit{kg\cdot m^2} $\\
+	Connecting rod 4 weight&$ m_2=0.13865\unit{kg} $\\
+	Center of gravity of link 4&$ l_{CS4}=l_{S4D} $\\
+	Moment of inertia of link 4&$ J_{S4}=0.00011121\unit{kg\cdot m^2} $\\
+	Piston weight&$ m_3=m_5=0.33513\unit{kg} $\\
+	Center of gravity of link 3 and 5&$ S_3\equiv B, S_5\equiv D $\\
+	Piston crown area&$ A=0.01\unit{m^2} $\\
+
+	Maximum operating pressure (The graphs given in figure \ref{fig:2a} and \ref{fig:2b})&$ p_{max}=23\unit{bar} $\\
+	Allowable tolerance factor&$ \delta=1/80 $\\
+	Average rotational velocity&$ n_1=500\unit{rpm} $\\
+	Valve lift (trapezoidal acceleration)&$ s=2\unit{mm} $ \\
+	Early opening and late closing of combustion end&$ 25^\circ $\\
+	Early opening of compression end&$ 40^\circ $\\
+	Pressure angle of cam follower&$ \alpha_2=6^\circ $\\
+	Periodic angles&$ \phi_{rise}=\phi_{fall}$, $\phi_{rise,comb}=5^\circ$, $\phi_{rise,comp}=20^\circ $
+\end{tabular}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{2.2a}
+	\caption{Pressure graph at link 3 (not to scale)}
+	\label{fig:2a}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{2.2b}
+	\caption{Pressure graph at link 5 (not to scale)}
+	\label{fig:2b}
+\end{figure}
+\section{Objectives}
+\begin{enumerate}
+	\item Mechanism synthesis
+	\item Kinematic analysis of the mechanism
+	\item Force  analysis of the mechanism
+	\item Identify energy relation and calculate the flywheel weight
+	\item Combining the motion
+	\item Model cam mechanism for compression piston
+\end{enumerate}
+\section{Displacement analysis}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{03}
+	\caption{Mechanism of the air compressor}
+	\label{fig:03}
+\end{figure}
+\paragraph{Position of $ A $:}
+\begin{equation}\label{rA}
+\vec{r}_A=
+\matgen{x_A}{y_A}{0}=\matgen{l_{OA}\cos \phi}{l_{OA}\sin \phi}{0}
+\end{equation}
+where $ \phi=\widehat {xOA} $
+\paragraph{Position of $ B $:}
+\begin{equation}\label{rB}
+	\left\{
+		\begin{array}{ll}
+		(x_A-x_B)^2+(y_A-y_B)^2&=l_{AB}^2\\
+		\dfrac{y_B}{x_B}&=\tan \widehat{xOB}\\
+		\end{array}
+	\right.
+\end{equation}
+Solve equation (\ref{rB}) yields 2 positions $ B_1, B_2 $. Combining with condition $ x_B,y_B>0 $ to find the correct solution.
+\[\vec{r}_B=
+\matgen{x_B}{y_B}{0}\]
+\paragraph{Position of $ C $:}
+\begin{equation}\label{rC}
+\left\{
+\begin{array}{ll}
+(x_A-x_C)^2+(y_A-y_C)^2&=l_{AC}^2\\
+(x_B-x_C)^2+(y_B-y_C)^2&=l_{BC}^2\\
+\end{array}
+\right.
+\end{equation}
+Solve equation (\ref{rC}) yields 2 sets of positions $ C_1, C_2 $, one of which is the correct solution. This can be programmed using MATLAB\textup{\textregistered} to try both sets.
+\[\vec{r}_C=
+\matgen{x_C}{y_C}{0}\]
+\paragraph{Position of $ D $:}
+\begin{equation}\label{rD}
+\left\{
+\begin{array}{ll}
+(x_C-x_D)^2+(y_C-y_D)^2&=l_{CD}^2\\
+\dfrac{y_D}{x_D}&=\tan \widehat{xOD}\\
+\end{array}
+\right.
+\end{equation}
+Solve equation (\ref{rD}) yields 2 positions $ D_1, D_2 $. Combining with condition $ x_D<0,y_D>0 $ to find the correct solution.
+\[\vec{r}_D=
+\matgen{x_D}{y_D}{0}\]
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{04}
+	\caption{Position analysis of $B$, $C$ and $D$}
+	\label{fig:04}
+\end{figure}
+Using MATLAB\textup{\textregistered} to plot the positions of the mechanism
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{05}
+	\caption{Locus of the mechanism using MATLAB\textup{\textregistered}}
+	\label{fig:05}
+\end{figure}
+\section{Velocity and Acceleration Analysis}
+With the analytical solutions of the points $ A,B,C,D $, we can easily find the corresponding velocities and accelerations using derivative with respect to time $ t $. Also, we need to remember that $ \phi(t) $ is a time-dependent variable.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{03}
+	\caption{Mechanism of the air compressor}
+	\label{fig:03}
+\end{figure}
+\subsection{Velocity analysis}
+\paragraph{Velocity of $ A $:}
+\begin{equation}\label{vA}
+\vec{v}_A=\dot{\vec{r}}_A=\dfrac{d\vec{r}_A}{dt}
+\end{equation}
+where $ \phi=\widehat{xOA} $
+\paragraph{Velocity of $ B $:}
+\begin{equation}\label{vB}
+\vec{v}_B=\dot{\vec{r}}_B=\dfrac{d\vec{r}_B}{dt}=\vec{v}_A+\vec{\omega}_2\times(\vec{r}_B-\vec{r}_A)
+\end{equation}
+From equation (\ref{vB}), we solve analytically for $ \vec{\omega}_2 $
+\[\vec{\omega}_2=\matgen{0}{0}{\omega_2}\]
+\paragraph{Velocity of $ C $:}
+\begin{equation}\label{vC}
+\vec{v}_C=\dot{\vec{r}}_C=\dfrac{d\vec{r}_C}{dt}
+\end{equation}
+\paragraph{Velocity of $ D $:}
+\begin{equation}\label{vD}
+\vec{v}_D=\dot{\vec{r}}_D=\dfrac{d\vec{r}_D}{dt}=\vec{v}_C+\vec{\omega}_4\times(\vec{r}_D-\vec{r}_C)
+\end{equation}
+From equation (\ref{vD}), we solve analytically for $ \vec{\omega}_4 $
+\[\vec{\omega}_4=\matgen{0}{0}{\omega_4}\]

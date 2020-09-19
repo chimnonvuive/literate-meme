@@ -1,0 +1,16 @@
+\chapter{Internship tasks }
+\section{Objectives}At the moment, the light duty air compressor market mainly use electricity as the power source, which can be inconvenient at remote locations where power grid is difficult to reach. To solve this problem, we will analyze and model a V-twin air compressor with a compressing end and a combustion end. The model is programmed using MATLAB\textsuperscript{\textregistered}
+R2019a.
+\section{Parameters}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{03}
+	\caption{Mechanism of the air compressor}
+	\label{fig:03}
+\end{figure}
+\begin{tabular}{p{5cm}l}
+	Valve lift & $ H_C=39\unit{mm} $\\
+	V-angle&$ \alpha=90^\circ $\\
+	Connecting rod dimensions&$ \dfrac{l_{AB}}{l_{OA}} =5.372,l_{AC}=25mm$\\
+	
+\end{tabular}

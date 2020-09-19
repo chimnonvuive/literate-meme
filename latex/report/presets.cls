@@ -4,7 +4,6 @@
 %\usepackage[utf8]{vietnam}
 \usepackage[english]{babel}
 \usepackage[hidelinks,colorlinks=true,linkcolor=blue,linktocpage=true]{hyperref}
-%\usepackage{biblatex}
 \usepackage{tgtermes}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -13,9 +12,9 @@
 \usepackage{setspace}
 \usepackage{newtxtext,newtxmath,multirow}
 \usepackage{stackengine,booktabs,float,placeins,longtable}
-\usepackage[margin=2.4cm]{geometry}
+\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage[none]{hyphenat}
+\usepackage{hyphenat}
 \usepackage[nottoc]{tocbibind}
 %\renewcommand{\baselinestretch}{1}
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
