@@ -1,14 +1,15 @@
-\chapter{Internship tasks }
+\chapter{Internship tasks}
+
 \section{Problem}
 At the moment, the light duty air compressor market mainly use electricity as the power source, which can be inconvenient at remote locations where power grid is difficult to reach. To solve this problem, we will analyze and model a V-twin air compressor with a compression end and a combustion end. The model is programmed using MATLAB\textsuperscript{\textregistered} R2019a.
-\section{Parameters}
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{03}
+	\includegraphics[width=0.6\linewidth]{03}
 	\caption{Mechanism of the air compressor}
 	\label{fig:03}
 \end{figure}
-\begin{tabular}{p{9cm}p{6cm}}
+\section{Parameters}
+\begin{tabular}{p{0.5\linewidth}p{0.5\linewidth}}
 	Piston lift & $ H_C=39\unit{mm} $\\
 	V-angle&$ \alpha=90^\circ $\\
 	Connecting rod dimensions  &$ \dfrac{l_{AB}}{l_{OA}} =5.372,l_{AC}=25mm$, $\beta=120^\circ$\\
@@ -33,21 +34,21 @@ At the moment, the light duty air compressor market mainly use electricity as th
 	Pressure angle of cam follower&$ \alpha_2=6^\circ $\\
 	Periodic angles&$ \phi_{rise}=\phi_{fall}$, $\phi_{rise,comb}=5^\circ$, $\phi_{rise,comp}=20^\circ $
 \end{tabular}
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{2.2a}
+	\includegraphics{2.2a}
 	\caption{Pressure graph at link 3 (not to scale)}
 	\label{fig:2a}
 \end{figure}
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{2.2b}
+	\includegraphics{2.2b}
 	\caption{Pressure graph at link 5 (not to scale)}
 	\label{fig:2b}
 \end{figure}
 \section{Objectives}
 \begin{enumerate}
-	\item Mechanism synthesis \cite{li_1984_hng}
+	\item Mechanism synthesis
 	\item Kinematic analysis of the mechanism
 	\item Force  analysis of the mechanism
 	\item Identify energy relation and calculate the flywheel weight
@@ -97,16 +98,16 @@ Solve equation (\ref{rC}) yields 2 sets of positions $ C_1, C_2 $, one of which 
 Solve equation (\ref{rD}) yields 2 positions $ D_1, D_2 $. Combining with condition $ x_D<0,y_D>0 $ to find the correct solution.
 \[\vec{r}_D=
 \matgen{x_D}{y_D}{0}\]
-\begin{figure}
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{04}
 	\caption{Position analysis of $B$, $C$ and $D$}
 	\label{fig:04}
 \end{figure}
 Using MATLAB\textup{\textregistered} to plot the positions of the mechanism in figure \ref{fig:05}
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{05}
+	\includegraphics{05}
 	\caption{Locus of the mechanism using MATLAB\textup{\textregistered}}
 	\label{fig:05}
 \end{figure}
@@ -134,10 +135,10 @@ From equation (\ref{vB}), we solve analytically for $ \vec{\omega}_2 $
 \end{equation}
 From equation (\ref{vD}), we solve analytically for $ \vec{\omega}_4 $
 \[\vec{\omega}_4=\matgen{0}{0}{\omega_4}\]
-Using MATLAB\textup{\textregistered} to plot the velocity graph of the mechanism in figure \ref{fig:06} \cite{marghitu_2009_mechanisms}. \clearpage
-\begin{figure}[h]
+Using MATLAB\textup{\textregistered} to plot the velocity graph of the mechanism in figure \ref{fig:06}.
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{06}
+	\includegraphics{06}
 	\caption{Velocity of link 3}
 	\label{fig:06}
 \end{figure}
@@ -162,21 +163,22 @@ where $ \phi=\widehat{xOA} $
 \end{equation}
 \[\vec{\alpha}_4=\dfrac{d\vec{\omega}_4}{dt}\]
 Using MATLAB\textup{\textregistered} to plot the acceleration graph of the mechanism in figures \ref{fig:07}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{07}
+	\includegraphics{07}
 	\caption{Acceleration of link 3}
 	\label{fig:07}
 \end{figure}
 \section{Force analysis}
 To find the reaction forces, we separate the links and solve the D'Alembert equations analytically.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{08}
 	\caption{Force analysis of the mechanism}
 	\label{fig:08}
-\end{figure}\\
-Position and acceleration equations of the links, located at their centers of gravity:
+\end{figure}
+
+Position and acceleration equations of the links at their centers of gravity:
 \begin{equation}\label{rS}
 	\vec{r}_{S1}=\vec{0},\vec{r}_{S2}=\dfrac{\vec{r}_A+\vec{r}_B}{2},\vec{r}_{S4}=\dfrac{\vec{r}_D+\vec{r}_C}{2}
 \end{equation}
@@ -230,26 +232,67 @@ where $ \vec{F}_{42}=-\vec{F}_{24}, \vec{F}_{32}=-\vec{F}_{23} $
 \end{array} 
 \right.
 \end{equation}
-Solving for system of equations from (\ref{rS}) to (\ref{L1}) by rearranging them into matrix form, we obtain $ \vec{F}_{45},\vec{R}_{05},\vec{F}_{24},\vec{F}_{23},\vec{F}_{12},\vec{R}_{01},\vec{R}_{03},\vec{M}_{cb} $.\\
+Solving for system of equations from (\ref{rS}) to (\ref{L1}) by rearranging them into matrix form, we obtain $ \vec{F}_{45},\vec{R}_{05},\vec{F}_{24},\vec{F}_{23},\vec{F}_{12},\vec{R}_{01},\vec{R}_{03},\vec{M}_{cb} $.
+
 Using MATLAB\textup{\textregistered} to plot the reaction force $ \vec{F}_{23},\vec{R}_{03} $ of the mechanism in figures \ref{fig:09} and \ref{fig:10}
+
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{09}
-	\caption{Reaction force $\vec{F}_{23}$ along y axis}
-	\label{fig:09}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{10}
-	\caption{Reaction force $\vec{R}_{03}$ along y axis}
-	\label{fig:10}
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{Reaction force $\vec{F}_{23}$ along y axis}
+		\label{fig:09}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{10}
+		\caption{Reaction force $\vec{R}_{03}$ along y axis}
+		\label{fig:10}
+	\end{minipage}
 \end{figure}
 
-\clearpage
+\begin{figure}
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{A subfigure}
+		\label{fig:sub1}
+	\end{subfigure}~
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{A subfigure}
+		\label{fig:sub2}
+	\end{subfigure}~
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{A subfigure}
+		\label{fig:sub3}
+	\end{subfigure}\\
+
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{A subfigure}
+		\label{fig:sub4}
+	\end{subfigure}~
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{09}
+		\caption{A subfigure}
+		\label{fig:sub5}
+	\end{subfigure}
+	\caption{A figure with two subfigures}
+	\label{fig:test}
+\end{figure}
+
 \section{Energy relation analysis}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{12}
+	\includegraphics{12}
 	\caption{Pressure on both ends of the system}
 	\label{fig:12}
 \end{figure}
@@ -265,10 +308,11 @@ Let us choose the driving link as the equivalent link of the system: $ \omega_{t
 From the displacement - pressure relation graph (figure \ref{fig:2a}), we convert it to the external force acting on the system $ F_B(\phi)=P_B(\phi) A $ in a cycle (each displacement data corresponds to a specific position and angle $ \phi(t) $ of the system).
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{11}
+	\includegraphics{11}
 	\caption{Force applied on piston 3 corresponding to angle of crankshaft 1}
 	\label{fig:11}
-\end{figure}\\
+\end{figure}
+
 The equivalent dynamic moment on link 1 is calculated as:
 \begin{equation}
 	M_d(\phi)=\dfrac{1}{\omega_1}\left(\vec{F}_B\cdot\vec{v}_B+\vec{Q}_2\cdot\vec{v}_{S2}+\vec{Q}_4\cdot\vec{v}_{S4}+\vec{Q}_3\cdot\vec{v}_{B}+\vec{Q}_5\cdot\vec{v}_{D}\right)
@@ -278,7 +322,8 @@ The equivalent dynamic moment on link 1 is calculated as:
 	\includegraphics[width=0.6\linewidth]{13}
 	\caption{Equivalent dynamic moment applied on crankshaft 1}
 	\label{fig:13}
-\end{figure}\\
+\end{figure}
+
 From the moment, we integrate to obtain the dynamic work:
 \begin{equation}
 	A_d(\phi)=\int_{\phi_i}^{\phi_f}M_d d\phi
@@ -296,15 +341,18 @@ From the displacement - pressure  relation graph (figure \ref{fig:2b}), we conve
 	\includegraphics[width=0.6\linewidth]{15}
 	\caption{Force applied on piston 3 corresponding to angle of crankshaft 1}
 	\label{fig:15}
-\end{figure}\\
+\end{figure}
+
 The equivalent resistant moment on link 1 is calculated as:
 \begin{equation}\label{23}
 M_c(\phi)=\dfrac{1}{\omega_1}\vec{F}_D\cdot\vec{v}_D
 \end{equation}
+
 From the moment, we integrate to obtain the resistant work:
 \begin{equation}\label{24}
 A_c(\phi)=\int_{\phi_i}^{\phi_f}M_c d\phi
 \end{equation}
+
 However, the value of $ M_c $ in equation \ref{23} still does not satisfy condition (\ref{condition}). To compensate for this, we multiply the force $ F_D $ by a ratio $ \dfrac{A_d}{A_c} $ and recalculate $ M_c, A_c $:
 \begin{equation}
 \begin{array}{l}
@@ -312,11 +360,12 @@ F_{D,new}(\phi)=\dfrac{A_d}{A_c}F_D\\
 M_{c,new}(\phi)=\dfrac{1}{\omega_1}\vec{F}_{D,new}\cdot\vec{v}_D\\
 \displaystyle A_{c,new}(\phi)=\int_{\phi_i}^{\phi_f}M_{c,new} d\phi
 \end{array}
-\end{equation}\clearpage
+\end{equation}
+
 We then obtain the figure of equivalent resistant moment and work:
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.66\linewidth]{16}
+	\includegraphics[width=0.6\linewidth]{16}
 	\caption{Equivalent resistant moment applied on crankshaft 1}
 	\label{fig:16}
 \end{figure}
@@ -325,7 +374,8 @@ We then obtain the figure of equivalent resistant moment and work:
 	\includegraphics[width=0.66\linewidth]{17}
 	\caption{Resistant work of the system in 1 cycle}
 	\label{fig:17}
-\end{figure}\\
+\end{figure}
+
 Combining the 2 figures \ref{fig:14} and \ref{fig:17}, we obtain the works applied onto the system in 1 cycle:
 \begin{figure}
 	\centering
@@ -344,7 +394,8 @@ where $ m_k,\omega_k,v_k $ are the weight, rotational speed and instantaneous sp
 	\includegraphics[width=0.6\linewidth]{19}
 	\caption{Equivalent moment of inertia of the system}
 	\label{fig:19}
-\end{figure}\\
+\end{figure}
+
 Then, we calculate the total energy output of the system:
 \begin{equation}
 	E(\phi)=\Delta E + E_0 = (A_c+A_d) + \dfrac{1}{2}J_0\omega_1^2
@@ -355,14 +406,16 @@ where $ \Delta E $ is the total equivalent work and $ J_0 = J(0)$
 	\includegraphics[width=0.6\linewidth]{20}
 	\caption{Energy output of the system in 1 cycle}
 	\label{fig:20}
-\end{figure}\\
+\end{figure}
+
 From the equivalent energy equation $ E(\phi) $ and moment of inertia $ J(\phi) $ we plot the graph of $ E(J) $
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{21}
 	\caption{Equivalent moment of inertia - energy output relations}
 	\label{fig:21}
-\end{figure}\\
+\end{figure}
+
 From figure \ref{fig:21} we draw 2 tangent lines at the boundaries. Let the slope of the lower tangent line be $ \psi_{min} $ and the upper one be $ \psi_{max} $. The slope of the lines at calculated numerically as follows:
 \begin{equation}
 \begin{array}{c}
@@ -388,10 +441,12 @@ The lines cross the ordinate $ E(J) $ at $ a, b $ respectively. We then derive t
 	\caption{Wittenbauer curve with tangent boundaries}
 	\label{fig:22}
 \end{figure}
+
 Calculating the moment of inertia of the flywheel using:
 \begin{equation}
 	J_d=\dfrac{\mu_J ab}{\psi_{max}-\psi_{min}}
 \end{equation}
+
 Programming with MATLAB\textup{\textregistered}, we estimate $ J_d=1.63\unit{kg\cdot m^2} $. Assuming the cross section area is $ 100\unit{cm^2} $, the weight of the flywheel will be about $ 16.3\unit{g} $.
 \section{Combining motion of the system}
 From the given parameters, we derive the following table:
@@ -416,26 +471,35 @@ For combustion ends, we will find the rise, dwell, fall of the motion:
 \phi_{dwell,comb}&=5^\circ\\
 \phi_{fall,comb}&=55^\circ\\
 \end{array}\right.\]
-Knowing the angles of each interval and the form of acceleration (modified trapezoidal), we can integrate to find velocity and displacement of the cam follower. For vibration safety, jerk is included using derivative with respect to $ \phi(t) $
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{26}
+	\caption{Position vectors of the cam}
+	\label{fig:26}
+\end{figure}
+Knowing the angles of each interval and the form of acceleration (modified trapezoidal), we can integrate to find velocity and displacement of the cam follower. For vibration safety, jerk is included using derivative with respect to $ \phi(t) $.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{24}
 	\caption{Displacement, velocity, acceleration and jerk of the cam follower}
 	\label{fig:24}
-\end{figure}\\
+\end{figure}
+
 For flat faced follower, the pressure angle is constant. This leads to the condition of convex cam profile $ R_0+Y+\frac{dY^2}{d\phi}>0 $ or:
 \begin{equation}\label{camc}
 	R_0> h_{max}
 \end{equation}
-where $ h_{max} $ is the minimum value of the sum $ Y+\frac{dY^2}{d\phi} $.\\
+where $ h_{max} $ is the minimum value of the sum $ Y+\frac{dY^2}{d\phi} $.
+
 From the figure, $ h_{max}=9.096\unit{mm} $. Then, arbitrarily choose $ R_0=12\unit{mm} $ to satisfy the condition (\ref{camc}).
 % TODO: \usepackage{graphicx} required
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{25}
+	\includegraphics[width=0.7\linewidth]{25}
 	\caption{Displacement - acceleration diagram of the cam}
 	\label{fig:25}
-\end{figure}\\
+\end{figure}
+
 From the pressure angle $ \alpha_2=6^\circ $, we use superposition to create an equivalent cam profile, namely $ Y=Y\cos\alpha_2 $. Then, apply the following formula to find cam profile:
 \begin{equation}
 \left\{
@@ -446,12 +510,7 @@ v&=(R_0+Y)\cos\phi - Y'\sin\phi
 \right.
 \end{equation}
 where $ \phi(t) =\widehat{xOA}$; $ u,v $ are the position of cam along $ x,y $-axes respectively; $ Y,Y' $ are the displacement and velocity of the cam follower as shown in figure \ref{fig:24}.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\linewidth]{26}
-	\caption{Position vectors of the cam}
-	\label{fig:26}
-\end{figure}\\
+
 Using MATLAB\textup{\textregistered}, we plot the cam profile numerically. Applying this process to the compression end, we also plot the cam profile in figure \ref{fig:28}:
 \begin{figure}[h]
 	\centering
