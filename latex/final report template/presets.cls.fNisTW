@@ -95,5 +95,5 @@
 }
 \newglossaryentry{formula}{
 	name={Chezy equation},
-	description={Chezy equation, \[a=b+c\] which is commonly used}
+	description={Chezy equation, \[a=b+c\]}
 }

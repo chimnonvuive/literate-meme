@@ -3,68 +3,72 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces DCSELab main entrance\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces DCSELab main entrance\relax }}{8}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The organizational structure of DCSELab\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The organizational structure of DCSELab\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mechanism of the air compressor\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mechanism of the air compressor\relax }}{10}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pressure graph at link 3 (not to scale)\relax }}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pressure graph at link 3 (not to scale)\relax }}{12}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Pressure graph at link 5 (not to scale)\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Pressure graph at link 5 (not to scale)\relax }}{12}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Position analysis of $B$, $C$ and $D$\relax }}{12}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Position analysis of $B$, $C$ and $D$\relax }}{14}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Locus of the mechanism using MATLAB\textup {\textregistered }\relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Locus of the mechanism using MATLAB\textup {\textregistered }\relax }}{15}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Velocity of link 3\relax }}{14}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Velocity of link 3\relax }}{16}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Acceleration of link 3\relax }}{15}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Acceleration of link 3\relax }}{17}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Force analysis of the mechanism\relax }}{15}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Force analysis of the mechanism\relax }}{17}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Reaction force $\vec {F}_{23}$ along y axis\relax }}{17}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Reaction force $\vec {F}_{23}$ along y axis\relax }}{19}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Reaction force $\vec {R}_{03}$ along y axis\relax }}{17}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Reaction force $\vec {R}_{03}$ along y axis\relax }}{19}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces A figure with two subfigures\relax }}{17}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces A figure with two subfigures\relax }}{19}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Pressure on both ends of the system\relax }}{18}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Pressure on both ends of the system\relax }}{20}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1\relax }}{19}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1\relax }}{21}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Equivalent dynamic moment applied on crankshaft 1\relax }}{19}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Equivalent dynamic moment applied on crankshaft 1\relax }}{21}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Dynamic work of the system in 1 cycle\relax }}{20}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Dynamic work of the system in 1 cycle\relax }}{22}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1\relax }}{20}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1\relax }}{22}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Equivalent resistant moment applied on crankshaft 1\relax }}{21}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Equivalent resistant moment applied on crankshaft 1\relax }}{23}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Resistant work of the system in 1 cycle\relax }}{22}{figure.caption.39}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Resistant work of the system in 1 cycle\relax }}{24}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Resistant and dynamic moment of the system in 1 cycle\relax }}{23}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Resistant and dynamic moment of the system in 1 cycle\relax }}{25}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Equivalent moment of inertia of the system\relax }}{23}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Equivalent moment of inertia of the system\relax }}{25}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Energy output of the system in 1 cycle\relax }}{24}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Energy output of the system in 1 cycle\relax }}{26}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Equivalent moment of inertia - energy output relations\relax }}{24}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Equivalent moment of inertia - energy output relations\relax }}{26}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Wittenbauer curve with tangent boundaries\relax }}{25}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Wittenbauer curve with tangent boundaries\relax }}{27}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Timing chart of the system\relax }}{25}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Timing chart of the system\relax }}{27}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Position vectors of the cam\relax }}{26}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Position vectors of the cam\relax }}{28}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Displacement, velocity, acceleration and jerk of the cam follower\relax }}{27}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Displacement, velocity, acceleration and jerk of the cam follower\relax }}{29}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Displacement - acceleration diagram of the cam\relax }}{28}{figure.caption.48}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Displacement - acceleration diagram of the cam\relax }}{30}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Cam profile of the combustion end\relax }}{28}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Cam profile of the combustion end\relax }}{30}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Cam profile of the compression end\relax }}{29}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Cam profile of the compression end\relax }}{31}{figure.caption.51}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

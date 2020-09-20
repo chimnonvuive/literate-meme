@@ -2,7 +2,7 @@
 
 \section{Problem}
 At the moment, the light duty air compressor market mainly use electricity as the power source, which can be inconvenient at remote locations where power grid is difficult to reach. To solve this problem, we will analyze and model a V-twin air compressor with a compression end and a combustion end. The model is programmed using MATLAB\textsuperscript{\textregistered} R2019a.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{03}
 	\caption{Mechanism of the air compressor}
@@ -389,7 +389,7 @@ Since the crankshaft is chosen to be the equivalent link, we obtain the equivale
 	J(\phi)=J_1+J_2\left(\dfrac{\omega_2}{\omega_1}\right)^2+m_2\left(\dfrac{v_{S2}}{\omega_1}\right)^2+m_3\left(\dfrac{v_{B}}{\omega_1}\right)^2+J_4\left(\dfrac{\omega_4}{\omega_1}\right)^2+m_5\left(\dfrac{v_{D}}{\omega_1}\right)^2
 \end{equation}
 where $ m_k,\omega_k,v_k $ are the weight, rotational speed and instantaneous speed at point $ k $ respectively.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{19}
 	\caption{Equivalent moment of inertia of the system}
@@ -401,17 +401,17 @@ Then, we calculate the total energy output of the system:
 	E(\phi)=\Delta E + E_0 = (A_c+A_d) + \dfrac{1}{2}J_0\omega_1^2
 \end{equation}
 where $ \Delta E $ is the total equivalent work and $ J_0 = J(0)$
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\linewidth]{20}
+	\includegraphics{20}
 	\caption{Energy output of the system in 1 cycle}
 	\label{fig:20}
 \end{figure}
 
 From the equivalent energy equation $ E(\phi) $ and moment of inertia $ J(\phi) $ we plot the graph of $ E(J) $
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\linewidth]{21}
+	\includegraphics{21}
 	\caption{Equivalent moment of inertia - energy output relations}
 	\label{fig:21}
 \end{figure}

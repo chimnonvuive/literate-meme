@@ -48,10 +48,9 @@
 %	\chapter{Glossary}
 %	\bibliography{ref}
 %	\bibliographystyle{plain}
-%	\cite{marghitu_2009_mechanisms}
-
-	\printglossaries
-	\printbibliography[title=References]
+	\cite{marghitu_2009_mechanisms}
+%	\printglossary
+	\printbibliography
 
 %	\printbibliography[title='Yes']
 \end{document}

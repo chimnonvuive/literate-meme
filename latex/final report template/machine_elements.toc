@@ -1,80 +1,92 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Overview of the Company}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Overview of the Company}{8}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}History of the Organization }{6}{section.1.1}%
+\contentsline {section}{\numberline {1.1}History of the Organization }{8}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Working Objectives}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Working Objectives}{9}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}The Organizational Structure}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.3}The Organizational Structure}{9}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Internship tasks}{8}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Internship tasks}{10}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Problem}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Problem}{10}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Parameters}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Parameters}{11}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Objectives}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Objectives}{11}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Displacement analysis}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Displacement analysis}{13}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Position of $ A $}{11}{section*.9}%
+\contentsline {paragraph}{Position of $ A $}{13}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Position of $ B $}{11}{section*.10}%
+\contentsline {paragraph}{Position of $ B $}{13}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Position of $ C $}{11}{section*.11}%
+\contentsline {paragraph}{Position of $ C $}{13}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Position of $ D $}{11}{section*.12}%
+\contentsline {paragraph}{Position of $ D $}{13}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Velocity and Acceleration analysis}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Velocity and Acceleration analysis}{14}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Velocity analysis}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.1}Velocity analysis}{14}{subsection.2.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Velocity of $ A $}{12}{section*.15}%
+\contentsline {paragraph}{Velocity of $ A $}{14}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Velocity of $ B $}{13}{section*.16}%
+\contentsline {paragraph}{Velocity of $ B $}{15}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Velocity of $ C $}{13}{section*.17}%
+\contentsline {paragraph}{Velocity of $ C $}{15}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Velocity of $ D $}{13}{section*.18}%
+\contentsline {paragraph}{Velocity of $ D $}{15}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Acceleration analysis}{14}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Acceleration analysis}{16}{subsection.2.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Acceleration of $ A $}{14}{section*.20}%
+\contentsline {paragraph}{Acceleration of $ A $}{16}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Acceleration of $ B $}{14}{section*.21}%
+\contentsline {paragraph}{Acceleration of $ B $}{16}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Acceleration of $ C $}{14}{section*.22}%
+\contentsline {paragraph}{Acceleration of $ C $}{16}{section*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Acceleration of $ D $}{14}{section*.23}%
+\contentsline {paragraph}{Acceleration of $ D $}{16}{section*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Force analysis}{15}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Force analysis}{17}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Link 5}{16}{section*.26}%
+\contentsline {paragraph}{Link 5}{18}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Link 4}{16}{section*.27}%
+\contentsline {paragraph}{Link 4}{18}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Link 3}{16}{section*.28}%
+\contentsline {paragraph}{Link 3}{18}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Link 2}{16}{section*.29}%
+\contentsline {paragraph}{Link 2}{18}{section*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Link 1}{16}{section*.30}%
+\contentsline {paragraph}{Link 1}{18}{section*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Energy relation analysis}{18}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Energy relation analysis}{20}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Find equivalent dynamic moment and dynamic work}{18}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.1}Find equivalent dynamic moment and dynamic work}{20}{subsection.2.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Find equivalent resistant moment and resistant work}{19}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.2}Find equivalent resistant moment and resistant work}{21}{subsection.2.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Find the energy equation and calculate the flywheel weight}{21}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Find the energy equation and calculate the flywheel weight}{23}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Combining motion of the system}{24}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Combining motion of the system}{26}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Cam mechanism}{25}{section.2.10}%
+\contentsline {section}{\numberline {2.10}Cam mechanism}{27}{section.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.1}Tasks}{25}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.1}Tasks}{27}{subsection.2.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.2}Cam profile determination}{26}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.2}Cam profile determination}{28}{subsection.2.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Summary and Conclusions}{30}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Summary and Conclusions}{32}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Chapter 1 - appendix}{33}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}section 1}{33}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}section 2}{33}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Chapter 2 - appendix}{34}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}section 1}{34}{section.B.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}section 2}{34}{section.B.2}%

@@ -50,8 +50,8 @@
 %	\bibliographystyle{plain}
 %	\cite{marghitu_2009_mechanisms}
 
-	\printglossaries
-	\printbibliography[title=References]
+	\printglossary
+	\printbibliography[title='References']
 
 %	\printbibliography[title='Yes']
 \end{document}
