@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[2] Config.pm:307> INFO - Logfile is 'presets.blg'
-[50] biber:322> INFO - === Sun Sep 20, 2020, 23:31:58
-[128] Utils.pm:309> ERROR - Cannot find 'presets.bcf'!
-[128] Biber.pm:132> INFO - ERRORS: 1

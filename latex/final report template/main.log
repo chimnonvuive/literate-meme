@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.22)  20 SEP 2020 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  23 SEP 2020 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**machine_elements.tex
-(./machine_elements.tex
+**main.tex
+(./main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (./presets.cls
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -44,8 +44,8 @@ Package: babel 2020/02/14 3.40 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-vietnamese/vietnamese.ldf
+Language: vietnamese 
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
@@ -56,12 +56,187 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@readstream=\read2
 \bbl@dirlevel=\count177
 )
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `Vietnamese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for english instead on input line 36.
+
+Package babel Info: \l@vietnamese = using hyphenrules for english
+(babel)             (\language0) on input line 37.
+Package babel Info: \l@vietnam = using hyphenrules for english
+(babel)             (\language0) on input line 38.
+Loading definitions for the Vietnamese font encoding
+(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.def
+File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
+Now handling font encoding T5 ...
+... processing UTF-8 mapping file for font encoding T5
+
+(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.dfu
+File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+01A0 (decimal 416)
+   defining Unicode char U+01A1 (decimal 417)
+   defining Unicode char U+01AF (decimal 431)
+   defining Unicode char U+01B0 (decimal 432)
+   defining Unicode char U+1EA0 (decimal 7840)
+   defining Unicode char U+1EA1 (decimal 7841)
+   defining Unicode char U+1EA2 (decimal 7842)
+   defining Unicode char U+1EA3 (decimal 7843)
+   defining Unicode char U+1EA4 (decimal 7844)
+   defining Unicode char U+1EA5 (decimal 7845)
+   defining Unicode char U+1EA6 (decimal 7846)
+   defining Unicode char U+1EA7 (decimal 7847)
+   defining Unicode char U+1EA8 (decimal 7848)
+   defining Unicode char U+1EA9 (decimal 7849)
+   defining Unicode char U+1EAA (decimal 7850)
+   defining Unicode char U+1EAB (decimal 7851)
+   defining Unicode char U+1EAC (decimal 7852)
+   defining Unicode char U+1EAD (decimal 7853)
+   defining Unicode char U+1EAE (decimal 7854)
+   defining Unicode char U+1EAF (decimal 7855)
+   defining Unicode char U+1EB0 (decimal 7856)
+   defining Unicode char U+1EB1 (decimal 7857)
+   defining Unicode char U+1EB2 (decimal 7858)
+   defining Unicode char U+1EB3 (decimal 7859)
+   defining Unicode char U+1EB4 (decimal 7860)
+   defining Unicode char U+1EB5 (decimal 7861)
+   defining Unicode char U+1EB6 (decimal 7862)
+   defining Unicode char U+1EB7 (decimal 7863)
+   defining Unicode char U+1EB8 (decimal 7864)
+   defining Unicode char U+1EB9 (decimal 7865)
+   defining Unicode char U+1EBA (decimal 7866)
+   defining Unicode char U+1EBB (decimal 7867)
+   defining Unicode char U+1EBC (decimal 7868)
+   defining Unicode char U+1EBD (decimal 7869)
+   defining Unicode char U+1EBE (decimal 7870)
+   defining Unicode char U+1EBF (decimal 7871)
+   defining Unicode char U+1EC0 (decimal 7872)
+   defining Unicode char U+1EC1 (decimal 7873)
+   defining Unicode char U+1EC2 (decimal 7874)
+   defining Unicode char U+1EC3 (decimal 7875)
+   defining Unicode char U+1EC4 (decimal 7876)
+   defining Unicode char U+1EC5 (decimal 7877)
+   defining Unicode char U+1EC6 (decimal 7878)
+   defining Unicode char U+1EC7 (decimal 7879)
+   defining Unicode char U+1EC8 (decimal 7880)
+   defining Unicode char U+1EC9 (decimal 7881)
+   defining Unicode char U+1ECA (decimal 7882)
+   defining Unicode char U+1ECB (decimal 7883)
+   defining Unicode char U+1ECC (decimal 7884)
+   defining Unicode char U+1ECD (decimal 7885)
+   defining Unicode char U+1ECE (decimal 7886)
+   defining Unicode char U+1ECF (decimal 7887)
+   defining Unicode char U+1ED0 (decimal 7888)
+   defining Unicode char U+1ED1 (decimal 7889)
+   defining Unicode char U+1ED2 (decimal 7890)
+   defining Unicode char U+1ED3 (decimal 7891)
+   defining Unicode char U+1ED4 (decimal 7892)
+   defining Unicode char U+1ED5 (decimal 7893)
+   defining Unicode char U+1ED6 (decimal 7894)
+   defining Unicode char U+1ED7 (decimal 7895)
+   defining Unicode char U+1ED8 (decimal 7896)
+   defining Unicode char U+1ED9 (decimal 7897)
+   defining Unicode char U+1EDA (decimal 7898)
+   defining Unicode char U+1EDB (decimal 7899)
+   defining Unicode char U+1EDC (decimal 7900)
+   defining Unicode char U+1EDD (decimal 7901)
+   defining Unicode char U+1EDE (decimal 7902)
+   defining Unicode char U+1EDF (decimal 7903)
+   defining Unicode char U+1EE0 (decimal 7904)
+   defining Unicode char U+1EE1 (decimal 7905)
+   defining Unicode char U+1EE2 (decimal 7906)
+   defining Unicode char U+1EE3 (decimal 7907)
+   defining Unicode char U+1EE4 (decimal 7908)
+   defining Unicode char U+1EE5 (decimal 7909)
+   defining Unicode char U+1EE6 (decimal 7910)
+   defining Unicode char U+1EE7 (decimal 7911)
+   defining Unicode char U+1EE8 (decimal 7912)
+   defining Unicode char U+1EE9 (decimal 7913)
+   defining Unicode char U+1EEA (decimal 7914)
+   defining Unicode char U+1EEB (decimal 7915)
+   defining Unicode char U+1EEC (decimal 7916)
+   defining Unicode char U+1EED (decimal 7917)
+   defining Unicode char U+1EEE (decimal 7918)
+   defining Unicode char U+1EEF (decimal 7919)
+   defining Unicode char U+1EF0 (decimal 7920)
+   defining Unicode char U+1EF1 (decimal 7921)
+   defining Unicode char U+1EF2 (decimal 7922)
+   defining Unicode char U+1EF3 (decimal 7923)
+   defining Unicode char U+1EF4 (decimal 7924)
+   defining Unicode char U+1EF5 (decimal 7925)
+   defining Unicode char U+1EF6 (decimal 7926)
+   defining Unicode char U+1EF7 (decimal 7927)
+   defining Unicode char U+1EF8 (decimal 7928)
+   defining Unicode char U+1EF9 (decimal 7929)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+))
+Package babel Info: Making " an active character on input line 147.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language22) on input line 108.
+(babel)             (\language69) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
@@ -254,6 +429,12 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'apa.dbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.dbx
+File: apa.dbx 2020/02/01 v9.5 APA biblatex style data model
+)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count302
@@ -292,38 +473,50 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedshortauthor=\count335
 \c@shorteditor=\count336
 \c@savedshorteditor=\count337
-\c@labelname=\count338
-\c@savedlabelname=\count339
-\c@institution=\count340
-\c@savedinstitution=\count341
-\c@lista=\count342
-\c@savedlista=\count343
-\c@listb=\count344
-\c@savedlistb=\count345
-\c@listc=\count346
-\c@savedlistc=\count347
-\c@listd=\count348
-\c@savedlistd=\count349
-\c@liste=\count350
-\c@savedliste=\count351
-\c@listf=\count352
-\c@savedlistf=\count353
-\c@location=\count354
-\c@savedlocation=\count355
-\c@organization=\count356
-\c@savedorganization=\count357
-\c@origlocation=\count358
-\c@savedoriglocation=\count359
-\c@origpublisher=\count360
-\c@savedorigpublisher=\count361
-\c@publisher=\count362
-\c@savedpublisher=\count363
-\c@language=\count364
-\c@savedlanguage=\count365
-\c@origlanguage=\count366
-\c@savedoriglanguage=\count367
-\c@pageref=\count368
-\c@savedpageref=\count369
+\c@groupauthor=\count338
+\c@savedgroupauthor=\count339
+\c@narrator=\count340
+\c@savednarrator=\count341
+\c@execproducer=\count342
+\c@savedexecproducer=\count343
+\c@execdirector=\count344
+\c@savedexecdirector=\count345
+\c@with=\count346
+\c@savedwith=\count347
+\c@labelname=\count348
+\c@savedlabelname=\count349
+\c@institution=\count350
+\c@savedinstitution=\count351
+\c@lista=\count352
+\c@savedlista=\count353
+\c@listb=\count354
+\c@savedlistb=\count355
+\c@listc=\count356
+\c@savedlistc=\count357
+\c@listd=\count358
+\c@savedlistd=\count359
+\c@liste=\count360
+\c@savedliste=\count361
+\c@listf=\count362
+\c@savedlistf=\count363
+\c@location=\count364
+\c@savedlocation=\count365
+\c@organization=\count366
+\c@savedorganization=\count367
+\c@origlocation=\count368
+\c@savedoriglocation=\count369
+\c@origpublisher=\count370
+\c@savedorigpublisher=\count371
+\c@publisher=\count372
+\c@savedpublisher=\count373
+\c@language=\count374
+\c@savedlanguage=\count375
+\c@origlanguage=\count376
+\c@savedoriglanguage=\count377
+\c@citation=\count378
+\c@savedcitation=\count379
+\c@pageref=\count380
+\c@savedpageref=\count381
 \shorthandwidth=\skip62
 \shortjournalwidth=\skip63
 \shortserieswidth=\skip64
@@ -349,49 +542,57 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count370
-\c@textcitetotal=\count371
-\c@textcitemaxnames=\count372
-\c@biburlbigbreakpenalty=\count373
-\c@biburlbreakpenalty=\count374
-\c@biburlnumpenalty=\count375
-\c@biburlucpenalty=\count376
-\c@biburllcpenalty=\count377
+\c@textcitecount=\count382
+\c@textcitetotal=\count383
+\c@textcitemaxnames=\count384
+\c@biburlbigbreakpenalty=\count385
+\c@biburlbreakpenalty=\count386
+\c@biburlnumpenalty=\count387
+\c@biburlucpenalty=\count388
+\c@biburllcpenalty=\count389
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count378
+\c@smartand=\count390
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.bbx
+File: apa.bbx 2020/02/01 v9.5 APA biblatex references style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count379
-\c@bbx:relatedtotal=\count380
+\c@bbx:relatedcount=\count391
+\c@bbx:relatedtotal=\count392
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.cbx
+File: apa.cbx 2020/02/01 v9.5 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'textcite' already 
+defined, overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
+, overwriting.
 Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeyear'.
+Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\citeauthor'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -411,12 +612,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen155
 \cmidrulekern=\dimen156
 \defaultaddspace=\dimen157
-\@cmidla=\count381
-\@cmidlb=\count382
+\@cmidla=\count393
+\@cmidlb=\count394
 \@aboverulesep=\dimen158
 \@belowrulesep=\dimen159
-\@thisruleclass=\count383
-\@lastruleclass=\count384
+\@thisruleclass=\count395
+\@lastruleclass=\count396
 \@thisrulewidth=\dimen160
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
@@ -434,8 +635,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen167
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count385
-\c@continuedfloat=\count386
+\c@caption@flags=\count397
+\c@continuedfloat=\count398
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -452,7 +653,7 @@ s
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count387
+\c@float@type=\count399
 \float@exts=\toks23
 \float@box=\box49
 \@float@everytoks=\toks24
@@ -464,9 +665,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count388
-\Gm@cntv=\count389
-\c@Gm@tempcnt=\count390
+\Gm@cnth=\count400
+\Gm@cntv=\count401
+\c@Gm@tempcnt=\count402
 \Gm@bindingoffset=\dimen168
 \Gm@wd@mp=\dimen169
 \Gm@odd@mp=\dimen170
@@ -488,7 +689,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count391
+\XKV@depth=\count403
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
@@ -507,7 +708,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count392
+\c@su@anzahl=\count404
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -518,19 +719,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count393
+\actioncount=\count405
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count394
-\FP@xia=\count395
-\FP@xib=\count396
-\FP@xfa=\count397
-\FP@xfb=\count398
-\FP@rega=\count399
-\FP@regb=\count400
-\FP@regs=\count401
-\FP@times=\count402
+\FP@xs=\count406
+\FP@xia=\count407
+\FP@xib=\count408
+\FP@xfa=\count409
+\FP@xfb=\count410
+\FP@rega=\count411
+\FP@regb=\count412
+\FP@regs=\count413
+\FP@times=\count414
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -549,7 +750,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count403
+\FPseed=\count415
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -561,14 +762,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks30
-\@dtl@tmpcount=\count404
+\@dtl@tmpcount=\count416
 \dtl@tmplength=\skip85
-\dtl@sortresult=\count405
-\@dtl@numgrpsepcount=\count406
-\@dtl@datatype=\count407
-\dtl@codeA=\count408
-\dtl@codeB=\count409
-\@dtl@foreach@level=\count410
+\dtl@sortresult=\count417
+\@dtl@numgrpsepcount=\count418
+\@dtl@datatype=\count419
+\dtl@codeA=\count420
+\dtl@codeB=\count421
+\@dtl@foreach@level=\count422
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
 307.sty
@@ -584,7 +785,13 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count411
+
+Package glossaries Warning: No language module detected for `vietnamese'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-vietnamese' or similar.
+
+\gls@level=\count423
 \@gls@tmpb=\toks31
 \gls@tmplen=\skip86
 \glskeylisttok=\toks32
@@ -607,16 +814,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip89
 \LTpre=\skip90
 \LTpost=\skip91
-\LTchunksize=\count412
+\LTchunksize=\count424
 \LTcapwidth=\dimen176
 \LT@head=\box51
 \LT@firsthead=\box52
 \LT@foot=\box53
 \LT@lastfoot=\box54
-\LT@cols=\count413
-\LT@rows=\count414
-\c@LT@tables=\count415
-\c@LT@chunks=\count416
+\LT@cols=\count425
+\LT@rows=\count426
+\c@LT@tables=\count427
+\c@LT@chunks=\count428
 \LT@p@ftn=\toks36
 )
 \glsdescwidth=\skip92
@@ -627,7 +834,7 @@ Package: glossary-super 2020/02/13 v4.45 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count417
+\c@tracingst=\count429
 \ST@wd=\dimen177
 \ST@rightskip=\skip94
 \ST@leftskip=\skip95
@@ -686,8 +893,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen189
-\Hy@linkcounter=\count418
-\Hy@pagecounter=\count419
+\Hy@linkcounter=\count430
+\Hy@pagecounter=\count431
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -700,8 +907,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count420
-\pdfmajorversion=\count421
+\Hy@SavedSpaceFactor=\count432
+\pdfmajorversion=\count433
 Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
@@ -710,7 +917,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count422
+\c@Hy@tempcnt=\count434
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen190
 
@@ -721,7 +928,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count423
+\Fld@menulength=\count435
 \Field@Width=\dimen191
 \Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -737,9 +944,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count424
-\c@Item=\count425
-\c@Hfootnote=\count426
+\Hy@abspage=\count436
+\c@Item=\count437
+\c@Hfootnote=\count438
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -749,8 +956,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count427
-\c@bookmark@seq@number=\count428
+\Fld@listcount=\count439
+\c@bookmark@seq@number=\count440
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -763,31 +970,126 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip98
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip99
-\multirow@cntb=\count429
-\multirow@dima=\skip100
-\bigstrutjot=\dimen193
-)
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
-Package: newtxmath 2020/01/25 v1.624
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
 
-`newtxmath' v1.624, 2020/01/25 Math macros based originally on txfonts (msharpe
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count441
+\mult@box=\box56
+\multicol@leftmargin=\dimen193
+\c@unbalance=\count442
+\c@collectmore=\count443
+\doublecol@number=\count444
+\multicoltolerance=\count445
+\multicolpretolerance=\count446
+\full@width=\dimen194
+\page@free=\dimen195
+\premulticols=\dimen196
+\postmulticols=\dimen197
+\multicolsep=\skip99
+\multicolbaselineskip=\skip100
+\partial@page=\box57
+\last@line=\box58
+\maxbalancingoverflow=\dimen198
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@gfirstbox=\box61
+\mult@firstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\c@minrows=\count447
+\c@columnbadness=\count448
+\c@finalcolumnbadness=\count449
+\last@try=\dimen199
+\multicolovershoot=\dimen256
+\multicolundershoot=\dimen257
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count450
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count451
+\l__pdf_internal_box=\box102
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count452
+\g__xparse_grabber_int=\count453
+\l__xparse_m_args_int=\count454
+\l__xparse_v_nesting_int=\count455
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip101
+\multirow@cntb=\count456
+\multirow@dima=\skip102
+\bigstrutjot=\dimen258
+)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2020/01/25 v1.624
+
+`newtxmath' v1.624, 2020/01/25 Math macros based originally on txfonts (msharpe
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count430
+\tx@cntz=\count457
 
 (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count431
-\tx@IsAlNum=\count432
+\tx@Isdigit=\count458
+\tx@IsAlNum=\count459
 \tx@tA=\toks37
 \tx@tB=\toks38
 \tx@su=\read4
@@ -887,12 +1189,12 @@ LaTeX Font Info:    Redeclaring math delimiter \vert on input line 805.
 LaTeX Font Info:    Redeclaring math accent \dot on input line 876.
 LaTeX Font Info:    Redeclaring math accent \ddot on input line 877.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1940.
-\ntx@numstart=\count433
-\ntx@UCstart=\count434
-\ntx@lcstart=\count435
-\ntx@tmpc=\count436
-\ntx@imath=\count437
-\ntx@jmath=\count438
+\ntx@numstart=\count460
+\ntx@UCstart=\count461
+\ntx@lcstart=\count462
+\ntx@tmpc=\count463
+\ntx@imath=\count464
+\ntx@jmath=\count465
 LaTeX Info: Redefining \Bbbk on input line 2449.
 LaTeX Info: Redefining \not on input line 2598.
 )
@@ -913,7 +1215,7 @@ LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 )
-\ntx@fs=\dimen194
+\ntx@fs=\dimen259
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
@@ -943,40 +1245,40 @@ ways
 
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_cnt_foreach_nest=\count439
-\loi_nestcnt=\count440
+\loi_cnt_foreach_nest=\count466
+\loi_nestcnt=\count467
 )
 Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
 sep char (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count441
-\calc@Bcount=\count442
-\calc@Adimen=\dimen195
-\calc@Bdimen=\dimen196
-\calc@Askip=\skip101
-\calc@Bskip=\skip102
+\calc@Acount=\count468
+\calc@Bcount=\count469
+\calc@Adimen=\dimen260
+\calc@Bdimen=\dimen261
+\calc@Askip=\skip103
+\calc@Bskip=\skip104
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count443
-\calc@Cskip=\skip103
+\calc@Ccount=\count470
+\calc@Cskip=\skip105
 )
-\c@@stackindex=\count444
-\@boxshift=\skip104
-\stack@tmplength=\skip105
-\temp@stkl=\skip106
-\@stackedboxwidth=\skip107
-\@addedbox=\box56
-\@anchorbox=\box57
-\stackedbox=\box58
-\@centerbox=\box59
-\c@ROWcellindex@=\count445
+\c@@stackindex=\count471
+\@boxshift=\skip106
+\stack@tmplength=\skip107
+\temp@stkl=\skip108
+\@stackedboxwidth=\skip109
+\@addedbox=\box103
+\@anchorbox=\box104
+\stackedbox=\box105
+\@centerbox=\box106
+\c@ROWcellindex@=\count472
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count446
-\c@subtable=\count447
+\c@subfigure=\count473
+\c@subtable=\count474
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -989,9 +1291,9 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks40
-\minrowclearance=\skip108
+\minrowclearance=\skip110
 )
-\rownum=\count448
+\rownum=\count475
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1002,26 +1304,52 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-\glswrite=\write4
-\glo@main@file=\write5
-\openout5 = `machine_elements.glo'.
 
-Package glossaries Info: Writing glossary file machine_elements.glo on input li
-ne 86.
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 83.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 84.
+
+\main@idxfile=\write4
+\openout4 = `main.idx'.
+
+Writing index file main.idx
+\glswrite=\write5
+\glo@main@file=\write6
+\openout6 = `main.glo'.
+
+Package glossaries Info: Writing glossary file main.glo on input line 94.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count449
-\@quotereset=\count450
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count451
-\l__pdf_internal_box=\box60
+\@quotelevel=\count476
+\@quotereset=\count477
+(./main.aux
+LaTeX Font Info:    Trying to load font information for T5+ntxtlf on input line
+ 52.
+LaTeX Font Info:    No file T5ntxtlf.fd. on input line 52.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 52
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
+File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-(./machine_elements.aux)
-\openout1 = `machine_elements.aux'.
+
+LaTeX Font Warning: Font shape `T5/ntxtlf/m/n' undefined
+(Font)              using `T5/cmr/m/n' instead on input line 52.
+
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
+e 53.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 53.
+)
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 3.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
@@ -1049,6 +1377,8 @@ LaTeX Font Info:    Trying to load font information for U+ntxexa on input line
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 3.
@@ -1067,29 +1397,58 @@ e 3.
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 3.
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+File: english-apa.lbx 2020/02/01 v9.5 APA biblatex localisation
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
+Package biblatex Info: ... file 'american-apa.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
+File: american-apa.lbx 2020/02/01 v9.5 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+))))
+
+Package biblatex Warning: File 'vietnamese-apa.lbx' not found!
+(biblatex)                Ignoring mapping 'vietnamese' -> 'vietnamese-apa'.
+
+Package biblatex Info: Trying to load language 'vietnamese'...
+Package biblatex Info: ... file 'vietnamese.lbx' not found.
+
+Package biblatex Warning: Language 'vietnamese' not supported.
+(biblatex)                Using fallback language 'english' on input line 3.
+
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `machine_elements.bcf'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'machine_elements.bbl' found.
-
-(./machine_elements.bbl)
+Package biblatex Info: ... file 'main.bbl' found.
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1102,7 +1461,7 @@ Package caption Info: End \AtBeginDocument code.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -1110,13 +1469,13 @@ Package caption Info: End \AtBeginDocument code.
 * \textwidth=455.24411pt
 * \textheight=702.78308pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=-15.36449pt
+* \evensidemargin=13.08827pt
 * \topmargin=-40.1381pt
 * \headheight=14.0pt
 * \headsep=25.0pt
 * \topskip=14.0pt
 * \footskip=30.0pt
-* \marginparwidth=61.0pt
+* \marginparwidth=15.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 2.0pt
@@ -1124,23 +1483,23 @@ Package caption Info: End \AtBeginDocument code.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count452
-\scratchdimen=\dimen197
-\scratchbox=\box61
-\nofMPsegments=\count453
-\nofMParguments=\count454
+\scratchcounter=\count478
+\scratchdimen=\dimen262
+\scratchbox=\box107
+\nofMPsegments=\count479
+\nofMParguments=\count480
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count455
-\MPscratchDim=\dimen198
-\MPnumerator=\count456
-\makeMPintoPDFobject=\count457
+\MPscratchCnt=\count481
+\MPscratchDim=\dimen263
+\MPnumerator=\count482
+\makeMPintoPDFobject=\count483
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1151,7 +1510,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box62
+\AtBeginShipoutBox=\box108
 Package hyperref Info: Link coloring ON on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1163,53 +1522,56 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count458
+\c@section@level=\count484
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 
-(./machine_elements.out) (./machine_elements.out)
-\@outlinefile=\write6
-\openout6 = `machine_elements.out'.
+(./main.out) (./main.out)
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
-\c@mv@tabular=\count459
-\c@mv@boldtabular=\count460
+\c@mv@tabular=\count485
+\c@mv@boldtabular=\count486
+ (./front matter/titlepage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
-<./images/logo.png, id=116, 1007.765pt x 1027.84pt>
+(Font)              scaled to size 12.0pt on input line 3.
+<./images/logo.png, id=84, 1007.765pt x 1027.84pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
-Package pdftex.def Info: ./images/logo.png  used on input line 10.
+Package pdftex.def Info: ./images/logo.png  used on input line 7.
 (pdftex.def)             Requested size: 85.35826pt x 87.04373pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 29.86pt on input line 12.
+(Font)              scaled to size 29.86pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 29.86pt on input line 12.
+(Font)              scaled to size 29.86pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 16.
+(Font)              scaled to size 17.28pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 17.28pt on input line 17.
+(Font)              scaled to size 17.28pt on input line 14.
  [1
 
-\openout4 = `machine_elements.ist'.
+\openout5 = `main.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>])
+(./front matter/acknowledgement.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 35.83pt on input line 36.
+(Font)              scaled to size 35.83pt on input line 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 35.83pt on input line 36.
- (./machine_elements.toc
+(Font)              scaled to size 35.83pt on input line 1.
+) (./front matter/preface.texpdfTeX warning (ext4): destination with the same i
+dentifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            *{Abstract} [1
+
+]) [2
+
+] (./main.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 4.
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
-File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
-)
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.5pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1241,43 +1603,24 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [2
+))
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
-])
-\tf@toc=\write7
-\openout7 = `machine_elements.toc'.
+ [3
+
+] (./main.lof)
+\tf@lof=\write9
+\openout9 = `main.lof'.
 
 
+[4
 
-Package Fancyhdr Warning: \headheight is too small (14.0pt): 
-Make it at least 17.0pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
+] (./main.lot)
+\tf@lot=\write10
+\openout10 = `main.lot'.
 
-[3] (./machine_elements.lof
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 20.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 20.
- [4
-
-])
-\tf@lof=\write8
-\openout8 = `machine_elements.lof'.
-
- [5]
-(./machine_elements.lot)
-\tf@lot=\write9
-\openout9 = `machine_elements.lot'.
-
- (./chapters/acknowledgement.tex [6
-
-])
-(./chapters/chap1.tex [7
+ (./chapters/chap1.tex [5
 
 ]
 Chapter 1.
@@ -1285,331 +1628,183 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
-<./images/01.jpg, id=250, 186.6975pt x 170.13562pt>
-File: ./images/01.jpg Graphic file (type jpg)
-<use ./images/01.jpg>
-Package pdftex.def Info: ./images/01.jpg  used on input line 6.
-(pdftex.def)             Requested size: 273.14923pt x 248.93071pt.
-[8
 
- <./images/01.jpg>]
-<./images/02.jpg, id=255, 657.45625pt x 417.56pt>
-File: ./images/02.jpg Graphic file (type jpg)
-<use ./images/02.jpg>
-Package pdftex.def Info: ./images/02.jpg  used on input line 15.
-(pdftex.def)             Requested size: 273.14923pt x 173.48167pt.
-) (./chapters/chap2.tex [9 <./images/02.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/b/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\T1/ntxtlf/b/n/14.4 A1 (1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+\T1/ntxtlf/m/n/14.4 B1 (1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/b/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/b/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Overfull \hbox (3.3354pt too wide) in paragraph at lines 6--14
+ [][] 
+ []
+
+) (./chapters/chap3.tex [6
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+Make it at least 17.0pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[7]
 Chapter 2.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 4.
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 4.
-<./images/03.png, id=260, 353.82187pt x 248.42813pt>
-File: ./images/03.png Graphic file (type png)
-<use ./images/03.png>
-Package pdftex.def Info: ./images/03.png  used on input line 7.
-(pdftex.def)             Requested size: 273.14923pt x 191.78682pt.
-
-Underfull \hbox (badness 3138) in paragraph at lines 28--28
-[]|\T1/ntxtlf/m/n/14.4 Maximum op-er-at-ing pres-sure (The
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 35--36
-[]|$\OML/ntxmi/m/it/14.4 ^^^[] \U/ntxmia/m/it/14.4 = \OML/ntxmi/m/it/14.4 ^^^[]
-$\T1/ntxtlf/m/n/14.4 , $\OML/ntxmi/m/it/14.4 ^^^[] \U/ntxmia/m/it/14.4 = \OT1/n
-txtlf/m/n/14.4 5[]$\T1/ntxtlf/m/n/14.4 ,
- []
-
-<./images/2.2a.png, id=263, 199.071pt x 149.4675pt>
-File: ./images/2.2a.png Graphic file (type png)
-<use ./images/2.2a.png>
-Package pdftex.def Info: ./images/2.2a.png  used on input line 39.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
-<./images/2.2b.png, id=264, 199.071pt x 149.4675pt>
-File: ./images/2.2b.png Graphic file (type png)
-<use ./images/2.2b.png>
-Package pdftex.def Info: ./images/2.2b.png  used on input line 45.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
-
-Overfull \hbox (24.0pt too wide) in paragraph at lines 12--49
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10
-
- <./images/03.png>] [11]
-Underfull \vbox (badness 1377) has occurred while \output is active []
-
- [12 <./images/2.2a.png (PNG copy)> <./images/2.2b.png (PNG copy)>] [13]
-<./images/04.png, id=301, 822.07124pt x 587.94656pt>
-File: ./images/04.png Graphic file (type png)
-<use ./images/04.png>
-Package pdftex.def Info: ./images/04.png  used on input line 103.
-(pdftex.def)             Requested size: 364.19667pt x 260.4736pt.
-<./images/05.png, id=303, 356.0803pt x 266.49562pt>
-File: ./images/05.png Graphic file (type png)
-<use ./images/05.png>
-Package pdftex.def Info: ./images/05.png  used on input line 110.
-(pdftex.def)             Requested size: 273.14923pt x 204.43777pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 116.
- [14 <./images/04.png>]
-<./images/06.png, id=315, 199.071pt x 149.4675pt>
-File: ./images/06.png Graphic file (type png)
-<use ./images/06.png>
-Package pdftex.def Info: ./images/06.png  used on input line 141.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
- [15 <./images/05.png>]
-<./images/07.png, id=328, 421.4655pt x 316.3455pt>
-File: ./images/07.png Graphic file (type png)
-<use ./images/07.png>
-Package pdftex.def Info: ./images/07.png  used on input line 168.
-(pdftex.def)             Requested size: 273.14923pt x 205.03323pt.
- [16 <./images/06.png (PNG copy)>]
-<./images/08.png, id=341, 825.0825pt x 451.6875pt>
-File: ./images/08.png Graphic file (type png)
-<use ./images/08.png>
-Package pdftex.def Info: ./images/08.png  used on input line 176.
-(pdftex.def)             Requested size: 364.19667pt x 199.37718pt.
- [17 <./images/07.png> <./images/08.png>]
-<./images/09.png, id=352, 356.0803pt x 266.49562pt>
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 243.
-(pdftex.def)             Requested size: 204.85846pt x 153.31918pt.
-<./images/10.png, id=353, 356.0803pt x 265.74281pt>
-File: ./images/10.png Graphic file (type png)
-<use ./images/10.png>
-Package pdftex.def Info: ./images/10.png  used on input line 249.
-(pdftex.def)             Requested size: 204.85846pt x 152.88608pt.
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 259.
-(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 265.
-(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 271.
-(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 278.
-(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
-File: ./images/09.png Graphic file (type png)
-<use ./images/09.png>
-Package pdftex.def Info: ./images/09.png  used on input line 284.
-(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
-<./images/12.png, id=354, 508.14844pt x 377.91188pt>
-File: ./images/12.png Graphic file (type png)
-<use ./images/12.png>
-Package pdftex.def Info: ./images/12.png  used on input line 295.
-(pdftex.def)             Requested size: 273.14923pt x 203.14673pt.
- [18] [19 <./images/09.png> <./images/10.png>]
-<./images/11.png, id=379, 341.3115pt x 255.9015pt>
-File: ./images/11.png Graphic file (type png)
-<use ./images/11.png>
-Package pdftex.def Info: ./images/11.png  used on input line 311.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/13.png, id=380, 341.3115pt x 255.9015pt>
-File: ./images/13.png Graphic file (type png)
-<use ./images/13.png>
-Package pdftex.def Info: ./images/13.png  used on input line 322.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20 <./images/12.png>]
-<./images/14.png, id=388, 341.3115pt x 255.9015pt>
-File: ./images/14.png Graphic file (type png)
-<use ./images/14.png>
-Package pdftex.def Info: ./images/14.png  used on input line 333.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/15.png, id=390, 341.3115pt x 255.9015pt>
-File: ./images/15.png Graphic file (type png)
-<use ./images/15.png>
-Package pdftex.def Info: ./images/15.png  used on input line 341.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-[21 <./images/11.png> <./images/13.png>] [22 <./images/14.png> <./images/15.png
->]
-<./images/16.png, id=409, 341.3115pt x 255.9015pt>
-File: ./images/16.png Graphic file (type png)
-<use ./images/16.png>
-Package pdftex.def Info: ./images/16.png  used on input line 368.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-<./images/17.png, id=410, 341.3115pt x 255.9015pt>
-File: ./images/17.png Graphic file (type png)
-<use ./images/17.png>
-Package pdftex.def Info: ./images/17.png  used on input line 374.
-(pdftex.def)             Requested size: 300.46277pt x 225.29164pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/18.png, id=413, 199.071pt x 149.4675pt>
-File: ./images/18.png Graphic file (type png)
-<use ./images/18.png>
-Package pdftex.def Info: ./images/18.png  used on input line 382.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
-<./images/19.png, id=414, 341.3115pt x 255.9015pt>
-File: ./images/19.png Graphic file (type png)
-<use ./images/19.png>
-Package pdftex.def Info: ./images/19.png  used on input line 394.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-[23 <./images/16.png>]
-<./images/20.png, id=422, 341.3115pt x 255.9015pt>
-File: ./images/20.png Graphic file (type png)
-<use ./images/20.png>
-Package pdftex.def Info: ./images/20.png  used on input line 406.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-<./images/21.png, id=423, 341.3115pt x 255.9015pt>
-File: ./images/21.png Graphic file (type png)
-<use ./images/21.png>
-Package pdftex.def Info: ./images/21.png  used on input line 414.
-(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
-
-Overfull \hbox (9.77359pt too wide) in paragraph at lines 425--430
-[] 
- []
-
-
-Underfull \vbox (badness 2837) has occurred while \output is active []
-
- [24 <./images/17.png>]
-<./images/22.png, id=434, 199.071pt x 149.4675pt>
-File: ./images/22.png Graphic file (type png)
-<use ./images/22.png>
-Package pdftex.def Info: ./images/22.png  used on input line 440.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
-
-Underfull \vbox (badness 3333) has occurred while \output is active []
-
- [25 <./images/18.png (PNG copy)> <./images/19.png>]
-<./images/23.png, id=443, 443.40656pt x 329.73187pt>
-File: ./images/23.png Graphic file (type png)
-<use ./images/23.png>
-Package pdftex.def Info: ./images/23.png  used on input line 455.
-(pdftex.def)             Requested size: 273.14923pt x 203.13356pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <./images/20.png> <./images/21.png>] [27 <./images/22.png (PNG copy)> <./i
-mages/23.png>]
-<./images/26.png, id=455, 258.9675pt x 328.22626pt>
-File: ./images/26.png Graphic file (type png)
-<use ./images/26.png>
-Package pdftex.def Info: ./images/26.png  used on input line 476.
-(pdftex.def)             Requested size: 182.09486pt x 230.80354pt.
-<./images/24.png, id=456, 284.1525pt x 189.873pt>
-File: ./images/24.png Graphic file (type png)
-<use ./images/24.png>
-Package pdftex.def Info: ./images/24.png  used on input line 483.
-(pdftex.def)             Requested size: 364.19667pt x 243.38136pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/25.png, id=458, 199.071pt x 149.139pt>
-File: ./images/25.png Graphic file (type png)
-<use ./images/25.png>
-Package pdftex.def Info: ./images/25.png  used on input line 498.
-(pdftex.def)             Requested size: 318.66948pt x 238.74786pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28 <./images/26.png>]
-<./images/27.png, id=467, 199.071pt x 149.4675pt>
-File: ./images/27.png Graphic file (type png)
-<use ./images/27.png>
-Package pdftex.def Info: ./images/27.png  used on input line 517.
-(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
-<./images/28.png, id=468, 467.2pt x 350.4pt>
-File: ./images/28.png Graphic file (type png)
-<use ./images/28.png>
-Package pdftex.def Info: ./images/28.png  used on input line 523.
-(pdftex.def)             Requested size: 273.14923pt x 204.86287pt.
-) (./chapters/chap3.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29 <./images/24.png (PNG copy)>] [30 <./images/25.png> <./images/27.png>]
-[31 <./images/28.png (PNG copy)>]
-Chapter 3.
-) (./appendix/chap1.tex [32
+) (./appendix/chap1.tex [8
 
 ]
 Appendix A.
-) (./appendix/chap2.tex [33
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 7.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 7.
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 12--16
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 16--17
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 17--18
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 18--19
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 19--40
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 40--51
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[9
+
+]) (./appendix/chap2.tex [10]
+Appendix B.
+) (./main.gls [11
 
 ]
-Appendix B.
-) (./machine_elements.gls [34
 
-]) [35
+LaTeX Font Warning: Font shape `T5/ntxtlf/b/n' undefined
+(Font)              using `T5/ntxtlf/m/n' instead on input line 7.
+
+) [12
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 14.4pt on input line 54.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
- [36
-
-runsystem(makeindex -s machine_elements.ist -t machine_elements.glg -o machine_
-elements.gls machine_elements.glo)...executed safely (allowed).
+(Font)              scaled to size 14.4pt on input line 25.
+ [13
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
- (./machine_elements.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
-Package rerunfilecheck Info: File `machine_elements.out' has not changed.
-(rerunfilecheck)             Checksum: B6A78FC2A3CEADDE6BB7AC5024545334;1904.
-Package logreq Info: Writing requests to 'machine_elements.run.xml'.
-\openout1 = `machine_elements.run.xml'.
+runsystem(makeindex main.idx)...executed safely (allowed).
+
+ (./main.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [14
+
+
+runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
+fely (allowed).
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A5199DB6487A564F275997C537AB581B;1279.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25073 strings out of 481239
- 424822 string characters out of 5920377
- 1120788 words of memory out of 5000000
- 39694 multiletter control sequences out of 15000+600000
- 592621 words of font info for 89 fonts, out of 8000000 for 9000
+ 26736 strings out of 481239
+ 461632 string characters out of 5920377
+ 1365126 words of memory out of 5000000
+ 41420 multiletter control sequences out of 15000+600000
+ 583990 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,13n,79p,1018b,2018s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fon
+ 70i,14n,107p,1006b,4848s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
+f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fon
 ts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/
-NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share
-/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/publi
-c/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/tx
-exs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on machine_elements.pdf (36 pages, 1551612 bytes).
+blic/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb><
+/usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/t
+ype1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsy
+s.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb>
+Output written on main.pdf (15 pages, 172522 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 162 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

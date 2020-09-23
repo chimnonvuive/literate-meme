@@ -18,14 +18,15 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{apa/global//global/global}
     \entry{li_1984_hng}{book}{}
       \name{author}{1}{}{%
-        {{hash=c57de8717ca8f60cca5e0f3e2356f216}{%
+        {{un=0,uniquepart=base,hash=c57de8717ca8f60cca5e0f3e2356f216}{%
            family={Khac\bibnamedelima Liem},
            familyi={K\bibinitperiod\bibinitdelim L\bibinitperiod},
            given={Lai},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Service Education School HCMC}%
@@ -38,18 +39,22 @@
       \strng{authorfullhash}{c57de8717ca8f60cca5e0f3e2356f216}
       \field{sortinit}{K}
       \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Huong dan thiet ke mon hoc nguyen ly may}
+      \field{title}{{Huong dan Thiet ke Mon hoc Nguyen Ly May}}
       \field{year}{1984}
     \endentry
     \entry{marghitu_2009_mechanisms}{book}{}
       \name{author}{1}{}{%
-        {{hash=74cf60c28eaa5fd52555607a4f3166d4}{%
+        {{un=0,uniquepart=base,hash=74cf60c28eaa5fd52555607a4f3166d4}{%
            family={Marghitu},
            familyi={M\bibinitperiod},
            given={Dan\bibnamedelima B},
-           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Dordrecht Springer}%
@@ -62,9 +67,12 @@
       \strng{authorfullhash}{74cf60c28eaa5fd52555607a4f3166d4}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Mechanisms and robots analysis with MATLAB}
+      \field{title}{{Mechanisms and Robots Analysis with MATLAB}}
       \field{year}{2009}
     \endentry
   \enddatalist

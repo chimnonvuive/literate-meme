@@ -1,22 +1,26 @@
-\LoadClass[14pt,a4paper,twoside]{extreport}
+\LoadClass[14pt,a4paper,oneside]{extreport}
 \usepackage[utf8]{inputenc}
+%\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
+\usepackage[vietnamese, english]{babel}
 
 \usepackage{array}
 \usepackage{tgtermes}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{biblatex}
+\usepackage[style=apa]{biblatex}
 \usepackage{booktabs}
 \usepackage{caption}
+\usepackage{etoolbox}
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
-\usepackage[automake]{glossaries}
+\usepackage[toc,automake]{glossaries}
 \usepackage{graphicx}
 \usepackage[hidelinks,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+\usepackage{imakeidx}
+\usepackage{lipsum}
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{newtxmath}
@@ -33,11 +37,13 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
-\pagestyle{fancy}
 \fancyhf{}
+\pagestyle{fancy}
+
 
 % increase line height
-\renewcommand{\baselinestretch}{1.25}
+%\renewcommand{\baselinestretch}{1.25}
+\setlength{\belowcaptionskip}{0.6\baselineskip}
 \renewcommand{\sectionmark}[1]{\markright{\thesection~ #1}}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter~ #1}{}}
 
@@ -76,19 +82,25 @@
 \fancyhead[LO]{\rightmark}
 \fancyhead[RE]{\leftmark}
 \fancyhead[LE,RO]{\thepage}
-\cfoot{}	
+%\cfoot{}	
 \renewcommand{\headrulewidth}{0pt}
 %\rhead{\theauthor}
 %\lhead{\thetitle}
 %\cfoot{\thepage}
 
-\glsenablehyper
+\makeindex[intoc]
+
+%\glsenablehyper
 \makeglossaries
 \newglossaryentry{latex}{
 	name={latex},
 	description={Is a mark up language specially suited 
 		for scientific documents}
 }
+\newglossaryentry{glossary 1}{name={glossary name},description={glossary description}}
+\newglossaryentry{glossary 2}{name={complicated name \begin{otherlanguage}{vietnamese}
+			(thuật ngữ tiếng Việt)
+	\end{otherlanguage}},description={glossary description}}
 \newglossaryentry{maths}{
 	name={mathematics},
 	description={Mathematics is what mathematicians do}

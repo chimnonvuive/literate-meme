@@ -1,0 +1,28 @@
+\documentclass{presets}
+
+\begin{document}
+	\input{front matter/titlepage.tex}
+	\input{front matter/acknowledgement.tex}
+	\input{front matter/preface.tex}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\input{chapters/chap1.tex}
+%	\input{chapters/chap2.tex}
+	\input{chapters/chap3.tex}
+
+	\appendix
+%	\pretocmd{\chapter}{%
+%		\clearpage
+%		\pagenumbering{arabic}%
+%		\renewcommand*{\thepage}{\thechapter-\arabic{page}}% 	
+%	}{}{}
+	\input{appendix/chap1.tex}
+	\input{appendix/chap2.tex}
+
+	\printglossaries
+	\printbibliography[heading=bibintoc,title={References}]
+	\printindex
+%	\printbibliography[title='Yes']
+\end{document}
