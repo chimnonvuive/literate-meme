@@ -21,30 +21,30 @@
   \datalist[entry]{apa/global//global/global}
     \entry{li_1984_hng}{book}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ac1441dbb3c3e819c77f2f8b39d0bac7}{%
-           family={Lai},
-           familyi={L\bibinitperiod},
-           given={Khac\bibnamedelima Liem},
-           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+        {{un=0,uniquepart=base,hash=c57de8717ca8f60cca5e0f3e2356f216}{%
+           family={Khac\bibnamedelima Liem},
+           familyi={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Lai},
+           giveni={L\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
         {Service Education School HCMC}%
       }
-      \strng{namehash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \strng{fullhash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \strng{bibnamehash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \strng{authorbibnamehash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \strng{authornamehash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \strng{authorfullhash}{ac1441dbb3c3e819c77f2f8b39d0bac7}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \strng{namehash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \strng{fullhash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \strng{bibnamehash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \strng{authorbibnamehash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \strng{authornamehash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \strng{authorfullhash}{c57de8717ca8f60cca5e0f3e2356f216}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Huong dan thiet ke mon hoc nguyen ly may}
+      \field{title}{{Huong dan Thiet ke Mon hoc Nguyen Ly May}}
       \field{year}{1984}
     \endentry
     \entry{marghitu_2009_mechanisms}{book}{}
@@ -72,7 +72,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Mechanisms and robots analysis with MATLAB}
+      \field{title}{{Mechanisms and Robots Analysis with MATLAB}}
       \field{year}{2009}
     \endentry
   \enddatalist

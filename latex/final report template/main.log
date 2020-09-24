@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  24 SEP 2020 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.22)  24 SEP 2020 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**machine_elements.tex
-(./machine_elements.tex
+**main.tex
+(./main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (./presets.cls
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -234,9 +234,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language69) on input line 105.
+(babel)             (\language22) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language69) on input line 108.
+(babel)             (\language22) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
@@ -1304,24 +1304,16 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+\main@idxfile=\write4
+\openout4 = `main.idx'.
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 84.
 
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 85.
-
-\machine_elements@idxfile=\write4
-\openout4 = `machine_elements.idx'.
-
-Writing index file machine_elements.idx
+Writing index file main.idx
 \glswrite=\write5
 \glo@main@file=\write6
-\openout6 = `machine_elements.glo'.
+\openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file machine_elements.glo on input li
-ne 95.
+Package glossaries Info: Writing glossary file main.glo on input line 94.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1329,8 +1321,28 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count476
 \@quotereset=\count477
-(./machine_elements.aux)
-\openout1 = `machine_elements.aux'.
+(./main.aux
+LaTeX Font Info:    Trying to load font information for T5+ntxtlf on input line
+ 59.
+LaTeX Font Info:    No file T5ntxtlf.fd. on input line 59.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 59
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
+File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `T5/ntxtlf/m/n' undefined
+(Font)              using `T5/cmr/m/n' instead on input line 59.
+
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
+e 60.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 60.
+)
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 3.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
@@ -1359,12 +1371,6 @@ File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 3.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 3.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
-File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -1424,19 +1430,18 @@ Package biblatex Warning: Language 'vietnamese' not supported.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `machine_elements.bcf'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'machine_elements.bbl' found.
-(./machine_elements.bbl)
+Package biblatex Info: ... file 'main.bbl' found.
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1449,7 +1454,7 @@ Package caption Info: End \AtBeginDocument code.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -1457,13 +1462,13 @@ Package caption Info: End \AtBeginDocument code.
 * \textwidth=455.24411pt
 * \textheight=702.78308pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
+* \evensidemargin=-15.36449pt
 * \topmargin=-40.1381pt
 * \headheight=14.0pt
 * \headsep=25.0pt
 * \topskip=14.0pt
 * \footskip=30.0pt
-* \marginparwidth=15.0pt
+* \marginparwidth=61.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 2.0pt
@@ -1471,8 +1476,8 @@ Package caption Info: End \AtBeginDocument code.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1516,54 +1521,52 @@ LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 
-(./machine_elements.out) (./machine_elements.out)
+(./main.out) (./main.out)
 \@outlinefile=\write7
-\openout7 = `machine_elements.out'.
+\openout7 = `main.out'.
 
 \c@mv@tabular=\count485
 \c@mv@boldtabular=\count486
+ (./front matter/titlepage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
-<logo.png, id=20, 1007.765pt x 1027.84pt>
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 10.
+(Font)              scaled to size 12.0pt on input line 3.
+<./images/logo.png, id=96, 1007.765pt x 1027.84pt>
+File: ./images/logo.png Graphic file (type png)
+<use ./images/logo.png>
+Package pdftex.def Info: ./images/logo.png  used on input line 7.
 (pdftex.def)             Requested size: 85.35826pt x 87.04373pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 29.86pt on input line 12.
+(Font)              scaled to size 29.86pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 29.86pt on input line 12.
+(Font)              scaled to size 29.86pt on input line 9.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 16.
+(Font)              scaled to size 17.28pt on input line 13.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 17.28pt on input line 17.
+(Font)              scaled to size 17.28pt on input line 14.
  [1
 
-\openout5 = `machine_elements.ist'.
+\openout5 = `main.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>])
+(./front matter/acknowledgement.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 35.83pt on input line 36.
+(Font)              scaled to size 35.83pt on input line 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 35.83pt on input line 36.
- (./machine_elements.toc
+(Font)              scaled to size 35.83pt on input line 1.
+) (./front matter/preface.tex [2
+
+]) [3
+
+]
+(./main.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 4.
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
-File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
-)
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.5pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.9pt on input line 6.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
@@ -1590,22 +1593,22 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ))
 \tf@toc=\write8
-\openout8 = `machine_elements.toc'.
+\openout8 = `main.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.37 	\listoffigures
-                     [1
+ [4
 
-] (./machine_elements.lof)
+] (./main.lof)
 \tf@lof=\write9
-\openout9 = `machine_elements.lof'.
+\openout9 = `main.lof'.
 
- [2
 
-] (./chap1.tex [3
+[5
+
+] (./main.lot)
+\tf@lot=\write10
+\openout10 = `main.lot'.
+
+ (./chapters/chap1.tex [6
 
 ]
 Chapter 1.
@@ -1613,64 +1616,187 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 20.74pt on input line 2.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 5.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--16
-
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/b/n/14.4 solution
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\T1/ntxtlf/b/n/14.4 A1 (1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+\T1/ntxtlf/m/n/14.4 B1 (1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/ntxtlf/b/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/b/n/14.4 solution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T1/ntxtlf/m/n/14.4 solution
+ []
+
+
+Overfull \hbox (3.3354pt too wide) in paragraph at lines 6--14
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 29--29
+[]|\T1/ntxtlf/m/n/14.4 Thermal treat-
+ []
+
+<images/01.jpg, id=168, 481.8pt x 504.88625pt>
+File: images/01.jpg Graphic file (type jpg)
+<use images/01.jpg>
+Package pdftex.def Info: images/01.jpg  used on input line 56.
+(pdftex.def)             Requested size: 273.14923pt x 286.24734pt.
+[7
+
+]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 20.
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 63.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 20.
- [4
+(Font)              scaled to size 14.4pt on input line 63.
 
-]
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
 Make it at least 17.0pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[5]) (./chap3.tex [6]
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 76--85
+
+ []
+
+[9 <./images/01.jpg (PNG copy)>] [10]) (./chapters/chap3.tex [11]
 Chapter 2.
-)
-
-Package glossaries Warning: No \printglossary or \printglossaries found. 
-(Remove \makeglossaries if you don't want any glossaries.) 
-This document will not have a glossary.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-[7
-
-runsystem(makeindex -s machine_elements.ist -t machine_elements.glg -o machine_
-elements.gls machine_elements.glo)...executed safely (allowed).
+) (./appendix/chap1.tex [12
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
- (./machine_elements.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `machine_elements.out' has not changed.
-(rerunfilecheck)             Checksum: 619D96DD779BC8CA5742079D90ABD498;283.
-Package logreq Info: Writing requests to 'machine_elements.run.xml'.
-\openout1 = `machine_elements.run.xml'.
+Appendix A.
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 12--16
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 16--17
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 17--18
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 18--19
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 19--40
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.75423pt too wide) in alignment at lines 40--51
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[13
+
+]) (./appendix/chap2.tex [14]
+Appendix B.
+) (./main.gls [15
+
+]
+
+LaTeX Font Warning: Font shape `T5/ntxtlf/b/n' undefined
+(Font)              using `T5/ntxtlf/m/n' instead on input line 7.
+
+) [16
+
+
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 14.4pt on input line 25.
+ [17
+
+]
+runsystem(makeindex main.idx)...executed safely (allowed).
+
+ (./main.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [18
+
+
+runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
+fely (allowed).
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F1FC8CDA3394E6FE48E0F173AC83555A;1496.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26452 strings out of 481239
- 456765 string characters out of 5920377
- 1318468 words of memory out of 5000000
- 41183 multiletter control sequences out of 15000+600000
- 585302 words of font info for 78 fonts, out of 8000000 for 9000
+ 26780 strings out of 481239
+ 462069 string characters out of 5920377
+ 1365291 words of memory out of 5000000
+ 41435 multiletter control sequences out of 15000+600000
+ 584559 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,16n,107p,1018b,4848s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,14n,107p,1006b,4848s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fon
 ts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
@@ -1678,11 +1804,11 @@ blic/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb><
 /usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/t
 ype1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsy
-s.pfb>
-Output written on machine_elements.pdf (8 pages, 152798 bytes).
+s.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb>
+Output written on main.pdf (18 pages, 280659 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
