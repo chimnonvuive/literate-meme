@@ -1,34 +1,6 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces DCSELab main entrance}}{5}{figure.1.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The organizational structure of DCSELab}}{6}{figure.1.2}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mechanism of the air compressor}}{7}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pressure graph at link 3 (not to scale)}}{9}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Pressure graph at link 5 (not to scale)}}{9}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Position analysis of $B$, $C$ and $D$}}{11}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Locus of the mechanism using MATLAB\textup {\textregistered }}}{11}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Velocity of link 3}}{13}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Acceleration of link 3}}{14}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Force analysis of the mechanism}}{14}{figure.2.8}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Reaction force $\vec {F}_{23}$ along y axis}}{16}{figure.2.9}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Reaction force $\vec {R}_{03}$ along y axis}}{16}{figure.2.10}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Pressure on both ends of the system}}{17}{figure.2.11}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1}}{18}{figure.2.12}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Equivalent dynamic moment applied on crankshaft 1}}{18}{figure.2.13}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Dynamic work of the system in 1 cycle}}{19}{figure.2.14}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Force applied on piston 3 corresponding to angle of crankshaft 1}}{19}{figure.2.15}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Equivalent resistant moment applied on crankshaft 1}}{20}{figure.2.16}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Resistant work of the system in 1 cycle}}{20}{figure.2.17}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Resistant and dynamic moment of the system in 1 cycle}}{21}{figure.2.18}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Equivalent moment of inertia of the system}}{21}{figure.2.19}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Energy output of the system in 1 cycle}}{22}{figure.2.20}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Equivalent moment of inertia - energy output relations}}{22}{figure.2.21}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Wittenbauer curve with tangent boundaries}}{23}{figure.2.22}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Timing chart of the system}}{24}{figure.2.23}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Displacement, velocity, acceleration and jerk of the cam follower}}{25}{figure.2.24}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Displacement - acceleration diagram of the cam}}{25}{figure.2.25}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Position vectors of the cam}}{26}{figure.2.26}%
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Cam profile of the combustion end}}{26}{figure.2.27}%
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Cam profile of the compression end}}{27}{figure.2.28}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

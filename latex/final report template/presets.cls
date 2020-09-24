@@ -63,6 +63,7 @@
 \makeatother
 
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
+\newcommand{\degc}{^\circ C}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\unitp}[1]{\ensuremath{\, (\mathrm{#1})}}
 \newcommand{\md}[1]{\multicolumn{1}{c}{#1}}
