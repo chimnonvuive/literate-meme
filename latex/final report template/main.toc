@@ -1,46 +1,48 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Overview of the Company}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Several Key points}{7}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}History of the Organization }{6}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Morphological Box}{7}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Summary and Conclusions}{8}{chapter.2}%
+\contentsline {section}{\numberline {1.2}Evaluation Table}{8}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Summary and Conclusions}{10}{chapter.2}%
 \babel@toc {vietnamese}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{9}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix}{11}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}List of Abbreviations}{9}{section.A.1}%
+\contentsline {section}{\numberline {A.1}List of Abbreviations}{11}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}List of Tables}{9}{section.A.2}%
+\contentsline {section}{\numberline {A.2}List of Tables}{11}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}List of Figures}{10}{section.A.3}%
+\contentsline {section}{\numberline {A.3}List of Figures}{12}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Important Standards}{10}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Important Standards}{12}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Bill of Materials}{10}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Bill of Materials}{12}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Drawings (in drawing roll)}{10}{section.A.6}%
+\contentsline {section}{\numberline {A.6}Drawings (in drawing roll)}{12}{section.A.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Manufacturer Catalogues (in separate folder)}{10}{section.A.7}%
+\contentsline {section}{\numberline {A.7}Manufacturer Catalogues (in separate folder)}{12}{section.A.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Drawings (if you don't have drawing rolls)}{11}{appendix.B}%
+\contentsline {chapter}{\numberline {B}Drawings (if you don't have drawing rolls)}{13}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Bill of Materials}{11}{section.B.1}%
+\contentsline {section}{\numberline {B.1}Bill of Materials}{13}{section.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Assembly drawing}{11}{section.B.2}%
+\contentsline {section}{\numberline {B.2}Assembly drawing}{13}{section.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Component drawings: 1}{11}{section.B.3}%
+\contentsline {section}{\numberline {B.3}Component drawings: 1}{13}{section.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}Component drawings: 2}{11}{section.B.4}%
+\contentsline {section}{\numberline {B.4}Component drawings: 2}{13}{section.B.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.5}Component drawings: 3}{11}{section.B.5}%
+\contentsline {section}{\numberline {B.5}Component drawings: 3}{13}{section.B.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{12}{section*.8}%
+\contentsline {chapter}{Glossary}{14}{section*.10}%
 \babel@toc {vietnamese}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{13}{appendix*.10}%
+\contentsline {chapter}{References}{15}{appendix*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{14}{section*.11}%
+\contentsline {chapter}{Index}{16}{section*.13}%

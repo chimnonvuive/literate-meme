@@ -1,4 +1,4 @@
-\LoadClass[14pt,a4paper,oneside]{extreport}
+\LoadClass[14pt,a4paper,twoside]{extreport}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
@@ -76,8 +76,7 @@
 		#2\\
 		#3
 	\end{array}
-	\right]
-}
+	\right]}
 
 \fancyhead[LO]{\rightmark}
 \fancyhead[RE]{\leftmark}
