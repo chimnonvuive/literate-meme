@@ -1,0 +1,58 @@
+\chapter{Appendix}
+\section{List of Abbreviations}
+\section{List of Tables}
+Should be limited unless the table is out of context at that part of writing
+How to reference table:
+\begin{itemize}
+	\item abc xyz, Table \ref{A long table}.
+	\item abc xyz, see Table \ref{A long table}.
+	\item abc xyz shows the following table. (direct referencing)
+	\item abc xyz shows Table \ref{A long table}
+\end{itemize}
+\begin{longtable}{C{0.04\linewidth}rrrrC{0.04\linewidth}rrrrC{0.04\linewidth}rrrr}
+	\toprule
+	\multirow{2}{*}{Pr} & \multicolumn{4}{c}{Parameters} & \multirow{2}{*}{Pr} & \multicolumn{4}{c}{Parameters} & \multirow{2}{*}{Pr} & \multicolumn{4}{c}{Parameters}\\
+	\cmidrule{2-5}\cmidrule{7-10}\cmidrule{12-15} & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $\\\midrule
+	\endfirsthead
+	& $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $ & & $ P_3 $ & $ u_1 $ & $ u_2 $ & $ u_3 $\\\midrule\endhead
+	\bottomrule\endfoot
+	\bottomrule\caption{A long table}\endlastfoot
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}1 &2.5&2&2 & 3 &{\cellcolor[HTML]{C0C0C0}}31 & 6.5&4&2&3  &{\cellcolor[HTML]{C0C0C0}}61&12&3&2&4\\
+	{\cellcolor[HTML]{C0C0C0}}2 &2.5&2&2.24&4&{\cellcolor[HTML]{C0C0C0}}32&7&3&2.24&3   &{\cellcolor[HTML]{C0C0C0}}62&12&4&2.24&2\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}3 &2.5&4&2.5&4 &{\cellcolor[HTML]{C0C0C0}}33&7&4&2.5&4    &{\cellcolor[HTML]{C0C0C0}}63&12.5&3&2.5&3\\
+	{\cellcolor[HTML]{C0C0C0}}4 &3&2&3.15&3  &{\cellcolor[HTML]{C0C0C0}}34&7&3&3.15&4&   {\cellcolor[HTML]{C0C0C0}}64&12.5&3&3.15&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}5 &3&2&3.55&3  &{\cellcolor[HTML]{C0C0C0}}35&7&2&3.55&3&   {\cellcolor[HTML]{C0C0C0}}65&12.5&4&3.55&2\\
+	{\cellcolor[HTML]{C0C0C0}}6 &3&4&4&2     &{\cellcolor[HTML]{C0C0C0}}36&7&3&4&4&      {\cellcolor[HTML]{C0C0C0}}66&12.5&3&4&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}7 &3&2&2&3     &{\cellcolor[HTML]{C0C0C0}}37&7.5&4&2&2&    {\cellcolor[HTML]{C0C0C0}}67&12.5&4&2&3\\
+	{\cellcolor[HTML]{C0C0C0}}8 &3&4&2.24&3  &{\cellcolor[HTML]{C0C0C0}}38&7.5&4&2.24&3& {\cellcolor[HTML]{C0C0C0}}68&12.5&4&2.24&2\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}9&3.5&3&2.5&2  &{\cellcolor[HTML]{C0C0C0}}39&7.5&4&2.5&3&  {\cellcolor[HTML]{C0C0C0}}69&13&4&2.5&4\\
+	{\cellcolor[HTML]{C0C0C0}}10&3.5&4&3.15&2&{\cellcolor[HTML]{C0C0C0}}40&8&4&3.15&3&   {\cellcolor[HTML]{C0C0C0}}70&13&3&3.15&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}11&3.5&3&3.55&2&{\cellcolor[HTML]{C0C0C0}}41&8&4&3.55&2&   {\cellcolor[HTML]{C0C0C0}}71&13&2&3.55&2\\
+	{\cellcolor[HTML]{C0C0C0}}12&3.5&3&4&4   &{\cellcolor[HTML]{C0C0C0}}42&8&4&4&3&      {\cellcolor[HTML]{C0C0C0}}72&13&3&4&2\\ 
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}13&4&4&2&3&     {\cellcolor[HTML]{C0C0C0}}43&8&2&2&3&      {\cellcolor[HTML]{C0C0C0}}73&13&4&2&3\\
+	{\cellcolor[HTML]{C0C0C0}}14&4&3&2.24&3  &{\cellcolor[HTML]{C0C0C0}}44&8.5&2&2.24&2& {\cellcolor[HTML]{C0C0C0}}74&13&3&2.24&3\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}15&4&3&2.5&4&   {\cellcolor[HTML]{C0C0C0}}45&8.5&2&2.5&3&  {\cellcolor[HTML]{C0C0C0}}75&13&2&2.5&4\\
+	{\cellcolor[HTML]{C0C0C0}}16&4&4&3.15&2  &{\cellcolor[HTML]{C0C0C0}}46&8.5&3&3.15&2& {\cellcolor[HTML]{C0C0C0}}76&13&4&3.15&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}17&4&3&3.55&3&  {\cellcolor[HTML]{C0C0C0}}47&8.5&2&3.55&2& {\cellcolor[HTML]{C0C0C0}}77&13.5&4&3.55&4\\
+	{\cellcolor[HTML]{C0C0C0}}18&4&3&4&2&     {\cellcolor[HTML]{C0C0C0}}48&8.5&4&4&3&    {\cellcolor[HTML]{C0C0C0}}78&14&3&4&2\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}19&4&4&2&3&     {\cellcolor[HTML]{C0C0C0}}49&9.5&2&2&3&    {\cellcolor[HTML]{C0C0C0}}79&14&2&2&4\\
+	{\cellcolor[HTML]{C0C0C0}}20&4&4&2.24&3&  {\cellcolor[HTML]{C0C0C0}}50&9.5&4&2.24&4& {\cellcolor[HTML]{C0C0C0}}80&14&3&2.24&2\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}21&4.5&3&2.5&2& {\cellcolor[HTML]{C0C0C0}}51&10&4&2.5&4&   {\cellcolor[HTML]{C0C0C0}}81&14&3&2.5&4\\
+	{\cellcolor[HTML]{C0C0C0}}22&4.5&3&3.15&3&{\cellcolor[HTML]{C0C0C0}}52&10&4&3.15&3&  {\cellcolor[HTML]{C0C0C0}}82&14.5&4&3.15&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}23&5.5&4&3.55&4&{\cellcolor[HTML]{C0C0C0}}53&10.5&4&3.55&4&{\cellcolor[HTML]{C0C0C0}}83&14.5&3&3.55&4\\
+	{\cellcolor[HTML]{C0C0C0}}24&5.5&2&4&3&   {\cellcolor[HTML]{C0C0C0}}54&10.5&2&4&4&   {\cellcolor[HTML]{C0C0C0}}84&15&3&4&2\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}25&6&3&2&4&     {\cellcolor[HTML]{C0C0C0}}55&10.5&2&2&4&   {\cellcolor[HTML]{C0C0C0}}85&15&2&2&3\\
+	{\cellcolor[HTML]{C0C0C0}}26&6&2&2.24&4&  {\cellcolor[HTML]{C0C0C0}}56&10.5&2&2.24&2&{\cellcolor[HTML]{C0C0C0}}86&15&4&2.24&3\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}27&6&4&2.5&4&   {\cellcolor[HTML]{C0C0C0}}57&10.5&2&2.5&2& {\cellcolor[HTML]{C0C0C0}}87&15.5&3&2.5&3\\
+	{\cellcolor[HTML]{C0C0C0}}28&6&4&3.15&3&  {\cellcolor[HTML]{C0C0C0}}58&11&4&3.15&3&  {\cellcolor[HTML]{C0C0C0}}88&15.5&3&3.15&4\\
+	\rowcolor{lightgray!20}{\cellcolor[HTML]{C0C0C0}}29&6&4&3.55&3&  {\cellcolor[HTML]{C0C0C0}}59&11&3&3.55&3&  {\cellcolor[HTML]{C0C0C0}}89&16&4&3.55&2\\
+	{\cellcolor[HTML]{C0C0C0}}30&6.5&2&4&3&   {\cellcolor[HTML]{C0C0C0}}60&11.5&2&4&4&   {\cellcolor[HTML]{C0C0C0}}90&16&4&4&3
+	\label{A long table}
+\end{longtable}
+\section{List of Figures}
+Should be limited unless the figure is out of context at that part of writing
+\section{Important Standards}
+\section{Bill of Materials}
+\section{Drawings (in drawing roll)}
+Could be included in this appendix section as figures
+\section{Manufacturer Catalogues (in separate folder)}

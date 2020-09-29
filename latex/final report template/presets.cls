@@ -22,6 +22,7 @@
 \usepackage{imakeidx}
 \usepackage{lipsum}
 \usepackage{longtable}
+\usepackage{multicol}
 \usepackage{multirow}
 \usepackage{newtxmath}
 \usepackage{newtxtext}

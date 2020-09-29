@@ -1,5 +1,5 @@
-%\LoadClass[12pt,a4paper]{book}
-\documentclass[graybox,envcountchap]{SVMonoEnhanced}
+\LoadClass[14pt,a4paper]{extreport}
+%\documentclass[graybox,envcountchap]{SVMonoEnhanced}
 \usepackage{type1cm}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
