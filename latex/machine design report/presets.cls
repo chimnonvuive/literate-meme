@@ -1,4 +1,4 @@
-\LoadClass[14pt,a4paper,twoside]{extreport}
+\LoadClass[14pt,a4paper,twoside]{report}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
@@ -26,8 +26,10 @@
 \usepackage{multirow}
 \usepackage{newtxmath}
 \usepackage{newtxtext}
+\usepackage{nomentbl}
 \usepackage{placeins}
 \usepackage{setspace}
+\usepackage{siunitx}
 \usepackage{stackengine}
 \usepackage{subcaption}
 \usepackage[table,xcdraw]{xcolor}

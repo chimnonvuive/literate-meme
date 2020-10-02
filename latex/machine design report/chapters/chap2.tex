@@ -1,6 +1,6 @@
 \chapter{Choose Motor}
 
-\section{Nomenclature}
+\section*{Nomenclature}
 \begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
 	$ n_{sh} $ & rotational speed of shaft, $ \unit{rpm} $\\
 	$ P_{mo} $ & calculated motor power to drive the system, $ \unit{kW} $\\
@@ -20,34 +20,43 @@
 	$ \eta_{ch} $ & chain drive efficiency\\
 	$ \eta_{hg} $ & helical gear efficiency\\
 	$ \eta_{sys} $ & efficiency of the system\\
-	$ _1 $ & shaft 1\\
-	$ _2 $ & shaft 2\\
-	$ _3 $ & shaft 3
+	$ _1 $ & subscript for shaft 1\\
+	$ _2 $ & subscript for shaft 2\\
+	$ _3 $ & subscript for shaft 3
 \end{tabular}
 \paragraph{Known parameters} From Chapter 1, we know that:\\
-$ P=7\unit{kW}$, $n=65\unit{rpm} $\\
+$ P=\SI{7}{kW}$, $n=\SI{65}{rpm} $\\
 $ T_1=T$, $T_2=0.7T$\\
-$ t_1=15\unit{s}$, $t_2=11\unit{s} $
-\section{Calculate $ \eta_{sys} $}
-From Table 2.3:\\
-$ \eta_c = 1 $\\
-$ \eta_b = 0.99 $\\
-$ \eta_{hg} = 0.97 $\\
-$ \eta_{ch} = 0.96 $\\
-$ \eta_{sys} = \eta_c\eta_b^4\eta_{hg}^2\eta_{ch} = 0.87 $
+$ t_1=\SI{15}{s}$, $t_2=\SI{11}{s} $
+\section{Choose motor for the mixing tank}
+The choice of motor will affect the entire system, so it is necessary to pick the right one.
 
-\section{Calculate $ P $}
-From Equation 2.13 \cite{tk1}:\\
-$ P_w = P\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} = 6.2 \unit{(kW)} $\\
-$ P_{mo} = \dfrac{P_w}{\eta_{sys}} = 7.14\unit{(kW)} > P$
+\textbf{Calculate system overall efficiency} From Table 2.3 \cite{tk1}:
+\begin{itemize}
+	\item 1 elastic coupling which connects the motor and the speed reducer. $ \eta_c = 1 $
+	\item 4 sealed rolling bearings. 3 of which belong to the speed reducer and the last one is used for the shaft of the mixing tank. $ \eta_b = 0.99 $
+	\item 2 sealed pairs of helical gear drive which connect the shafts inside the speed reducer. $ \eta_{hg} = 0.97 $
+	\item 1 sealed roller chain drive connecting the speed reduce and the mixing tank. $ \eta_{ch} = 0.96 $
+\end{itemize}
+Aggregate all efficiencies yields: 
+\[\eta_{sys} = \eta_c\eta_b^4\eta_{hg}^2\eta_{ch} = 1 \times 0.99^4 \times 0.97^2 \times 0.96 = 0.87\]
 
-\section{Calculate $ n_{mo} $}
-Using Table 2.4 \cite{tk1}:\\
+\textbf{Calculate required power for operation}
+The power $ P $ from Chapter 1 applies for systems with single loading input. In case of varying load each cycle, the equivalent power is calculated using  Equation 2.13 \cite{tk1}:
+\[
+P_w = P\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} = 7 \times \sqrt{\dfrac{\left(\dfrac{T}{T}\right)^2\times15 + \left(\dfrac{0.7T}{T}\right)^2\times11}{15+11}} = 6.2 \unitp{kW}
+\]
+\[
+P_{mo} = \dfrac{P_w}{\eta_{sys}} = \dfrac{6.2}{0.87} = 7.14 \unitp{kW}
+\]
+
+\textbf{Calculate $ n_{mo} $} Using Table 2.4 \cite{tk1}:\\
 $ u_{ch} = 4$, $ u_{h} = 10$\\
 $ u_{sys} = u_{ch}u_{h} = 40 $\\
 $ n_{mo} = u_{sys}n = 2600  \unitp{rpm} $
-\section{Choose motor}
-To work normally, the maximum operating power of the chosen motor must be no smaller than both estimated $ P_{mo} $ and $ P $. Since $ P_{mo} > P $ for our case, the minimum operating power of choice is $ P_{mo}=7.14\unitp{kW} $. In similar fashion, its rotational speed must also be no smaller than estimated $ n_{mo} $.
+
+\textbf{Choose motor}
+To work normally, the maximum operating power of the chosen motor must be no smaller than $ P_{mo} $. In similar fashion, its rotational speed must also be no smaller than estimated $ n_{mo} $.
 
 Thus, from Table P1.3 \cite{tk1}, we choose motor 4A112M2Y3 which operates at $ 7.5\unit{kW} $ and $ 2922\unit{rpm} $.\\
 $\Rightarrow P_{mo} = 7.5\unitp{kW}, n_{mo} = 2922\unitp{rpm}$\\
@@ -73,7 +82,7 @@ $ n_{sh2} = {n_{sh1}}/{u_{1}} = 905.02 \unit{(rpm)}$\\
 $ n_{sh3} = {n_{sh2}}/{u_{2}} = 292.20 \unit{(rpm)}$
 
 \subsection{Torque}
-$ T_{mo} = 9.55\times10^6 \times P_{mo}/n_{mo} = 24512.32 \unit{(N\cdot mm)}$\\
+$ T_{mo} = 9.55\times10^6 \times P_{mo}/n_{mo} = 23350.04 \unit{(N\cdot mm)}$\\
 $ T_{sh1} = 9.55\times10^6 \times{P_{sh1}}/{n_{sh1}} = 23106.95 \unit{(N\cdot mm)}$\\
 $ T_{sh2} = 9.55\times10^6 \times{P_{sh2}}/{n_{sh2}} = 71672.45 \unit{(N\cdot mm)}$\\
 $ T_{sh3} = 9.55\times10^6 \times{P_{sh3}}/{n_{sh3}} = 213175.22 \unit{(N\cdot mm)}$\\
@@ -86,7 +95,7 @@ In summary, we obtain the following table:
 		$ P \unitp{kW}$ & 7.5  & 7.07& 6.79   & 6.52   \\
 		$ u $ &       -   &1    &  3.23  & 3.1                 \\
 		$ n \unitp{rpm}$ & 2922 & 2922 & 905.02 & 292.20 \\
-		$ T \unitp{N\cdot mm}$ & 24512.32 & 23116.54 & 71672.45 & 213175.22
+		$ T \unitp{N\cdot mm}$ & 23350.04 & 23116.54 & 71672.45 & 213175.22
 	\end{tabular}
 	\caption{Output specifications}
 	\label{tab:my-table}

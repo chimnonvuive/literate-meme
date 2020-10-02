@@ -1,120 +1,64 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Design Problem}{9}{chapter.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Nomenclature}{9}{section.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Problem}{9}{section.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Mixing machine parameters}{9}{section.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Requirements}{10}{section.1.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Design problem}{10}{section.1.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Choose Motor}{12}{chapter.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Nomenclature}{12}{section.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Known parameters}{12}{section*.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Calculate $ \eta _{sys} $}{13}{section.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Calculate $ P $}{13}{section.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Calculate $ n_{mo} $}{13}{section.2.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Choose motor}{13}{section.2.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Calculate power, rotational speed and torque}{14}{section.2.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Power}{14}{subsection.2.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Rotational speed}{14}{subsection.2.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Torque}{15}{subsection.2.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Chain Drive Design}{16}{chapter.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Nomenclature}{16}{section.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Known parameters}{17}{section*.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Find $ p $}{17}{section.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Calculate $ z $}{17}{subsection.3.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Calculate $ [P] $}{17}{subsection.3.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Determine p}{18}{subsection.3.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Find $ a $, $ x_c $, and $ i $}{18}{section.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Find $ x_c $}{18}{subsection.3.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Find $ a $}{18}{subsection.3.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Find $ i $}{18}{subsection.3.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Strength of chain drive}{19}{section.3.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Determine sprocket specifications and output force on the shaft}{19}{section.3.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Force on shaft}{20}{section.3.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Other parameters}{20}{section.3.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Gearbox Design (Helix gears)}{22}{chapter.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Nomenclature}{22}{section.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Known parameters}{24}{section*.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Choose material}{24}{section.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Calculate $ [\sigma _H] $ and $ [\sigma _F] $}{24}{section.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Determine basic specifications of the Transmission system}{26}{section.4.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Determine basic parameters}{26}{subsection.4.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Determine gear meshing parameters}{27}{subsection.4.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ z_1 $, $ z_2 $, $ b_w $}{27}{section*.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Correct $ \beta $}{27}{section*.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ x_1 $, $ x_2 $}{28}{section*.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Basic parameters}{28}{subsection.4.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.4}Find $ [{\sigma }_{Hw}] $, $ [\sigma _{Fw1}] $ and $ [\sigma _{Fw2}] $}{28}{subsection.4.4.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.5}Contact stress analysis}{29}{subsection.4.4.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ z_M $}{29}{section*.15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ z_H $}{29}{section*.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ z_\varepsilon $}{29}{section*.17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ K_H $}{29}{section*.18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ \sigma _H $}{29}{section*.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.6}Bending stress analysis}{30}{subsection.4.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ Y_\varepsilon $}{30}{section*.20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ Y_\beta $}{30}{section*.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ Y_F $}{30}{section*.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ K_F $}{30}{section*.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Find $ \sigma _F $}{30}{section*.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.7}Force on shafts}{30}{subsection.4.4.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{35}{chapter*.26}%
+\contentsline {chapter}{\numberline {1}Design Problem}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mixing machine parameters}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Requirements}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Design problem}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Choose Motor}{10}{chapter.2}%
+\contentsline {paragraph}{Known parameters}{10}{section*.9}%
+\contentsline {section}{\numberline {2.1}Choose motor for the mixing tank}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Calculate power, rotational speed and torque}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Power}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Rotational speed}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Torque}{12}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Chain Drive Design}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Nomenclature}{13}{section.3.1}%
+\contentsline {paragraph}{Known parameters}{14}{section*.11}%
+\contentsline {section}{\numberline {3.2}Find $ p $}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Calculate $ z $}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Calculate $ [P] $}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Determine p}{14}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Find $ a $, $ x_c $, and $ i $}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Find $ x_c $}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Find $ a $}{15}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Find $ i $}{15}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Strength of chain drive}{15}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Determine sprocket specifications and output force on the shaft}{16}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Force on shaft}{16}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Other parameters}{16}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Gearbox Design (Helix gears)}{18}{chapter.4}%
+\contentsline {paragraph}{Known parameters}{19}{section*.14}%
+\contentsline {section}{\numberline {4.1}Choose material}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Calculate $ [\sigma _H] $ and $ [\sigma _F] $}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Determine basic specifications of the Transmission system}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Determine basic parameters}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Determine gear meshing parameters}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Basic parameters}{22}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Stress analysis}{22}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Correct $ [{\sigma }_{H}] $, $ [\sigma _{F1}] $ and $ [\sigma _{F2}] $}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Contact stress analysis}{23}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Bending stress analysis}{23}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Overloading analysis}{24}{subsection.4.4.4}%
+\contentsline {chapter}{\numberline {5}Shaft Design}{26}{chapter.5}%
+\contentsline {paragraph}{Known parameters}{27}{section*.17}%
+\contentsline {section}{\numberline {5.1}Choose material}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Transmission Design}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Load on shafts}{27}{subsection.5.2.1}%
+\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{28}{section*.18}%
+\contentsline {subsubsection}{Applied forces from Chain drives}{28}{section*.19}%
+\contentsline {subsection}{\numberline {5.2.2}Preliminary calculations}{28}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Identify the distance between bearings and applied forces}{28}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Determine shaft diameters and lengths}{29}{subsection.5.2.4}%
+\contentsline {paragraph}{Find reaction forces}{29}{figure.caption.22}%
+\contentsline {paragraph}{Draw bending moment - torque diagrams}{30}{section*.23}%
+\contentsline {paragraph}{Find equivalent moments}{30}{section*.26}%
+\contentsline {paragraph}{Find permissible stress}{31}{section*.27}%
+\contentsline {paragraph}{Find standardized diameters at specific locations on the shaft}{31}{section*.28}%
+\contentsline {section}{\numberline {5.3}Fatigue Strength Analysis}{31}{section.5.3}%
+\contentsline {paragraph}{Find $ \sigma _{-1}$, $ \tau _{-1} $}{31}{section*.29}%
+\contentsline {paragraph}{Find $ \sigma _{a}, \tau _{a}, \sigma _{m}, \tau _{m} $}{31}{section*.30}%
+\contentsline {paragraph}{Find $ K_{\sigma }, K_\tau $}{32}{section*.32}%
+\contentsline {paragraph}{Find $ s_\sigma $, $ s_\tau $ and $ s $}{32}{section*.34}%
+\contentsline {section}{\numberline {5.4}Static Strength Analysis}{33}{section.5.4}%
+\contentsline {chapter}{References}{36}{chapter*.37}%

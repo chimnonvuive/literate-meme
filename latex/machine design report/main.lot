@@ -1,16 +1,14 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces Output specifications\relax }}{15}{table.caption.8}%
-\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Output specifications\relax }}{12}{table.caption.10}%
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Chain drive specifications\relax }}{21}{table.caption.10}%
-\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Chain drive specifications\relax }}{17}{table.caption.12}%
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Gearbox specifications\relax }}{31}{table.caption.25}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Gearbox specifications\relax }}{25}{table.caption.15}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Calculated variables for $ \sigma _{a}, \tau _{a}, \sigma _{m}, \tau _{m} $\relax }}{32}{table.caption.31}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Calculated variables in $ K_\sigma $ and $ K_\tau $\relax }}{32}{table.caption.33}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Safety factor at critical cross sections\relax }}{33}{table.caption.35}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Calculated static strength at critical cross sections\relax }}{33}{table.caption.36}%
