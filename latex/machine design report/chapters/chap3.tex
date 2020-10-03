@@ -61,44 +61,73 @@
 	$ _1 $  & subscript for driving sprocket\\
 	$ _2 $  & subscript for driven sprocket\\
 \end{tabular}
-\paragraph{Known parameters} From Chapter 1, we know that:\\
+
+\textbf{Known parameters} From Chapter 1, we know that:\\
 The chain type is roller.\\
-$ n_{sh3}= 292.2\unit{rpm}$.\\
-$ P_{ch}=6.3\unit{kW}, u_{ch}=4.5 $.
+$ n_{sh3}= 132.27 \unit{rpm}$\\
+$ P_{ch} = 6.26\unit{kW}, u_{ch}=4.5 $
 
-\section{Find $ p $}
-The driving sprocket is connected to shaft 3, $ n_1 = n_{sh3} = 292.2\unit{(rpm)} $.
-\subsection{Calculate $ z $}
-Since $ z_1 $ and $ z_2 $ is preferably an odd number, Equation 5.1 \cite{tk1}:\\
-$ z_1 = 29 - 2u_{ch} = 21 $\\
-$ z_2 = u_{ch}z_1 = 95 \leq 120$
-%Because $ z_1 \geq 15 $, we use table (5.8) and interpolation to approximate $ p_{max} $. Therefore, $ p_{max} \approx 33.58 \unit{(mm)} $.
-\subsection{Calculate $ [P] $}
-Since $ 200 $ is the nearest to $ n_{ch} = 292.2 \unit{rpm}$, we choose $ n_{01} = 200\unit{rpm} $, which is one of the experimental angular rotational speed values. Then, we can obtain the value $ [P] $, Equation 5.3 \cite{tk1}:
-\[P_t=P_{ch}k_0k_ak_{dc}k_{bt}k_dk_ck_zk_n\leq[P]\]
-where $ k_z = {25}/{z_1} = 1.32$ and $ k_n = {n_{01}}/{n_{1}} = 1.02$.
+\section{Find the chain drive pitch}
+The driving sprocket is connected to shaft 3, $ n_1 = n_{sh3} = 132.27\unit{rpm} $.
 
-Assuming good operational condition, $ k_0=k_a=k_{dc}=k_{bt}=1 $, $ k_d=1.25 $, $ k_c=1 $, see Table 5.6 \cite{tk1}. Calculation yields $ P_t=6.38\unitp{kW}\leq [P] $. Inspecting Table 5.5 \cite{tk1} at column $ n_{01}=200\unit{rpm} $, choose the closet value $ [P]=11\unit{kW} $.
-\subsection{Determine p}
-Knowing $ [P] $, we have $ p= 25.4\unit{mm}$, Table 5.5. Consequently, $ d_c=7.95\unit{mm} $, $ B=22.61\unit{mm} $. Consulting Table 5.8, the pitch is indeed suitable.
+\textbf{Calculate $ z $}
+The number of teeth determines the how stable is the rotational speed, which relates to the impact intensity and service life:\\
+$ z_1 = 29 - 2u_{ch} = 29 - 2 \times 2.03 = 25 \geq 19 $ (rounded to the nearest odd number)\\
+$ z_2 = u_{ch}z_1 = 2.03 \times 25 = 51 \leq 120$ (Equation 5.1 \cite{tk1})
 
-\section{Find $ a $, $ x_c $, and $ i $}
+\textbf{Calculate $ [P] $} An experiment is conducted to find the optimal pitch given the permissible power and angular rotational speed. A roller chain drive having $ 25 $ teeth on the driving sprocket is tested in 8 different cases of $ n_{01} $ in somewhat similar condition with our design purpose, p.80 \cite{tk1}. In this problem, $ z_1=25 $; $ n_1=132.27\unit{rpm} $, which is close to $ n_{01}=200\unit{rpm} $, which yields $ k_z = {25}/{z_1} = 25/25 = 1 $ and $  k_n = {n_{01}}/{n_{1}} = 200/132.27 = 1.51 $. 
 
-\subsection{Find $ x_c $}
-$ a_{min} = 30p = 762 \unit{(mm)} $, $ a_{max} = 50p = 1270 \unit{(mm)}$. Limiting the range of choice for $ a $ in $ [a_{min},a_{max}] $, we can approximate $ a_i= 1000 \unit{mm} $ and find $ x_c $:
-\[x = \dfrac{2a_i}{p} + \dfrac{z_1+z_2}{2} + \dfrac{(z_2-z_1)^2p}{4\pi^2a_i} = 140.26\] 
-Then, round $ x $ up to the nearest even number gives $ x_c = 142$.
+Another step is to specify the working condition of the chain, Table 5.6:
+\begin{itemize}
+	\item The centerline between 2 sprockets is parallel with the ground. $ k_0 = 1 $
+	\item Center distance $ a= (30\div 50)p $, which is similar to the experiment. $ k_a= 1 $
+	\item Center distance is modifiable through displacing the sprockets. $ k_{dc}=1 $
+	\item Moderate impact load. $ k_d=1.5 $
+	\item 1 shift. $ k_c=1 $
+	\item Dusty condition with moderate lubrication quality. $ k_{bt} =1.3$
+\end{itemize}
+Then, we can obtain the value $ [P] $, Equation 5.3 \cite{tk1}:
+\begin{multline*}
+	P_t=P_{ch}k_0k_ak_{dc}k_dk_ck_{bt}k_zk_n\\
+	=6.26\times1\times1\times1\times1.5\times1\times1.3\times1\times1.51=18.46\unitp{kW}\leq[P]
+\end{multline*}
 
-\subsection{Find $ a $}
-Using $ x_c $ to find the correct center distance, see Equation 5.13 \cite{tk1}. In addition, it is recommended to loosing the chain an amount of $ 0.002\div0.004 a $, which explains the coefficient $ 0.097 $ in the formula below:
-\[a = \dfrac{0.097p}{4}\left[x_c-\dfrac{z_2+z_1}{2}+\sqrt{\left(x_c-\dfrac{z_2+z_1}{2}\right)^2-2\left(\dfrac{z_2-z_1}{\pi}\right)^2}\right]= 1019.99 \unitp{mm}\]
-%$$
+Inspecting Table 5.5 \cite{tk1} at column $ n_{01}=200\unit{rpm} $, the closet value is $ [P]=19.3\unit{kW} $. Knowing $ [P] $, we have $ p= 31.75 \unit{mm} $, Table 5.5 \cite{tk1}. Consequently, $ d_c=9.55\unit{mm} $, $ B=27.46\unit{mm} $. Consulting Table 5.8 \cite{tk1}, the pitch is indeed suitable.
 
-\subsection{Find $ i $} The permissible impact frequency is $ [i]=30 $, Table 5.9 \cite{tk1}. Calculating $ i $ gives:
-\[i=\dfrac{z_1n_1}{15x}=2.92<[i]\]
+\section{Determine basic parameters of the chain drive}
+\subsection{Find number of links and center distance}
+The parameters are found:
 
+\textbf{Find $ x_c $} The  $ a_{min} = 30p = 30\times 31.75= 952.50 \unit{(mm)} $, $ a_{max} = 50p = 50\times 31.75 = 1587.50 \unit{(mm)}$. Limiting the range of choice for $ a $ in $ [a_{min},a_{max}] $, we can approximate $ a = 1300 \unit{mm} $ and find $ x_c $:
+\[x = \dfrac{2a}{p} + \dfrac{z_1+z_2}{2} + \dfrac{(z_2-z_1)^2p}{4\pi^2a}\\ = \dfrac{2\times 1300}{31.75} + \dfrac{25+51}{2} + \dfrac{(51-25)^2\times 31.75}{4\pi^2\times 1300}=120.31\]
+%\begin{multline*}
+%	
+%\end{multline*}
+
+Then, round $ x $ up to the nearest even number gives $ x_c = 122$.
+
+\textbf{Find $ a $}
+Using $ x_c $ to find the correct center distance, Equation 5.13 \cite{tk1}. In addition, it is recommended to loose the chain an amount of $ 0.002\div0.004 a $ to reduce tension. Choosing the amount of $ 0.003a $, the coefficient $ 0.997 $ is multiplied in the formula below:
+\begin{multline*}
+	a = \dfrac{0.997p}{4}\left[x_c-\dfrac{z_2+z_1}{2}+\sqrt{\left(x_c-\dfrac{z_2+z_1}{2}\right)^2-2\left(\dfrac{z_2-z_1}{\pi}\right)^2}\right]\\ = \dfrac{0.997\times31.75}{4}\left[122-\dfrac{51+25}{2}+\sqrt{\left(122-\dfrac{51+25}{2}\right)^2-2\left(\dfrac{51-25}{\pi}\right)^2}\right]= 1019.99 \unitp{mm}
+\end{multline*}
+
+\textbf{Other parameters} The values below are necessary for modeling the chain drive:\\ 
+$ d_1 = p/\sin\left(\dfrac{\pi}{z_1}\right) = 31.75/\sin\left(\dfrac{180}{25}\right) = 253.32\unitp{mm}$\\
+$ d_2 = p/\sin\left(\dfrac{\pi}{z_2}\right) = 31.75/\sin\left(\dfrac{180}{51}\right) = 515.75\unitp{mm}$\\
+$ d_{a1} = p\left( 0.5 + \cot \dfrac{180}{z_1} \right) = 31.75 \left( 0.5 + \cot \dfrac{180}{25} \right) = 267.20 \unitp{mm}$\\
+$ d_{a2} = p\left( 0.5 + \cot \dfrac{180}{z_2} \right) = 31.75 \left( 0.5 + \cot \dfrac{180}{51} \right) =  530.65 \unitp{mm}$
+
+Look up to find $ d_l = 19.05 \unit{(mm)} $, see Table 5.2 \cite{tk1}:\\
+$ d_{f1} = d_1 - 2(0.502d_l+0.05) = 253.32 - 2(0.502\times 19.05+0.05) = 234.08 \unitp{mm}$\\
+$ d_{f2} = d_2 - 2(0.502d_l+0.05) = 515.75 - 2(0.502\times 19.05+0.05) = 496.50 \unitp{mm}$
 
 \section{Strength of chain drive}
+\subsection{Impact frequency analysis}
+After determine the center distance, it is necessary to validate the impact frequency. From Table 5.9 \cite{tk1}, it  is $ [i]=25 $. Calculating $ i $ gives:
+\[i=\dfrac{z_1n_1}{15x}=\dfrac{25\times 132.27}{15\times 120.31}=1.83<[i]\]
+
+\subsection{Safety factor analysis}
 In order to operate safely, the chain drive's safety factor must satisfy the following condition:
 \[s = \dfrac{Q}{k_dF_t+F_0+F_v} \geq [s]\]
 Rotational speed of the smaller sprocket is determined using the formula below:
@@ -118,7 +147,7 @@ $ F_0=9.81\times10^{-3}k_fqa = 156.11\unitp{N}$
 Replacing all the variables gives:
 \[s=18.49\geq8.71\]
 which satisfies the condition.
-\section{Determine sprocket specifications and output force on the shaft}
+\subsection{Contact stress analysis}
 The following condition must be met, Equation 5.18 \cite{tk1}:
 \[\sigma_H = 0.47\sqrt{\dfrac{k_r(F_tk_d+F_{vd})E}{AK_d}}\leq[\sigma_H]\]
 Since the chain drive only has one strand, $ K_d = 1$.
@@ -145,13 +174,7 @@ Choose $ k_x=1.15 $ to obtain $ F_r $, Equation 5.20 \cite{tk1}:\\
 $ F_r = k_xF_t = 2772.05\unit{(N)} $
 
 \section{Other parameters}
-$ d_1 = p/\sin\left(\dfrac{\pi}{z_1}\right) = 170.42\unitp{mm}$\\
-$ d_2 = p/\sin\left(\dfrac{\pi}{z_2}\right) = 768.22\unitp{mm}$\\
-$ d_{a1} = p\left( 0.5 + \cot \dfrac{180}{z_1} \right) \approx 181.22 \unit{(mm)}$\\
-$ d_{a2} = p\left( 0.5 + \cot \dfrac{180}{z_2} \right) \approx 780.50 \unit{(mm)}$\\
-Look up to find $ d_l = 15.88 \unit{(mm)} $, see Table 5.2 \cite{tk1}:\\
-$ d_{f1} = d_1 - 2(0.502d_l+0.05) \approx 154.36 \unit{(mm)}$\\
-$ d_{f2} = d_2 - 2(0.502d_l+0.05) \approx 752.16 \unit{(mm)}$\\
+
 In summary, we have the following table:
 
 \begin{table}[ht]

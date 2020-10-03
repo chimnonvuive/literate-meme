@@ -6,4 +6,15 @@
 \BOOKMARK [0][-]{chapter.2}{Choose Motor}{}% 6
 \BOOKMARK [1][-]{section.2.1}{Choose motor for the mixing tank}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.2}{Calculate power, rotational speed and torque}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter*.11}{References}{}% 9
+\BOOKMARK [0][-]{chapter.3}{Chain Drive Design}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Nomenclature}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Find the chain drive pitch}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Determine basic parameters of the chain drive}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.1}{Find number of links and center distance}{section.3.3}% 13
+\BOOKMARK [1][-]{section.3.4}{Strength of chain drive}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.4.1}{Impact frequency analysis}{section.3.4}% 15
+\BOOKMARK [2][-]{subsection.3.4.2}{Safety factor analysis}{section.3.4}% 16
+\BOOKMARK [2][-]{subsection.3.4.3}{Contact stress analysis}{section.3.4}% 17
+\BOOKMARK [1][-]{section.3.5}{Force on shaft}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.6}{Other parameters}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter*.12}{References}{}% 20

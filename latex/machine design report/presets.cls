@@ -10,6 +10,7 @@
 \usepackage{amssymb}
 \usepackage{biblatex}
 \usepackage{booktabs}
+%\usepackage{breqn}
 \usepackage{caption}
 \usepackage{etoolbox}
 \usepackage{fancyhdr}

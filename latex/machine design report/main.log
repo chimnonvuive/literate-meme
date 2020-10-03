@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.2)  2 OCT 2020 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  3 OCT 2020 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -234,9 +234,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language44) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language44) on input line 108.
+(babel)             (\language69) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
@@ -1359,7 +1359,7 @@ Writing index file main.idx
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 98.
+Package glossaries Info: Writing glossary file main.glo on input line 99.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1586,7 +1586,7 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 (./front matter/titlepage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
-<./images/logo.png, id=40, 1007.765pt x 1027.84pt>
+<./images/logo.png, id=84, 1007.765pt x 1027.84pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
 Package pdftex.def Info: ./images/logo.png  used on input line 7.
@@ -1642,7 +1642,7 @@ Overfull \hbox (4.2727pt too wide) in paragraph at lines 4--17
 [] [] 
  []
 
-<images/problem.jpg, id=99, 727.518pt x 334.3692pt>
+<images/problem.jpg, id=156, 727.518pt x 334.3692pt>
 File: images/problem.jpg Graphic file (type jpg)
 <use images/problem.jpg>
 Package pdftex.def Info: images/problem.jpg  used on input line 22.
@@ -1681,7 +1681,56 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 4.84003pt on input line 28.
 [9
 
-] [10]) [11]
+] [10]) (./chapters/chap3.tex [11]
+Chapter 3.
+
+Overfull \hbox (2.18758pt too wide) in paragraph at lines 7--7
+[]|$\LMS/ntxsy/m/n/12 »\OML/ntxmi/m/it/12 ^^[[]\LMS/ntxsy/m/n/12 ¼$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]|\T1/ntxtlf/m/n/12 cross sec-tional area of chain
+ []
+
+
+Overfull \hbox (2.47278pt too wide) in paragraph at lines 3--42
+[][] 
+ []
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]|\T1/ntxtlf/m/n/12 experimental an-gu-lar ro-ta-tional
+ []
+
+
+Overfull \hbox (1.05116pt too wide) in paragraph at lines 49--49
+[]|$\OML/ntxmi/m/it/12 p[]$| 
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 55--56
+[]|\T1/ntxtlf/m/n/12 instantaneous ve-loc-ity along the
+ []
+
+
+Overfull \hbox (2.47278pt too wide) in paragraph at lines 42--64
+[][] 
+ []
+
+[13]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 98.
+ [14]
+Underfull \vbox (badness 6995) has occurred while \output is active []
+
+ [15]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 155.
+)
+[16] [17]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 26.
 
@@ -1691,7 +1740,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
-[12
+[18
 
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
 fely (allowed).
@@ -1701,9 +1750,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C1C1E964D0DDB5BCBD79D01C1124A4A;553.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 34D642BD75C2BAF77E4C00B3E64903B2;1360
+(rerunfilecheck)             After:  FC823FEF27979EA897709B2A6C91A2A7;1351.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.33798pt have occurred.
@@ -1713,25 +1768,28 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29145 strings out of 481239
- 529988 string characters out of 5920377
- 1332225 words of memory out of 5000000
- 43806 multiletter control sequences out of 15000+600000
- 602767 words of font info for 130 fonts, out of 8000000 for 9000
+ 29184 strings out of 481239
+ 530496 string characters out of 5920377
+ 1334224 words of memory out of 5000000
+ 43821 multiletter control sequences out of 15000+600000
+ 608944 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,80p,1006b,1864s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fon
-ts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb><
-/usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/t
-ype1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmia
-X.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 224765 bytes).
+ 59i,12n,80p,1006b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></u
+sr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/typ
+e1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (18 pages, 251025 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
