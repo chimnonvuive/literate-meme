@@ -6,42 +6,4 @@
 \BOOKMARK [0][-]{chapter.2}{Choose Motor}{}% 6
 \BOOKMARK [1][-]{section.2.1}{Choose motor for the mixing tank}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.2}{Calculate power, rotational speed and torque}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.1}{Power}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.2}{Rotational speed}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.3}{Torque}{section.2.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Chain Drive Design}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Nomenclature}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Find \040p }{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Calculate \040z }{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.2}{Calculate \040[P] }{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.3}{Determine p}{section.3.2}% 17
-\BOOKMARK [1][-]{section.3.3}{Find \040a , \040xc , and \040i }{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.3.1}{Find \040xc }{section.3.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.2}{Find \040a }{section.3.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.3}{Find \040i }{section.3.3}% 21
-\BOOKMARK [1][-]{section.3.4}{Strength of chain drive}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.5}{Determine sprocket specifications and output force on the shaft}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.6}{Force on shaft}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.7}{Other parameters}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{Gearbox Design \(Helix gears\)}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Choose material}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Calculate \040[H] \040and \040[F] }{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Determine basic specifications of the Transmission system}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Determine basic parameters}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{Determine gear meshing parameters}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.3}{Basic parameters}{section.4.3}% 32
-\BOOKMARK [1][-]{section.4.4}{Stress analysis}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.1}{Correct \040[H] , \040[F1] \040and \040[F2] }{section.4.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.2}{Contact stress analysis}{section.4.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.3}{Bending stress analysis}{section.4.4}% 36
-\BOOKMARK [2][-]{subsection.4.4.4}{Overloading analysis}{section.4.4}% 37
-\BOOKMARK [0][-]{chapter.5}{Shaft Design}{}% 38
-\BOOKMARK [1][-]{section.5.1}{Choose material}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.2}{Transmission Design}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.2.1}{Load on shafts}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.2}{Preliminary calculations}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.3}{Identify the distance between bearings and applied forces}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.4}{Determine shaft diameters and lengths}{section.5.2}% 44
-\BOOKMARK [1][-]{section.5.3}{Fatigue Strength Analysis}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.4}{Static Strength Analysis}{chapter.5}% 46
-\BOOKMARK [0][-]{chapter*.37}{References}{}% 47
+\BOOKMARK [0][-]{chapter*.11}{References}{}% 9

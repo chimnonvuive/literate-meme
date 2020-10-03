@@ -1,4 +1,4 @@
-\LoadClass[14pt,a4paper,twoside]{report}
+\LoadClass[12pt,a4paper,twoside]{extreport}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}

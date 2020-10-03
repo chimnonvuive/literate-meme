@@ -50,52 +50,58 @@ P_w = P\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\righ
 P_{mo} = \dfrac{P_w}{\eta_{sys}} = \dfrac{6.2}{0.87} = 7.14 \unitp{kW}
 \]
 
-\textbf{Calculate $ n_{mo} $} Using Table 2.4 \cite{tk1}:\\
-$ u_{ch} = 4$, $ u_{h} = 10$\\
-$ u_{sys} = u_{ch}u_{h} = 40 $\\
-$ n_{mo} = u_{sys}n = 2600  \unitp{rpm} $
+\textbf{Calculate $ n_{mo} $} The purpose is to Using Table 2.4 \cite{tk1}:
+\begin{itemize}
+	\item 2-level transmission speed reducer, spur gear type. $ u_{h} = 11 $
+	\item 1 chain drive, roller type. $ u_{ch} = 2$
+\end{itemize}
+Multiplying all transmission ratio yields:\\
+$ u_{sys} = u_{h}u_{ch} = 11 \times 2 = 22 $\\
+$ n_{mo} = u_{sys}n = 22 \times 65 = 1430 \unitp{rpm} $
 
 \textbf{Choose motor}
-To work normally, the maximum operating power of the chosen motor must be no smaller than $ P_{mo} $. In similar fashion, its rotational speed must also be no smaller than estimated $ n_{mo} $.
-
-Thus, from Table P1.3 \cite{tk1}, we choose motor 4A112M2Y3 which operates at $ 7.5\unit{kW} $ and $ 2922\unit{rpm} $.\\
-$\Rightarrow P_{mo} = 7.5\unitp{kW}, n_{mo} = 2922\unitp{rpm}$\\
-Recalculating $ u_{sys} $ with the new $ P_{mo} $ and $ n_{mo} $, we obtain:\\
-$ u_{sys} = \dfrac{n_{mo}}{n} = 44.95	$\\
-Assuming $ u_{h} = const $:\\
-$ u_{ch} = \dfrac{u_{sys}}{u_{h}} = 4.5$
+To work normally, the maximum operating power of the chosen motor must be no smaller than $ P_{mo} $. In similar fashion, its rotational speed must also be no smaller than  $ n_{mo} $. Thus, from Table P1.3 \cite{tk1}, we choose motor 4A132S4Y3 which operates at $ 7.5 \unit{kW} $ maximum and $ 1455 \unit{rpm} $, which makes $ n_{mo} = 1455\unit{rpm}$.\\
+Recalculating $ u_{sys} $ with the new $ P_{mo} $ and $ n_{mo} $ derived from the chosen motor, we obtain:
+\[u_{sys} = \dfrac{n_{mo}}{n} = \dfrac{1455}{65} = 22.38\]
+Retaining the transmission ratio of the speed reducer (i.e. let $ u_{h} = const = 11 $), the new transmission ratio of the chain drive is then:
+\[u_{ch} = \dfrac{u_{sys}}{u_{h}} = \dfrac{22.38}{11} = 2.03\]
 
 \section{Calculate power, rotational speed and torque}
-Let us denote $ P_{sh1} $, $ n_{sh1} $ and $ T_{sh1} $ be the transmitted power, rotational speed and torque onto shaft 1, respectively. Similarly, $ P_{sh2} $, $ n_{sh2} $ and $ T_{sh2} $ will be the transmitted parameters onto shaft 2 and $ P_{sh3} $, $ n_{sh3} $ and $ T_{sh3} $ will be the transmitted parameters onto shaft 3. These notations will be used throughout the next chapters.
-\subsection{Power}
-$ P_{ch} = \dfrac{P_w}{\eta_b} = 6.3 \unit{(kW)}$\\
-$ P_{sh3} = \dfrac{P_{ch}}{\eta_{ch}} = 6.52 \unit{(kW)}$\\
-$ P_{sh2} = \dfrac{P_{sh3}}{\eta_b\eta_{hg}} = 6.79 \unit{(kW)}$\\
-$ P_{sh1} = \dfrac{P_{sh2}}{\eta_b\eta_{hg}} = 7.07 \unit{(kW)}$
-\subsection{Rotational speed}
-To minimize the speed reducer weight, we can use the following formula, see Equation 3.12 \cite{tk1}:
-\[u_1=0.7332u_h^{0.6438}\]
-Then,\\
-$ u_1=3.23$ and $ u_2=u_h/u_1=3.1 $\\
-$ n_{sh1} = n_{mo} = 2922\unit{(rpm)}$\\
-$ n_{sh2} = {n_{sh1}}/{u_{1}} = 905.02 \unit{(rpm)}$\\
-$ n_{sh3} = {n_{sh2}}/{u_{2}} = 292.20 \unit{(rpm)}$
+Let $ P_{sh1} $, $ n_{sh1} $ and $ T_{sh1} $ be the transmitted power, rotational speed and torque onto shaft 1, respectively. Similarly, $ P_{sh2} $, $ n_{sh2} $ and $ T_{sh2} $ are the transmitted parameters onto shaft 2 and $ P_{sh3} $, $ n_{sh3} $ and $ T_{sh3} $ are used for shaft 3. Unless otherwise stated, these notations will be used throughout the next chapters.
 
-\subsection{Torque}
-$ T_{mo} = 9.55\times10^6 \times P_{mo}/n_{mo} = 23350.04 \unit{(N\cdot mm)}$\\
-$ T_{sh1} = 9.55\times10^6 \times{P_{sh1}}/{n_{sh1}} = 23106.95 \unit{(N\cdot mm)}$\\
-$ T_{sh2} = 9.55\times10^6 \times{P_{sh2}}/{n_{sh2}} = 71672.45 \unit{(N\cdot mm)}$\\
-$ T_{sh3} = 9.55\times10^6 \times{P_{sh3}}/{n_{sh3}} = 213175.22 \unit{(N\cdot mm)}$\\
+\textbf{Power} The entire system is described followed by calculation as follows:\\
+Chain drive power is affected by the bearings on the shaft of the mixing tank.\\
+$ P_{ch} = \dfrac{P_w}{\eta_b} = \dfrac{6.2}{0.99} = 6.26 \unitp{kW}$\\
+Shaft 3 power is affected by the chain drive.\\
+$ P_{sh3} = \dfrac{P_{ch}}{\eta_{ch}} = \dfrac{6.26}{0.96} = 6.52 \unitp{kW}$\\
+Shaft 2 power is affected by the bearings and gear drives on shaft 3.\\
+$ P_{sh2} = \dfrac{P_{sh3}}{\eta_b\eta_{hg}} = \dfrac{6.52}{0.99 \times 0.97} = 6.79 \unitp{kW}$\\
+Shaft 1 power is affected by the bearings and gear drives on shaft 2.\\
+$ P_{sh1} = \dfrac{P_{sh2}}{\eta_b\eta_{hg}} = \dfrac{6.79}{0.99 \times 0.97} = 7.07 \unitp{kW}$
+
+\textbf{Rotational speed} The design goal of the speed reducer is to lubricate both driven gears equally, which has a size disadvantage. Therefore, the transmission ratio of each pair of gears is calculated using Equation 3.12 \cite{tk1}:
+\[u_1=u_2=\sqrt{u_h}=\sqrt{11}=3.32\]
+
+Then,\\
+from motor to shaft 1: $ n_{sh1} = n_{mo} = 1455 \unitp{rpm}$ \\
+from shaft 1 to shaft 2: $ n_{sh2} = {n_{sh1}}/{u_{1}} = 1455/3.32 = 438.70 \unitp{rpm}$\\
+from shaft 2 to shaft 3: $ n_{sh3} = {n_{sh2}}/{u_{2}} = 438.70/3.32 = 132.27 \unitp{rpm}$
+
+\textbf{Torque} Subsequently, the torque is calculated as follows:\\
+$ T_{mo}  = 9.55\times10^6 \times P_{mo}/n_{mo} = 9.55\times10^6 \times 7.14/1455 = 46892.66 \unit{(N\cdot mm)}$\\
+$ T_{sh1} = 9.55\times10^6 \times {P_{sh1}}/{n_{sh1}} = 9.55\times10^6 \times 7.07/1455 = 46423.73 \unit{(N\cdot mm)}$\\
+$ T_{sh2} = 9.55\times10^6 \times {P_{sh2}}/{n_{sh2}} = 9.55\times10^6 \times 6.79/438.70 = 147857.49 \unit{(N\cdot mm)}$\\
+$ T_{sh3} = 9.55\times10^6 \times {P_{sh3}}/{n_{sh3}} = 9.55\times10^6 \times 6.52/132.27 = 470919.44 \unit{(N\cdot mm)}$
 
 In summary, we obtain the following table:
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{lllll}
 		&Motor    & Shaft 1  & Shaft 2  & Shaft 3   \\\toprule
-		$ P \unitp{kW}$ & 7.5  & 7.07& 6.79   & 6.52   \\
-		$ u $ &       -   &1    &  3.23  & 3.1                 \\
-		$ n \unitp{rpm}$ & 2922 & 2922 & 905.02 & 292.20 \\
-		$ T \unitp{N\cdot mm}$ & 23350.04 & 23116.54 & 71672.45 & 213175.22
+		$ P \unitp{kW}$ & 7.14  & 7.07   & 6.79   & 6.52   \\
+		$ u $ &       -   &1    &  3.32  & 3.32                 \\
+		$ n \unitp{rpm}$ & 1455 & 1455  & 438.70 & 132.27 \\
+		$ T \unitp{N\cdot mm}$ & 46892.66 & 46423.73 & 147857.49 & 470919.44
 	\end{tabular}
 	\caption{Output specifications}
 	\label{tab:my-table}
