@@ -16,5 +16,15 @@
 \BOOKMARK [2][-]{subsection.3.4.2}{Safety factor analysis}{section.3.4}% 16
 \BOOKMARK [2][-]{subsection.3.4.3}{Contact stress analysis}{section.3.4}% 17
 \BOOKMARK [1][-]{section.3.5}{Force on shaft}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.6}{Other parameters}{chapter.3}% 19
-\BOOKMARK [0][-]{chapter*.12}{References}{}% 20
+\BOOKMARK [0][-]{chapter.4}{Gear Design \(shaft 1-2\)}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Choose material}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Estimate the permissible contact stress and bending stress}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Determine basic specifications of the Transmission system}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.3.1}{Determine basic parameters}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.2}{Other parameters}{section.4.3}% 24
+\BOOKMARK [1][-]{section.4.4}{Stress analysis}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.4.1}{Correct \040[H] , \040[F1] \040and \040[F2] }{section.4.4}% 26
+\BOOKMARK [2][-]{subsection.4.4.2}{Contact stress analysis}{section.4.4}% 27
+\BOOKMARK [2][-]{subsection.4.4.3}{Bending stress analysis}{section.4.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.4}{Overloading analysis}{section.4.4}% 29
+\BOOKMARK [0][-]{chapter*.15}{References}{}% 30

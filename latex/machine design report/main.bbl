@@ -19,6 +19,72 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Mareau2013ExperimentalAN}{book}{}
+      \name{author}{3}{}{%
+        {{hash=665376914bdd40e9be0a7c749e4de391}{%
+           family={Mareau},
+           familyi={M\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f31dd78e0cd2f903e555fd55bf4d1e02}{%
+           family={Cuillerier},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=474a2cd8a2ee9de32b9da6337ec91be2}{%
+           family={Morel},
+           familyi={M\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \strng{fullhash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \strng{bibnamehash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \strng{authorbibnamehash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \strng{authornamehash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \strng{authorfullhash}{f4d7c34755d9a97d703b6c910e277cbf}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Experimental and numerical study of the evolution of stored and dissipated energies in a medium carbon steel under cyclic loading C}
+      \field{year}{2013}
+    \endentry
+    \entry{mott_vavrek_wang_2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=d6261613936effc390d110818b836637}{%
+           family={Mott},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=790d40689e63c15457c26f9cc99179c4}{%
+           family={Vavrek},
+           familyi={V\bibinitperiod},
+           given={Edward\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e8c0d2bd9befc1f8abb0ce0aaaf16830}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jyhwen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{a6f700c4e43babe374614bdc4651e574}
+      \strng{fullhash}{a6f700c4e43babe374614bdc4651e574}
+      \strng{bibnamehash}{a6f700c4e43babe374614bdc4651e574}
+      \strng{authorbibnamehash}{a6f700c4e43babe374614bdc4651e574}
+      \strng{authornamehash}{a6f700c4e43babe374614bdc4651e574}
+      \strng{authorfullhash}{a6f700c4e43babe374614bdc4651e574}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{title}{Machine elements in mechanical design}
+      \field{year}{2018}
+    \endentry
     \entry{tk1}{book}{}
       \name{author}{2}{}{%
         {{hash=6003def78112e776525bcd7e92fcf519}{%
