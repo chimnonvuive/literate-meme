@@ -1,11 +1,11 @@
-\LoadClass[12pt,a4paper,twoside]{extreport}
+\LoadClass[fleqn,12pt,a4paper,twoside]{report}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
 \usepackage[vietnamese, english]{babel}
 \usepackage{array}
 \usepackage{tgtermes}
-\usepackage{amsmath}
+\usepackage[fleqn]{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{biblatex}
@@ -35,6 +35,15 @@
 \usepackage{subcaption}
 \usepackage[table,xcdraw]{xcolor}
 
+\usepackage{showframe}
+%\usepackage{titlesec}    
+%\titleformat{\chapter}[display]
+%{\normalfont%
+%	\huge% %change this size to your needs for the first line
+%	\bfseries}{\chaptertitlename\ \thechapter}{12pt}{%
+%	\Huge %change this size to your needs for the second line
+%}
+
 \addbibresource{ref.bib}
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -47,7 +56,7 @@
 
 % increase line height
 %\renewcommand{\baselinestretch}{1.5}
-\onehalfspacing
+%\onehalfspacing
 \setlength{\belowcaptionskip}{0.6\baselineskip}
 \renewcommand{\sectionmark}[1]{\markright{\thesection~ #1}}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter~ #1}{}}
@@ -69,6 +78,7 @@
 
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
 \newcommand{\degc}{^\circ C}
+\newcommand{\s}{\hspace{20mm}}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\unitp}[1]{\ensuremath{\, (\mathrm{#1})}}
 \newcommand{\md}[1]{\multicolumn{1}{c}{#1}}
@@ -92,6 +102,8 @@
 %\rhead{\theauthor}
 %\lhead{\thetitle}
 %\cfoot{\thepage}
+
+\setlength{\mathindent}{20mm}
 
 \makeindex[intoc]
 

@@ -24,10 +24,7 @@
 	$ _2 $ & subscript for shaft 2\\
 	$ _3 $ & subscript for shaft 3
 \end{tabular}
-\paragraph{Known parameters} From Chapter 1, we know that:\\
-$ P=\SI{7}{kW}$, $n=\SI{65}{rpm} $\\
-$ T_1=T$, $T_2=0.7T$\\
-$ t_1=\SI{15}{s}$, $t_2=\SI{11}{s} $
+
 \section{Choose motor for the mixing tank}
 The choice of motor will affect the entire system, so it is necessary to pick the right one.
 
@@ -35,7 +32,7 @@ The choice of motor will affect the entire system, so it is necessary to pick th
 \begin{itemize}
 	\item 1 elastic coupling which connects the motor and the speed reducer. $ \eta_c = 1 $
 	\item 4 sealed rolling bearings. 3 of which belong to the speed reducer and the last one is used for the shaft of the mixing tank. $ \eta_b = 0.99 $
-	\item 2 sealed pairs of helical gear drive which connect the shafts inside the speed reducer. $ \eta_{hg} = 0.97 $
+	\item 2 sealed pairs of helical gear drives which connect the shafts inside the speed reducer. $ \eta_{hg} = 0.97 $
 	\item 1 sealed roller chain drive connecting the speed reduce and the mixing tank. $ \eta_{ch} = 0.96 $
 \end{itemize}
 Aggregate all efficiencies yields: 
@@ -43,12 +40,8 @@ Aggregate all efficiencies yields:
 
 \textbf{Calculate required power for operation}
 The power $ P $ from Chapter 1 applies for systems with single loading input. In case of varying load each cycle, the equivalent power is calculated using  Equation 2.13 \cite{tk1}:
-\[
-P_w = P\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} = 7 \times \sqrt{\dfrac{\left(\dfrac{T}{T}\right)^2\times15 + \left(\dfrac{0.7T}{T}\right)^2\times11}{15+11}} = 6.2 \unitp{kW}
-\]
-\[
-P_{mo} = \dfrac{P_w}{\eta_{sys}} = \dfrac{6.2}{0.87} = 7.14 \unitp{kW}
-\]
+\[P_w = P\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}} = 7 \times \sqrt{\dfrac{\left(\dfrac{T}{T}\right)^2\times15 + \left(\dfrac{0.7T}{T}\right)^2\times11}{15+11}} = 6.2 \unitp{kW}\]
+\[P_{mo} = \dfrac{P_w}{\eta_{sys}} = \dfrac{6.2}{0.87} = 7.14 \unitp{kW}x\]
 
 \textbf{Calculate $ n_{mo} $} The purpose is to Using Table 2.4 \cite{tk1}:
 \begin{itemize}

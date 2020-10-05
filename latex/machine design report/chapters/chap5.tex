@@ -1,4 +1,4 @@
-\chapter{Gear Design (shaft 1-2)}
+\chapter{Gear Design (shaft 2-3)}
 \section*{Nomenclature}
 \begin{tabular}[t]{p{0.1\linewidth}p{0.35\linewidth}}
 	$ [\sigma] $ & permissible stress, $ \unit{MPa} $\\
@@ -11,12 +11,7 @@
 	$ d_a $ & addendum diameter, $ \unit{mm} $\\
 	$ d_b $ & base diameter, $ \unit{mm} $\\
 	$ d_f $ & deddendum diameter, $ \unit{mm} $\\
-	%	$ F_a $ & axial force, $ \unit{N} $\\
-	%	$ F_r $ & radial force, $ \unit{N} $\\
-	%	$ F_t $ & tangential force, $ \unit{N} $\\
 	$ H $ & surface roughness, HB\\
-\end{tabular}
-\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
 	$ K_d $ & coefficient of gear material\\	
 	$ K $ & overall load factor\\
 	$ K_{C} $ & load placement factor\\
@@ -25,15 +20,18 @@
 	$ K_{\alpha} $ & load distribution factor on gear teeth\\
 	$ K_{\beta} $ & load distribution factor on top land\\
 	$ K_{qt} $ & overloading factor\\
-\end{tabular}\newpage
-\noindent\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-	$ m_t $ & traverse module, $ \unit{mm} $\\
 	$ m $ & root of fatigue curve in stress test\\
+	$ m_t $ & traverse module, $ \unit{mm} $\\
+	
+	%	$ F_a $ & axial force, $ \unit{N} $\\
+	%	$ F_r $ & radial force, $ \unit{N} $\\
+	%	$ F_t $ & tangential force, $ \unit{N} $\\
+\end{tabular}
+\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
 	$ m_n $ & normal module, $ \unit{mm} $\\
 	$ N_{E} $ & working cycle of equivalent tensile stress\\
 	$ N_{O} $ & working cycle of bearing stress\\
-	$ S_F $ & safety factor of bending stress\\
-	$ S_H $ & safety factor of contact stress\\
+	$ S $ & safety factor\\	
 	$ v $ & rotational velocity, $ \unit{m/s} $\\
 	$ Y_F $ & tooth shape factor\\
 	$ Y_R $ & surface roughness factor\\
@@ -43,11 +41,7 @@
 	$ Z_R $ & surface roughness factor of the working's area\\
 	$ Z_v $ & speed factor\\
 	$ z_H $ & contact surface's shape factor\\
-	$ z_M $ & material's mechanical properties factor \\
-	$ z_{min} $ & minimum number of teeth corresponding to $ \beta $\\
-\end{tabular}
-\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-	
+	$ z_M $ & material's mechanical properties factor\\
 	$ z_v $ & virtual number of teeth\\
 	$ z_\varepsilon $ & meshing condition factor\\
 	$ \alpha $ & normal pressure angle. In TCVN 1065-71, $ \alpha = 20^\circ $\\
@@ -55,335 +49,277 @@
 	$ \varepsilon_\alpha $ & traverse contact ratio\\
 	$ \varepsilon_\beta $ & face contact ratio\\
 	$ \beta $ & helix angle, $ ^\circ $\\
+\end{tabular}\newpage
+\noindent\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
 	$ \beta_b $ & base circle helix angle, $ ^\circ $\\
 	$ \psi_{ba} $ & width to shaft distance ratio\\
 	$ \psi_{bd} $ & face width factor \\
 	$ \sigma_b $ & ultimate strength, $ \unit{MPa} $\\
 	$ \sigma_{ch} $ & yield limit, $ \unit{MPa} $\\
-	$ \sigma_{lim}^o $ & permissible stress corresponding to working cycle, $ \unit{MPa} $\\
+	$ \sigma_{lim}^o $ & permissible stress corresponding to working cycle, $ \unit{MPa} $\\	
+\end{tabular}
+\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
 	$ \sigma_{max} $ & stress due to overloading, $ \unit{MPa} $ \\
 	$ _{1} $ & subscript for the pinion \\
 	$ _{2} $ & subscript for the driven gear\\
 	$ _F $ & subscript relating to bending stress\\
 	$ _H $ & subscript relating to contact stress\\
-	$ _q $ & subscript for the quick transmission stage\\
-	$ _s $ & subscript for the slow transmission stage\\
-	$ _w $ & subscript for the value after correction\\
 \end{tabular}
 
-
-\paragraph{Known parameters} From Chapter 1 and 2, we know that:\\
-$ L=8\unit{years} $, $ K_{ng}=260\unit{days} $, $ Ca=1\unit{shift} $\\
-$ T_1=T$, $T_2=0.7T$, $ t_1=15\unit{s}$, $t_2=11\unit{s} $\\
-$ n_{sh1}=2922\unit{rpm} $, $ n_{sh2}=905.02\unit{rpm} $, $ n_{sh3}=292.20\unit{rpm} $\\
-$ u_h=10 $, $ u_1 =u_q=3.23$, $ u_2=u_s=3.1 $
-
-This chapter will increase readability by calculating both stages at the same time with the first one being quick stage and the latter is slow stage.
 \section{Choose material}
-Because all gears are the same in material and working hours except for their angular rotational speed, this section applies for both pairs.
+For small scale machines, type I is sufficient. Materials of this type  are often quenched and have low hardness value ($ \text{HB}\leq 350 $), which make it easy to manufacture precisely.  However, their permissible stresses are low. In this design problem, 45 steel  is used to manufacture both gears.  The specifications of the material are $ \text{HB} 205 $, $ \sigma_b = 600\unit{MPa} $, $ \sigma_{ch} = 340 \unit{MPa}$, Table 6.1  \cite{tk1}.
 
-The material of choice for the 2 pair of gears is steel 40X. The specifications are $ \text{HB} 250 $, $ \sigma_b = 850\unit{MPa} $, $ \sigma_{ch} = 550 \unit{MPa}$, see Table 6.1  \cite{tk1}.
+\section{Estimate the permissible contact stress and bending stress}
+The permissible stresses are calculated as follows, Equation 6.1 and 6.2 \cite{tk1}:
+\[[\sigma_H]=\dfrac{\sigma_{Hlim}^o}{S_H}Z_RZ_vK_{xH}K_{HL}\]
+\[[\sigma_{F}]=\dfrac{\sigma_{Flim}^o}{S_F}Y_RY_sK_{xF}K_{FC}K_{FL}\]
 
-From Table 6.2 \cite{tk1}, $ \sigma_{Hlim}^o = 2\text{HB} + 70$, $ S_H = 1.1 $, $ \sigma_{Flim}^o = 1.8\text{HB} $, $ S_F = 1.75 $.
+Initial estimation of these values assumes $ Z_RZ_vK_{xH} = 1 $ and $ Y_RY_sK_{xF} = 1 $. The factors will be accounted for in the next sections.
 
-Therefore, they have the same properties except for their surface roughness $ H $, since $ H_2 = H_1 - 10 \div 15$.
+\textbf{Find $ \sigma_{lim}^o $} The value depends on hardness. It is also recommended to have the hardness of the pinion slightly higher than the driving gear from $ 10 $ to $ 15 $ units. Using Table 6.2 \cite{tk1}, the formulas below are used for quenched 45 steel:\\
+$ \sigma_{Hlim}^o = 2\text{HB} + 70$\\
+$ \sigma_{Flim}^o = 1.8\text{HB} $
 
-For the pinion, $ H_1=\text{HB}250 \Rightarrow \sigma_{Hlim1}^o = 570\unit{MPa}$, $ \sigma_{Flim1}^o = 450\unit{MPa}$.
+For the pinion with $ H_1=\text{HB}205$:\\
+$ \sigma_{Hlim1}^o = 2 \times 205 + 70 = 480 \unitp{MPa}$\\
+$ \sigma_{Flim1}^o = 1.8\times 205 = 369 \unitp{MPa}$.
 
-For the driven gear, $ H_2=\text{HB}240 \Rightarrow \sigma_{Hlim2}^o = 550\unit{MPa}$, $ \sigma_{Flim2}^o = 432\unit{MPa}$.
+For the driven gear with $ H_2=H_1-15=205-15=\text{HB}190 $:\\
+$ \sigma_{Hlim2}^o = 2 \times 190 + 70 = 450 \unitp{MPa}$\\
+$ \sigma_{Flim2}^o = 1.8\times 190 = 342 \unitp{MPa}$.
 
-In this part, distinguishing between 2 stages is unnecessary since the variables are material-dependent, which in this case all the gears have identical choice of material. Therefore, unless otherwise specified, a single subscript $ 1 $ or $ 2 $ indicates the variable applies for both stages
+\textbf{Find $ S $} The safety factors are found using Table 6.2 \cite{tk1}. $ S_H=1.1 $, $ S_F=1.75 $
 
-\section{Calculate $ [\sigma_H] $ and $ [\sigma_F] $}
-The permissible stresses are calculated as follows, see Equation 6.1 and 6.2 \cite{tk1}:
-\[[\sigma_{H}]=\dfrac{\sigma_{Hlim}^o}{S_H}Z_RZ_vK_{xH}K_{HL}\]
-\[[\sigma_{F}]=\dfrac{\sigma_{Flim}^o}{S_F}Y_RY_sK_{xF}K_{FL}\]
+\textbf{Find $ K_{FC} $} The motor works in one direction and the load is placed in one way. $ K_{FC} = 1$
 
-\textbf{Calculate working cycle of bearing stress} The stress is found using the formula below, see Equation 6.5 \cite{tk1}:\\
-$ N_{HO1} = 30H_1^{2.4} = 17067789.40\unit{(cycles)}$.\\
-$ N_{HO2} = 30H_2^{2.4} = 15474913.67\unit{(cycles)}$.\\
+\textbf{Find $ K_L $} The aging factor is determined by Equation 6.3 and 6.4 \cite{tk1} for contact stress and bending stress, respectively. The surface hardness of the gears is smaller than $ 350 $, which makes $ m_H=6 $, $ m_F=6 $. Also, both pairs of gears are meshed indefinitely which makes $ c=1 $. From working condition, the service life in hours are found:
+\[L_h = 8\unit{\left( \dfrac{hours}{shift}\right)}\times Ca  K_{ng} L= 8 \times 1\times 260\times 8 = 16640\unitp{hours}\]
 
-\textbf{Calculate working cycle of equivalent tensile stress} Since $ H_1,H_2\leq\text{HB}350 $, $ m_H=6 $, $ m_F=6 $. Also, both pairs of gears are meshed indefinitely, which makes $ c=1 $. From working condition, we calculate:\\
-$ L_h = 8\unit{\left( \dfrac{hours}{shift}\right)}\times Ca  K_{ng} L=16640\unit{(hours)}$\\
-Find $ N_{HE} $ and $ N_{FE} $  using equation 6.7 and 6.8 \cite{tk1}:\\
-$ N_{HE1q} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] = 2.11\times10^9\unit{(cycles)}$\\
-$ N_{HE2q} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] = 0.65\times10^9\unit{(cycles)}$\\
-$ N_{FE1q} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] = 1.83\times10^9\unit{(cycles)}$\\
-$ N_{FE2q} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] = 0.57\times10^9\unit{(cycles)}$\\
-$ N_{HE1s} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] = 0.65\times10^9\unit{(cycles)}$\\
-$ N_{HE2s} = 60n_{sh3}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] = 0.21\times10^9\unit{(cycles)}$\\
-$ N_{FE1s} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] = 0.57\times10^9\unit{(cycles)}$\\
-$ N_{FE2s} = 60n_{sh3}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] = 0.18\times10^9\unit{(cycles)}$\\
+$ N_{HE} $ and $ N_{FE} $ are found using Equation 6.7 and 6.8 \cite{tk1}:
+\begin{multline*}
+N_{HE1} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right] \\
+= 60 \times 1455 \times 1 \times 16640 \left[ \left( \dfrac{T}{T}\right)^3\dfrac{15}{15+11} + \left( \dfrac{0.7T}{T}\right)^3\dfrac{11}{15+11}\right] = 1.05 \times10^9\unitp{cycles}
+\end{multline*}
+\begin{multline*}
+N_{HE2} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^3\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^3\dfrac{t_2}{t_1+t_2}\right]\\
+= 60 \times 438.70 \times 1 \times 16640 \left[ \left( \dfrac{T}{T}\right)^6\dfrac{15}{15+11} + \left( \dfrac{0.7T}{T}\right)^6\dfrac{11}{15+11}\right] = 0.32 \times10^9\unitp{cycles}
+\end{multline*}
+\begin{multline*}
+N_{FE1} = 60n_{sh1}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right] \\
+= 60 \times 1455 \times 1 \times 16640 \left[ \left( \dfrac{T}{T}\right)^6\dfrac{15}{15+11} + \left( \dfrac{0.7T}{T}\right)^6\dfrac{11}{15+11}\right] = 0.91 \times10^9\unitp{cycles}
+\end{multline*}
+\begin{multline*} 
+N_{FE2} = 60n_{sh2}cL_h\left[ \left( \dfrac{T_1}{T}\right)^{m_F}\dfrac{t_1}{t_1+t_2} + \left( \dfrac{T_2}{T}\right)^{m_F}\dfrac{t_2}{t_1+t_2}\right]\\
+= 60 \times 438.70 \times 1 \times 16640 \left[ \left( \dfrac{T}{T}\right)^6\dfrac{15}{15+11} + \left( \dfrac{0.7T}{T}\right)^6\dfrac{11}{15+11}\right] = 0.27 \times10^9\unitp{cycles}
+\end{multline*}
 
-\textbf{Calculate aging factor} 
-For steel, $ N_{FO1}= N_{FO2}= 4\times10^6\unitp{MPa}$. Equation 6.3 and 6.4 \cite{tk1}  gives (if the factors are smaller than 1, round them up to 1, see p.94 \cite{tk1}):\\
-$ K_{HL1q} = \sqrt[m_H]{N_{HO1}/N_{HE1q}} = 0.45 < 1 \Rightarrow K_{HL1q} = 1$\\
-$ K_{HL2q} = \sqrt[m_H]{N_{HO2}/N_{HE2q}} = 0.54 < 1 \Rightarrow K_{HL2q} = 1$\\
+The working cycle of bearing stress is found using the formula below, Equation 6.5 \cite{tk1}:\\
+$ N_{HO1} = 30H_1^{2.4} = 30\times 205^{2.4} = 10600601.81\unit{(cycles)}$.\\
+$ N_{HO2} = 30H_2^{2.4} = 30\times 190^{2.4} = 8833440.68\unit{(cycles)}$.
 
-$ K_{HL1s} = \sqrt[m_H]{N_{HO1}/N_{HE1s}} = 0.54 < 1 \Rightarrow K_{HL1s} = 1$\\
-$ K_{HL2s} = \sqrt[m_H]{N_{HO2}/N_{HE2s}} = 0.65 < 1 \Rightarrow K_{HL2s} = 1$\\
-$ K_{FL1s} = \sqrt[m_F]{N_{FO1}/N_{FE1s}} = 0.44 < 1 \Rightarrow K_{FL1s} = 1$\\
-$ K_{FL2s} = \sqrt[m_F]{N_{FO2}/N_{FE2s}} = 0.53 < 1 \Rightarrow K_{FL2s} = 1$\\
+For steel, $ N_{FO1}= N_{FO2}= 4000000\unitp{MPa}$. The factors $ K_L $ are rounded up to 1 if it is less than 1, p.94 \cite{tk1}. Apply Equation 6.3 and 6.4 \cite{tk1}:\\
+$ K_{HL1} = \sqrt[m_H]{N_{HO1}/N_{HE1}} = \sqrt[6]{10600601.81/1.05 \times10^9} = 0.46 < 1 \Rightarrow K_{HL1} = 1$\\
+$ K_{HL2} = \sqrt[m_H]{N_{HO2}/N_{HE2}} = \sqrt[6]{8833440.68/0.32 \times10^9} = 0.55 < 1 \Rightarrow K_{HL2} = 1$\\
+$ K_{FL1} = \sqrt[m_F]{N_{FO1}/N_{FE1}} = \sqrt[6]{4000000/0.91 \times10^9} = 0.40 < 1 \Rightarrow K_{FL1} = 1$\\
+$ K_{FL2} = \sqrt[m_F]{N_{FO2}/N_{FE2}} = \sqrt[6]{4000000/0.27 \times10^9} = 0.49 < 1 \Rightarrow K_{FL2} = 1$
 
-\textbf{Calculate $ [{\sigma}_H] $, $ [{\sigma}_{F1}] $, $ [{\sigma}_{F2}] $}
-Since the motor works in one direction, $ K_{FC} = 1$, which means all $ K $ factors are equal to $ 1 $ and we can safely skip them.
+\textbf{Calculate $ [\sigma_H] $, $ [\sigma_{F1}] $, $ [\sigma_{F2}] $} Replacing all the values:\\
+$ [\sigma_{H1}] = \sigma_{Hlim1}^oK_{HL1}/S_H = 480\times 1/1.1 = 436.36 \unitp{MPa}$\\
+$ [\sigma_{H2}] = \sigma_{Hlim2}^oK_{HL2}/S_H = 450\times 1/1.1 = 409.09 \unitp{MPa}$\\
+$ [\sigma_{F1}] = \sigma_{Flim1}^oK_{FC}K_{FL1}/S_{F} = 369\times 1\times 1/1.75  = 210.86\unitp{MPa}$\\
+$ [\sigma_{F2}] = \sigma_{Flim2}^oK_{FC}K_{FL2}/S_{F} = 342\times 1\times 1/1.75  = 195.43 \unitp{MPa}$
 
-For initial estimation, assume $ Z_RZ_vK_{xH} = 1 $ and $ Y_RY_sK_{xF} = 1 $, we obtain the permissible stresses (notice they are equal in both quick and slow transmission stages):\\
-$ [{\sigma}_{H1}] = \sigma_{Hlim1}^o/S_{H} = 518.18 \unit{(MPa)}$\\
-$ [{\sigma}_{H2}] = \sigma_{Hlim2}^o/S_{H} = 500 \unit{(MPa)}$\\
-$ [{\sigma}_{F1}] = \sigma_{Flim1}^o/S_{F} = 257.14\unit{(MPa)}$\\
-$ [{\sigma}_{F2}] = \sigma_{Flim2}^o/S_{F} = 246.86 \unit{(MPa)}$
-
-The mean permissible contact stress must be lower than 1.25 times of either $ [{\sigma}_{H1}] $ or $ [{\sigma}_{H2}] $, whichever is smaller. In this case, it is $ 1.25[{\sigma}_{H2}]$ or $ 625\unit{MPa} $:
-\[[{\sigma}_{H}] =\dfrac{1}{2}\left( [{\sigma}_{H1}]+[{\sigma}_{H2}]\right)  = 509.09 \unit{(MPa)}\leq 625\]
+The mean permissible contact stress must be lower than 1.25 times of either $ [\sigma_{H1}] $ or $ [\sigma_{H2}] $, whichever is smaller. In this case, it is $ 1.25[\sigma_{H2}]$. Replacing all the variables gives:
+\begin{multline*}
+[\sigma_H] =\dfrac{[\sigma_{H1}]+[\sigma_{H2}]}{2}= \dfrac{436.36+409.09}{2} = 422.73 \unitp{MPa}\\
+\leq 1.25[\sigma_{H2}] = 1.25\times 409.09= 511.36\unitp{MPa}
+\end{multline*}
 which satisfy the condition.
 
 In case of overloading, the permissible contact and bending stresses are calculated as follows:\\
-$ [{\sigma}_H]_{max} = 2.8\sigma_{ch} = 1540\unitp{MPa} $\\
-$ [{\sigma}_F]_{max} = 0.8\sigma_{ch} = 440\unitp{MPa} $
+For quenched material: $ [\sigma_H]_{max} = 2.8\times 600 = 952\unitp{MPa} $\\
+For material with hardness smaller than $ \text{HB}350 $: $ [\sigma_F]_{max} = 0.8\sigma_{ch} = 0.8\times 340 = 272\unitp{MPa} $
 
-\section{Determine basic specifications of the Transmission system}
+\section{Determine basic specifications of the transmission system}
 
 \subsection{Determine basic parameters}
-Figure \ref{fig:problem} shows both pairs are helical, which  gives $ K_a = 43 $, Table 6.5 \cite{tk1}. Also, the entire speed reducer has asymmetrical design, resulting in $ \psi_{ba} = 0.4$, Table 6.6 \cite{tk1}. This value is then used in Equation 6.16 \cite{tk1} to find $ \psi_{bd} $:\\
-$ \psi_{bdq} = 0.53\psi_{ba}(u_q+1) = 0.90 $\\
-$ \psi_{bds} = 0.53\psi_{ba}(u_s+1) = 0.87 $
+Figure \ref{fig:problem} shows both pairs are helical, which  gives $ K_a = 43 $, Table 6.5 \cite{tk1}. Also, the pinion is symmetrical about the bearings and both gears surface have hardness smaller than $ \text{HB}350 $, resulting in $ \psi_{ba} = 0.3$, Table 6.6 \cite{tk1}. Then, $ \psi_{bd} $ is calculated using Equation 6.16 \cite{tk1}:\\
+$ \psi_{bd} = 0.53\psi_{ba}(u+1) = 0.53\times 0.3\times(3.32+1) = 0.69 $, which is smaller than the permissible ratio $ \psi_{bdmax}=1.2 $, Table 6.6 \cite{tk1}.
 
-Using interpolation, we approximate the factors, Table 6.7 \cite{tk1}:\\
-$ K_{H\beta q} = 1.06 $, $ K_{F\beta q} = 1.14 $\\
-$ K_{H\beta s} = 1.09 $, $ K_{F\beta s} = 1.19 $\\
-Since the gear system only consists of involute gears and it is also a speed reducer gearbox, we estimate $ a $ using Equation 6.15a \cite{tk1}. Also, we round up the center distance to the nearest multiple of 5 for small production, p.99 \cite{tk1}:\\
-$ a_q = K_a(u_{q}+1)\sqrt[3]{\dfrac{T_{sh1}K_{H\beta q}}{[{\sigma}_H]^2u_{q}\psi_{ba}}} = 76.06 \unitp{mm} \Rightarrow a_{q}= 85 \unit{mm}$\\
-$ a_s = K_a(u_{s}+1)\sqrt[3]{\dfrac{T_{sh2}K_{H\beta s}}{[{\sigma}_H]^2u_{s}\psi_{ba}}} = 110.00 \unitp{mm} \Rightarrow a_{s}= 120 \unit{mm}$
-\subsection{Determine gear meshing parameters}
-In this section, we will find all necessary specifications of a gear. Due to complexity and maintenance, the undercutting process will be omitted throughout the calculations, that is, it is not factored in any variables of the gear drives.
+The gear placement in the speed reducer is similar to diagram 5 of Table 6.7 \cite{tk1}. $ K_{H\beta} = 1.04 $, $ K_{F\beta} = 1.1 $
+
+\textbf{Find $ a $} Since the gear drive only has involute gears, $ a $ is estimated using Equation 6.15a \cite{tk1}. It is also rounded up to the nearest multiple of 5 (small production type, p.99 \cite{tk1}):
+\[a= K_a(u+1)\sqrt[3]{\dfrac{T_{sh1}K_{H\beta}}{[\sigma_H]^2u\psi_{ba}}}	=  43\times(3.32+1)\times\sqrt[3]{\dfrac{46423.73\times 1.04}{422.73^2\times 3.32\times 0.3}}
+= 120.14 \unitp{mm}\]
+$ \Rightarrow a= 180 \unit{mm} $
+
+Due to complexity and maintenance, the undercutting process will be omitted throughout the calculations, that is, it is not factored in any variables of the gear drives.
 
 \textbf{Find $ m $} Using Equation 6.17 \cite{tk1} and Table 6.8 \cite{tk1}, we determine $ m $ for each pair of gears:\\
-$ m_{tq} = (0.01\div0.02)a_{q} = 0.85 \div 1.7 \unitp{mm} \Rightarrow m_{tq}=\SI{1.5}{mm}$\\
-$ m_{ts} = (0.01\div0.02)a_{s} = 1.2 \div 2.4 \unitp{mm} \Rightarrow m_{ts}=\SI{2}{mm}$
+$ m_t = (0.01\div0.02)a = (0.01\div0.02)\times 180 =  1.8 \div 3.6 \unitp{mm} \Rightarrow m_t=2\unit{mm}$
 
-\textbf{Find $ z_1 $, $ z_2 $, $ b $} Arbitrarily choose $ \beta = 20^\circ $ in the range $ 8 \div 20^\circ $. Combining Equation 6.18 and 6.20 \cite{tk1} to calculate $ z_1 $. Then, find $ z_2 $ and $ b $.\\
-$ z_{1q} = \dfrac{2a_{q}\cos\beta}{m_{tq}(u_q+1)} = 25.18 \Rightarrow z_{1q} = 26$\\
-$ z_{2q} = u_{q}z_{1q} = 83.95 \Rightarrow z_{2q} = 84 $\\
-$ b_q = \psi_{ba}a_{q} = 34.00\unit{(mm)}$\\
-$ z_{1s} = \dfrac{2a_{s}\cos\beta}{m_{ts}(u_s+1)} = 27.52 \Rightarrow z_{1s} = 28$\\
-$ z_{2s} = u_{s}z_{1s} = 86.72 \Rightarrow z_{2s} = 87 $\\
-$ b_s = \psi_{ba}a_{s} = 48.00\unit{(mm)}$
+\textbf{Find $ z_1 $, $ z_2 $, $ b $} Arbitrarily choose $ \beta = 20^\circ $ (permissible value is $ 8 \div 20^\circ $). Combining Equation 6.18 and 6.20 \cite{tk1} to calculate $ z_1 $:
+\[z_1 = \dfrac{2a\cos\beta}{m_t(u+1)}= \dfrac{2\times 180\cos 20^\circ}{2\times(3.32+1)} = 39.18 \Rightarrow z_1 = 40\]
 
-\textbf{Correct $ \beta $} The helix angles are corrected to compensate for rounding center distances and number of teeth, Equation 6.32 \cite{tk1}:\\
-$ \beta_{wq} = \dfrac{m_{tq}(z_{1q}+z_{2q})}{2a_q} = 13.93 ^\circ$\\
-$ \beta_{ws} = \dfrac{m_{ts}(z_{1s}+z_{2s})}{2a_s} = 16.6 ^\circ$
+Then, find $ z_2 $ and $ b $:\\
+$ z_2 = uz_1 = 3.32\times 40 = 132.66 \Rightarrow z_2 = 133 $\\
+$ b = \psi_{ba}a = 0.3\times 180= 54\unitp{mm}$
 
-%$ y_q = \dfrac{a_{wq}}{m_{tq}} - 0.5(z_{1q}+z_{2q}) = 1.69$\\
-%$ k_{yq} = \dfrac{1000y_q}{z_{1q}+z_{2q}} = 15.41 $\\
+\textbf{Correct $ \beta $} The helix angles are corrected to compensate for rounding center distances and number of teeth, Equation 6.32 \cite{tk1}:
+\[\beta = \arccos\dfrac{m_t(z_2+z_1)}{2a} = \arccos\dfrac{2\times(133+40)}{2\times 180} = 16.03 ^\circ\]
+
+%$ y = \dfrac{a}{m_t} - 0.5(z_1+z_1) = 1.69$\\
+%$ k_{yq} = \dfrac{1000y}{z_1+z_1} = 15.41 $\\
 %$ y_s = \dfrac{a_{ws}}{m_{ts}} - 0.5(z_{1s}+z_{2s}) =0.59 $\\
 %$ k_{ys} = \dfrac{1000y_s}{z_{1s}+z_{2s}} = 4.96 $\\
 %From $ k_y $, we inspect Table 6.10a \cite{tk1} and obtain $ k_x $. The results are $ k_{xq}=1.63 $, $ k_{xs}=0.19 $.
 %
 %The only thing left to do  is to find $ x_1 $, $ x_2 $ and $ \alpha_{tw} $.\\
-%$ \Delta_{yq}=\dfrac{k_{xq}(z_{1q}+z_{2q})}{1000}= 0.18$\\
-%$ x_{1q}=0.5(y_q+\Delta_{yq}-\dfrac{(z_{2q}-z_{1q})y}{z_{1q}+z_{2q}}) =0.49$\\
-%$ x_{2q}=y_q+\Delta_{yq}-x_{1q} =1.38$\\
-%$ \alpha_{twq}=\arccos\left[\dfrac{(z_{1q}+z_{2q})m_{tq}\cos\alpha}{2a_{wq}}\right]= 24.27^\circ$\\
+%$ \Delta_{yq}=\dfrac{k_{xq}(z_1+z_1)}{1000}= 0.18$\\
+%$ x_1=0.5(y+\Delta_{yq}-\dfrac{(z_1-z_1)y}{z_1+z_1}) =0.49$\\
+%$ x_{2q}=y+\Delta_{yq}-x_1 =1.38$\\
+%$ \alpha_{twq}=\arccos\left[\dfrac{(z_1+z_1)m_t\cos\alpha}{2a}\right]= 24.27^\circ$\\
 %$ \Delta_{ys}=\dfrac{k_{xs}(z_{1s}+z_{2s})}{1000}= 0.02$\\
 %$ x_{1s}=0.5(y_s+\Delta_{ys}-\dfrac{(z_{2s}-z_{1s})y}{z_{1s}+z_{2s}}) =0.16$\\
 %$ x_{2s}=y_s+\Delta_{ys}-x_{1s} =0.46$\\
 %$ \alpha_{tws}=\arccos\left[\dfrac{(z_{1s}+z_{2s})m_{ts}\cos\alpha}{2a_{ws}}\right]= 21.49^\circ$
 
-%\paragraph{Find $ x_1 $, $ x_2 $} To find $ x_1 $ and $ x_2 $, we will follow the calculation scheme provided in p.103. Since $ \beta_w \approx 13.59^\circ \in (10,15]$, $ z_{min} = 11$, which leads to $ z_1 $ satisfying condition $ z_1 \geq z_{min} + 2 > 10 $, according to table (6.9). Combined with $ u_{hg} = 5 \geq 3.5 $, we obtain $ x_1 = 0.3 $, $ x_2 = -0.3 $, disregarding the calculation of $ y $.
+%\paragraph{Find $ x_1 $, $ x_2 $} To find $ x_1 $ and $ x_2 $, we will follow the calculation scheme provided in p.103. Since $ \beta \approx 13.59^\circ \in (10,15]$, $ z_{min} = 11$, which leads to $ z_1 $ satisfying condition $ z_1 \geq z_{min} + 2 > 10 $, according to table (6.9). Combined with $ u_{hg} = 5 \geq 3.5 $, we obtain $ x_1 = 0.3 $, $ x_2 = -0.3 $, disregarding the calculation of $ y $.
 
-\subsection{Basic parameters}
-
-For quick stage transmission:\\
-\begin{tabular}[t]{p{0.5\linewidth}}
-	$ d_{1q} = \dfrac{m_{tq}z_{1q}}{\cos\beta_{wq}} = 40.18\unit{(mm)} $\\
-	$ d_{2q} = \dfrac{m_{tq}z_{2q}}{\cos\beta_{wq}} = 129.82\unit{(mm)} $\\
-	$ d_{a1q} = d_{1q} + 2m_{tq} = 43.18\unit{(mm)}$\\
-	$ d_{a2q} = d_{2q} + 2m_{tq} = 132.82\unit{(mm)}$\\
-	$ d_{f1q} = d_{1q} - 2.5m_{tq} = 36.43\unit{(mm)}$\\
-	$ d_{f2q} = d_{2q} - 2.5m_{tq} = 126.07\unit{(mm)}$\\
-\end{tabular}~
-\begin{tabular}[t]{p{0.5\linewidth}}
-	$ d_{b1q} = d_{1q}\cos\alpha = 37.76\unit{(mm)}$\\
-	$ d_{b2q} = d_{2q}\cos\alpha = 121.99 \unit{(mm)}$\\
-	$ \alpha_{tq} = \arctan\dfrac{\tan\alpha}{\cos\beta_{wq}} = 20.56^\circ $\\
-	$ v_{1q} = \dfrac{\pi d_{1q}n_{sh1}}{60000} = 6.15\unit{(m/s)}$
-\end{tabular}\\\\
-For slow stage transmission:\\
-\begin{tabular}[t]{p{0.5\linewidth}}
-	$ d_{1s} = \dfrac{m_{ts}z_{1s}}{\cos\beta_{ws}} = 58.43\unit{(mm)} $\\
-	$ d_{2s} = \dfrac{m_{ts}z_{2s}}{\cos\beta_{ws}} = 181.57\unit{(mm)} $\\
-	$ d_{a1s} = d_{1s} + 2m_{ts} = 62.43\unit{(mm)}$\\
-	$ d_{a2s} = d_{2s} + 2m_{ts} = 185.57\unit{(mm)}$\\
-	$ d_{f1s} = d_{1s} - 2.5m_{ts} = 53.43\unit{(mm)}$\\
-	$ d_{f2s} = d_{2s} - 2.5m_{ts} = 176.57\unit{(mm)}$\\
-\end{tabular}~
-\begin{tabular}[t]{p{0.5\linewidth}}
-	$ d_{b1s} = d_{1s}\cos\alpha = 54.91\unit{(mm)}$\\
-	$ d_{b2s} = d_{2s}\cos\alpha = 170.62 \unit{(mm)}$\\
-	$ \alpha_{ts} = \arctan\dfrac{\tan\alpha}{\cos\beta_{ws}} = 20.80^\circ $\\
-	$ v_{1s} = \dfrac{\pi d_{1s}n_{sh2}}{60000} = 2.77\unit{(m/s)}$
-\end{tabular}
+\subsection{Other parameters}
+$ d_1 = {m_tz_1}/{\cos\beta} = {2\times 40}/{\cos16.03^\circ} = 83.24\unitp{mm} $\\
+$ d_2 = {m_tz_2}/{\cos\beta} = {2\times 133}/{\cos16.03^\circ} = 276.76\unitp{mm} $\\
+$ d_{a1} = d_1 + 2m_t = 83.24 + 2\times 2 = 87.24\unitp{mm}$\\
+$ d_{a2} = d_2 + 2m_t = 276.76 + 2\times 2 = 280.76\unitp{mm}$\\
+$ d_{f1} = d_1 - 2.5m_t = 83.24 - 2.5\times 2 = 78.24\unitp{mm}$\\
+$ d_{f2} = d_2 - 2.5m_t = 276.76 - 2.5\times 2 = 271.76\unitp{mm}$\\
+$ d_{b1} = d_1\cos\alpha = 83.24\times \cos 20^\circ = 78.22\unitp{mm}$\\
+$ d_{b2} = d_2\cos\alpha = 276.76\times \cos 20^\circ = 260.07 \unitp{mm}$\\
+$ \alpha_t = \arctan\left({\tan\alpha}/{\cos\beta}\right) = \arctan\left({\tan 20^\circ}/{\cos 16.03^\circ}\right) = 20.74^\circ $\\
+$ v_1 = {\pi d_1n_{sh1}}/{60000} = {\pi \times 83.24 \times 1455}/{60000} = 6.34\unitp{m/s}$
 
 \section{Stress analysis}
-\subsection{Correct $ [{\sigma}_{H}] $, $ [\sigma_{F1}] $ and $ [\sigma_{F2}] $}
-In reality, the factors of Equation 6.1 and 6.2 \cite{tk1} do not equal 1. As a result, we will try to approximate them given the values calculated above:
-\[
-\begin{array}{l@{{} = {}}l}
-[\sigma_{Hw}] & [{\sigma}_H]Z_RZ_VK_{xH}\\
+\subsection{Correct $ [\sigma_H] $, $ [\sigma_{F1}] $ and $ [\sigma_{F2}] $}
+In reality, the factors $ Z_RZ_vK_{xH} $ and $ Y_RY_sK_{xF} $ do not equal to 1. This part will correct them to obtain the correct permissible stresses.
 
-[\sigma_{Fw}] & [{\sigma}_F]Y_RY_SK_{xF}\\
-\end{array}
-\]
-Assuming smooth surface condition, $ Z_R = 1 $.\\
-All gears have low surface hardness:\\
-$ Z_{vq} = 0.85v_{1q}^{0.1} = 1.02$\\
-$ Z_{vs} = 0.85v_{1s}^{0.1} = 0.94$\\
-All gears have small addendum, $ K_{xH} = 1$.\\
-The gears are properly polished, which means $ Y_R=1.2 $\\
-$ Y_{sq} = 1.08-0.0695\ln(m_{tq}) = 1.05 $\\
-$ Y_{ss} = 1.08-0.0695\ln(m_{ts}) = 1.03 $\\
-Since $ d_{a1},d_{a2}\leq400\unit{(mm)} $, $ K_{xF}=1 $. Then, multiplying all variables yields:\\
-\begin{tabular}[t]{ll}
-	$ [{\sigma}_{Hwq}] = 518.90\unit{(MPa)}$ & $ [{\sigma}_{Hws}] = 479.12\unit{(MPa)}$\\
-	$ [{\sigma}_{Fw1q}] = 324.56\unit{(MPa)}$& $ [{\sigma}_{Fw1s}] = 318.39\unit{(MPa)}$\\
-	$ [{\sigma}_{Fw2q}] = 311.58\unit{(MPa)}$& $ [{\sigma}_{Fw2s}] = 305.66\unit{(MPa)}$\\
-\end{tabular}
+\begin{itemize}
+	\item The roughness deviation is less than $ 1.25\mu m $. $ Z_R = 1 $
+	\item The surface hardness of the gear drive is less than $ \text{HB}350 $. $ Z_v = 0.85v_1^{0.1} = 0.85\times 6.34^{0.1} = 1.02$
+	\item The gears have $ d_{a1}, d_{a2} \leq 700\unit{mm} $. $ K_{xH} = 1$
+	\item The gears are not polished. $ Y_R=1 $
+	\item $ Y_s = 1.08-0.0695\ln(m_t) = 1.03 $
+	\item $ d_{a1}, d_{a2} \leq 400 \unit{mm} $. $ K_{xF}=1 $
+\end{itemize}
+Replacing all the variables gives:\\
+$ [\sigma_H] = 422.73\times 1\times 1.02\times 1 = 432.21\unit{MPa}$ \\
+$ [\sigma_{F1}] = 210.86\times 1\times 1.03\times 1 = 217.57\unit{MPa}$\\
+$ [\sigma_{F2}] = 195.43\times 1\times 1.03\times 1 = 201.65\unit{MPa}$
+
 \subsection{Contact stress analysis}
-The contact stress applied on a gear surface must satisfy Equation 6.33 \cite{tk1}.
+The contact stress applied on a gear surface must satisfy Equation 6.33 \cite{tk1}:
+\[
+\sigma_H = z_Mz_Hz_\varepsilon\sqrt{2T_{sh1}K_H\dfrac{u+1}{bud_1^2}} \leq [\sigma_H]
+\]
 
 \textbf{Find $ z_M $} According to Table 6.5 \cite{tk1}, $ z_M = 274 $.
 
 \textbf{Find $ z_H $} Applying Equation 6.34 \cite{tk1} and 6.35 \cite{tk1}:\\
-$ \beta_{bq} = \arctan\left( \cos\alpha_{tq}\tan\beta_{wq}\right) = 13.08^\circ \Rightarrow z_{Hq} = \sqrt{2\dfrac{\cos\beta_{bq}}{\sin(2\alpha_{tq})}} = 1.72$\\
-$ \beta_{bs} = \arctan\left( \cos\alpha_{ts}\tan\beta_{ws}\right) = 15.57^\circ \Rightarrow z_{Hs} = \sqrt{2\dfrac{\cos\beta_{bs}}{\sin(2\alpha_{ts})}} = 1.70$
+$ \beta_b = \arctan\left( \cos\alpha_t\tan\beta\right) = \arctan\left( \cos 20.47^\circ\tan 16.03^\circ\right) = 15.04^\circ$\\
+$ z_H = \sqrt{\dfrac{2\cos\beta_b}{\sin(2\alpha_t)}} = \sqrt{\dfrac{2\times\cos 15.04^\circ}{\sin(2\times 20.74^\circ)}} = 1.71$
 
-\textbf{Find $ z_\varepsilon $} Obtaining $ z_\varepsilon $ through calculations:\\
-$ \varepsilon_{\alpha q} = \dfrac{\sqrt{d_{a1q}^2-d_{b1q}^2}+\sqrt{d_{a2q}^2-d_{b2q}^2}-2a_{q}\sin\alpha_{tq}}{2\pi m_{tq}\dfrac{\cos\alpha_{tq}}{\cos\beta_q}} = 1.52$\\
-$ \varepsilon_{\beta q} = b_q\dfrac{\sin\beta_q}{m_{tq}\pi} >1 \Rightarrow z_{\varepsilon q} = \varepsilon_{\alpha q}^{-0.5} = 0.81 $\\
-$ \varepsilon_{\alpha s} = \dfrac{\sqrt{d_{a1s}^2-d_{b1s}^2}+\sqrt{d_{a2s}^2-d_{b2s}^2}-2a_{s}\sin\alpha_{ts}}{2\pi m_{ts}\dfrac{\cos\alpha_{ts}}{\cos\beta_s}} = 1.43$\\
-$ \varepsilon_{\beta s} = b_s\dfrac{\sin\beta_s}{m_{ts}\pi} >1 \Rightarrow z_{\varepsilon s} = \varepsilon_{\alpha s}^{-0.5} = 0.84 $
+\textbf{Find $ z_\varepsilon $} Obtaining $ z_\varepsilon $ through calculations:
+\begin{multline*}
+\varepsilon_\alpha = \dfrac{\sqrt{d_{a1}^2-d_{b1}^2}+\sqrt{d_{a2}^2-d_{b2}^2}-2a\sin\alpha_t}{2\pi m_t{\cos\alpha_t}/{\cos\beta}}\\
+= \dfrac{\sqrt{87.24^2-78.22^2}+\sqrt{280.76^2-260.07^2}-2\times 180\times\sin 20.74^\circ}{2\pi \times 2\times{\cos 20.74^\circ}/{\cos 16.03^\circ}} = 1.38
+\end{multline*}
+$ \varepsilon_\beta = b\dfrac{\sin\beta}{m_t\pi} = 54\times\dfrac{\sin 16.03^\circ}{2\times\pi}=2.37 >1 \Rightarrow z_\varepsilon = \varepsilon_\alpha^{-0.5} = 1.38^{-0.5} = 0.85 $
 
-\textbf{Find $ K_H $ and $ K_F $} We find $ K_H $, $ K_F $ using Equation 6.39 and 6.45 \cite{tk1}:\\
-From Table 6.13 \cite{tk1}:\\
-$ v_{1q}\leq 10 \unitp{m/s}\Rightarrow \text{AG}_q = 8 $ \\
-$ v_{1s}\leq 4 \unitp{m/s}\Rightarrow \text{AG}_s = 9 $ \\
+\textbf{Find $ K_H $ and $ K_F $} We find $ K_H $, $ K_F $ using Equation 6.39 and 6.45 \cite{tk1}.
+
+The gear drive velocity determines the accuracy grade, Table 6.13 \cite{tk1}. In case of helical gear, it is:\\
+$ v_1=6.34 \unit{m/s} \leq 10 \unit{m/s}\Rightarrow \text{AG} = 8 $
+
 From Table P2.3 \cite{tk1}, using interpolation, we approximate:\\
-$ K_{Hvq} = 1.06$, $ K_{Fvq} = 1.17$\\
-$ K_{Hvs} = 1.04$, $ K_{Fvs} = 1.10$\\
+$ K_{Hv} = 1.04$, $ K_{Fv} = 1.18$
+
 From Table 6.14 \cite{tk1}, using interpolation, we approximate:\\
-$ K_{H\alpha q} = 1.1$, $ K_{F\alpha q} = 1.29 $ \\
-$ K_{H\alpha s} = 1.13$, $ K_{F\alpha s} = 1.37 $ \\		
-Knowing the results of $ K_{H\beta} $ from previous section, multiply all the values to obtain $ K_H $:\\
-$ \Rightarrow K_{Hq} = 1.24 $, $ K_{Fq} = 1.73 $\\
-$ \Rightarrow K_{Hs} = 1.28 $, $ K_{Fs} = 1.79 $
+$ K_{H\alpha} = 1.06$, $ K_{F\alpha} = 1.3 $
 
-\textbf{Find $ \sigma_H $} After calculating $ z_M $, $ z_H $, $ z_\varepsilon $, $ K_H $, we get the following result:\\
-For quick stage with transmission ratio $ u_q $ and input torque $ T_{sh1} $:
-\[
-\sigma_{Hq} = z_Mz_{Hq}z_{\varepsilon q}\sqrt{2T_{sh1}K_{Hq}\dfrac{u_q+1}{b_qu_qd_{1q}^2}} \leq [{\sigma}_{Hwq}]
-\]
-\[\sigma_{Hq} = 447.07 \unitp{MPa}\leq 518.90 \] 
-For slow stage with transmission ratio $ u_s $ and input torque $ T_{sh2} $:
-\[
-\sigma_{Hs} = z_Mz_{Hs}z_{\varepsilon s}\sqrt{2T_{sh3}K_{Hs}\dfrac{u_s+1}{b_su_sd_{1s}^2}} \leq [{\sigma}_{Hws}]
-\]
-\[\sigma_{Hs} = 476.18 \unitp{MPa}\leq 479.12 \] 
+Knowing $ K_{H\beta} $ and $ K_{H\beta} $ from previous section, multiply all the values to obtain $ K_H $ and $ K_F $:\\
+$ K_H = K_{H\beta}K_{Hv}K_{H\alpha} = 1.04\times 1.1 \times 1.06  = 1.21 $\\
+$ K_F = K_{F\beta}K_{Fv}K_{F\alpha} = 1.1\times 1.18 \times 1.3 = 1.68 $
+
+\textbf{Find $ \sigma_H $} Replacing all the variables gives:
+\begin{multline*}
+\sigma_H = 274\times 1.71 \times 1.55 \times \sqrt{2\times 46423.73 \times 1.21 \times\dfrac{3.32+1}{54 \times 3.32 \times 83.24^2}}\\
+= 249.04 \unitp{MPa} \leq 432.21 \unit{MPa}
+\end{multline*}
+which satisfies the condition.
 \subsection{Bending stress analysis}
-For safety reasons, Equation 6.43 and 6.44 \cite{tk1} must be met for both pairs of gears.
+For safety reasons, Equation 6.43 and 6.44 \cite{tk1} must be met for both pairs of gears:
+\[
+\begin{array}{l@{{} \leq {}}l}
+\sigma_{F1} = \dfrac{2T_{sh1}K_FY_\varepsilon Y_\beta Y_{F1}}{bd_1m_t\cos\beta} & [\sigma_{F1}]\\ 
+\sigma_{F2} = \sigma_{F1}Y_{F2}/Y_{F1} & [\sigma_{F2}]
+\end{array}
+\]
 
-\textbf{Find $ Y_\varepsilon $} Using $ \varepsilon_\alpha $ calculated in the previous section, we find $ Y_\varepsilon$:\\
-$ Y_{\varepsilon q}= \varepsilon_{\alpha q}^{-1} = 0.66 $\\
-$ Y_{\varepsilon s}= \varepsilon_{\alpha s}^{-1} = 0.70 $
+\textbf{Find $ Y_\varepsilon $} Using $ \varepsilon_\alpha $ calculated in the previous section, 
+$ Y_\varepsilon= \varepsilon_\alpha^{-1} = 1.38^{-1} = 0.72 $
 
 \textbf{Find $ Y_\beta $} The value of $ Y_\beta $ is calculated using the equation on p.108 \cite{tk1}:\\
-$ Y_{\beta q} = 1-\dfrac{\beta_{wq}}{140}= 0.90$\\
-$ Y_{\beta s} = 1-\dfrac{\beta_{ws}}{140}= 0.88$
+$ Y_\beta = 1-{\beta}/{140^\circ}=  1-{16.03^\circ}/{140^\circ}= 0.89$
 
-\textbf{Find $ Y_F $} Using the formula $ z_v = z\cos^{-3}(\beta_w) $ and Table 6.18 \cite{tk1}:\\
-$ z_{v1q} = z_{1q}\cos^{-3}(\beta_{wq}) = 28.44\Rightarrow Y_{F1q} = 3.83 $\\
-$ z_{v2q} = z_{2q}\cos^{-3}(\beta_{wq}) = 91.87\Rightarrow Y_{F2q} = 3.60 $\\
-$ z_{v1s} = z_{1s}\cos^{-3}(\beta_{ws}) = 31.81\Rightarrow Y_{F1s} = 3.78 $\\
-$ z_{v2s} = z_{2s}\cos^{-3}(\beta_{ws}) = 98.85\Rightarrow Y_{F2s} = 3.60 $
+\textbf{Find $ Y_F $} Using the formula $ z_v = z\cos^{-3}(\beta) $ and Table 6.18 \cite{tk1}:\\
+$ z_{v1} = z_1\cos^{-3}(\beta) = 40\times\cos^{-3}(16.03^\circ) = 45.05\Rightarrow Y_{F1} = 3.67 $\\
+$ z_{v2} = z_2\cos^{-3}(\beta) = 133\times\cos^{-3}(16.03^\circ) = 149.81\Rightarrow Y_{F2} = 3.60 $
 
-\textbf{Find $ K_F $} The value of $ K_F $ has already been found in the previous section.
+\textbf{Find $ K_F $} The value of $ K_F $ has already been found in the previous section. $ K_F = 1.68 $
 
-\textbf{Find $ \sigma_F $} Replacing the normal module in Equation 6.43 \cite{tk1} with $ m_n = m_t\cos\beta_w $, substituting all the values yields:
-
-For quick stage with input torque $ T_{sh1} $:
+\textbf{Find $ \sigma_F $} The module in Equation 6.43 \cite{tk1} is $ m_n = m_t\cos\beta $. Replacing all the values gives:
 \[
 \begin{array}{l@{{} \leq {}}l}
-\sigma_{F1q} = 2\dfrac{T_{sh1}K_{Fq}Y_{\varepsilon q} Y_{\beta q} Y_{F1q}}{b_qd_{1q}m_{tq}\cos\beta_{wq}} & [\sigma_{Fw1q}]\\ 
-\sigma_{F2q} = \dfrac{\sigma_{F1q}Y_{F2q}}{Y_{F1q}} & [\sigma_{Fw2q}]
+\sigma_{F1} = \dfrac{2\times 46423.73 \times 1.68 \times 0.72 \times 0.89 \times 3.67}{54 \times 83.24 \times 2 \times\cos16.03^\circ} = 42.44 \unitp{MPa} & 217.57 \unit{MPa}\\ 
+\sigma_{F2} = {42.44 \times 3.60}/{3.66} = 41.57 \unitp{MPa}& 201.65 \unit{MPa}
 \end{array}
 \]
-gives the results:
-\[
-\begin{array}{l@{{} \leq {}}l}
-\sigma_{F1q} = 91.48 \unitp{MPa} & 324.56 \unit{MPa}\\
-\sigma_{F2q} = 86.05 \unitp{MPa} & 311.58 \unit{MPa}
-\end{array}
-\]
-
-For slow stage with input torque $ T_{sh2} $:
-\[
-\begin{array}{l@{{} \leq {}}l}
-\sigma_{F1s} = 2\dfrac{T_{sh2}K_{Fs}Y_{\varepsilon s} Y_{\beta s} Y_{F1s}}{b_sd_{1s}m_{ts}\cos\beta_{ws}} & [\sigma_{Fw1s}]\\ 
-\sigma_{F2s} = \dfrac{\sigma_{F1s}Y_{F2s}}{Y_{F1s}} & [\sigma_{Fw2s}]
-\end{array}
-\]
-gives the results:
-\[
-\begin{array}{l@{{} \leq {}}l}
-\sigma_{F1s} = 111.83 \unitp{MPa} & 318.39 \unit{MPa}\\
-\sigma_{F2s} = 106.47 \unitp{MPa} & 305.66 \unit{MPa}
-\end{array}
-\]
-which is well below the yielding strength.
+which satisfies the conditions.
 \subsection{Overloading analysis}
-Inspecting Table P1.3 \cite{tk1}, the motor we chose in Chapter 2 has $ K_{qt}=2.2 $. Using the values of $ [\sigma_H]_{max} $ and $ [{\sigma}_F]_{max} $ calculated in previous section combined with Equation 6.48 and 6.49 \cite{tk1}, we are able to verify the stresses are below overloading limits.
-
-For quick stage transmission:
+From the load diagram, we determine the overloading factor:
+\[
+K_{qt}=\sqrt{\dfrac{\left(\dfrac{T_1}{T}\right)^2t_1 + \left(\dfrac{T_2}{T}\right)^2t_2}{t_1+t_2}}= \sqrt{\dfrac{\left(\dfrac{T}{T}\right)^2\times15 + \left(\dfrac{0.7T}{T}\right)^2\times11}{15+11}} = 1.13
+\]
+Using the values of $ [\sigma_H]_{max} $ and $ [\sigma_F]_{max} $ calculated in previous section combined with Equation 6.48 and 6.49 \cite{tk1}, we are able to verify the stresses are below overloading limits. Replacing all the variables gives
 \[
 \begin{array}{l}
-\sigma_{Hmaxq}=\sigma_{Hq}\sqrt{K_{qt}} = 663.11 \unitp{MPa} \leq 1540 \unit{MPa}\\
-\sigma_{F2maxq}=\sigma_{F2q}K_{qt} = 189.31 \unitp{MPa} \leq 440 \unit{MPa}\\
-\sigma_{F1maxs}=\sigma_{F1s}K_{qt} = 246.03 \unitp{MPa} \leq 440 \unit{MPa}
+\sigma_{Hmax}=\sigma_H\sqrt{K_{qt}} = 249.04\times\sqrt{1.13} = 264.64 \unitp{MPa} \leq 952.00 \unit{MPa}\\
+\sigma_{F1max}=\sigma_{F1s}K_{qt} =42.44\times 1.13 = 47.92 \unitp{MPa} \leq 440 \unit{MPa}\\
+\sigma_{F2max}=\sigma_{F2}K_{qt} =41.57\times 1.13 = 46.95 \unitp{MPa} \leq 272.00 \unit{MPa}\\
 \end{array}
 \]
+which satisfy the conditions.
 
-For slow stage transmission:
-\[
-\begin{array}{l}
-\sigma_{Hmaxs}=\sigma_{Hs}\sqrt{K_{qt}} = 706.29 \unitp{MPa} \leq 1540 \unit{MPa}\\
-\sigma_{F1maxq}=\sigma_{F1q}K_{qt} = 201.25 \unitp{MPa} \leq 440 \unit{MPa}\\
-\sigma_{F2maxs}=\sigma_{F2s}K_{qt} = 234.24 \unitp{MPa} \leq 440 \unit{MPa}
-\end{array}
-\]
-which satisfy the conditions. In summary, we have the following table:
+In summary, we have the following table:
 %\subsection{Force on shafts}
 %$ F_t = \dfrac{2T_{sh1}}{d_{w1}} \approx 2402.28 \unit{(N)}$\\
 %$ F_r = F_t\tan\alpha_{tw} \approx 899.55 \unit{(N)}$\\
-%$ F_a = F_t\tan\beta_w\approx 580.75 \unit{(N)}$\\
+%$ F_a = F_t\tan\beta\approx 580.75 \unit{(N)}$\\
 
 \begin{table}[ht]
 	\centering
-	\begin{tabular}[t]{|
-			>{\columncolor[HTML]{C0C0C0}}l |p{2.5cm}|p{2.5cm}|}
-		\hline
-		& \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}pinion} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}driving gear} \\ \hline
-		$ a_w\unit{(mm)} $            & \multicolumn{2}{l|}{\hskip2cm 100}           \\ \hline
-		$ b\unit{(mm)} $            & \multicolumn{2}{l|}{\hskip2cm 50}           \\ \hline
-		$ m\unit{(mm)} $              & \multicolumn{2}{l|}{\hskip2cm 1.5}    \\ \hline
-		$ d_w\unit{(mm)} $              & 33.33                    & 166.67 \\ \hline
-		$ d_a\unit{(mm)} $            & 37.23                    & 168.77 \\ \hline
-		$ d_f\unit{(mm)} $            & 30.48                    & 162.02 \\ \hline
-		$ d_b\unit{(mm)} $            & 31.32                     & 156.62 \\ \hline
-		$ u_{hg} $              & \multicolumn{2}{l|}{\hskip2cm 5}    \\ \hline
-		$ v\unit{(m/s)} $              & \multicolumn{2}{l|}{\hskip2cm 5}    \\ \hline
-		$ z $                       & 21                       & 105     \\ \hline
-		$ \alpha_{tw}\unit{(^\circ)} $ & \multicolumn{2}{l|}{\hskip2cm 20.65}        \\ \hline
-		$ \beta_w\unit{(^\circ)} $ & \multicolumn{2}{l|}{\hskip2cm 19.09}        \\ \hline
+	\begin{tabular}{lp{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}\toprule
+		& Gear drive & Pinion & Driven gear \\ \midrule
+		%		$ [P] \unitp{kW} $	&	19.3	&	-		&	-		\\
+		$ a\unitp{mm}    $	&	180	&	-		&	-		\\
+		$ d\unitp{mm}    $	&	-		&	83.24	&	276.76	\\
+		$ d_a\unitp{mm}  $	&	-		&	87.24	&	280.76	\\
+		$ d_b\unitp{mm}  $	&	-		&	78.22	&	260.07	\\
+		$ d_f\unitp{mm}  $	&	-		&	78.24	&	271.76	\\
+		$ m\unitp{mm}    $	&	2	&	-		&	-		\\
+		$ u			     $	&	3.32	&	-		&	-		\\
+		$ \alpha_t\unitp{^\circ}    $	&	20.74	&	-		&	-		\\
+		$ \beta\unitp{^\circ}    $	&	16.03	&	-		&	-		\\
+		\bottomrule
 	\end{tabular}
-	\caption{Gearbox specifications}
+	\caption{Gear drive specifications. Material of choice is 45 steel}
 \end{table}
