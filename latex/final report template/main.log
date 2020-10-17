@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  24 SEP 2020 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  8 OCT 2020 08:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1313,7 +1313,7 @@ Writing index file main.idx
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 94.
+Package glossaries Info: Writing glossary file main.glo on input line 95.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1323,24 +1323,24 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotereset=\count477
 (./main.aux
 LaTeX Font Info:    Trying to load font information for T5+ntxtlf on input line
- 59.
-LaTeX Font Info:    No file T5ntxtlf.fd. on input line 59.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 59
-.
+ 176.
+LaTeX Font Info:    No file T5ntxtlf.fd. on input line 176.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 17
+6.
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T5/ntxtlf/m/n' undefined
-(Font)              using `T5/cmr/m/n' instead on input line 59.
+(Font)              using `T5/cmr/m/n' instead on input line 176.
 
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 60.
+e 177.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 60.
+(Font)              scaled to size 14.4pt on input line 177.
 )
 \openout1 = `main.aux'.
 
@@ -1530,7 +1530,7 @@ LaTeX Info: Redefining \nameref on input line 3.
  (./front matter/titlepage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
-<./images/logo.png, id=96, 1007.765pt x 1027.84pt>
+<./images/logo.png, id=160, 1007.765pt x 1027.84pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
 Package pdftex.def Info: ./images/logo.png  used on input line 7.
@@ -1591,24 +1591,39 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-))
+) [4
+
+])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
- [4
 
-] (./main.lof)
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+Make it at least 17.0pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[5] (./main.lof
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 14.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 14.
+)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
 
-[5
+[6
 
 ] (./main.lot)
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
- (./chapters/chap1.tex [6
+ (./chapters/chap1.tex [7
 
 ]
 Chapter 1.
@@ -1681,36 +1696,263 @@ Underfull \hbox (badness 2126) in paragraph at lines 29--29
 []|\T1/ntxtlf/m/n/14.4 Thermal treat-
  []
 
-<images/01.jpg, id=168, 481.8pt x 504.88625pt>
+<images/01.jpg, id=311, 481.8pt x 504.88625pt>
 File: images/01.jpg Graphic file (type jpg)
 <use images/01.jpg>
 Package pdftex.def Info: images/01.jpg  used on input line 56.
 (pdftex.def)             Requested size: 273.14923pt x 286.24734pt.
-[7
+[8
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 63.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 63.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.0pt): 
-Make it at least 17.0pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[8]
+] [9]
 Underfull \hbox (badness 10000) in paragraph at lines 76--85
 
  []
 
-[9 <./images/01.jpg (PNG copy)>] [10]) (./chapters/chap3.tex [11]
+[10 <./images/01.jpg (PNG copy)>] [11]) (./chapters/chap2.tex [12]
 Chapter 2.
-) (./appendix/chap1.tex [12
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 4.
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.5pt on input line 4.
+<./images/03.png, id=348, 353.82187pt x 248.42813pt>
+File: ./images/03.png Graphic file (type png)
+<use ./images/03.png>
+Package pdftex.def Info: ./images/03.png  used on input line 7.
+(pdftex.def)             Requested size: 273.14923pt x 191.78682pt.
+
+Underfull \hbox (badness 3058) in paragraph at lines 35--36
+[]|$\OML/ntxmi/m/it/14.4 ^^^[] \U/ntxmia/m/it/14.4 = \OML/ntxmi/m/it/14.4 ^^^[]
+$\T1/ntxtlf/m/n/14.4 , $\OML/ntxmi/m/it/14.4 ^^^[] \U/ntxmia/m/it/14.4 = \OT1/n
+txtlf/m/n/14.4 5[]$\T1/ntxtlf/m/n/14.4 ,
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 12--37
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
+
+ <./images/03.png>] [14]
+<./images/04.png, id=366, 822.07124pt x 587.94656pt>
+File: ./images/04.png Graphic file (type png)
+<use ./images/04.png>
+Package pdftex.def Info: ./images/04.png  used on input line 85.
+(pdftex.def)             Requested size: 364.19667pt x 260.4736pt.
+<./images/05.png, id=368, 356.0803pt x 266.49562pt>
+File: ./images/05.png Graphic file (type png)
+<use ./images/05.png>
+Package pdftex.def Info: ./images/05.png  used on input line 92.
+(pdftex.def)             Requested size: 273.14923pt x 204.43777pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 98.
+ [15]
+<./images/06.png, id=382, 199.071pt x 149.4675pt>
+File: ./images/06.png Graphic file (type png)
+<use ./images/06.png>
+Package pdftex.def Info: ./images/06.png  used on input line 123.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
+ [16 <./images/04.png>]
+<./images/07.png, id=395, 421.4655pt x 316.3455pt>
+File: ./images/07.png Graphic file (type png)
+<use ./images/07.png>
+Package pdftex.def Info: ./images/07.png  used on input line 150.
+(pdftex.def)             Requested size: 273.14923pt x 205.03323pt.
+<./images/08.png, id=396, 825.0825pt x 451.6875pt>
+File: ./images/08.png Graphic file (type png)
+<use ./images/08.png>
+Package pdftex.def Info: ./images/08.png  used on input line 158.
+(pdftex.def)             Requested size: 364.19667pt x 199.37718pt.
+ [17 <./images/05.png>] [18 <./images/06.png (PNG copy)>]
+<./images/09.png, id=426, 356.0803pt x 266.49562pt>
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 225.
+(pdftex.def)             Requested size: 204.85846pt x 153.31918pt.
+<./images/10.png, id=427, 356.0803pt x 265.74281pt>
+File: ./images/10.png Graphic file (type png)
+<use ./images/10.png>
+Package pdftex.def Info: ./images/10.png  used on input line 231.
+(pdftex.def)             Requested size: 204.85846pt x 152.88608pt.
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 241.
+(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 247.
+(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 253.
+(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 260.
+(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
+File: ./images/09.png Graphic file (type png)
+<use ./images/09.png>
+Package pdftex.def Info: ./images/09.png  used on input line 266.
+(pdftex.def)             Requested size: 136.57462pt x 102.21278pt.
+<./images/12.png, id=428, 508.14844pt x 377.91188pt>
+File: ./images/12.png Graphic file (type png)
+<use ./images/12.png>
+Package pdftex.def Info: ./images/12.png  used on input line 277.
+(pdftex.def)             Requested size: 273.14923pt x 203.14673pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2a' on page 19 undefined on input line 290.
+
+<./images/11.png, id=429, 341.3115pt x 255.9015pt>
+File: ./images/11.png Graphic file (type png)
+<use ./images/11.png>
+Package pdftex.def Info: ./images/11.png  used on input line 293.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+[19 <./images/07.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/13.png, id=442, 341.3115pt x 255.9015pt>
+File: ./images/13.png Graphic file (type png)
+<use ./images/13.png>
+Package pdftex.def Info: ./images/13.png  used on input line 304.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/14.png, id=443, 341.3115pt x 255.9015pt>
+File: ./images/14.png Graphic file (type png)
+<use ./images/14.png>
+Package pdftex.def Info: ./images/14.png  used on input line 315.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+[20 <./images/08.png> <./images/09.png> <./images/10.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2b' on page 21 undefined on input line 320.
+
+<./images/15.png, id=454, 341.3115pt x 255.9015pt>
+File: ./images/15.png Graphic file (type png)
+<use ./images/15.png>
+Package pdftex.def Info: ./images/15.png  used on input line 323.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+<./images/16.png, id=463, 341.3115pt x 255.9015pt>
+File: ./images/16.png Graphic file (type png)
+<use ./images/16.png>
+Package pdftex.def Info: ./images/16.png  used on input line 350.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+<./images/17.png, id=464, 341.3115pt x 255.9015pt>
+File: ./images/17.png Graphic file (type png)
+<use ./images/17.png>
+Package pdftex.def Info: ./images/17.png  used on input line 356.
+(pdftex.def)             Requested size: 300.46277pt x 225.29164pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/18.png, id=467, 199.071pt x 149.4675pt>
+File: ./images/18.png Graphic file (type png)
+<use ./images/18.png>
+Package pdftex.def Info: ./images/18.png  used on input line 364.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
+<./images/19.png, id=468, 341.3115pt x 255.9015pt>
+File: ./images/19.png Graphic file (type png)
+<use ./images/19.png>
+Package pdftex.def Info: ./images/19.png  used on input line 376.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+<./images/20.png, id=469, 341.3115pt x 255.9015pt>
+File: ./images/20.png Graphic file (type png)
+<use ./images/20.png>
+Package pdftex.def Info: ./images/20.png  used on input line 388.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+[22 <./images/12.png>]
+<./images/21.png, id=478, 341.3115pt x 255.9015pt>
+File: ./images/21.png Graphic file (type png)
+<use ./images/21.png>
+Package pdftex.def Info: ./images/21.png  used on input line 396.
+(pdftex.def)             Requested size: 273.14923pt x 204.81128pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 407--412
+[] 
+ []
+
+<./images/22.png, id=481, 199.071pt x 149.4675pt>
+File: ./images/22.png Graphic file (type png)
+<use ./images/22.png>
+Package pdftex.def Info: ./images/22.png  used on input line 422.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
+<./images/23.png, id=482, 443.40656pt x 329.73187pt>
+File: ./images/23.png Graphic file (type png)
+<use ./images/23.png>
+Package pdftex.def Info: ./images/23.png  used on input line 437.
+(pdftex.def)             Requested size: 273.14923pt x 203.13356pt.
+[23 <./images/11.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/26.png, id=491, 258.9675pt x 328.22626pt>
+File: ./images/26.png Graphic file (type png)
+<use ./images/26.png>
+Package pdftex.def Info: ./images/26.png  used on input line 458.
+(pdftex.def)             Requested size: 182.09486pt x 230.80354pt.
+<./images/24.png, id=492, 284.1525pt x 189.873pt>
+File: ./images/24.png Graphic file (type png)
+<use ./images/24.png>
+Package pdftex.def Info: ./images/24.png  used on input line 465.
+(pdftex.def)             Requested size: 364.19667pt x 243.38136pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./images/13.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/25.png, id=499, 199.071pt x 149.139pt>
+File: ./images/25.png Graphic file (type png)
+<use ./images/25.png>
+Package pdftex.def Info: ./images/25.png  used on input line 480.
+(pdftex.def)             Requested size: 318.66948pt x 238.74786pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/27.png, id=502, 199.071pt x 149.4675pt>
+File: ./images/27.png Graphic file (type png)
+<use ./images/27.png>
+Package pdftex.def Info: ./images/27.png  used on input line 499.
+(pdftex.def)             Requested size: 273.14923pt x 205.09535pt.
+<./images/28.png, id=503, 467.2pt x 350.4pt>
+File: ./images/28.png Graphic file (type png)
+<use ./images/28.png>
+Package pdftex.def Info: ./images/28.png  used on input line 505.
+(pdftex.def)             Requested size: 273.14923pt x 204.86287pt.
+) (./chapters/chap3.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./images/14.png>] [26 <./images/15.png> <./images/16.png>] [27 <./images/1
+7.png> <./images/18.png (PNG copy)>] [28 <./images/19.png> <./images/20.png>]
+[29 <./images/21.png> <./images/22.png (PNG copy)>] [30 <./images/23.png> <./im
+ages/26.png>] [31 <./images/24.png (PNG copy)> <./images/25.png>] [32 <./images
+/27.png> <./images/28.png (PNG copy)>]
+Chapter 3.
+) (./appendix/chap1.tex [33
 
 ]
 Appendix A.
@@ -1744,31 +1986,31 @@ Overfull \hbox (3.75423pt too wide) in alignment at lines 40--51
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-[13
+[34
 
-]) (./appendix/chap2.tex [14]
+]) (./appendix/chap2.tex [35]
 Appendix B.
-) (./main.gls [15
+) (./main.gls [36
 
 ]
 
 LaTeX Font Warning: Font shape `T5/ntxtlf/b/n' undefined
 (Font)              using `T5/ntxtlf/m/n' instead on input line 7.
 
-) [16
+) [37
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 14.4pt on input line 25.
- [17
+ [38
 
 ]
 runsystem(makeindex main.idx)...executed safely (allowed).
 
  (./main.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [18
+ [39
 
 
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
@@ -1780,35 +2022,40 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F1FC8CDA3394E6FE48E0F173AC83555A;1496.
+(rerunfilecheck)             Checksum: D7AFF6DD295C60C3812D140BE1403CC0;2672.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26780 strings out of 481239
- 462069 string characters out of 5920377
- 1365294 words of memory out of 5000000
- 41435 multiletter control sequences out of 15000+600000
- 584559 words of font info for 80 fonts, out of 8000000 for 9000
+ 27167 strings out of 481239
+ 467021 string characters out of 5920377
+ 1368762 words of memory out of 5000000
+ 41701 multiletter control sequences out of 15000+600000
+ 593593 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,14n,107p,1006b,4848s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fon
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/sh
+are/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fon
 ts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb><
-/usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/t
-ype1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsy
-s.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb>
-Output written on main.pdf (18 pages, 280659 bytes).
+blic/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/
+NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share
+/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/publi
+c/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/tx
+exs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb>
+Output written on main.pdf (39 pages, 1291452 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

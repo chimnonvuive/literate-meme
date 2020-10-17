@@ -1,52 +1,118 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Several Key points}{7}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Several Key points}{8}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Morphological Box}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Morphological Box}{8}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Evaluation Table}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Evaluation Table}{9}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Tabular Re-arrangement}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Tabular Re-arrangement}{9}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Choosing between diagram, table and text descriptions}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Choosing between diagram, table and text descriptions}{10}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Summary and Conclusions}{12}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Internship tasks}{13}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Problem}{13}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Parameters}{14}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Displacement analysis}{14}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Position of $ A $}{14}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Position of $ B $}{14}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Position of $ C $}{15}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Position of $ D $}{15}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Velocity and Acceleration analysis}{15}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Velocity analysis}{15}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Velocity of $ A $}{15}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Velocity of $ B $}{16}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Velocity of $ C $}{16}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Velocity of $ D $}{16}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Acceleration analysis}{17}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Acceleration of $ A $}{17}{section*.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Acceleration of $ B $}{17}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Acceleration of $ C $}{17}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Acceleration of $ D $}{17}{section*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Force analysis}{18}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Link 5}{18}{section*.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Link 4}{18}{section*.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Link 3}{18}{section*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Link 2}{19}{section*.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Link 1}{19}{section*.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Energy relation analysis}{19}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Find equivalent dynamic moment and dynamic work}{20}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}Find equivalent resistant moment and resistant work}{21}{subsection.2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Find the energy equation and calculate the flywheel weight}{22}{section.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Combining motion of the system}{24}{section.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Cam mechanism}{24}{section.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}Tasks}{24}{subsection.2.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}Cam profile determination}{24}{subsection.2.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Summary and Conclusions}{33}{chapter.3}%
 \babel@toc {vietnamese}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{13}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix}{34}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}List of Abbreviations}{13}{section.A.1}%
+\contentsline {section}{\numberline {A.1}List of Abbreviations}{34}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}List of Tables}{13}{section.A.2}%
+\contentsline {section}{\numberline {A.2}List of Tables}{34}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}List of Figures}{14}{section.A.3}%
+\contentsline {section}{\numberline {A.3}List of Figures}{35}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Important Standards}{14}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Important Standards}{35}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Bill of Materials}{14}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Bill of Materials}{35}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Drawings (in drawing roll)}{14}{section.A.6}%
+\contentsline {section}{\numberline {A.6}Drawings (in drawing roll)}{35}{section.A.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Manufacturer Catalogues (in separate folder)}{14}{section.A.7}%
+\contentsline {section}{\numberline {A.7}Manufacturer Catalogues (in separate folder)}{35}{section.A.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Drawings (if you don't have drawing rolls)}{15}{appendix.B}%
+\contentsline {chapter}{\numberline {B}Drawings (if you don't have drawing rolls)}{36}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Bill of Materials}{15}{section.B.1}%
+\contentsline {section}{\numberline {B.1}Bill of Materials}{36}{section.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Assembly drawing}{15}{section.B.2}%
+\contentsline {section}{\numberline {B.2}Assembly drawing}{36}{section.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Component drawings: 1}{15}{section.B.3}%
+\contentsline {section}{\numberline {B.3}Component drawings: 1}{36}{section.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}Component drawings: 2}{15}{section.B.4}%
+\contentsline {section}{\numberline {B.4}Component drawings: 2}{36}{section.B.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.5}Component drawings: 3}{15}{section.B.5}%
+\contentsline {section}{\numberline {B.5}Component drawings: 3}{36}{section.B.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossary}{16}{section*.11}%
+\contentsline {chapter}{Glossary}{37}{section*.54}%
 \babel@toc {vietnamese}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{17}{appendix*.13}%
+\contentsline {chapter}{References}{38}{appendix*.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{18}{section*.14}%
+\contentsline {chapter}{Index}{39}{section*.57}%

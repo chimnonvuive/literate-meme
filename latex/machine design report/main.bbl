@@ -19,6 +19,104 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{collins_busby_staab_2010}{book}{}
+      \name{author}{3}{}{%
+        {{hash=30cb9387d22057ee72e69c32e033a2b4}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Jack\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f1b84d65f90f50b6998941519d3c83e1}{%
+           family={Busby},
+           familyi={B\bibinitperiod},
+           given={Henry\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e999d55812b7e240b4f1af7a6851be80}{%
+           family={Staab},
+           familyi={S\bibinitperiod},
+           given={George\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{587584b98f8f8b5c237f6030634aa873}
+      \strng{fullhash}{587584b98f8f8b5c237f6030634aa873}
+      \strng{bibnamehash}{587584b98f8f8b5c237f6030634aa873}
+      \strng{authorbibnamehash}{587584b98f8f8b5c237f6030634aa873}
+      \strng{authornamehash}{587584b98f8f8b5c237f6030634aa873}
+      \strng{authorfullhash}{587584b98f8f8b5c237f6030634aa873}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Mechanical Design of Machine Elements and Machines: A Failure Prevention Perspective}
+      \field{volume}{1}
+      \field{year}{2010}
+    \endentry
+    \entry{ibt_industrial_solutions}{book}{}
+      \list{publisher}{1}{%
+        {Martin}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBT Industrial Solutions}
+      \field{title}{Engineered Class Sprockets}
+      \field{pages}{20}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://www.ibtinc.com/pdf/suppliers/8386e32e-2d02-4fcd-b9e6-db8129bb3f7a.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ibtinc.com/pdf/suppliers/8386e32e-2d02-4fcd-b9e6-db8129bb3f7a.pdf
+      \endverb
+    \endentry
+    \entry{Ishibashi1981}{book}{}
+      \name{author}{2}{}{%
+        {{hash=bd8547a95833afbecffac9303b463c47}{%
+           family={Ishibashi},
+           familyi={I\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34db949a380ba4573539da56f1432552}{%
+           family={Tanaka},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{ASME} International}%
+      }
+      \strng{namehash}{d1f0014ef05f156893f3e817121bc6ee}
+      \strng{fullhash}{d1f0014ef05f156893f3e817121bc6ee}
+      \strng{bibnamehash}{d1f0014ef05f156893f3e817121bc6ee}
+      \strng{authorbibnamehash}{d1f0014ef05f156893f3e817121bc6ee}
+      \strng{authornamehash}{d1f0014ef05f156893f3e817121bc6ee}
+      \strng{authorfullhash}{d1f0014ef05f156893f3e817121bc6ee}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mechanical Design}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Effects of Hunting Gear Ratio Upon Surface Durability of Gear Teeth}
+      \field{volume}{103}
+      \field{year}{1981}
+      \field{pages}{227\bibrangedash 235}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1115/1.3254869
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1115/1.3254869
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1115/1.3254869
+      \endverb
+    \endentry
     \entry{Mareau2013ExperimentalAN}{book}{}
       \name{author}{3}{}{%
         {{hash=665376914bdd40e9be0a7c749e4de391}{%
@@ -47,7 +145,7 @@
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Experimental and numerical study of the evolution of stored and dissipated energies in a medium carbon steel under cyclic loading C}
+      \field{title}{Experimental and Numerical Study of The Evolution of Stored and Dissipated energies in a medium carbon steel under cyclic loading C}
       \field{year}{2013}
     \endentry
     \entry{mott_vavrek_wang_2018}{book}{}
@@ -82,7 +180,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{6}
-      \field{title}{Machine elements in mechanical design}
+      \field{title}{Machine Elements in Mechanical Design}
       \field{year}{2018}
     \endentry
     \entry{tk1}{book}{}

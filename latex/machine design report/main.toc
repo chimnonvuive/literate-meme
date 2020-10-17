@@ -1,41 +1,40 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\contentsline {section}{\numberline {0.1}Problem}{8}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Mixing machine parameters}{9}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Requirements}{9}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Design problem}{9}{section.0.4}%
-\contentsline {chapter}{\numberline {1}Choose Motor}{10}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Choose motor for the mixing tank}{10}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Calculate power, rotational speed and torque}{11}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Chain Drive Design}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Find the chain drive pitch}{14}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Determine basic parameters of the chain drive}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Find number of links and center distance}{15}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Strength of chain drive}{16}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Impact frequency analysis}{16}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Safety factor analysis}{16}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Contact stress analysis}{16}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Force on shaft}{17}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Gear Design (shaft 1-2)}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Choose material}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Estimate the permissible contact stress and bending stress}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Determine basic specifications of the transmission system}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Determine basic parameters}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Other parameters}{21}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Stress analysis}{22}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Correct $ [\sigma _H] $, $ [\sigma _{F1}] $ and $ [\sigma _{F2}] $}{22}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Contact stress analysis}{22}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Bending stress analysis}{23}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Overloading analysis}{23}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Gear Design (shaft 2-3)}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Choose material}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Estimate the permissible contact stress and bending stress}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Determine basic specifications of the transmission system}{28}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Determine basic parameters}{28}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Other parameters}{28}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Stress analysis}{29}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Correct $ [\sigma _H] $, $ [\sigma _{F1}] $ and $ [\sigma _{F2}] $}{29}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Contact stress analysis}{29}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Bending stress analysis}{30}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Overloading analysis}{30}{subsection.4.4.4}%
-\contentsline {chapter}{References}{32}{chapter*.17}%
+\contentsline {section}{\numberline {I}Problem}{7}{section.0.1}%
+\contentsline {section}{\numberline {II}Mixing machine parameters}{7}{section.0.2}%
+\contentsline {section}{\numberline {III}Requirements}{8}{section.0.3}%
+\contentsline {section}{\numberline {IV}Design problem}{8}{section.0.4}%
+\contentsline {chapter}{\numberline {1}Choose Motor}{9}{chapter.1}%
+\contentsline {section}{\numberline {I}Motor selection for the mixing tank}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}Calculate system overall efficiency $ \eta _{sys} $}{9}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Calculate required power $ P_{mo} $ for operation}{10}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.3}Choose motor}{10}{subsection.1.1.3}%
+\contentsline {paragraph}{Calculate working speed $ n_{mo} $}{10}{Item.19}%
+\contentsline {paragraph}{Choose motor}{11}{Item.19}%
+\contentsline {section}{\numberline {II}Power, rotational speed and torque of the system}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Calculate speed of the chain drive and the shafts}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {2.2}Calculate speed of the shafts}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {2.3}Calculate torque of the motor and the shafts}{13}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Shaft Design}{14}{chapter.2}%
+\contentsline {section}{\numberline {I}Choose material}{14}{section.2.1}%
+\contentsline {section}{\numberline {II}Transmission Design}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1}Load on shafts}{14}{subsection.2.2.1}%
+\contentsline {subsubsection}{Applied forces from Gears}{14}{subsection.2.2.1}%
+\contentsline {paragraph}{Find magnitude of $ F_{t} $, $ F_r $, $ F_a $}{15}{subsection.2.2.1}%
+\contentsline {paragraph}{Find direction of $ F_{t} $, $ F_r $, $ F_a $}{15}{subsection.2.2.1}%
+\contentsline {subsubsection}{Applied forces from Chain drives}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2}Preliminary calculations}{15}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Identify the distance between bearings and applied forces}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.4}Determine shaft diameters and lengths}{16}{subsection.2.2.4}%
+\contentsline {paragraph}{Find reaction forces}{16}{subsection.2.2.4}%
+\contentsline {paragraph}{Draw bending moment - torque diagrams}{17}{figure.caption.12}%
+\contentsline {paragraph}{Find equivalent moments}{17}{figure.caption.14}%
+\contentsline {paragraph}{Find permissible stress}{18}{figure.caption.14}%
+\contentsline {paragraph}{Find standardized diameters at specific locations on the shaft}{18}{figure.caption.14}%
+\contentsline {section}{\numberline {III}Fatigue Strength Analysis}{18}{section.2.3}%
+\contentsline {paragraph}{Find $ \sigma _{-1}$, $ \tau _{-1} $}{18}{section.2.3}%
+\contentsline {paragraph}{Find $ \sigma _{a}, \tau _{a}, \sigma _{m}, \tau _{m} $}{18}{section.2.3}%
+\contentsline {paragraph}{Find $ K_{\sigma }, K_\tau $}{19}{table.caption.15}%
+\contentsline {paragraph}{Find $ s_\sigma $, $ s_\tau $ and $ s $}{20}{table.caption.16}%
+\contentsline {section}{\numberline {IV}Static Strength Analysis}{20}{section.2.4}%
+\contentsline {chapter}{References}{23}{chapter*.19}%

@@ -29,20 +29,25 @@
 \usepackage{newtxtext}
 \usepackage{nomentbl}
 \usepackage{placeins}
-\usepackage{setspace}
+\usepackage[nodisplayskipstretch]{setspace}
 \usepackage{siunitx}
 \usepackage{stackengine}
 \usepackage{subcaption}
 \usepackage[table,xcdraw]{xcolor}
 
-\usepackage{showframe}
-%\usepackage{titlesec}    
+%\usepackage{showframe}
+\usepackage[tiny]{titlesec}    
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
 %\titleformat{\chapter}[display]
 %{\normalfont%
 %	\huge% %change this size to your needs for the first line
 %	\bfseries}{\chaptertitlename\ \thechapter}{12pt}{%
 %	\Huge %change this size to your needs for the second line
 %}
+
+
+\captionsetup{justification=raggedright,labelfont=bf,singlelinecheck=false}
 
 \addbibresource{ref.bib}
 
@@ -77,7 +82,7 @@
 \makeatother
 
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
-\newcommand{\degc}{^\circ C}
+\newcommand{\degc}{^\circ \text{C}}
 \newcommand{\s}{\hspace{20mm}}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\unitp}[1]{\ensuremath{\, (\mathrm{#1})}}
