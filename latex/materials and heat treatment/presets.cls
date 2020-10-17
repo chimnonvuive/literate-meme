@@ -1,9 +1,8 @@
-\LoadClass[14pt,a4paper,oneside]{extreport}
-\usepackage{extsizes}
+\LoadClass[12pt,a4paper,twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{pdflscape}
-\usepackage[russian,english]{babel}
+\usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -11,10 +10,9 @@
 \usepackage{setspace}
 \usepackage{newtxtext,newtxmath,multirow}
 \usepackage{stackengine,booktabs,float,placeins,longtable}
-\usepackage[margin=2.4cm]{geometry}
+\usepackage[left=30mm,right=20mm,top=25mm,bottom=25mm]{geometry}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[none]{hyphenat}
-\renewcommand{\baselinestretch}{1.5}
 \newcommand\xrowht[2][0]{\addstackgap[.5\dimexpr#2\relax]{\vphantom{#1}}}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \newcommand{\md}[1]{\multicolumn{1}{c}{#1}}
@@ -26,8 +24,6 @@
 \graphicspath{{images/}}
 \usepackage{parskip}
 \usepackage{fancyhdr}
-\usepackage{vmargin}
-\setmarginsrb{25mm}{20mm}{15mm}{20mm}{20mm}{1.5 cm}{1 cm}{1.5 cm}
 
 \title{Lab Report}
 \author{Nguyen Quy Khoi}
