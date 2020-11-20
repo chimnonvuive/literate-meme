@@ -1,4 +1,4 @@
-\LoadClass[14pt,a4paper,twoside]{extreport}
+\LoadClass[12pt,a4paper,twoside]{report}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
@@ -55,7 +55,7 @@
 % set default path for figures
 \graphicspath{{./images/}}
 
-\title{Air Compressor Modeling using MATLAB}
+\title{Introduction to Flow Sensors and Datasheet Reading}
 \author{Group 3}
 
 \makeatletter
@@ -90,26 +90,7 @@
 %\lhead{\thetitle}
 %\cfoot{\thepage}
 
-\setlength{\mathindent}{20mm}
+%\setlength{\mathindent}{20mm}
 
 \makeindex[intoc]
-
-%\glsenablehyper
 \makeglossaries
-\newglossaryentry{latex}{
-	name={latex},
-	description={Is a mark up language specially suited 
-		for scientific documents}
-}
-\newglossaryentry{glossary 1}{name={glossary name},description={glossary description}}
-\newglossaryentry{glossary 2}{name={complicated name \begin{otherlanguage}{vietnamese}
-			(thuật ngữ tiếng Việt)
-	\end{otherlanguage}},description={glossary description}}
-\newglossaryentry{maths}{
-	name={mathematics},
-	description={Mathematics is what mathematicians do}
-}
-\newglossaryentry{formula}{
-	name={Chezy equation},
-	description={Chezy equation, \[a=b+c\] which is commonly used}
-}

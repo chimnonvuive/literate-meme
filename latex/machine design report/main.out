@@ -11,13 +11,59 @@
 \BOOKMARK [2][-]{subsection.1.2.1}{Calculate speed of the chain drive and the shafts}{section.1.2}% 11
 \BOOKMARK [2][-]{subsection.1.2.2}{Calculate speed of the shafts}{section.1.2}% 12
 \BOOKMARK [2][-]{subsection.1.2.3}{Calculate torque of the motor and the shafts}{section.1.2}% 13
-\BOOKMARK [0][-]{chapter.2}{Shaft Design}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Choose material}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{Transmission Design}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.1}{Load on shafts}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{Preliminary calculations}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.3}{Identify the distance between bearings and applied forces}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Determine shaft diameters and lengths}{section.2.2}% 20
-\BOOKMARK [1][-]{section.2.3}{Fatigue Strength Analysis}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.4}{Static Strength Analysis}{chapter.2}% 22
-\BOOKMARK [0][-]{chapter*.19}{References}{}% 23
+\BOOKMARK [0][-]{chapter.2}{Chain Drive Design}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Determination of chain drive pitch}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{Calculate number of teeth of the sprocket \040z }{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{Calculate permissible power \040[P] \040and find pitch \040p }{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{Basic parameters of the chain drive}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Find \040xc }{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Find center distance \040a }{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.3}{Find other parameters}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Strength of chain drive}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{Impact frequency analysis}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.2}{Safety factor analysis}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.3}{Contact stress analysis}{section.2.3}% 25
+\BOOKMARK [1][-]{section.2.4}{Force on shaft}{chapter.2}% 26
+\BOOKMARK [0][-]{chapter.3}{Gear Design \(Stage One\)}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Material selection}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Stress estimation}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Estimate the permissible contact stress \040[H] \040and bending stress \040[F] }{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Find permissible contact stress \040[H]max \040and bending stress \040[F]max \040due to overload}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{Basic specifications of the transmission system}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.1}{Determine basic parameters}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.2}{Other parameters}{section.3.3}% 34
+\BOOKMARK [1][-]{section.3.4}{Stress analysis}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.4.1}{Correct the permissible contact stress \040[H] \040and bending stresses \040[F1] , \040[F2] }{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.2}{Contact stress analysis}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.3}{Bending stress analysis}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.4}{Overload analysis}{section.3.4}% 39
+\BOOKMARK [0][-]{chapter.4}{Gear Design \(Stage Two\)}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Choose material}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{Stress estimation}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.2.1}{Estimate the permissible contact stress \040[H] \040and bending stress \040[F] }{section.4.2}% 43
+\BOOKMARK [2][-]{subsection.4.2.2}{Find permissible contact stress \040[H]max \040and bending stress \040[F]max \040due to overload}{section.4.2}% 44
+\BOOKMARK [1][-]{section.4.3}{Determine basic specifications of the transmission system}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.3.1}{Determine basic parameters}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.2}{Other parameters}{section.4.3}% 47
+\BOOKMARK [1][-]{section.4.4}{Stress analysis}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.1}{Correct the permissible contact stress \040[H] \040and bending stresses \040[F1] , \040[F2] }{section.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.2}{Contact stress analysis}{section.4.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.3}{Bending stress analysis}{section.4.4}% 51
+\BOOKMARK [2][-]{subsection.4.4.4}{Overload analysis}{section.4.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Flex Coupling Design}{}% 53
+\BOOKMARK [0][-]{chapter.6}{Shaft Design}{}% 54
+\BOOKMARK [1][-]{section.6.1}{Choose material}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.2}{Loads on shafts}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.3}{Determination of shaft diameters at critical sections}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.3.1}{Preliminary estimation of shafts diameter}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.2}{Find reaction forces}{section.6.3}% 59
+\BOOKMARK [1][-]{section.6.4}{Design of keys and keyways}{chapter.6}% 60
+\BOOKMARK [2][-]{subsection.6.4.1}{Calculate key dimensions}{section.6.4}% 61
+\BOOKMARK [2][-]{subsection.6.4.2}{Stress analysis of key}{section.6.4}% 62
+\BOOKMARK [1][-]{section.6.5}{Strength of the shafts}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.5.1}{Fatigue Strength Analysis}{section.6.5}% 64
+\BOOKMARK [2][-]{subsection.6.5.2}{Static Strength Analysis}{section.6.5}% 65
+\BOOKMARK [0][-]{chapter.7}{Bearing Design}{}% 66
+\BOOKMARK [1][-]{section.7.1}{Choose bearing type}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.2}{SKF rating life}{chapter.7}% 68
+\BOOKMARK [0][-]{chapter*.40}{References}{}% 69

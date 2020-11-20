@@ -1,70 +1,4 @@
-\chapter{Gear Design (shaft 1-2)}
-%\section*{Nomenclature}
-%\begin{tabular}[t]{p{0.1\linewidth}p{0.35\linewidth}}
-%	$ [\sigma] $ & permissible stress, $ \unit{MPa} $\\
-%	$ [\sigma]_{max} $ & permissible stress due to overloading, $ \unit{MPa} $\\
-%	$ \text{AG} $ & accuracy grade of gear\\
-%	$ a $ & center distance, $ \unit{mm} $\\
-%	$ b $ & face width, $ \unit{mm} $\\
-%	$ c $ & gear meshing rate\\
-%	$ d $ & pitch circle, $ \unit{mm} $\\
-%	$ d_a $ & addendum diameter, $ \unit{mm} $\\
-%	$ d_b $ & base diameter, $ \unit{mm} $\\
-%	$ d_f $ & deddendum diameter, $ \unit{mm} $\\
-%	$ H $ & surface roughness, HB\\
-%	$ K_d $ & coefficient of gear material\\	
-%	$ K $ & overall load factor\\
-%	$ K_{C} $ & load placement factor\\
-%	$ K_{L} $ & aging factor\\
-%	$ K_{v} $ & dynamic load factor at meshing area\\
-%	$ K_{\alpha} $ & load distribution factor on gear teeth\\
-%	$ K_{\beta} $ & load distribution factor on top land\\
-%	$ K_{qt} $ & overloading factor\\
-%	$ m $ & root of fatigue curve in stress test\\
-%	$ m_t $ & traverse module, $ \unit{mm} $\\
-%	
-%%	$ F_a $ & axial force, $ \unit{N} $\\
-%%	$ F_r $ & radial force, $ \unit{N} $\\
-%%	$ F_t $ & tangential force, $ \unit{N} $\\
-%\end{tabular}
-%\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-%	$ m_n $ & normal module, $ \unit{mm} $\\
-%	$ N_{E} $ & working cycle of equivalent tensile stress\\
-%	$ N_{O} $ & working cycle of bearing stress\\
-%	$ S $ & safety factor\\	
-%	$ v $ & rotational velocity, $ \unit{m/s} $\\
-%	$ Y_F $ & tooth shape factor\\
-%	$ Y_R $ & surface roughness factor\\
-%	$ Y_s $ & stress concentration factor\\
-%	$ Y_\beta $ & helix angle factor\\
-%	$ Y_\varepsilon $ & contact ratio factor\\
-%	$ Z_R $ & surface roughness factor of the working's area\\
-%	$ Z_v $ & speed factor\\
-%	$ z_H $ & contact surface's shape factor\\
-%	$ z_M $ & material's mechanical properties factor\\
-%	$ z_v $ & virtual number of teeth\\
-%	$ z_\varepsilon $ & meshing condition factor\\
-%	$ \alpha $ & normal pressure angle. In TCVN 1065-71, $ \alpha = 20^\circ $\\
-%	$ \alpha_t $ & traverse pressure angle, $ ^\circ $\\
-%	$ \varepsilon_\alpha $ & traverse contact ratio\\
-%	$ \varepsilon_\beta $ & face contact ratio\\
-%	$ \beta $ & helix angle, $ ^\circ $\\
-%\end{tabular}\newpage
-%\noindent\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-%	$ \beta_b $ & base circle helix angle, $ ^\circ $\\
-%	$ \psi_{ba} $ & width to shaft distance ratio\\
-%	$ \psi_{bd} $ & face width factor \\
-%	$ \sigma_b $ & ultimate strength, $ \unit{MPa} $\\
-%	$ \sigma_{ch} $ & yield limit, $ \unit{MPa} $\\
-%	$ \sigma_{lim}^o $ & permissible stress corresponding to working cycle, $ \unit{MPa} $\\	
-%\end{tabular}
-%\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-%	$ \sigma_{max} $ & stress due to overloading, $ \unit{MPa} $ \\
-%	$ _{1} $ & subscript for the pinion \\
-%	$ _{2} $ & subscript for the driven gear\\
-%	$ _F $ & subscript relating to bending stress\\
-%	$ _H $ & subscript relating to contact stress\\
-%\end{tabular}
+\chapter{Gear Design (Stage One)}
 
 \section{Material selection}
 For small scale machines, type I material, which is often quenched and has low hardness ($ \text{HB}\leq 350 $), is sufficient. Precise manufacture is possible albeit low permissible stresses. In this design problem, the gear drive uses quenched 45 steel, whose specification is displayed on Table 6.1 \cite{tk1}:
@@ -170,7 +104,7 @@ The permissible contact stress of the gear drive $ [\sigma_H] $ must be lower th
 
 \subsection{Find permissible contact stress $ [\sigma_H]_{max} $ and bending stress $ [\sigma_F]_{max} $ due to overload}
 Preventing overload failure is necessary. For quenched material, the permissible overload contact stress $ [\sigma_H]_{max} $ is
-\[ [\sigma_H]_{max} = 2.8\times \sigma_b = 2.8\times 600 = 952.00\unitp{MPa} \]
+\[ [\sigma_H]_{max} = 2.8\sigma_{ch} = 2.8\times 340 = 952.00\unitp{MPa} \]
 
 For material with hardness smaller than $ \text{HB}350 $, the permissible overload bending stress $ [\sigma_F]_{max} $ is
 \[ [\sigma_F]_{max} = 0.8\sigma_{ch} = 0.8\times 340 = 272.00\unitp{MPa} \]
@@ -223,8 +157,8 @@ The values below are necessary for modeling the gear drive:\\
 \[ d_2 = {m_tz_2}/{\cos\beta} = {2.00\times 116}/{\cos9.07^\circ} = 236.43\unitp{mm}\]
 \[ d_{a1} = d_1 + 2m_t = 83.57 + 2\times 2.00 = 87.57\unitp{mm}\]
 \[ d_{a2} = d_2 + 2m_t = 236.43 + 2\times 2.00 = 240.43\unitp{mm}\]
-\[ d_{b1} = d_1\cos\alpha = 83.57\times \cos 20^\circ = 78.53\unitp{mm}\]
-\[ d_{b2} = d_2\cos\alpha = 236.43\times \cos 20^\circ = 222.17 \unitp{mm}\]
+\[ d_{b1} = d_1\cos\alpha_n = 83.57\times \cos 20^\circ = 78.53\unitp{mm}\]
+\[ d_{b2} = d_2\cos\alpha_n = 236.43\times \cos 20^\circ = 222.17 \unitp{mm}\]
 \[ d_{f1} = d_1 - 2.5m_t = 83.57 - 2.5\times 2.00 = 78.57\unitp{mm}\]
 \[ d_{f2} = d_2 - 2.5m_t = 236.43 - 2.5\times 2.00 = 231.43\unitp{mm}\]
 \[ \alpha_t = \arctan\left({\tan\alpha}/{\cos\beta}\right) = \arctan\left({\tan 20^\circ}/{\cos 11.11^\circ}\right) = 20.35^\circ\]
@@ -234,10 +168,10 @@ where
 	\item $ b $ is the face width,$ \unit{mm} $.
 	\item $ d $ is the pitch circle diameter, $ \unit{mm} $.
 	\item $ d_a $ is the addendum diameter, $ \unit{mm} $.
-	\item $ d_b $ is the base diameter, $ \unit{mm} $.
-	\item $ d_f $ is the deddendum diameter, $ \unit{mm} $.
+	\item $ d_b $ is the projection diameter, $ \unit{mm} $.
+	\item $ d_f $ is the dedendum diameter, $ \unit{mm} $.
 	\item $ \alpha_t $ is the traverse pressure angle,$ ^\circ $.
-	\item $ \alpha=20^\circ $ is the normal pressure angle following TCVN 1065-71 standard of Vietnam.
+	\item $ \alpha_n=20^\circ $ is the normal pressure angle following TCVN 1065-71 standard of Vietnam.
 	\item $ v $ is the average speed of the pinion,$ \unit{m/s} $.
 \end{itemize}
 
@@ -298,31 +232,7 @@ where
 	\end{itemize}
 \end{itemize}
 
-%\textbf{Find $ z_H $} Applying Equation 6.37 \cite{tk1} and 6.35 \cite{tk1}:
 
-
-
-%\textbf{Find $ z_\varepsilon $} Obtaining $ z_\varepsilon $ through calculations:
-%\[  >1 \Rightarrow \]
-
-%\textbf{Find $ K_H $ and $ K_F $} We find $ K_H $, $ K_F $ using Equation 6.39 and 6.45 \cite{tk1}.
-%
-%The gear drive velocity determines the accuracy grade, Table 6.13 \cite{tk1}. In case of helical gear, it is:\\
-%\[ v_1=6.37 \unit{m/s} \leq 10 \unit{m/s}\Rightarrow \text{AG} = 8\]
-%
-%From Table P2.3 \cite{tk1}, using interpolation, we approximate:\\
-%\[,  K_{Fv} = 1.18\]
-%
-%From Table 6.14 \cite{tk1}, using interpolation, we approximate:\\
-%\[  K_{F\alpha} = 1.3\]
-%
-%Knowing $ K_{H\beta} $ and $ K_{H\beta} $ from previous section, multiply all the values to obtain $ K_H $ and $ K_F $:\\
-%
-%\[ K_F = K_{F\beta}K_{Fv}K_{F\alpha} = 1.1\times 1.18 \times 1.3 = 1.66\]
-
-%\textbf{Find $ \sigma_H $} Replacing all the variables gives:
-%
-%which satisfies the condition.
 \subsection{Bending stress analysis}
 For safety reasons, the gear drive must follow Equation 6.43 and 6.44 \cite{tk1}. The bending stress $ \sigma_{F1} $ on the pinion and $ \sigma_{F2} $ on the driving gear are
 
@@ -352,23 +262,7 @@ where
 	\[ z_{v2} = z_2\cos^{-3}(\beta) = 116\times\cos^{-3}(11.11^\circ) = 122.78\Rightarrow Y_{F2} = 3.60\]
 	\item $ b,d_1,m_t,\beta $ are given in previous sections.
 \end{itemize}
-%\textbf{Find } Using $ \varepsilon_\alpha $ calculated in the previous section, 
-%\[ Y_\varepsilon= \varepsilon_\alpha^{-1} = 1.61^{-1} = 0.62\]
-%
-%
-%\textbf{Find $ Y_F $} Using the formula $ z_v = z\cos^{-3}(\beta) $ and Table 6.18 \cite{tk1}:\\
 
-
-%\textbf{Find $ K_F $} The value of $ K_F $ has already been found in the previous section. $ K_F = 1.66 $
-
-%\textbf{Find $ \sigma_F $} The module in Equation 6.43 \cite{tk1} is $ m_n = m_t\cos\beta $. Replacing all the values gives:
-%\[
-%\begin{array}{l@{{} \leq {}}l}
-%\sigma_{F1} = \dfrac{2\times 46423.73 \times 1.66 \times 0.62 \times 0.92 \times 3.69}{48.00 \times 83.57 \times 2 \times\cos9.07^\circ} = 41.09 \unitp{MPa} & 217.57 \unit{MPa}\\ 
-%\sigma_{F2} = {41.09 \times 3.60}/{3.66} = 40.17 \unitp{MPa}& 201.65 \unit{MPa}
-%\end{array}
-%\]
-%which satisfies the conditions.
 \subsection{Overload analysis}
 From the load diagram, the overload factor $ K_{qt} $ is
 \begin{flalign*}
@@ -381,26 +275,19 @@ Using the values of $ [\sigma_H]_{max} $ and $ [\sigma_F]_{max} $ calculated in 
 \[ \sigma_{Hmax}=\sigma_H\sqrt{K_{qt}} = 251.85\times\sqrt{1.13} = 267.63 \unitp{MPa} \leq 952.00 \unit{MPa} \]
 \[ \sigma_{F1max}=\sigma_{F1}K_{qt} =41.09\times 1.13 = 41.09 \unitp{MPa} \leq 272.00 \unit{MPa}\]
 \[ \sigma_{F2max}=\sigma_{F2}K_{qt} =40.17\times 1.13 = 45.36 \unitp{MPa} \leq 272.00 \unit{MPa}\]
-%\end{array}
-%\]
-%which satisfy the conditions.
 
 In summary, the table is obtained
-%\subsection{Force on shafts}
-%$ F_t = \dfrac{2T_{sh1}}{d_{w1}} \approx 2402.28 \unit{(N)}$\\
-%$ F_r = F_t\tan\alpha_{tw} \approx 899.55 \unit{(N)}$\\
-%$ F_a = F_t\tan\beta\approx 580.75 \unit{(N)}$\\
 
 \begin{table}[ht]
 	\centering
 	\caption{Gear drive final specification}
 	\begin{tabular}{lp{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}\toprule
 		& Gear drive & Pinion & Driven gear \\ \midrule
-		Material 			&	quenched 45 steel&	quenched 45 steel&	quenched 45 steel\\
-		$ a\unitp{mm}    $	&	160	&	-		&	-		\\
+		Material 			&	-		&	quenched 45 steel&	quenched 45 steel\\
+		$ a\unitp{mm}    $	&	160		&	-		&	-		\\
+		$ b\unitp{mm}    $	&	-		&	48.00	&	48.00	\\
 		$ d\unitp{mm}    $	&	-		&	83.57	&	236.43	\\
 		$ d_a\unitp{mm}  $	&	-		&	87.57	&	240.43	\\
-		$ d_b\unitp{mm}  $	&	-		&	78.53	&	222.17	\\
 		$ d_f\unitp{mm}  $	&	-		&	78.57	&	231.43	\\
 		$ m\unitp{mm}    $	&	2.00	&	-		&	-		\\
 		$ \alpha_t\unitp{^\circ}    $	&	20.35	&	-		&	-		\\
@@ -408,4 +295,5 @@ In summary, the table is obtained
 		$ z  $	&	-		&	41	&	116	\\
 		\bottomrule
 	\end{tabular}
+	\label{chap4spec}
 \end{table}

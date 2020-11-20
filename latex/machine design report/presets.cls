@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
-\usepackage[vietnamese, english]{babel}
+\usepackage[english]{babel}
 \usepackage{array}
 \usepackage{tgtermes}
 \usepackage[fleqn]{amsmath}
@@ -29,6 +29,7 @@
 \usepackage{newtxtext}
 \usepackage{nomentbl}
 \usepackage{placeins}
+\usepackage{pdflscape}
 \usepackage[nodisplayskipstretch]{setspace}
 \usepackage{siunitx}
 \usepackage{stackengine}
@@ -36,7 +37,7 @@
 \usepackage[table,xcdraw]{xcolor}
 
 %\usepackage{showframe}
-\usepackage[tiny]{titlesec}    
+\usepackage[tiny]{titlesec}
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
 %\titleformat{\chapter}[display]
@@ -47,7 +48,7 @@
 %}
 
 
-\captionsetup{justification=raggedright,labelfont=bf,singlelinecheck=false}
+\captionsetup{labelsep=space,justification=raggedright,labelfont=bf,singlelinecheck=false}
 
 \addbibresource{ref.bib}
 
@@ -109,25 +110,4 @@
 %\cfoot{\thepage}
 
 \setlength{\mathindent}{20mm}
-
-\makeindex[intoc]
-
-%\glsenablehyper
 \makeglossaries
-\newglossaryentry{latex}{
-	name={latex},
-	description={Is a mark up language specially suited 
-		for scientific documents}
-}
-\newglossaryentry{glossary 1}{name={glossary name},description={glossary description}}
-\newglossaryentry{glossary 2}{name={complicated name \begin{otherlanguage}{vietnamese}
-			(thuật ngữ tiếng Việt)
-	\end{otherlanguage}},description={glossary description}}
-\newglossaryentry{maths}{
-	name={mathematics},
-	description={Mathematics is what mathematicians do}
-}
-\newglossaryentry{formula}{
-	name={Chezy equation},
-	description={Chezy equation, \[a=b+c\] which is commonly used}
-}

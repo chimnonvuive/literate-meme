@@ -1,61 +1,4 @@
 \chapter{Chain Drive Design}
-%\section*{Nomenclature}
-%\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-%	$ [i] $ & permissible impact times per second\\
-%	$ [s] $ & permissible safety factor\\
-%	$ [P] $ & permissible power,$ \unit{kW} $\\
-%	$ [\sigma_H] $ & permissible contact stress,$ \unit{MPa} $\\
-%	$ A $ & cross sectional area of chain hinge,$ \unit{mm^2} $\\
-%	$ a $ & real center distance,$ \unit{mm} $\\
-%	$ a_i $ & estimated center distance,$ \unit{mm} $\\
-%	$ a_{max} $ & maximum center distance,$ \unit{mm} $\\
-%	$ a_{min} $ & minimum center distance,$ \unit{mm} $\\
-%	$ B $ & width between inner link plate,$ \unit{mm} $\\
-%	$ d $ & chordal diameter,$ \unit{mm} $\\
-%	$ d_a $ & addendum diameter,$ \unit{mm} $\\
-%	$ d_f $ & deddendum diameter,$ \unit{mm} $\\
-%	$ d_l $ & roller diameter,$ \unit{mm} $\\
-%	$ d_O $ & pin diameter,$ \unit{mm} $\\
-%	$ E $ & modulus of elasticity,$ \unit{MPa} $\\
-%	$ E_1 $ & modulus of elasticity of the sprockets,$ \unit{MPa} $\\
-%	$ E_2 $ & modulus of elasticity of the chain,$ \unit{MPa} $\\
-%	$ F_0 $ & sagging force,$ \unit{N} $\\
-%	$ F_1 $ & tight side tension force,$ \unit{N} $\\
-%	$ F_2 $ & slack side tension force,$ \unit{N} $\\
-%	$ F_r $ & force on the shaft,$ \unit{N} $\\
-%	$ F_t $ & effective peripheral force,$ \unit{N} $\\
-%	$ F_v $ & centrifugal force,$ \unit{N} $\\
-%	$ F_{vd} $ & contact force,$ \unit{N} $\\
-%	$ i $ & impact times per second\\
-%	$ K_d $ & weight distribution factor\\
-%	$ k $ & overall factor\\
-%	$ \\
-%	$ k_{bt} $ & lubrication factor\\
-%	$ k_c $ & rating factor\\
-%	$ k_d $ & dynamic load factor\\
-%	$ \\
-%\end{tabular}%
-%\begin{tabular}[t]{p{0.05\linewidth}p{0.4\linewidth}}
-%	$ k_f $ & loosing factor\\
-%	$ k_n $ & coefficient of rotational speed\\
-%	$ k_r $ & number of tooth factor\\
-%	$ k_x $ & chain weight factor\\
-%	$ k_z $ & coefficient of number of teeth\\
-%	$ n $ & angular rotational speed, $ arrangement of drive facto\unit{rpm} $\\
-%	$ n_{01} $ & experimental angular rotational speed,$ \unit{rpm} $\\
-%	$ P_t $ & calculated power,$ \unit{kW} $\\
-%	$ p $ & pitch,$ \unit{mm} $\\
-%	$ p_{max} $ & permissible sprocket pitch,$ \unit{mm} $\\
-%	$ Q $ & permissible load,$ \unit{N} $\\
-%	$ q $ & mass per unit length,$ \unit{kg/m} $\\
-%	$ s $ & safety factor\\
-%	$ v $ & instantaneous velocity along the chain,$ \unit{m/s} $\\
-%	$ x $ & chain length in pitches, the number of links\\
-%	$ x_c $ & an even number of links\\
-%	$ z $ & number of teeth of a sprocket\\
-%	$ z_{max} $ & maximum number of teeth of the driven sprocket\\
-%	$ \sigma_H $ & contact stress,$ \unit{MPa} $\\
-%\end{tabular}
 
 \section{Determination of chain drive pitch}
 For power transmission purpose, three modes of failure are considered \cite{mott_vavrek_wang_2018}:
@@ -229,7 +172,7 @@ In summary, we have the following table:
 
 \begin{table}[ht]
 	\centering
-	\caption{Chain drive final specification}
+	\caption{Chain drive final specification. The chain is placed parallel to the ground}
 	\begin{tabular}{lp{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}\toprule
 		& Chain drive & Driving sprocket & Driven sprocket \\ \midrule
 		Material	&	Cast iron ASTM-A48 No. 30A	&	quenched 45 steel		&	quenched 45 steel		\\
@@ -247,4 +190,5 @@ In summary, we have the following table:
 %		$ v\unitp{m/s}   $	&			&	-		&	-		\\
 		$ z              $	&	-		&	25		&	71		\\\bottomrule
 	\end{tabular}
+	\label{chain}
 \end{table}

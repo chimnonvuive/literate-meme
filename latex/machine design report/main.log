@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  16 OCT 2020 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.27)  20 NOV 2020 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,8 +45,8 @@ Package: babel 2020/02/14 3.40 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-vietnamese/vietnamese.ldf
-Language: vietnamese 
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
@@ -57,181 +57,6 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@readstream=\read2
 \bbl@dirlevel=\count177
 )
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language `Vietnamese' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for english instead on input line 36.
-
-Package babel Info: \l@vietnamese = using hyphenrules for english
-(babel)             (\language0) on input line 37.
-Package babel Info: \l@vietnam = using hyphenrules for english
-(babel)             (\language0) on input line 38.
-Loading definitions for the Vietnamese font encoding
-(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.def
-File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
-Now handling font encoding T5 ...
-... processing UTF-8 mapping file for font encoding T5
-
-(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5enc.dfu
-File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+01A0 (decimal 416)
-   defining Unicode char U+01A1 (decimal 417)
-   defining Unicode char U+01AF (decimal 431)
-   defining Unicode char U+01B0 (decimal 432)
-   defining Unicode char U+1EA0 (decimal 7840)
-   defining Unicode char U+1EA1 (decimal 7841)
-   defining Unicode char U+1EA2 (decimal 7842)
-   defining Unicode char U+1EA3 (decimal 7843)
-   defining Unicode char U+1EA4 (decimal 7844)
-   defining Unicode char U+1EA5 (decimal 7845)
-   defining Unicode char U+1EA6 (decimal 7846)
-   defining Unicode char U+1EA7 (decimal 7847)
-   defining Unicode char U+1EA8 (decimal 7848)
-   defining Unicode char U+1EA9 (decimal 7849)
-   defining Unicode char U+1EAA (decimal 7850)
-   defining Unicode char U+1EAB (decimal 7851)
-   defining Unicode char U+1EAC (decimal 7852)
-   defining Unicode char U+1EAD (decimal 7853)
-   defining Unicode char U+1EAE (decimal 7854)
-   defining Unicode char U+1EAF (decimal 7855)
-   defining Unicode char U+1EB0 (decimal 7856)
-   defining Unicode char U+1EB1 (decimal 7857)
-   defining Unicode char U+1EB2 (decimal 7858)
-   defining Unicode char U+1EB3 (decimal 7859)
-   defining Unicode char U+1EB4 (decimal 7860)
-   defining Unicode char U+1EB5 (decimal 7861)
-   defining Unicode char U+1EB6 (decimal 7862)
-   defining Unicode char U+1EB7 (decimal 7863)
-   defining Unicode char U+1EB8 (decimal 7864)
-   defining Unicode char U+1EB9 (decimal 7865)
-   defining Unicode char U+1EBA (decimal 7866)
-   defining Unicode char U+1EBB (decimal 7867)
-   defining Unicode char U+1EBC (decimal 7868)
-   defining Unicode char U+1EBD (decimal 7869)
-   defining Unicode char U+1EBE (decimal 7870)
-   defining Unicode char U+1EBF (decimal 7871)
-   defining Unicode char U+1EC0 (decimal 7872)
-   defining Unicode char U+1EC1 (decimal 7873)
-   defining Unicode char U+1EC2 (decimal 7874)
-   defining Unicode char U+1EC3 (decimal 7875)
-   defining Unicode char U+1EC4 (decimal 7876)
-   defining Unicode char U+1EC5 (decimal 7877)
-   defining Unicode char U+1EC6 (decimal 7878)
-   defining Unicode char U+1EC7 (decimal 7879)
-   defining Unicode char U+1EC8 (decimal 7880)
-   defining Unicode char U+1EC9 (decimal 7881)
-   defining Unicode char U+1ECA (decimal 7882)
-   defining Unicode char U+1ECB (decimal 7883)
-   defining Unicode char U+1ECC (decimal 7884)
-   defining Unicode char U+1ECD (decimal 7885)
-   defining Unicode char U+1ECE (decimal 7886)
-   defining Unicode char U+1ECF (decimal 7887)
-   defining Unicode char U+1ED0 (decimal 7888)
-   defining Unicode char U+1ED1 (decimal 7889)
-   defining Unicode char U+1ED2 (decimal 7890)
-   defining Unicode char U+1ED3 (decimal 7891)
-   defining Unicode char U+1ED4 (decimal 7892)
-   defining Unicode char U+1ED5 (decimal 7893)
-   defining Unicode char U+1ED6 (decimal 7894)
-   defining Unicode char U+1ED7 (decimal 7895)
-   defining Unicode char U+1ED8 (decimal 7896)
-   defining Unicode char U+1ED9 (decimal 7897)
-   defining Unicode char U+1EDA (decimal 7898)
-   defining Unicode char U+1EDB (decimal 7899)
-   defining Unicode char U+1EDC (decimal 7900)
-   defining Unicode char U+1EDD (decimal 7901)
-   defining Unicode char U+1EDE (decimal 7902)
-   defining Unicode char U+1EDF (decimal 7903)
-   defining Unicode char U+1EE0 (decimal 7904)
-   defining Unicode char U+1EE1 (decimal 7905)
-   defining Unicode char U+1EE2 (decimal 7906)
-   defining Unicode char U+1EE3 (decimal 7907)
-   defining Unicode char U+1EE4 (decimal 7908)
-   defining Unicode char U+1EE5 (decimal 7909)
-   defining Unicode char U+1EE6 (decimal 7910)
-   defining Unicode char U+1EE7 (decimal 7911)
-   defining Unicode char U+1EE8 (decimal 7912)
-   defining Unicode char U+1EE9 (decimal 7913)
-   defining Unicode char U+1EEA (decimal 7914)
-   defining Unicode char U+1EEB (decimal 7915)
-   defining Unicode char U+1EEC (decimal 7916)
-   defining Unicode char U+1EED (decimal 7917)
-   defining Unicode char U+1EEE (decimal 7918)
-   defining Unicode char U+1EEF (decimal 7919)
-   defining Unicode char U+1EF0 (decimal 7920)
-   defining Unicode char U+1EF1 (decimal 7921)
-   defining Unicode char U+1EF2 (decimal 7922)
-   defining Unicode char U+1EF3 (decimal 7923)
-   defining Unicode char U+1EF4 (decimal 7924)
-   defining Unicode char U+1EF5 (decimal 7925)
-   defining Unicode char U+1EF6 (decimal 7926)
-   defining Unicode char U+1EF7 (decimal 7927)
-   defining Unicode char U+1EF8 (decimal 7928)
-   defining Unicode char U+1EF9 (decimal 7929)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-))
-Package babel Info: Making " an active character on input line 147.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
@@ -760,12 +585,6 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-
-Package glossaries Warning: No language module detected for `vietnamese'.
-(glossaries)                Language modules need to be installed separately.
-(glossaries)                Please check on CTAN for a bundle called
-(glossaries)                `glossaries-vietnamese' or similar.
-
 \gls@level=\count411
 \@gls@tmpb=\toks31
 \gls@tmplen=\skip86
@@ -1249,6 +1068,14 @@ LaTeX Info: Redefining \addtolength on input line 81.
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -1363,16 +1190,11 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthlast=\dimen279
 \titlewidthfirst=\dimen280
 )
-\main@idxfile=\write4
-\openout4 = `main.idx'.
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `main.glo'.
 
-
-Writing index file main.idx
-\glswrite=\write5
-\glo@main@file=\write6
-\openout6 = `main.glo'.
-
-Package glossaries Info: Writing glossary file main.glo on input line 116.
+Package glossaries Info: Writing glossary file main.glo on input line 113.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1408,14 +1230,6 @@ LaTeX Font Info:    Trying to load font information for U+ntxexa on input line
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 3.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 3.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
-File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 3.
@@ -1440,13 +1254,6 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
-Package biblatex Info: Trying to load language 'vietnamese'...
-Package biblatex Info: ... file 'vietnamese.lbx' not found.
-
-
-Package biblatex Warning: Language 'vietnamese' not supported.
-(biblatex)                Using fallback language 'english' on input line 3.
-
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1454,7 +1261,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
+ (./main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                bibid
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1547,8 +1362,8 @@ LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
 
 (./main.out) (./main.out)
-\@outlinefile=\write7
-\openout7 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
 \c@mv@tabular=\count490
 \c@mv@boldtabular=\count491
@@ -1599,7 +1414,7 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 (./front matter/titlepage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
-<./images/logo.png, id=96, 1007.765pt x 1027.84pt>
+<./images/logo.png, id=281, 1007.765pt x 1027.84pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
 Package pdftex.def Info: ./images/logo.png  used on input line 7.
@@ -1614,7 +1429,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 14.4pt on input line 14.
  [1
 
-\openout5 = `main.ist'.
+\openout4 = `main.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>]) (./fr
 ont matter/acknowledgement.tex
@@ -1627,35 +1442,37 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 ]) [3
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
-|\T1/ntxtlf/b/n/14.4 Contents|
- []
+] (./main.toc [4
 
-(./main.toc)
-\tf@toc=\write8
-\openout8 = `main.toc'.
+])
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
- [4
 
-] (./main.lof)
-\tf@lof=\write9
-\openout9 = `main.lof'.
 
- [5
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[5] (./main.lof)
+\tf@lof=\write8
+\openout8 = `main.lof'.
+
+ [6
 
 ] (./main.lot)
-\tf@lot=\write10
-\openout10 = `main.lot'.
+\tf@lot=\write9
+\openout9 = `main.lot'.
 
- (./chapters/chap1.tex [6
+ (./chapters/chap1.tex [7
 
 ]
 Overfull \hbox (4.2727pt too wide) in paragraph at lines 4--17
 [] [] 
  []
 
-<images/problem.jpg, id=192, 727.518pt x 334.3692pt>
+<images/problem.jpg, id=485, 727.518pt x 334.3692pt>
 File: images/problem.jpg Graphic file (type jpg)
 <use images/problem.jpg>
 Package pdftex.def Info: images/problem.jpg  used on input line 22.
@@ -1667,16 +1484,9 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 39.
- [7
+ [8
 
- <./images/problem.jpg>]) (./chapters/chap2.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.49998pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[8]
+ <./images/problem.jpg>]) (./chapters/chap2.tex [9]
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1694,12 +1504,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
-<images/problem2.jpg, id=217, 1071.00125pt x 676.5275pt>
+<images/problem2.jpg, id=508, 1071.00125pt x 676.5275pt>
 File: images/problem2.jpg Graphic file (type jpg)
 <use images/problem2.jpg>
 Package pdftex.def Info: images/problem2.jpg  used on input line 7.
 (pdftex.def)             Requested size: 341.43307pt x 215.6777pt.
-[9
+[10
 
  <./images/problem2.jpg>]
 
@@ -1714,102 +1524,566 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 20.
 
-[10]
-<./images/p0.jpg, id=244, 1136.245pt x 750.805pt>
+[11]
+<./images/p0.jpg, id=535, 1136.245pt x 750.805pt>
 File: ./images/p0.jpg Graphic file (type jpg)
 <use ./images/p0.jpg>
-Package pdftex.def Info: ./images/p0.jpg  used on input line 76.
+Package pdftex.def Info: ./images/p0.jpg  used on input line 69.
 (pdftex.def)             Requested size: 182.09486pt x 120.31454pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 77.
-<./images/p1.jpg, id=245, 671.50874pt x 801.99625pt>
+(Font)              scaled to size 10.95pt on input line 70.
+<./images/p1.jpg, id=536, 671.50874pt x 801.99625pt>
 File: ./images/p1.jpg Graphic file (type jpg)
 <use ./images/p1.jpg>
-Package pdftex.def Info: ./images/p1.jpg  used on input line 82.
+Package pdftex.def Info: ./images/p1.jpg  used on input line 75.
 (pdftex.def)             Requested size: 109.2572pt x 130.48804pt.
-<./images/p2.jpg, id=246, 1043.9pt x 780.9175pt>
+<./images/p2.jpg, id=537, 1043.9pt x 780.9175pt>
 File: ./images/p2.jpg Graphic file (type jpg)
 <use ./images/p2.jpg>
-Package pdftex.def Info: ./images/p2.jpg  used on input line 88.
+Package pdftex.def Info: ./images/p2.jpg  used on input line 81.
 (pdftex.def)             Requested size: 109.25433pt x 81.73065pt.
-<./images/p3.jpg, id=247, 966.61125pt x 769.87625pt>
+<./images/p3.jpg, id=538, 966.61125pt x 769.87625pt>
 File: ./images/p3.jpg Graphic file (type jpg)
 <use ./images/p3.jpg>
-Package pdftex.def Info: ./images/p3.jpg  used on input line 94.
+Package pdftex.def Info: ./images/p3.jpg  used on input line 87.
 (pdftex.def)             Requested size: 109.24792pt x 87.01262pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
+[12]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 119.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 119.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 119.
- [12 <./images/p0.jpg> <./images/p1.jpg> <./images/p2.jpg> <./images/p3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+(Font)              scaled to size 6.6pt on input line 112.
+ [13 <./images/p0.jpg> <./images/p1.jpg> <./images/p2.jpg> <./images/p3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-) (./chapters/chap6.tex [13]
+) (./chapters/chap3.tex [14]
 Chapter 2.
-[14
+<./images/chain failure.jpg, id=557, 803.0pt x 602.25pt>
+File: ./images/chain failure.jpg Graphic file (type jpg)
+<use ./images/chain failure.jpg>
+Package pdftex.def Info: ./images/chain failure.jpg  used on input line 12.
+(pdftex.def)             Requested size: 227.62206pt x 170.71487pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 21.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[15
+
+ <./images/chain failure.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 57.
+
+[16]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 65.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+) (./chapters/chap4.tex [20]
+Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+[21
 
 ]
-<./images/shaft1.png, id=268, 505.13719pt x 359.84438pt>
-File: ./images/shaft1.png Graphic file (type png)
-<use ./images/shaft1.png>
-Package pdftex.def Info: ./images/shaft1.png  used on input line 154.
-(pdftex.def)             Requested size: 426.79134pt x 304.03523pt.
- [15]
-<./images/shaft.png, id=274, 1301.86375pt x 842.14626pt>
-File: ./images/shaft.png Graphic file (type png)
-<use ./images/shaft.png>
-Package pdftex.def Info: ./images/shaft.png  used on input line 179.
-(pdftex.def)             Requested size: 455.24408pt x 294.48575pt.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 188.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 188.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.6pt on input line 188.
- [16 <./images/shaft1.png>]
-<./images/mshaft1.png, id=282, 2967.085pt x 4111.36pt>
-File: ./images/mshaft1.png Graphic file (type png)
-<use ./images/mshaft1.png>
-Package pdftex.def Info: ./images/mshaft1.png  used on input line 248.
-(pdftex.def)             Requested size: 426.79134pt x 591.33278pt.
-<./images/mshaft2.png, id=283, 2712.1325pt x 4111.36pt>
-File: ./images/mshaft2.png Graphic file (type png)
-<use ./images/mshaft2.png>
-Package pdftex.def Info: ./images/mshaft2.png  used on input line 255.
-(pdftex.def)             Requested size: 426.79134pt x 646.97803pt.
-
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [17 <./images/shaft.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 347--353
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[19]) [20] [21 <./images/mshaft1.png>] [22 <./images/mshaft2.png>]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 21.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+[23]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+[25]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+[26] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+) (./chapters/chap5.tex [29] [30]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+[31
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 105.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 105.
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+[35]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+) (./chapters/chap55.tex [39] [40]
+Chapter 5.
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-21.
-
+3.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+<./images/coupling.png, id=797, 188.20313pt x 157.33781pt>
+File: ./images/coupling.png Graphic file (type png)
+<use ./images/coupling.png>
+Package pdftex.def Info: ./images/coupling.png  used on input line 20.
+(pdftex.def)             Requested size: 227.62206pt x 190.3073pt.
+)
+(./chapters/chap6.tex [41
+
+ <./images/coupling.png>]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+<./images/states.jpg, id=808, 1558.82375pt x 772.8875pt>
+File: ./images/states.jpg Graphic file (type jpg)
+<use ./images/states.jpg>
+Package pdftex.def Info: ./images/states.jpg  used on input line 26.
+(pdftex.def)             Requested size: 273.14923pt x 135.42244pt.
+[42
+
+] [43 <./images/states.jpg>] [44]
+<./images/diagram.jpg, id=833, 1318.9275pt x 902.37125pt>
+File: ./images/diagram.jpg Graphic file (type jpg)
+<use ./images/diagram.jpg>
+Package pdftex.def Info: ./images/diagram.jpg  used on input line 126.
+(pdftex.def)             Requested size: 426.79134pt x 292.00043pt.
+ [45 <./images/diagram.jpg>]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 170.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 170.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 6.6pt on input line 170.
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+[48]
+<./images/mshaft1.jpg, id=871, 857.13774pt x 1554.19354pt>
+File: ./images/mshaft1.jpg Graphic file (type jpg)
+<use ./images/mshaft1.jpg>
+Package pdftex.def Info: ./images/mshaft1.jpg  used on input line 349.
+(pdftex.def)             Requested size: 364.19667pt x 660.36938pt.
+<./images/mshaft2.jpg, id=872, 1405.25pt x 2007.5pt>
+File: ./images/mshaft2.jpg Graphic file (type jpg)
+<use ./images/mshaft2.jpg>
+Package pdftex.def Info: ./images/mshaft2.jpg  used on input line 356.
+(pdftex.def)             Requested size: 455.24411pt x 650.3468pt.
+<./images/mshaft3.jpg, id=873, 941.8413pt x 1554.19354pt>
+File: ./images/mshaft3.jpg Graphic file (type jpg)
+<use ./images/mshaft3.jpg>
+Package pdftex.def Info: ./images/mshaft3.jpg  used on input line 363.
+(pdftex.def)             Requested size: 364.19667pt x 600.98688pt.
+ [49] [50] [51 <./images/mshaft1.jpg>] [52 <./images/mshaft2.jpg>] [53 <./image
+s/mshaft3.jpg>]
+<./images/keydim.jpg, id=899, 1811.76875pt x 534.99875pt>
+File: ./images/keydim.jpg Graphic file (type jpg)
+<use ./images/keydim.jpg>
+Package pdftex.def Info: ./images/keydim.jpg  used on input line 383.
+(pdftex.def)             Requested size: 273.14923pt x 80.65451pt.
+
+
+LaTeX Warning: Reference `tk1' on page 54 undefined on input line 421.
+
+[54
+
+ <./images/keydim.jpg>] [55] [56] [57] [58] [59
+
+] [60
+
+
+]) (./chapters/chap7.tex [61
+
+]
+Chapter 7.
+<./images/bearing arrangement.jpg, id=969, 200.4288pt x 174.8934pt>
+File: ./images/bearing arrangement.jpg Graphic file (type jpg)
+<use ./images/bearing arrangement.jpg>
+Package pdftex.def Info: ./images/bearing arrangement.jpg  used on input line 3
+7.
+(pdftex.def)             Requested size: 273.14923pt x 238.37494pt.
+[62
+
+]
+<./images/bearing dimension.jpg, id=977, 561.09625pt x 679.53876pt>
+File: ./images/bearing dimension.jpg Graphic file (type jpg)
+<use ./images/bearing dimension.jpg>
+Package pdftex.def Info: ./images/bearing dimension.jpg  used on input line 78.
+
+(pdftex.def)             Requested size: 182.09486pt x 220.52605pt.
+<./images/bearing assembly.jpg, id=978, 496.85625pt x 653.44125pt>
+File: ./images/bearing assembly.jpg Graphic file (type jpg)
+<use ./images/bearing assembly.jpg>
+Package pdftex.def Info: ./images/bearing assembly.jpg  used on input line 84.
+(pdftex.def)             Requested size: 182.09486pt x 239.48618pt.
+ [63 <./images/bearing arrangement.jpg>] [64 <./images/bearing dimension.jpg> <
+./images/bearing assembly.jpg>]
+<./images/face2face.jpg, id=1007, 980.66376pt x 748.7975pt>
+File: ./images/face2face.jpg Graphic file (type jpg)
+<use ./images/face2face.jpg>
+Package pdftex.def Info: ./images/face2face.jpg  used on input line 156.
+(pdftex.def)             Requested size: 182.09486pt x 139.03952pt.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 157.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 157.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 157.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 157.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 157.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 6.1pt on input line 157.
+<./images/face2face2.jpg, id=1008, 661.47125pt x 506.89375pt>
+File: ./images/face2face2.jpg Graphic file (type jpg)
+<use ./images/face2face2.jpg>
+Package pdftex.def Info: ./images/face2face2.jpg  used on input line 162.
+(pdftex.def)             Requested size: 182.09486pt x 139.53929pt.
+ [65] [66 <./images/face2face.jpg> <./images/face2face2.jpg>] [67]) [68]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 21.
+
+Overfull \hbox (7.28711pt too wide) in paragraph at lines 21--21
+[]\T1/ntxtlf/m/it/12 SKF Cou-plings\T1/ntxtlf/m/n/12 . SKF Group, Jan. 2018. \T
+1/ntxtlf/m/sc/12 url\T1/ntxtlf/m/n/12 : [][]$\T1/ntxtt/m/n/12 https : / / www .
+ skfptp . com / Publications /
+ []
 
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
@@ -1817,7 +2091,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
-[23
+[69
 
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
 fely (allowed).
@@ -1828,19 +2102,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1C03754BBA342E43A8BC187A8BA48E7A;1693.
+(rerunfilecheck)             Checksum: 134531AF1034BBD0A97113881CC3E925;5480.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29556 strings out of 481239
- 534131 string characters out of 5920377
- 1358684 words of memory out of 5000000
- 44151 multiletter control sequences out of 15000+600000
- 595790 words of font info for 101 fonts, out of 8000000 for 9000
+ 29292 strings out of 481239
+ 530557 string characters out of 5920377
+ 1354035 words of memory out of 5000000
+ 43760 multiletter control sequences out of 15000+600000
+ 613322 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,19n,77p,1006b,1916s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,18n,77p,1006b,2827s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr/
 share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texm
 f/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
@@ -1852,10 +2130,10 @@ re/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (23 pages, 1188122 bytes).
+Output written on main.pdf (69 pages, 2005123 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1145 PDF objects out of 1200 (max. 8388607)
+ 1032 compressed objects within 11 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 653 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,6 +19,26 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{aisi1035}{book}{}
+      \list{publisher}{1}{%
+        {AZo Materials}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AZo Materials}
+      \field{month}{9}
+      \field{title}{{AISI} 1035 Carbon Steel ({UNS} G10350)}
+      \field{year}{2012}
+      \field{pages}{2}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://www.azom.com/article.aspx?ArticleID=6540
+      \endverb
+      \verb{url}
+      \verb https://www.azom.com/article.aspx?ArticleID=6540
+      \endverb
+    \endentry
     \entry{collins_busby_staab_2010}{book}{}
       \name{author}{3}{}{%
         {{hash=30cb9387d22057ee72e69c32e033a2b4}{%
@@ -183,6 +203,43 @@
       \field{title}{Machine Elements in Mechanical Design}
       \field{year}{2018}
     \endentry
+    \entry{rolling_bearings}{book}{}
+      \list{publisher}{1}{%
+        {SKF Group}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{journaltitle}{SKF}
+      \field{month}{10}
+      \field{title}{Rolling bearings}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.skf.com/binaries/pub12/Images/0901d196802809de-Rolling-bearings---17000_1-EN_tcm_12-121486.pdf
+      \endverb
+    \endentry
+    \entry{skf_2018}{book}{}
+      \list{publisher}{1}{%
+        {SKF Group}%
+      }
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SKF}
+      \field{month}{1}
+      \field{title}{{SKF} Couplings}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.skfptp.com/Publications/DownloadFile?document=Downloads%2FCatalogues%2FSKF Couplings.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.skfptp.com/Publications/DownloadFile?document=Downloads%2FCatalogues%2FSKF%20Couplings.pdf
+      \endverb
+    \endentry
     \entry{tk1}{book}{}
       \name{author}{2}{}{%
         {{hash=6003def78112e776525bcd7e92fcf519}{%
@@ -215,6 +272,7 @@
       \field{year}{2006}
     \endentry
   \enddatalist
+  \missing{bibid}
 \endrefsection
 \endinput
 

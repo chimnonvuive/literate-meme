@@ -1,9 +1,28 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Output specification for the shafts and motor\relax }}{13}{table.caption.10}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Output specification for 3 shafts and motor 4A132S4Y3\relax }}{14}{table.caption.10}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Calculated variables for $ \sigma _{a}, \tau _{a}, \sigma _{m}, \tau _{m} $\relax }}{19}{table.caption.15}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Calculated variables in $ K_\sigma $ and $ K_\tau $\relax }}{20}{table.caption.16}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Safety factor at critical cross sections\relax }}{20}{table.caption.17}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Calculated static strength at critical cross sections\relax }}{20}{table.caption.18}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Chain drive final specification. The chain is placed parallel to the ground\relax }}{20}{table.caption.12}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Gear drive final specification\relax }}{30}{table.caption.13}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Gear drive final specification\relax }}{40}{table.caption.14}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Tabularized equations for reaction forces in matrix form\relax }}{47}{table.caption.18}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Equivalent moment $ M_e $ and cross section diameters of 3 shafts\relax }}{49}{table.caption.19}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Selection of key dimensions (all units are in$ \ensuremath {\tmspace +\thinmuskip {.1667em} \mathrm {mm}} $)\relax }}{54}{table.caption.24}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Stress analysis of keys\relax }}{55}{table.caption.25}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Computation of tensile stress safety factor at critical cross sections $ s_\sigma $\relax }}{59}{table.caption.26}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Computation of torsion stress safety factor at critical cross sections $ s_\tau $ and the overall safety factor $ s $\relax }}{60}{table.caption.27}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Equivalent moment $ M_e $ and cross section diameters of 3 shafts\relax }}{61}{table.caption.28}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Calculation table for limiting ratio $ F_a/F_r $\relax }}{62}{table.caption.29}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Compact specification table of selected bearings according to SKF \cite {rolling_bearings}\relax }}{63}{table.caption.31}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Calculation table for lubrication condition $ \kappa $\relax }}{65}{table.caption.33}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Calculation table life modification factor $ a_{SKF} $\relax }}{66}{table.caption.34}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Compact specification table of selected bearings according to SKF \cite {rolling_bearings}\relax }}{66}{table.caption.36}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Condition check for radial load for bearing pairs arranged face-to-face\relax }}{67}{table.caption.37}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Calculation table for equivalent dynamic bearing load $ P $\relax }}{67}{table.caption.38}%
+\contentsline {table}{\numberline {7.8}{\ignorespaces Calculation table for SKF rating life $ L_{nmh} $ in hours\relax }}{68}{table.caption.39}%

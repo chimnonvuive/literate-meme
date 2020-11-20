@@ -1,17 +1,23 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[64] biber:322> INFO - === T6 Thg 10  9, 2020, 16:33:41
-[75] Biber.pm:415> INFO - Reading 'main.bcf'
-[131] Biber.pm:943> INFO - Found 6 citekeys in bib section 0
-[142] Biber.pm:4256> INFO - Processing section 0
-[142] Utils.pm:75> INFO - Globbing data source 'ref.bib'
-[143] Utils.pm:91> INFO - Globbed data source 'ref.bib' to ref.bib
-[151] Biber.pm:4455> INFO - Looking for bibtex format file 'ref.bib' for section 0
-[151] bibtex.pm:1653> INFO - LaTeX decoding ...
-[161] bibtex.pm:1471> INFO - Found BibTeX data source 'ref.bib'
-[207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[207] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[207] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[221] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[224] bbl.pm:755> INFO - Output to main.bbl
+[72] biber:322> INFO - === T5 Thg 11  5, 2020, 07:29:32
+[88] Biber.pm:415> INFO - Reading 'main.bcf'
+[156] Biber.pm:943> INFO - Found 10 citekeys in bib section 0
+[167] Biber.pm:4256> INFO - Processing section 0
+[168] Utils.pm:75> INFO - Globbing data source 'ref.bib'
+[168] Utils.pm:91> INFO - Globbed data source 'ref.bib' to ref.bib
+[177] Biber.pm:4455> INFO - Looking for bibtex format file 'ref.bib' for section 0
+[178] bibtex.pm:1653> INFO - LaTeX decoding ...
+[191] bibtex.pm:1471> INFO - Found BibTeX data source 'ref.bib'
+[224] Utils.pm:293> WARN - month field 'jan' in entry 'Ishibashi1981' is not an integer - this will probably not sort properly.
+[234] Utils.pm:293> WARN - month field 'Jan' in entry 'skf_2018' is not an integer - this will probably not sort properly.
+[235] Utils.pm:293> WARN - month field 'sep' in entry 'aisi1035' is not an integer - this will probably not sort properly.
+[236] Utils.pm:293> WARN - month field 'Oct' in entry 'rolling_bearings' is not an integer - this will probably not sort properly.
+[236] Utils.pm:293> WARN - I didn't find a database entry for 'bibid' (section 0)
+[249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[249] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[249] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[263] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[267] bbl.pm:755> INFO - Output to main.bbl
+[267] Biber.pm:128> INFO - WARNINGS: 5
