@@ -149,7 +149,7 @@ where all parameters are given in previous sections. The number of teeth selecti
 
 \subsection{Other parameters}
 The values below are necessary for modeling the gear drive:\\
-\[ b = \psi_{ba}a = 0.39\times 160= 62.40\unitp{mm}\]
+\[ b = \psi_{ba}a = 0.39\times 160= 62\unitp{mm}\]
 \[ d_1 = {m_tz_1}/{\cos\beta} = {3.00\times 27}/{\cos9.07^\circ} = 83.08\unitp{mm}\]
 \[ d_2 = {m_tz_2}/{\cos\beta} = {3.00\times 77}/{\cos9.07^\circ} = 236.92\unitp{mm}\]
 \[ d_{a1} = d_1 + 2m_t = 83.08 + 2\times 3.00 = 89.08\unitp{mm}\]
@@ -196,7 +196,7 @@ where
 The contact stress applied on a gear surface must satisfy Equation 6.33 \cite{tk1}:
 \begin{multline*}
 \sigma_H = z_Mz_Hz_\varepsilon\sqrt{2TK_H\dfrac{u+1}{bud_1^2}} \\
-= 274\times 1.73 \times 0.80 \times \sqrt{2\times 126093.30 \times 1.26 \times\dfrac{2.83+1}{62.40 \times 2.83 \times 83.08^2}}\\
+= 274\times 1.73 \times 0.80 \times \sqrt{2\times 126093.30 \times 1.26 \times\dfrac{2.83+1}{62 \times 2.83 \times 83.08^2}}\\
 = 379.07 \unitp{MPa} \leq [\sigma_H]' = 389.46 \unit{MPa}
 \end{multline*}
 
@@ -208,7 +208,7 @@ where
 	where $ \beta_b $ is the base circle helix angle. Using Equation 6.35 \cite{tk1}, the angle is
 	\[ \beta_b = \arctan\left( \cos\alpha_t\tan\beta\right) = \arctan\left( \cos 20.47^\circ \times \tan 12.84^\circ\right) = 12.05^\circ\]
 	\item $ z_\varepsilon $ is meshing condition factor. Depending on the value of face contact ratio $ \varepsilon_\beta $, 1 in 3 Equation 6.36a, 6.36b, 6.36c \cite{tk1} is used. Using Equation 2.24 \cite{tk1}, the ratio is
-	\[\varepsilon_\beta = b\dfrac{\sin\beta}{m_t\pi} = 62.40\times\dfrac{\sin 12.84^\circ}{3.00\times\pi}=1.47\]
+	\[\varepsilon_\beta = b\dfrac{\sin\beta}{m_t\pi} = 62\times\dfrac{\sin 12.84^\circ}{3.00\times\pi}=1.47\]
 	Since $ \varepsilon_\beta >1 $, Equation 6.36c \cite{tk1} is used:
 	\[z_\varepsilon = \varepsilon_\alpha^{-0.5} = 1.56^{-0.5} = 0.80\]	
 	where $ \varepsilon_\alpha $ is the traverse contact ratio. Using Equation 6.38a \cite{tk1}, the factor is
@@ -234,7 +234,7 @@ where
 For safety reasons, the gear drive must follow Equation 6.43 and 6.44 \cite{tk1}. The bending stress $ \sigma_{F1} $ on the pinion and $ \sigma_{F2} $ on the driving gear are
 
 \begin{multline*}
-\sigma_{F1} = \dfrac{2TK_FY_\varepsilon Y_\beta Y_{F1}}{bd_1m_t\cos\beta} [\sigma_{F1}]= \dfrac{2\times 126093.30 \times 1.73 \times 0.64 \times 0.91 \times 3.82}{62.40 \times 83.08 \times 3.00 \cos 12.84^\circ}\\
+\sigma_{F1} = \dfrac{2TK_FY_\varepsilon Y_\beta Y_{F1}}{bd_1m_t\cos\beta} [\sigma_{F1}]= \dfrac{2\times 126093.30 \times 1.73 \times 0.64 \times 0.91 \times 3.82}{62 \times 83.08 \times 3.00 \cos 12.84^\circ}\\
 = 63.96 \unitp{MPa} \leq [\sigma_{F1}]' = 211.63 \unit{MPa}
 \end{multline*}
 \[\sigma_{F2} = \sigma_{F1}Y_{F2}/Y_{F1} = {63.96 \times 3.61}/3.82 = 60.46 \unitp{MPa} \leq [\sigma_{F2}]' = 196.14 \unit{MPa}\]
@@ -282,7 +282,7 @@ In summary, the table is obtained
 		& Gear drive & Pinion & Driven gear \\ \midrule
 		Material 			&	-		&	quenched 45 steel &	quenched 45 steel\\
 		$ a\unitp{mm}    $	&	160		&	-		&	-		\\
-		$ b\unitp{mm}    $	&	-		&	62.40	&	62.40	\\
+		$ b\unitp{mm}    $	&	-		&	62	&	62	\\
 		$ d\unitp{mm}    $	&	-		&	83.08	&	236.92	\\
 		$ d_a\unitp{mm}  $	&	-		&	89.08	&	242.92	\\
 		$ d_f\unitp{mm}  $	&	-		&	75.58	&	229.42	\\

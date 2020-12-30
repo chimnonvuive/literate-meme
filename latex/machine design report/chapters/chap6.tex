@@ -85,8 +85,6 @@ where
 	\item $ T_{sh1},T_{sh2} $ are given in \textbf{Table \ref{tab:my-table}}.
 \end{itemize}
 
-Let $  $
-
 Let $ \alpha $ be the angle of the chain drive with respect to ground. From \textbf{Table \ref{chain}}'s description, the chain is parallel to ground, which makes $ \alpha = 0^\circ $.
 \[
 \begin{array}{l}
@@ -95,14 +93,16 @@ F_{32y} = F_{r32}\sin(\alpha) = 3741\sin(0) = 0 \unitp{N}\\
 \end{array}
 \]
 
+Similarly, the force derived from coupling is the same direction with $ F_{32} $. Thus, $ F_{11} = F_{11x} = 3315.98 \unitp{N} $
+
 \section{Determination of shaft diameters at critical sections}
 \subsection{Preliminary estimation of shafts diameter}
 For input shaft, it is recommended to choose permissible torsion stress a small value $ [\tau] $ for the input shaft and a large value for the output shaft. From Equation 10.9 \cite{tk1}, the minimum nominal diameter of 3 shafts are
 \[
 \begin{array}{l}
-d_1 \geq \sqrt[3]{\dfrac{5T_{sh1}}{[\tau_1]}} = \sqrt[3]{\dfrac{5\times 46423.73}{15}} = 24.92 \unitp{mm}\\
-d_2 \geq \sqrt[3]{\dfrac{5T_{sh2}}{[\tau_2]}} = \sqrt[3]{\dfrac{5\times 126093.30}{20}} = 31.59 \unitp{mm}\\
-d_3 \geq \sqrt[3]{\dfrac{5T_{sh3}}{[\tau_3]}} = \sqrt[3]{\dfrac{5\times 342486.86}{25}} = 40.92 \unitp{mm}
+d_1 \geq \sqrt[3]{\dfrac{5T_{sh1}}{[\tau_1]}} = \sqrt[3]{\dfrac{5\times 46423.73}{20}} = 22.64 \unitp{mm}\\
+d_2 \geq \sqrt[3]{\dfrac{5T_{sh2}}{[\tau_2]}} = \sqrt[3]{\dfrac{5\times 126093.30}{25}} = 29.33 \unitp{mm}\\
+d_3 \geq \sqrt[3]{\dfrac{5T_{sh3}}{[\tau_3]}} = \sqrt[3]{\dfrac{5\times 342486.86}{30}} = 38.5 \unitp{mm}
 \end{array}
 \]
 where
@@ -116,8 +116,8 @@ Machining the gears integrally with the shaft is better suitable for precision s
 Since the input shaft is connected with the motor shaft by a flexible coupling, the difference between 2 diameters must be within $ 20\% $ of the motor diameter $ d_{mo} $. Inspecting Table P1.7 for motor 4A132S4Y3, $ d_{mo}=42.00\unit{mm} $. Combining with Table 10.2 \cite{tk1} to obtain the nominal diameter of 3 shafts and the corresponding bearings width:
 \[
 \begin{array}{l}
-d_1=35\unit{mm},d_2=35\unit{mm},d_3=45\unit{mm}\\
-b_{O1}=21\unit{mm},b_{O2}=21\unit{mm},b_{O3}=25\unit{mm}
+d_1=30\unit{mm},d_2=30\unit{mm},d_3=40\unit{mm}\\
+b_{O1}=19\unit{mm},b_{O2}=19\unit{mm},b_{O3}=23\unit{mm}
 \end{array}
 \]
 
@@ -128,14 +128,14 @@ b_{O1}=21\unit{mm},b_{O2}=21\unit{mm},b_{O3}=25\unit{mm}
 	\label{shaft}
 \end{figure}
 
-The gear widths are $ b_{12}=b_{21}=48.00\unit{mm} $ and $ b_{22}=b_{31} = 62.40\unit{mm}$, \textbf{Table \ref{chap4spec}} and \textbf{\ref{chap5spec}}. These values will be used to determine the minimum hub lengths $ l_{m13},l_{m22},l_{m32} $ (i.e. the hub length equals to shaft length at the gear mating section). Table 10.3 \cite{tk1} gives formulas to determine the necessary lengths in \textbf{Figure \ref{shaft}}. From design perspective, it is desirable to minimize the size of the speed reducer, thereby reducing material cost, bending moment and deflection of the shaft. This leads to the selection of hub lengths $ l_m $ shown below (refer to \textbf{Figure \ref{shaft}} for locating these dimensions):
+The gear widths are $ b_{12}=b_{21}=48.00\unit{mm} $ and $ b_{22}=b_{31} = 62\unit{mm}$, \textbf{Table \ref{chap4spec}} and \textbf{\ref{chap5spec}}. These values will be used to determine the minimum hub lengths $ l_{m13},l_{m22},l_{m32} $ (i.e. the hub length equals to shaft length at the gear mating section). Table 10.3 \cite{tk1} gives formulas to determine the necessary lengths in \textbf{Figure \ref{shaft}}. From design perspective, it is desirable to minimize the size of the speed reducer, thereby reducing material cost, bending moment and deflection of the shaft. This leads to the selection of hub lengths $ l_m $ shown below (refer to \textbf{Figure \ref{shaft}} for locating these dimensions):
 \[
 \begin{array}{l}
-l_{m12} = 1.40 d_1 = 1.40\times 35 = 49 \unitp{mm}\\
-l_{m13} = 1.20 d_1 = 1.20\times 35 = 42 \unitp{mm} \Rightarrow l_{m13} = 48.00 \unit{mm}\\
-l_{m22} = 1.20 d_2 = 1.20\times 35 = 42 \unitp{mm} \Rightarrow l_{m13} = 48.00 \unit{mm}\\
-l_{m32} = 1.20 d_3 = 1.20\times 45 = 54 \unitp{mm} \Rightarrow l_{m32} = 62.40 \unit{mm}\\
-l_{m33} = 1.20 d_3 = 1.20\times 45 = 54 \unitp{mm} \Rightarrow l_{m33} = 67.50 \unit{mm}\\
+l_{m12} = 1.40 d_1 = 1.40\times 30 = 42 \unitp{mm}\\
+l_{m13} = b_1 = 48 \unit{mm}\\
+l_{m22} = 1.20 d_2 = 1.20\times 30 = 42 \unitp{mm} \Rightarrow l_{m13} = 48.00 \unit{mm}\\
+l_{m32} = b_2 = 62 \unit{mm}\\
+l_{m33} = 1.20 d_3 = 1.20\times 40 = 54 \unitp{mm} \Rightarrow l_{m33} = 67.50 \unit{mm}\\
 \end{array}
 \]
 
@@ -150,7 +150,7 @@ On shaft 1:
 
 On shaft 3:
 \begin{flalign*}
-	l_{32} &= 0.5(l_{m32}+b_{O3})+k_1+k_2 \\&= 0.5(62.40 + 25)+ 5 + 5 = 54.00\unitp{mm}\\
+	l_{32} &= 0.5(l_{m32}+b_{O3})+k_1+k_2 \\&= 0.5(62 + 25)+ 5 + 5 = 54.00\unitp{mm}\\
 	l_{31} &= 2l_{32} = 2\times 54.00 = 108.00\unitp{mm} \\
 	l_{33} &= l_{31} + 0.5(l_{m33}+b_{O3})+k_3+h_n \\ & = 108.00 + 0.5(67.50 + 25) + 5 + 15 = 174.25\unitp{mm} \Rightarrow l_{33} = 175\unit{mm}
 \end{flalign*}
@@ -209,88 +209,88 @@ The equations above are applied to 3 pairs of bearings, each of which is mounted
 	\label{soltab}
 \end{table}
 
-For convenience, the values of variables in \textbf{Table \ref{soltab}} are mentioned here:
+%For convenience, the values of variables in \textbf{Table \ref{soltab}} are mentioned here:
+%
+%Dimension values:
+%\[
+%\begin{array}{l}
+%l_{11} = 89.00\unit{mm}, l_{12} = 44.50\unit{mm}, l_{13} = 55.00\unit{mm}\\
+%l_{21} = 225.00\unit{mm}, l_{22} = 44.50\unit{mm}, l_{23} = 171.00\unit{mm}\\
+%l_{31} = 108.00\unit{mm}, l_{32} = 54.00\unit{mm}, l_{33} = 175.00\unit{mm}\\
+%d_{12} = 83.57\unit{mm}, d_{21} = 236.43\unit{mm}, d_{22} = 83.08\unit{mm}, d_{31} = 236.92\unit{mm}
+%\end{array}
+%\]
+%
+%Force values:
+%\[
+%\begin{array}{l}
+%F_{12} = \begin{bmatrix} F_{12x} & F_{12y} & F_{12z}\end{bmatrix} = \begin{bmatrix} -1111.06 & -412.12 & -218.24\end{bmatrix} \unit{N}\\
+%F_{21} = \begin{bmatrix} F_{21x} & F_{21y} & F_{21z}\end{bmatrix} = \begin{bmatrix} 1111.06 & 412.12 & 218.24\end{bmatrix} \unit{N}\\
+%F_{22} = \begin{bmatrix} F_{22x} & F_{22y} & F_{22z}\end{bmatrix} = \begin{bmatrix} 1117.61 & -1133.19 & -691.82\end{bmatrix} \unit{N}\\
+%F_{31} = \begin{bmatrix} F_{31x} & F_{31y} & F_{31z}\end{bmatrix} = \begin{bmatrix} -1117.61 & 1133.19 & 691.82 \end{bmatrix} \unit{N}\\
+%F_{32} = \begin{bmatrix} F_{32x} & F_{32y} & F_{32z}\end{bmatrix} = \begin{bmatrix} 3741 & 0 & 0 \end{bmatrix} \unit{N}\\
+%\end{array}
+%\]
 
-Dimension values:
-\[
-\begin{array}{l}
-l_{11} = 89.00\unit{mm}, l_{12} = 44.50\unit{mm}, l_{13} = 55.00\unit{mm}\\
-l_{21} = 225.00\unit{mm}, l_{22} = 44.50\unit{mm}, l_{23} = 171.00\unit{mm}\\
-l_{31} = 108.00\unit{mm}, l_{32} = 54.00\unit{mm}, l_{33} = 175.00\unit{mm}\\
-d_{12} = 83.57\unit{mm}, d_{21} = 236.43\unit{mm}, d_{22} = 83.08\unit{mm}, d_{31} = 236.92\unit{mm}
-\end{array}
-\]
-
-Force values:
-\[
-\begin{array}{l}
-F_{12} = \begin{bmatrix} F_{12x} & F_{12y} & F_{12z}\end{bmatrix} = \begin{bmatrix} -1111.06 & -412.12 & -218.24\end{bmatrix} \unit{N}\\
-F_{21} = \begin{bmatrix} F_{21x} & F_{21y} & F_{21z}\end{bmatrix} = \begin{bmatrix} 1111.06 & 412.12 & 218.24\end{bmatrix} \unit{N}\\
-F_{22} = \begin{bmatrix} F_{22x} & F_{22y} & F_{22z}\end{bmatrix} = \begin{bmatrix} 1117.61 & -1133.19 & -691.82\end{bmatrix} \unit{N}\\
-F_{31} = \begin{bmatrix} F_{31x} & F_{31y} & F_{31z}\end{bmatrix} = \begin{bmatrix} -1117.61 & 1133.19 & 691.82 \end{bmatrix} \unit{N}\\
-F_{32} = \begin{bmatrix} F_{32x} & F_{32y} & F_{32z}\end{bmatrix} = \begin{bmatrix} 3741 & 0 & 0 \end{bmatrix} \unit{N}\\
-\end{array}
-\]
-
-From the reaction forces, the shear force diagrams for 3 shafts are created but will not be shown. From the shear force diagrams, the bending moment diagrams for 3 shafts are visualized as demonstrated in Fi\textbf{gure \ref{mshaft1}}, \textbf{\ref{mshaft2}} and \textbf{\ref{mshaft3}}. The moments at critical sections are computed below:\\
-Shaft 1, $ Oxz $-plane:
-\[
-\begin{array}{l}
-M_{1Ax} = 0 \unitp{N\cdot mm}\\
-M_{1Bx} = l_{12}F_{1By} = -5698.14 \unitp{N\cdot mm}\\
-M_{1Cx}^- = l_{12}F_{1By}+(l_{12}+l_{13})F_{12y} = 35307.65 \unitp{N\cdot mm}\\
-M_{1Cx}^+ = l_{12}F_{1By}+(l_{12}+l_{13})F_{12y}+d_{12}/2\times F_{21z} = 44426.31 \unitp{N\cdot mm}\\
-M_{1Dx} = 0 \unitp{N\cdot mm}\\
-\end{array}
-\]
-Shaft 1, $ Oyz $-plane:
-\[
-\begin{array}{l}
-M_{1Ay} = 0 \unitp{N\cdot mm}\\
-M_{1By} = l_{12}F_{1Bx} = -30554.04 \unitp{N\cdot mm}\\
-M_{1Cy} = l_{12}F_{1Bx}+(l_{12}+l_{13})F_{21x} = 79996.02 \unitp{N\cdot mm}\\
-M_{1Dy} = 0 \unitp{N\cdot mm}
-\end{array}
-\]
-Shaft 2, $ Oxz $-plane:
-\[
-\begin{array}{l}
-M_{2Ax} = 0 \unitp{N\cdot mm}\\
-M_{2Bx}^- = l_{22}F_{12y} =  -18339.27 \unitp{N\cdot mm}\\
-M_{2Bx}^+ = l_{22}F_{12y} + d_{21}/2\times F_{12z} = -44138.39 \unitp{N\cdot mm}\\
-M_{2Cx}^- = l_{22}F_{12y} + l_{23}F_{31y} + d_{21}/2\times F_{12z} = 149637.15 \unitp{N\cdot mm}\\
-M_{2Cx}^+ = l_{22}F_{12y} + l_{23}F_{31y} + d_{21}/2\times F_{12z} + d_{22}/2\times F_{31z} = 178374.12 \unitp{N\cdot mm}\\
-M_{2Dx} = 0 \unitp{N\cdot mm}\\
-\end{array}
-\]
-Shaft 2, $ Oyz $-plane:
-\[
-\begin{array}{l}
-M_{2Ay} = 0 \unitp{N\cdot mm}\\
-M_{2By} = l_{22}F_{1Bx} = -49441.98 \unitp{N\cdot mm}\\
-M_{2Cy} = l_{22}F_{1Bx}+(l_{12}+l_{13})F_{12x} = -240553.02 \unitp{N\cdot mm}\\
-M_{2Dy} = 0 \unitp{N\cdot mm}
-\end{array}
-\]
-Shaft 3, $ Oxz $-plane:
-\[
-\begin{array}{l}
-M_{3Ax} = 0 \unitp{N\cdot mm}\\
-M_{3Bx}^- = l_{32}F_{22y} = -61192.27 \unitp{N\cdot mm}\\
-M_{3Bx}^+ = l_{32}F_{22y}+d_{31}/2\times F_{22z} = -143145.85 \unitp{N\cdot mm}\\
-M_{3Cx} = l_{32}F_{22y}+l_{31}F_{3By}+d_{31}/2\times F_{22z} = 0 \unitp{N\cdot mm}\\
-M_{3Dx} = 0 \unitp{N\cdot mm}\\
-\end{array}
-\]
-Shaft 3, $ Oxz $-plane:
-\[
-\begin{array}{l}
-M_{3Ay} = 0 \unitp{N\cdot mm}\\
-M_{3By} = l_{32}F_{22x} = 60350.85 \unitp{N\cdot mm}\\
-M_{3Cy} = l_{32}F_{22x}+l_{31}F_{3Bx} = -654674.15 \unitp{N\cdot mm}\\
-M_{3Dy} = 0 \unitp{N\cdot mm}
-\end{array}
-\]
+From the reaction forces, the shear force diagrams for 3 shafts are created but will not be shown. From the shear force diagrams, the bending moment diagrams for 3 shafts are visualized as demonstrated in Fi\textbf{gure \ref{mshaft1}}, \textbf{\ref{mshaft2}} and \textbf{\ref{mshaft3}}. %The moments at critical sections are computed below:\\
+%Shaft 1, $ Oxz $-plane:
+%\[
+%\begin{array}{l}
+%M_{1Ax} = 0 \unitp{N\cdot mm}\\
+%M_{1Bx} = l_{12}F_{1By} = -5698.14 \unitp{N\cdot mm}\\
+%M_{1Cx}^- = l_{12}F_{1By}+(l_{12}+l_{13})F_{12y} = 35307.65 \unitp{N\cdot mm}\\
+%M_{1Cx}^+ = l_{12}F_{1By}+(l_{12}+l_{13})F_{12y}+d_{12}/2\times F_{21z} = 44426.31 \unitp{N\cdot mm}\\
+%M_{1Dx} = 0 \unitp{N\cdot mm}\\
+%\end{array}
+%\]
+%Shaft 1, $ Oyz $-plane:
+%\[
+%\begin{array}{l}
+%M_{1Ay} = 0 \unitp{N\cdot mm}\\
+%M_{1By} = l_{12}F_{1Bx} = -30554.04 \unitp{N\cdot mm}\\
+%M_{1Cy} = l_{12}F_{1Bx}+(l_{12}+l_{13})F_{21x} = 79996.02 \unitp{N\cdot mm}\\
+%M_{1Dy} = 0 \unitp{N\cdot mm}
+%\end{array}
+%\]
+%Shaft 2, $ Oxz $-plane:
+%\[
+%\begin{array}{l}
+%M_{2Ax} = 0 \unitp{N\cdot mm}\\
+%M_{2Bx}^- = l_{22}F_{12y} =  -18339.27 \unitp{N\cdot mm}\\
+%M_{2Bx}^+ = l_{22}F_{12y} + d_{21}/2\times F_{12z} = -44138.39 \unitp{N\cdot mm}\\
+%M_{2Cx}^- = l_{22}F_{12y} + l_{23}F_{31y} + d_{21}/2\times F_{12z} = 149637.15 \unitp{N\cdot mm}\\
+%M_{2Cx}^+ = l_{22}F_{12y} + l_{23}F_{31y} + d_{21}/2\times F_{12z} + d_{22}/2\times F_{31z} = 178374.12 \unitp{N\cdot mm}\\
+%M_{2Dx} = 0 \unitp{N\cdot mm}\\
+%\end{array}
+%\]
+%Shaft 2, $ Oyz $-plane:
+%\[
+%\begin{array}{l}
+%M_{2Ay} = 0 \unitp{N\cdot mm}\\
+%M_{2By} = l_{22}F_{1Bx} = -49441.98 \unitp{N\cdot mm}\\
+%M_{2Cy} = l_{22}F_{1Bx}+(l_{12}+l_{13})F_{12x} = -240553.02 \unitp{N\cdot mm}\\
+%M_{2Dy} = 0 \unitp{N\cdot mm}
+%\end{array}
+%\]
+%Shaft 3, $ Oxz $-plane:
+%\[
+%\begin{array}{l}
+%M_{3Ax} = 0 \unitp{N\cdot mm}\\
+%M_{3Bx}^- = l_{32}F_{22y} = -61192.27 \unitp{N\cdot mm}\\
+%M_{3Bx}^+ = l_{32}F_{22y}+d_{31}/2\times F_{22z} = -143145.85 \unitp{N\cdot mm}\\
+%M_{3Cx} = l_{32}F_{22y}+l_{31}F_{3By}+d_{31}/2\times F_{22z} = 0 \unitp{N\cdot mm}\\
+%M_{3Dx} = 0 \unitp{N\cdot mm}\\
+%\end{array}
+%\]
+%Shaft 3, $ Oxz $-plane:
+%\[
+%\begin{array}{l}
+%M_{3Ay} = 0 \unitp{N\cdot mm}\\
+%M_{3By} = l_{32}F_{22x} = 60350.85 \unitp{N\cdot mm}\\
+%M_{3Cy} = l_{32}F_{22x}+l_{31}F_{3Bx} = -654674.15 \unitp{N\cdot mm}\\
+%M_{3Dy} = 0 \unitp{N\cdot mm}
+%\end{array}
+%\]
 
 After computing all bending moments at critical sections, Equation 10.17 \cite{tk1} is used to estimate minimum diameter $ d_{est} $ at a cross section corresponding to the magnitude of moments there. The values are summarized in col. 6, \textbf{Table \ref{dia_sh}}:
 \[
@@ -311,13 +311,15 @@ where
 	\item $ [\sigma] $ is the permissible stress of shaft material, Table 10.5 \cite{tk1}. In this design project, all 3 shafts are fabricated from the same material (carbon steel AISI 1035) yielding at $ \sigma_b = 586\unit{MPa} $ (ultimate strength).
 \end{itemize}
 
-The selection of suitable diameters depends not only on stress condition but also the geometry of the shaft itself (i.e. mechanical drives are mounted in clearance, transition or interference fit and does not collide with the shaft). Therefore, during calculation, at cross sections where moment jump occurs, Equation 10.17 \cite{tk1} yields 2 minimum diameters. In such cases, the larger value is selected. In addition, at cross sections where the total bending moment is 0, the minimal diameter $ d_{est} $ determined by Equation 10.17 \cite{tk1} is incorrect. Thus it is best to relate to adjoining diameters and choose according to standard. From \textbf{Table \ref{dia_sh}}, the cross sections with zero equivalent bending moment are
-\begin{itemize}
-	\item shaft 1: $ M_{1D} $. The choice of $ d_{1D} $ is determined by the value of $ d_{1B} $ since a pair of bearings is mounted on sections $ B $ and $ D $.
-	\item shaft 2: $ M_{2A}, M_{2D} $. A pair of bearings is mounted on sections $ A $ and $ D $, which makes the approach from shaft 1 unreasonable. Hence, $ d_{2A}, d_{2D} $ are chosen so that they are not too small with respect to either $ d_{2B} $ or $ d_{2C} $ while still following the standard.
-	\item shaft 3: $ M_{3A} $. Similar to shaft 1, the diameter at $ A $ equals to that at $ C $ since a pair of bearings is mounted there.
-\end{itemize}
+Table \ref{dia_sh} summarizes the calculations for bending moment diagrams and estimated diameters of the 3 shafts.
 
+%The selection of suitable diameters depends not only on stress condition but also the geometry of the shaft itself (i.e. mechanical drives are mounted in clearance, transition or interference fit and does not collide with the shaft). Therefore, during calculation, at cross sections where moment jump occurs, Equation 10.17 \cite{tk1} yields 2 minimum diameters. In such cases, the larger value is selected. In addition, at cross sections where the total bending moment is 0, the minimal diameter $ d_{est} $ determined by Equation 10.17 \cite{tk1} is incorrect. Thus it is best to relate to adjoining diameters and choose according to standard. From \textbf{Table \ref{dia_sh}}, the cross sections with zero equivalent bending moment are
+%\begin{itemize}
+%	\item shaft 1: $ M_{1D} $. The choice of $ d_{1D} $ is determined by the value of $ d_{1B} $ since a pair of bearings is mounted on sections $ B $ and $ D $.
+%	\item shaft 2: $ M_{2A}, M_{2D} $. A pair of bearings is mounted on sections $ A $ and $ D $, which makes the approach from shaft 1 unreasonable. Hence, $ d_{2A}, d_{2D} $ are chosen so that they are not too small with respect to either $ d_{2B} $ or $ d_{2C} $ while still following the standard.
+%	\item shaft 3: $ M_{3A} $. Similar to shaft 1, the diameter at $ A $ equals to that at $ C $ since a pair of bearings is mounted there.
+%\end{itemize}
+\clearpage
 \begin{table}[ht]
 	\centering
 	\caption{Equivalent moment $ M_e $ and cross section diameters of 3 shafts}
@@ -365,12 +367,12 @@ The selection of suitable diameters depends not only on stress condition but als
 	\label{mshaft3}
 \end{figure}
 
-In addition, the geometry of the shafts requires modification. Each shaft has 4 cross sections with diameter alteration. The purpose is to mount and fix the gear(s) with keys. Therefore, from Figure 1.2,
-\begin{itemize}
-	\item on shaft 1 (designated I in the figure): diameter 2 starting from the left of the shaft must be smaller than the bearing diameter $ d_{1B} $ so that the bearing from the left can be slid right into the shaft (i.e. $ d_{1A} = 32 \unit{mm} < d{1AB} < d_{1B} = 35 \unit{mm} $). Thus, choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{1AB} = 34 \unit{mm} $.
-	\item on shaft 2 (designated II in the figure): diameter 3 starting from the left of the shaft must be larger than bore diameter of the 2 mounted gears. In that way, both gears can be supported from 1 end (i.e. prevent sliding on 1 direction). The range for selecting diameter 3 is $ d_{2BC} \geq \max(d_{2B}, d_{2C}) = 54 \unit{mm} $. Choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{2BC} = 60 \unit{mm} $.
-	\item on shaft 3 (designated III in the figure): diameter 2 starting from the left of the shaft must be larger than $ d_{3B} = 69 \unit{mm} $ to support the gear from 1 end. Choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{3AB} = 84 \unit{mm} $.
-\end{itemize}
+%In addition, the geometry of the shafts requires modification. Each shaft has 4 cross sections with diameter alteration. The purpose is to mount and fix the gear(s) with keys. Therefore, from Figure 1.2,
+%\begin{itemize}
+%	\item on shaft 1 (designated I in the figure): diameter 2 starting from the left of the shaft must be smaller than the bearing diameter $ d_{1B} $ so that the bearing from the left can be slid right into the shaft (i.e. $ d_{1A} = 32 \unit{mm} < d{1AB} < d_{1B} = 35 \unit{mm} $). Thus, choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{1AB} = 34 \unit{mm} $.
+%	\item on shaft 2 (designated II in the figure): diameter 3 starting from the left of the shaft must be larger than bore diameter of the 2 mounted gears. In that way, both gears can be supported from 1 end (i.e. prevent sliding on 1 direction). The range for selecting diameter 3 is $ d_{2BC} \geq \max(d_{2B}, d_{2C}) = 54 \unit{mm} $. Choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{2BC} = 60 \unit{mm} $.
+%	\item on shaft 3 (designated III in the figure): diameter 2 starting from the left of the shaft must be larger than $ d_{3B} = 69 \unit{mm} $ to support the gear from 1 end. Choosing from standard on p.195 \cite{tk1}, the diameter is $ d_{3AB} = 84 \unit{mm} $.
+%\end{itemize}
 \clearpage
 
 \section{Design of keys and keyways}

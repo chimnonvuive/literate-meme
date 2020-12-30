@@ -2331,12 +2331,12 @@
     <bcf:citekey order="152">tk1</bcf:citekey>
     <bcf:citekey order="153">tk1</bcf:citekey>
     <bcf:citekey order="154">tk1</bcf:citekey>
-    <bcf:citekey order="155">tk1</bcf:citekey>
+    <bcf:citekey order="155">mott_vavrek_wang_2018</bcf:citekey>
     <bcf:citekey order="156">tk1</bcf:citekey>
     <bcf:citekey order="157">tk1</bcf:citekey>
     <bcf:citekey order="158">tk1</bcf:citekey>
     <bcf:citekey order="159">tk1</bcf:citekey>
-    <bcf:citekey order="160">mott_vavrek_wang_2018</bcf:citekey>
+    <bcf:citekey order="160">tk1</bcf:citekey>
     <bcf:citekey order="161">tk1</bcf:citekey>
     <bcf:citekey order="162">tk1</bcf:citekey>
     <bcf:citekey order="163">tk1</bcf:citekey>
@@ -2347,12 +2347,12 @@
     <bcf:citekey order="168">tk1</bcf:citekey>
     <bcf:citekey order="169">tk1</bcf:citekey>
     <bcf:citekey order="170">tk1</bcf:citekey>
-    <bcf:citekey order="171">tk1</bcf:citekey>
-    <bcf:citekey order="172">tk1</bcf:citekey>
-    <bcf:citekey order="173">tk1</bcf:citekey>
-    <bcf:citekey order="174">tk1</bcf:citekey>
-    <bcf:citekey order="175">tk1</bcf:citekey>
-    <bcf:citekey order="176">aisi1035</bcf:citekey>
+    <bcf:citekey order="171">aisi1035</bcf:citekey>
+    <bcf:citekey order="172">rolling_bearings</bcf:citekey>
+    <bcf:citekey order="173">rolling_bearings</bcf:citekey>
+    <bcf:citekey order="174">rolling_bearings</bcf:citekey>
+    <bcf:citekey order="175">rolling_bearings</bcf:citekey>
+    <bcf:citekey order="176">rolling_bearings</bcf:citekey>
     <bcf:citekey order="177">rolling_bearings</bcf:citekey>
     <bcf:citekey order="178">rolling_bearings</bcf:citekey>
     <bcf:citekey order="179">rolling_bearings</bcf:citekey>
@@ -2371,11 +2371,6 @@
     <bcf:citekey order="192">rolling_bearings</bcf:citekey>
     <bcf:citekey order="193">rolling_bearings</bcf:citekey>
     <bcf:citekey order="194">rolling_bearings</bcf:citekey>
-    <bcf:citekey order="195">rolling_bearings</bcf:citekey>
-    <bcf:citekey order="196">rolling_bearings</bcf:citekey>
-    <bcf:citekey order="197">rolling_bearings</bcf:citekey>
-    <bcf:citekey order="198">rolling_bearings</bcf:citekey>
-    <bcf:citekey order="199">rolling_bearings</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

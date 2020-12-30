@@ -11,13 +11,13 @@ The motor power is $ P_{mo} = 7.14 \unit{kW} $, Table \ref{tab:my-table}.
 The motor speed is $ n_{mo} = 1455 \unit{rpm} $, Table \ref{tab:my-table}. Consulting Table 1, p.61 \cite{skf_2018}, the nearest specification is speed $ n = 1440 \unit{rpm} $ and power rating $ P = 9.95 \unit{kW} $. This results in the coupling size of 50. Also from the table, the nominal torque and max torque are also satisfactory ($ T_{sh} = 46892.66 \unit{N\cdot mm} < 66 \unit{N\cdot m}$).
 
 \paragraph{Bore size}
-Hub mounted coupling is used since the shaft is not tapered. Thus, SKF Flex flanges type B size 50 (PHE F50RSBFLG) is selected, p.65 \cite{skf_2018}. From the table on the page, the maximum bore diameter is $ 38\unit{mm} $, which is equal to the motor shaft diameter.
+Straight hub mounted coupling is used since the shaft is not tapered. Thus, SKF Flex flange type B size 50 (PHE F50RSBFLG) is selected, p.65 \cite{skf_2018}. From the table on the page, the maximum bore diameter is $ 38\unit{mm} $, which is equal to the motor shaft diameter.
 
 In summary, the flex coupling dimensions and basic physical quantities are specified in the catalog \cite{skf_2018} and product detail report \cite{bibid}.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.5\linewidth]{coupling}
-	\caption{Rendered photo of flex coupling PHE F50RSBFLG}
-	\label{coupling}
-\end{figure}
+The diameter of the shaft used is $ d_c = 28\unit{mm} $. The reason is due to repetitive design and analysis of the resulting gearbox.
+
+Therefore, the force $ F_{11} $ exerted on the shaft by the coupling is:
+\[
+F_{11} = \dfrac{2T_{sh1}}{d_c} = \dfrac{2\times 46423.73}{28} = 3316 \unitp{N}
+\]

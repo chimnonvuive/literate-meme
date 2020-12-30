@@ -6,7 +6,7 @@ USABLE ONLY FOR DOUBLE DWELL CAMS
 
 u = UnitRegistry()
 slant = 6 * u.deg
-b1, b2, b3 = np.array([55,5,55])*u.deg
+b1, b2, b3 = np.array([75,15,35])*u.deg
 b4 = 360*u.deg - b1 - b2 - b3
 m, n = 500*u.g, 250*u.rpm
 m = m.to(u.kg)
@@ -37,7 +37,7 @@ ddys = np.hstack([dds1, ds2, dds3, s4])/u.rad**2
 dddys = np.hstack([ddds1, ds2, ddds3, s4])/u.rad**3
 
 #%%
-PlotSVAJ(xs, ys, dys, ddys, dddys, n, savefig=0)
-# RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, 0, 12, 21, show=True, savefig=True)
-# RadialCamTranslatingRoller(xs, ys, n, 16.5, 0, show=True)
+# PlotSVAJ(xs, ys, dys, ddys, dddys, n, savefig=0)
+# RadialCamTranslatingFlatFaced(xs, ys, dys, ddys, n, 0, 12, 21, show=True, savefig=False)
+RadialCamTranslatingRoller(xs, ys, n, 16.5, 0, show=True)
 

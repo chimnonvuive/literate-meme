@@ -16,7 +16,6 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
-%\usepackage[left=2.4cm,right=1.6cm]{geometry}
 \usepackage[toc,automake]{glossaries}
 \usepackage{graphicx}
 \usepackage[hidelinks,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
