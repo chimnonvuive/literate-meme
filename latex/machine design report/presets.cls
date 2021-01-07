@@ -1,4 +1,4 @@
-\LoadClass[fleqn,12pt,a4paper,twoside]{report}
+\LoadClass[fleqn,12pt,a4paper,oneside]{report}
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}

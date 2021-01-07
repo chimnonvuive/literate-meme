@@ -1,97 +1,103 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\contentsline {section}{\numberline {I}Problem}{8}{section.0.1}%
-\contentsline {section}{\numberline {II}Mixing machine parameters}{8}{section.0.2}%
-\contentsline {section}{\numberline {III}Requirements}{9}{section.0.3}%
-\contentsline {section}{\numberline {IV}Design problem}{9}{section.0.4}%
-\contentsline {chapter}{\numberline {1}Choose Motor}{10}{chapter.1}%
-\contentsline {section}{\numberline {I}Motor selection for the mixing tank}{10}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1}Calculate system overall efficiency $ \eta _{sys} $}{10}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Calculate required power $ P_{mo} $ for operation}{11}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.3}Choose motor}{11}{subsection.1.1.3}%
-\contentsline {paragraph}{Calculate working speed $ n_{mo} $}{11}{Item.19}%
-\contentsline {paragraph}{Choose motor}{12}{Item.19}%
-\contentsline {section}{\numberline {II}Power, rotational speed and torque of the system}{12}{section.1.2}%
-\contentsline {subsection}{\numberline {2.1}Calculate speed of the chain drive and the shafts}{12}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {2.2}Calculate speed of the shafts}{13}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {2.3}Calculate torque of the motor and the shafts}{14}{subsection.1.2.3}%
-\contentsline {chapter}{\numberline {2}Chain Drive Design}{15}{chapter.2}%
-\contentsline {section}{\numberline {I}Determination of chain drive pitch}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {1.1}Calculate number of teeth of the sprocket $ z $}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {1.2}Calculate permissible power $ [P] $ and find pitch $ p $}{16}{subsection.2.1.2}%
-\contentsline {section}{\numberline {II}Basic parameters of the chain drive}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {2.1}Find $ x_c $}{17}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2}Find center distance $ a $}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Find other parameters}{17}{subsection.2.2.3}%
-\contentsline {section}{\numberline {III}Strength of chain drive}{18}{section.2.3}%
-\contentsline {subsection}{\numberline {3.1}Impact frequency analysis}{18}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {3.2}Safety factor analysis}{18}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {3.3}Contact stress analysis}{19}{subsection.2.3.3}%
-\contentsline {section}{\numberline {IV}Force on shaft}{20}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Gear Design (Stage One)}{21}{chapter.3}%
-\contentsline {section}{\numberline {I}Material selection}{21}{section.3.1}%
-\contentsline {section}{\numberline {II}Stress estimation}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {2.1}Estimate the permissible contact stress $ [\sigma _H] $ and bending stress $ [\sigma _F] $}{21}{subsection.3.2.1}%
-\contentsline {paragraph}{Find permissible stress corresponding to a working cycle $ \sigma _{lim}^o $}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Find safety factor $ S $}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Find load placement factor $ K_{FC} $}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Find aging factor $ K_L $}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Calculate preliminary values of $ [\sigma _H] $, $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{23}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {2.2}Find permissible contact stress $ [\sigma _H]_{max} $ and bending stress $ [\sigma _F]_{max} $ due to overload}{24}{subsection.3.2.2}%
-\contentsline {section}{\numberline {III}Basic specifications of the transmission system}{24}{section.3.3}%
-\contentsline {subsection}{\numberline {3.1}Determine basic parameters}{24}{subsection.3.3.1}%
-\contentsline {subsubsection}{Find center distance $ a $}{24}{subsection.3.3.1}%
-\contentsline {subsubsection}{Find face width ratio $ \psi _{bd} $}{25}{subsection.3.3.1}%
-\contentsline {subsubsection}{Find traverse module $ m_t $}{25}{subsection.3.3.1}%
-\contentsline {subsubsection}{Find number of teeth $ z $}{25}{subsection.3.3.1}%
-\contentsline {subsubsection}{Correct $ \beta $}{25}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.2}Other parameters}{25}{subsection.3.3.2}%
-\contentsline {section}{\numberline {IV}Stress analysis}{26}{section.3.4}%
-\contentsline {subsection}{\numberline {4.1}Correct the permissible contact stress $ [\sigma _H] $ and bending stresses $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{26}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {4.2}Contact stress analysis}{27}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {4.3}Bending stress analysis}{28}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {4.4}Overload analysis}{29}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Gear Design (Stage Two)}{31}{chapter.4}%
-\contentsline {section}{\numberline {I}Choose material}{31}{section.4.1}%
-\contentsline {section}{\numberline {II}Stress estimation}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {2.1}Estimate the permissible contact stress $ [\sigma _H] $ and bending stress $ [\sigma _F] $}{31}{subsection.4.2.1}%
-\contentsline {paragraph}{Find permissible stress corresponding to a working cycle $ \sigma _{lim}^o $}{32}{subsection.4.2.1}%
-\contentsline {paragraph}{Find safety factor $ S $}{32}{subsection.4.2.1}%
-\contentsline {paragraph}{Find load placement factor $ K_{FC} $}{32}{subsection.4.2.1}%
-\contentsline {paragraph}{Find aging factor $ K_L $}{32}{subsection.4.2.1}%
-\contentsline {paragraph}{Calculate preliminary values of $ [\sigma _H] $, $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{33}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {2.2}Find permissible contact stress $ [\sigma _H]_{max} $ and bending stress $ [\sigma _F]_{max} $ due to overload}{34}{subsection.4.2.2}%
-\contentsline {section}{\numberline {III}Determine basic specifications of the transmission system}{34}{section.4.3}%
-\contentsline {subsection}{\numberline {3.1}Determine basic parameters}{34}{subsection.4.3.1}%
-\contentsline {subsubsection}{Find center distance $ a $}{34}{subsection.4.3.1}%
-\contentsline {subsubsection}{Find face width ratio $ \psi _{bd} $}{35}{subsection.4.3.1}%
-\contentsline {subsubsection}{Find traverse module $ m_t $}{35}{subsection.4.3.1}%
-\contentsline {subsubsection}{Find number of teeth $ z $}{35}{subsection.4.3.1}%
-\contentsline {subsubsection}{Correct $ \beta $}{35}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {3.2}Other parameters}{35}{subsection.4.3.2}%
-\contentsline {section}{\numberline {IV}Stress analysis}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.1}Correct the permissible contact stress $ [\sigma _H] $ and bending stresses $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{36}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.2}Contact stress analysis}{37}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.3}Bending stress analysis}{38}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4}Overload analysis}{39}{subsection.4.4.4}%
-\contentsline {chapter}{\numberline {5}Flex Coupling Design}{41}{chapter.5}%
-\contentsline {paragraph}{Service factor}{41}{chapter.5}%
-\contentsline {paragraph}{Design power}{41}{chapter.5}%
-\contentsline {paragraph}{Coupling size}{41}{chapter.5}%
-\contentsline {paragraph}{Bore size}{41}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Shaft Design}{42}{chapter.6}%
-\contentsline {section}{\numberline {I}Choose material}{42}{section.6.1}%
-\contentsline {section}{\numberline {II}Loads on shafts}{42}{section.6.2}%
-\contentsline {section}{\numberline {III}Determination of shaft diameters at critical sections}{44}{section.6.3}%
-\contentsline {subsection}{\numberline {3.1}Preliminary estimation of shafts diameter}{44}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {3.2}Find reaction forces}{46}{subsection.6.3.2}%
-\contentsline {section}{\numberline {IV}Design of keys and keyways}{52}{section.6.4}%
-\contentsline {subsection}{\numberline {4.1}Calculate key dimensions}{52}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {4.2}Stress analysis of key}{52}{subsection.6.4.2}%
-\contentsline {section}{\numberline {V}Strength of the shafts}{53}{section.6.5}%
-\contentsline {subsection}{\numberline {5.1}Fatigue Strength Analysis}{53}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {5.2}Static Strength Analysis}{59}{subsection.6.5.2}%
-\contentsline {chapter}{\numberline {7}Bearing Design}{60}{chapter.7}%
-\contentsline {section}{\numberline {I}Choose bearing type}{60}{section.7.1}%
-\contentsline {section}{\numberline {II}SKF rating life}{62}{section.7.2}%
-\contentsline {chapter}{Bibliography}{67}{chapter*.39}%
+\contentsline {section}{\numberline {I}Problem}{7}{section.0.1}%
+\contentsline {section}{\numberline {II}Mixing machine parameters}{7}{section.0.2}%
+\contentsline {section}{\numberline {III}Requirements}{8}{section.0.3}%
+\contentsline {section}{\numberline {IV}Design problem}{8}{section.0.4}%
+\contentsline {chapter}{\numberline {1}Choose Motor}{9}{chapter.1}%
+\contentsline {section}{\numberline {I}Motor selection for the mixing tank}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}Calculate system overall efficiency $ \eta _{sys} $}{9}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Calculate required power $ P_{mo} $ for operation}{10}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.3}Choose motor}{10}{subsection.1.1.3}%
+\contentsline {paragraph}{Calculate working speed $ n_{mo} $}{10}{Item.19}%
+\contentsline {paragraph}{Choose motor}{11}{Item.19}%
+\contentsline {section}{\numberline {II}Power, rotational speed and torque of the system}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Calculate speed of the chain drive and the shafts}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {2.2}Calculate speed of the shafts}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {2.3}Calculate torque of the motor and the shafts}{13}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}Chain Drive Design}{14}{chapter.2}%
+\contentsline {section}{\numberline {I}Determination of chain drive pitch}{14}{section.2.1}%
+\contentsline {subsection}{\numberline {1.1}Calculate number of teeth of the sprocket $ z $}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {1.2}Calculate permissible power $ [P] $ and find pitch $ p $}{15}{subsection.2.1.2}%
+\contentsline {section}{\numberline {II}Basic parameters of the chain drive}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1}Find $ x_c $}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2}Find center distance $ a $}{16}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Find other parameters}{16}{subsection.2.2.3}%
+\contentsline {section}{\numberline {III}Strength of chain drive}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {3.1}Impact frequency analysis}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.2}Safety factor analysis}{17}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {3.3}Contact stress analysis}{18}{subsection.2.3.3}%
+\contentsline {section}{\numberline {IV}Force on shaft}{19}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Gear Design (Stage One)}{20}{chapter.3}%
+\contentsline {section}{\numberline {I}Material selection}{20}{section.3.1}%
+\contentsline {section}{\numberline {II}Stress estimation}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {2.1}Estimate the permissible contact stress $ [\sigma _H] $ and bending stress $ [\sigma _F] $}{20}{subsection.3.2.1}%
+\contentsline {paragraph}{Find permissible stress corresponding to a working cycle $ \sigma _{lim}^o $}{21}{subsection.3.2.1}%
+\contentsline {paragraph}{Find safety factor $ S $}{21}{subsection.3.2.1}%
+\contentsline {paragraph}{Find load placement factor $ K_{FC} $}{21}{subsection.3.2.1}%
+\contentsline {paragraph}{Find aging factor $ K_L $}{21}{subsection.3.2.1}%
+\contentsline {paragraph}{Calculate preliminary values of $ [\sigma _H] $, $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {2.2}Find permissible contact stress $ [\sigma _H]_{max} $ and bending stress $ [\sigma _F]_{max} $ due to overload}{23}{subsection.3.2.2}%
+\contentsline {section}{\numberline {III}Basic specifications of the transmission system}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Determine basic parameters}{23}{subsection.3.3.1}%
+\contentsline {subsubsection}{Find center distance $ a $}{23}{subsection.3.3.1}%
+\contentsline {subsubsection}{Find face width ratio $ \psi _{bd} $}{24}{subsection.3.3.1}%
+\contentsline {subsubsection}{Find traverse module $ m_t $}{24}{subsection.3.3.1}%
+\contentsline {subsubsection}{Find number of teeth $ z $}{24}{subsection.3.3.1}%
+\contentsline {subsubsection}{Correct $ \beta $}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2}Other parameters}{24}{subsection.3.3.2}%
+\contentsline {section}{\numberline {IV}Stress analysis}{25}{section.3.4}%
+\contentsline {subsection}{\numberline {4.1}Correct the permissible contact stress $ [\sigma _H] $ and bending stresses $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{25}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {4.2}Contact stress analysis}{26}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {4.3}Bending stress analysis}{27}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {4.4}Overload analysis}{28}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Gear Design (Stage Two)}{30}{chapter.4}%
+\contentsline {section}{\numberline {I}Choose material}{30}{section.4.1}%
+\contentsline {section}{\numberline {II}Stress estimation}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {2.1}Estimate the permissible contact stress $ [\sigma _H] $ and bending stress $ [\sigma _F] $}{30}{subsection.4.2.1}%
+\contentsline {paragraph}{Find permissible stress corresponding to a working cycle $ \sigma _{lim}^o $}{31}{subsection.4.2.1}%
+\contentsline {paragraph}{Find safety factor $ S $}{31}{subsection.4.2.1}%
+\contentsline {paragraph}{Find load placement factor $ K_{FC} $}{31}{subsection.4.2.1}%
+\contentsline {paragraph}{Find aging factor $ K_L $}{31}{subsection.4.2.1}%
+\contentsline {paragraph}{Calculate preliminary values of $ [\sigma _H] $, $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {2.2}Find permissible contact stress $ [\sigma _H]_{max} $ and bending stress $ [\sigma _F]_{max} $ due to overload}{33}{subsection.4.2.2}%
+\contentsline {section}{\numberline {III}Determine basic specifications of the transmission system}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {3.1}Determine basic parameters}{33}{subsection.4.3.1}%
+\contentsline {subsubsection}{Find center distance $ a $}{33}{subsection.4.3.1}%
+\contentsline {subsubsection}{Find face width ratio $ \psi _{bd} $}{34}{subsection.4.3.1}%
+\contentsline {subsubsection}{Find traverse module $ m_t $}{34}{subsection.4.3.1}%
+\contentsline {subsubsection}{Find number of teeth $ z $}{34}{subsection.4.3.1}%
+\contentsline {subsubsection}{Correct $ \beta $}{34}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {3.2}Other parameters}{34}{subsection.4.3.2}%
+\contentsline {section}{\numberline {IV}Stress analysis}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.1}Correct the permissible contact stress $ [\sigma _H] $ and bending stresses $ [\sigma _{F1}] $, $ [\sigma _{F2}] $}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.2}Contact stress analysis}{36}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.3}Bending stress analysis}{37}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4}Overload analysis}{38}{subsection.4.4.4}%
+\contentsline {chapter}{\numberline {5}Flex Coupling Design}{40}{chapter.5}%
+\contentsline {paragraph}{Service factor}{40}{chapter.5}%
+\contentsline {paragraph}{Design power}{40}{chapter.5}%
+\contentsline {paragraph}{Coupling size}{40}{chapter.5}%
+\contentsline {paragraph}{Bore size}{40}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Shaft Design}{41}{chapter.6}%
+\contentsline {section}{\numberline {I}Choose material}{41}{section.6.1}%
+\contentsline {section}{\numberline {II}Loads on shafts}{41}{section.6.2}%
+\contentsline {section}{\numberline {III}Determination of shaft diameters at critical sections}{43}{section.6.3}%
+\contentsline {subsection}{\numberline {3.1}Preliminary estimation of shafts diameter}{43}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {3.2}Find reaction forces}{45}{subsection.6.3.2}%
+\contentsline {section}{\numberline {IV}Design of keys and keyways}{51}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Calculate key dimensions}{51}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Stress analysis of key}{51}{subsection.6.4.2}%
+\contentsline {section}{\numberline {V}Strength of the shafts}{52}{section.6.5}%
+\contentsline {subsection}{\numberline {5.1}Fatigue Strength Analysis}{52}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {5.2}Static Strength Analysis}{58}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Bearing Design}{59}{chapter.7}%
+\contentsline {section}{\numberline {I}Choose bearing type}{59}{section.7.1}%
+\contentsline {section}{\numberline {II}SKF rating life for shaft 2, 3}{61}{section.7.2}%
+\contentsline {section}{\numberline {III}SKF rating life for shaft 1}{64}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Design of Gearbox Cover}{67}{chapter.8}%
+\contentsline {section}{\numberline {I}Gearbox material}{67}{section.8.1}%
+\contentsline {section}{\numberline {II}Bearing placement on shafts and in gearbox}{67}{section.8.2}%
+\contentsline {section}{\numberline {III}Lubrication for the transmission system}{67}{section.8.3}%
+\contentsline {section}{\numberline {IV}Tolerance selection for assembly}{67}{section.8.4}%
+\contentsline {chapter}{Bibliography}{70}{chapter*.41}%

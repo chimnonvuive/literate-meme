@@ -1,0 +1,77 @@
+\chapter{Design of Gearbox Cover}
+\section{Gearbox material}
+Basic criteria for gearbox material selection are hardness and weight. Thus, gray cast iron GX 15-32 is used because it is a common material in foundry industry. The advantages of using this is cost-effective, easy to cast and resistant to abrasion.
+
+To facilitate installation, the cap and housing unit are cast separately.
+
+\section{Bearing placement on shafts and in gearbox}
+
+\begin{table}
+	\centering
+	\caption{Parameters of gearbox housing unit}
+	\begin{tabular}{ll}\toprule
+		Wall thickness & \\\midrule
+		Gearbox body $ \delta $ & $ \delta = 0.03a + 2 = 0.03\times 160 + 2 = 8 \unitp{mm} \Rightarrow \delta = 7 \unit{mm}  $\\\midrule
+		Diameters & \\\midrule
+		Bolt at base $ d_1 $ & $ d_1 = 0.04a+10 = 0.04\times 160 + 10 = 16 \unitp{mm} $\\
+		& $ \Rightarrow d_1 = 10 \unit{mm}$\\
+		Bearing retaining bolt $ d_2 $ & $ d_2 = 0.75d_1 = 0.75\times 10 = 8\unitp{mm}$\\
+		Housing - top cover bolt $ d_3 $ & $ d_3 = 0.8 d_2 = 0.8\times 8 = 6.4 \unitp{mm} \Rightarrow d_3 = 8\unit{mm} $\\
+		Oil cap screw $ d_4 $ & $ d_4 = 0.6d_2 = 0.6\times 8 = 4.8 \unitp{mm} \Rightarrow d_4 = 8\unit{mm} $\\
+		Top cover screw $ d_5 $ & $ d_5  = 0.7 d_2 = 0.7\times 8 = 4 \unitp{mm}\Rightarrow d_5 = 6 \unit{mm} $\\\midrule
+		\multicolumn{2}{l}{Dimensions between housing and cover} \\\midrule
+		Cover wall thickness $ S_3 $ & $ S_3 = 1.6 d_3 = 1.6\times 8 = 13 \unitp{mm} $\\
+		Housing wall thickness $ S_4 $ & $ S_4 = S_3 = 13\unit{mm} $\\
+		Width $ K_1 $ & $ K_1 = 3d_1 = 3\times 10 = 30 \unitp{mm}$\\
+		Width $ E_2 $ & $ E_2 = 1.6d_2 = 1.6\times 8 = 13 \unitp{mm}$\\
+		Width $ R_2 $ & $ R_2 = E_2 = 13 \unitp{mm}$\\
+		Width $ K_2 $ & $ K_2 = E_2 + R_2 = 13+13 = 26 \unitp{mm}$\\
+		Width $ K_3 $ & $ K_3 = K_2 - 5 = 26 - 5 = 21 \unitp{mm}$\\\midrule
+		Bearing journals\\\midrule
+		Largest diameter $ D_3 $ & shaft 1: $ D_3 = 42 \unit{mm} $\\
+		& shaft 2: $ D_3 = 60 \unit{mm} $\\
+		& shaft 3: $ D_3 = 75 \unit{mm} $\\
+		Diameter at bolt centerline $ D_2 $ & shaft 1: $ D_2 = 92 \unit{mm} $\\
+		& shaft 2: $ D_2 = 113 \unit{mm} $\\
+		& shaft 3: $ D_2 = 130 \unit{mm} $\\
+		Screw diameter $ d_6 $ & shaft 1: $ d_6 = M8 $\\
+		& shaft 2: $ d_6 = M8 $\\
+		& shaft 3: $ d_6 = M8 $\\\midrule
+		Housing bottom\\\midrule
+		Wall thickness $ S_1 $ & $ S_1 = 1.6d_3 = 1.6\times 8 = 13\unitp{mm} \Rightarrow S_1 = 7\unit{mm}$\\
+		Width $ K_1 $ & $ K_1 = 3d_1 = 3\times 10 = 30 \unit{mm} $\\
+		Width $ q $ & $ q = K_1 + 2\delta = 30 + 2\times 7 = 44 \unit{mm} $\\\midrule
+		Gap between elements\\\midrule
+		Gears and housing inner wall $ \Delta $ & $ \Delta = 5\unit{mm} $\\
+		Gears $ \Delta $ & $ \Delta = 5\unit{mm} $\\\midrule
+		Number of bolt at base $ Z $ & $ Z = \dfrac{L+B}{250} = \dfrac{425+305}{250} = 3 \Rightarrow Z =6 $\\\bottomrule
+	\end{tabular}
+\end{table}
+where 
+\begin{itemize}
+	\item $ a = 160 \unit{mm} $ is the center distance between shafts.
+	\item $ L $ is the gearbox base length.
+	\item $ B $ is the gearbox base width .
+\end{itemize}
+
+The distance between the bottom of the gear and the bottom of the housing unit is $ \Delta_1 = 3.5\delta = 3.5\times 7 = 25 \unit{mm} $. In this way,  the debris at the bottom does not affect the transmission system performance and provide room for heat dissipation.
+
+The number of oil cap's screw $ Z_o = 4 $.
+
+The inner fillet radius $ r = 0.5\delta = 0.5 \times 7 = 3 \unitp{mm} $.
+
+The outer fillet radius $ R = 1.5 \delta = 1.5 \times 7 = 10 \unitp{mm} $.
+
+\section{Lubrication for the transmission system}
+Soaking the system in oil is commonly used in practice. Therefore, this method is preferred. In addition, the approach is suitable for speed lower than $ 12\unit{m/s} $. The oil type is ISO VG-46, which works well at $ 70^\circ $C operation.
+
+For the bearings, grease is selected since it is easier to design and install than oil lubrication. LGMT2 grease is chosen for small size bearings with water and wear resistance.
+
+\section{Tolerance selection for assembly}
+The method of making the componenet is precision lathing, with accuracy grade 6 for shafts and 7 for holes; for keyholes, milling is used with accuracy grade 9.
+
+Gear assembly uses H7/k6 transition fit since the load is moderate and frequent replacement is avoided.
+
+Bearing assembly also uses H7/k6 transition fit. Although interference fit is more common in general, the shaft material is relatively low quality which may break under force fitting. Furthermore, extra care for grease replacement is considered makes the transition fit more suitable in this case.
+
+For the keys, interference fit P9/h9 is used for single production.

@@ -15,18 +15,18 @@ Since shaft is simply supported beam (i.e. a shaft has pinned support at 1 end a
 	\caption{Calculation table for limiting ratio $ F_a/F_r $}
 	\begin{tabular}{lllllll}\toprule
 		Sect. & $ F_x \unitp{kN} $ & $ F_y \unitp{kN} $ & $ F_z \unitp{kN} $ & $ F_r = \sqrt{F_x^2+F_y^2} \unitp{kN} $ & $ F_a = |F_z| \unitp{kN} $ & $ F_a/F_r $ \\ \midrule
-		$ 1B $ & -0.56 & -0.1 & 0.22 & 0.57 & 0.22 & 0.39 \\
-		$ 1D $ & -0.56 & -0.31 & 0 & 0.64 & 0 & - \\
-		$ 2A $ & 1.16 & 0.07 & 0.47 & 1.16 & 0.47 & 0.41 \\
-		$ 2D $ & 1.07 & -0.79 & 0 & 1.33 & 0 & - \\
-		$ 3A $ & 1.76 & -0.19 & -0.69 & 1.77 & 0.69 & 0.39 \\
-		$ 3C $ & -6.62 & 1.33 & 0 & 6.75 & 0 & -\\
+		$ 1B $ & -5.88 & -0.1 & 0.22 & 5.88 & 0.22 & 0.04 \\
+		$ 1D $ & 1.68 & -0.31 & 0 & 1.7 & 0 & - \\
+		$ 2A $ & 1.14 & 0.08 & 0.47 & 1.14 & 0.47 & 0.42 \\
+		$ 2D $ & 1.09 & -0.8 & 0 & 1.36 & 0 & - \\
+		$ 3A $ & 1.76 & -0.22 & -0.69 & 1.77 & 0.69 & 0.39 \\
+		$ 3C $ & -6.62 & 1.36 & 0 & 6.76 & 0 & -\\
 		\bottomrule
 	\end{tabular}
 	\label{Fr/Fa}
 \end{table}
 
-The ratio $ F_a/F_r \geq 0.3 $ indicates the axial loads on 3 shafts are significant. Therefore, angular contact ball bearings, single row is selected. However, if the bearings are used, misalignment should not exist as recommended by the comparison table on p.72 \cite{rolling_bearings}.
+The ratio $ F_a/F_r \geq 0.3 $ indicates the axial loads on shaft 2 and 3 are significant. Therefore, angular contact ball bearings, single row are selected for the 2 shafts. However, if the bearings are used, misalignment should not exist as recommended by the comparison table on p.72 \cite{rolling_bearings}. For shaft 1, it uses a pair of deep groove ball bearings.
 
 The shafts are short in length, which is suitable for adjusted bearing arrangements since thermal expansion is small to axially displacing the bearings. \textbf{Figure \ref{bearing arrangement}} shows similar design and arrangement of the shafts in the speed reducer.
 
@@ -52,20 +52,20 @@ From the specifications above, the bearings are selected from standard single ro
 \begin{table}[ht]
 	\centering
 	\caption{Compact specification table of selected bearings according to SKF \cite{rolling_bearings}}
-	\begin{tabular}{llll}\toprule
-		Specifications & Bearings 1 & Bearings 2 & Bearings 3 \\ \midrule
-		SKF designation & 7207 BE-2RZP & 7210 BE-2RZP & 7212 BEP\\
-		$ d \unitp{mm} $ & 30 & 45 & 60\\
-		$ D \unitp{mm} $ & 72 & 90 & 110\\
-		$ B \unitp{mm} $ & 17 & 20 & 22\\
-		$ C \unitp{kN} $ & 29.1 & 37.7 & 57.2\\
-		$ C_0 \unitp{kN} $ & 19 & 28.5 & 45.5\\
-		$ P_u \unitp{kN} $ & 0.815 & 1.22 & 1.93\\
-		$ d_a \unitp{mm} $ min. & 42 & 57 & 69\\
-		$ d_a \unitp{mm} $ max. & 49 & 65 & -\\
-		$ D_a \unitp{mm} $ max. & 65 & 83 & 101\\
-		$ r_a \unitp{mm} $ max. & 1 & 1 & 1.5\\
-		$ k_r $ & 0.095 & 0.095 & 0.095\\
+	\begin{tabular}{lll}\toprule
+		Specifications & Bearings 2 & Bearings 3 \\ \midrule
+		SKF designation & 7209 BE-2RZP & 7212 BEP\\
+		$ d \unitp{mm} $ & 45 & 60\\
+		$ D \unitp{mm} $ & 85 & 110\\
+		$ B \unitp{mm} $ & 19 & 22\\
+		$ C \unitp{kN} $ & 35.8 & 57.2\\
+		$ C_0 \unitp{kN} $ & 26 & 45.5\\
+		$ P_u \unitp{kN} $ & 1.12 & 1.93\\
+		$ d_a \unitp{mm} $ min. & 52 & 60\\
+		$ d_a \unitp{mm} $ max. & 65 & -\\
+		$ D_a \unitp{mm} $ max. & 78 & 101\\
+		$ r_a \unitp{mm} $ max. & 1 & 1.5\\
+		$ k_r $ & 0.095 & 0.095\\
 		\bottomrule
 	\end{tabular}
 	\label{bearingspecs}
@@ -95,12 +95,12 @@ where
 	\item $ C $ is the basic dynamic load rating,$ \unit{kN} $.
 	\item $ C_0 $ is the basic static load rating,$ \unit{kN} $.
 	\item $ P_u $ is the fatigue load limit,$ \unit{kN} $.
-	\item $ A, k_r $ are the calculation factors.
+	\item $ k_r $ is the calculation factor.
 \end{itemize}
 
 Referring to \textbf{Table \ref{safety-sigma}} and \textbf{\ref{safety-tau}}, the fillet radius and shoulder diameter are in accordance with the limits provided in \textbf{Table \ref{bearingspecs}}.
 
-\section{SKF rating life}
+\section{SKF rating life for shaft 2, 3}
 SKF uses a modified life factor in accordance with ISO 281 to optimize prediction of bearing life, p.89 \cite{rolling_bearings}. In terms of operating hours, the SKF rating life $ L_{nmh} $ (unit is$ \unit{h} $) is
 \[L_{nmh} = \left(\dfrac{10^6}{60n}\right) a_1 a_{SKF} \left(\dfrac{C}{P}\right)^p\]
 where
@@ -124,8 +124,7 @@ where
 			\caption{Calculation table for lubrication condition $ \kappa $}
 			\begin{tabular}{llllllll}\toprule
 				Shaft & $ d $ & $ D $ & $ d_m = 0.5(d+D) $ & $ n \unitp{rpm} $ & $ nd_m \unitp{mm/min} $ & $ \nu_1 \unitp{mm^2/s} $ & $ \kappa $ \\\midrule
-				1 & 35 & 72 & 53.5 & 1455 & 77842.5 & 15 & 2.33\\
-				2 & 45 & 90 & 67.5 & 514.42 & 34723.36 & 30 & 1.17\\
+				2 & 45 & 85 & 65 & 514.42 & 33437.31 & 30 & 1.17\\
 				3 & 60 & 110 & 90 & 181.88 & 16368.75 & 48 & 0.73\\\bottomrule
 			\end{tabular}
 		\end{table}
@@ -137,12 +136,10 @@ where
 		\caption{Calculation table life modification factor $ a_{SKF} $}
 		\begin{tabular}{llllll}\toprule
 			Sect. & $ P_u \unitp{kN} $ & $ P \unitp{kN} $ & $ \eta_c \dfrac{P_u}{P} $ & $ \kappa $ & $ a_{SKF} $ \\ \midrule
-			$ 1B $ & 0.81 & 0.88 & 0.46 & 0.87 & 15 \\
-			$ 1D $ & 0.81 & 1.08 & 0.38 & 0.87 & 10\\
-			$ 2A $ & 1.22 & 1.81 & 0.34 & 0.43 & 1.1\\
-			$ 2D $ & 1.22 & 2.26 & 0.27 & 0.43 & 0.9\\
+			$ 2A $ & 1.12 & 1.78 & 0.32 & 0.43 & 1.1\\
+			$ 2D $ & 1.12 & 2.28 & 0.25 & 0.43 & 0.9\\
 			$ 3A $ & 1.93 & 2.76 & 0.35 & 0.27 & 0.22\\
-			$ 3C $ & 1.93 & 7.59 & 0.13 & 0.27 & 0.2\\
+			$ 3C $ & 1.93 & 7.6  & 0.13 & 0.27 & 0.2\\
 			\bottomrule
 		\end{tabular}
 		\label{askf}
@@ -181,9 +178,8 @@ where
 			\caption{Compact specification table of selected bearings according to SKF \cite{rolling_bearings}}
 			\begin{tabular}{lllllll}\toprule
 				Shaft & $ F_{rA} $ & $ F_{rB} $ & $ K_a = |F_z| $ & $ R(F_{rB}-F_{rA}) $ & $ F_{aA} $ & $ F_{aB} $ \\\midrule
-				1 & 0.57 & 0.64 & 0.22 (\textbf{Fig. \ref{face2face}})& 0.06 (case 1b) & 0.5 & 0.72 \\
-				2 & 1.16 & 1.33 & 0.47 (\textbf{Fig. \ref{face2face}})& 0.15 (case 1b) & 1.02 & 1.5 \\
-				3 & 1.77 & 6.75 & 0.69 (\textbf{Fig. \ref{face2face2}})& 4.38 (case 2c) & 1.56 & 0.87 \\\bottomrule
+				1 & 1.14 & 1.09 & 0.47 (\textbf{Fig. \ref{face2face}})& 0.19 (case 1b) & 1 & 1.48 \\
+				2 & 1.76 & 6.62 & 0.69 (\textbf{Fig. \ref{face2face2}})& 4.38 (case 2c) & 1.56 & 0.87 \\\bottomrule
 			\end{tabular}
 			\label{bearingforce}
 		\end{table}
@@ -204,9 +200,8 @@ where
 				\caption{Condition check for radial load for bearing pairs arranged face-to-face}
 				\begin{tabular}{lllllllll}\toprule
 					Shaft & $ k_r $ & $ d $ & $ D $ & $ d_m = 0.5(d+D) $ & $ F_{rA} $ & $ F_{rB} $ & $ F_{rm} $ & Condition $ F_r \geq F_{rm} $ \\\midrule
-					1 & 0.095 & 35 & 72 & 53.5 & 0.57 & 0.64 & 0.34 & Satisfied \\
-					2 & 0.095 & 45 & 90 & 67.5 & 1.16 & 1.33 & 0.27 & Satisfied \\
-					3 & 0.095 & 60 & 110 & 90 & 1.77 & 6.75 & 0.24 & Satisfied \\\bottomrule
+					2 & 0.095 & 45 & 85 & 65 & 1.14 & 1.09 & 0.14 & Satisfied \\
+					3 & 0.095 & 60 & 110 & 90 & 1.76 & 6.62 & 0.14 & Satisfied \\\bottomrule
 				\end{tabular}
 				\label{Frm}
 			\end{table}
@@ -218,12 +213,10 @@ where
 		\caption{Calculation table for equivalent dynamic bearing load $ P $}
 		\begin{tabular}{lllll}\toprule
 			Sect. & $ F_r $ & $ F_a $ & $ F_a/F_r < e $ & $ P \unitp{kN} $ \\ \midrule
-			$ 1B $ & 0.57 & 0.5  & 0.88<1.14 & 0.88 \\
-			$ 1D $ & 0.64 & 0.72 & 1.13<1.14 & 1.08 \\
-			$ 2A $ & 1.16 & 1.02 & 0.88<1.14 & 1.81 \\
-			$ 2D $ & 1.33 & 1.5  & 1.12<1.14 & 2.26 \\
+			$ 2A $ & 1.14 & 1 & 0.88<1.14 & 1.78 \\
+			$ 2D $ & 1.36 & 1.48  & 1.09<1.14 & 2.28 \\
 			$ 3A $ & 1.77 & 1.56 & 0.88<1.14 & 2.76 \\
-			$ 3C $ & 6.75 & 0.87 & 0.13<1.14 & 7.59 \\
+			$ 3C $ & 6.76 & 0.87 & 0.13<1.14 & 7.6 \\
 			\bottomrule
 		\end{tabular}
 		\label{Pload}
@@ -231,28 +224,95 @@ where
 	\item $ p $ is the exponent of the life equation. For ball bearings, $ p = 3 $.
 \end{itemize}
 
-In summary, the rating life $ L_{nmh} $ is computed in \textbf{Table \ref{ratinglife}}. According to calculation, under specified environmental conditions (normal cleanliness, working at $ 80\degc $ and $ 90\% $ reliability), the bearings are guaranteed to operate for at least $ 12,000 $ hours. This is the typical life span in machines for use 8 hours a day, but not always fully utilized, Table 1, p.88 \cite{rolling_bearings}.
-
-SKF recommends when $ \kappa < 1 $, EP/AW additives should be used, p.102 \cite{rolling_bearings}. However, it is always possible to obtain higher lubrication condition $ \kappa $ if better viscosity oil is used (ISO VG 63). Also, the speeds of 3 shafts are not too low ($ > 10 \unitp{rpm} $) that static loading analysis is needed. Therefore, the selected SKF bearings are still valid.
-
-The proposed bearings are listed as follows (specifications are provided in SKF bearings catalog \cite{rolling_bearings}):
-\begin{itemize}
-	\item Shaft 1: 7207 BE-2RZP
-	\item Shaft 2: 7210 BE-2RZP
-	\item Shaft 3: 7212 BEP
-\end{itemize}
 \begin{table}[ht]
 	\centering
 	\caption{Calculation table for SKF rating life $ L_{nmh} $ in hours}
 	\begin{tabular}{llllll}\toprule
 		Sect. & $ n \unitp{rpm} $ & $ a_{SKF} $ & $ C \unitp{kN} $ & $ P \unitp{kN} $ & $ L_{nmh} \unitp{h} $ \\ \midrule
-		$ 1B $ & 1455   & 15   & 29.1 & 0.88 & $ 6,201,499.81 $ \\
-		$ 1D $ & 1455   & 10   & 29.1 & 1.08 & $ 2,238,026.65 $ \\
-		$ 2A $ & 514.42 & 1.1  & 	37.7 & 1.81 & $ 321,910.25 $ \\
-		$ 2D $ & 514.42 & 0.9  & 37.7 & 2.26 & $ 135,097.87 $ \\
-		$ 3A $ & 181.88 & 0.22 & 66.3 & 2.76 & $ 278,897.56 $ \\
-		$ 3C $ & 181.88 & 0.2  & 66.3 & 7.59 & $ 12,211.88 $ \\
+		$ 2A $ & 514.42 & 1.1  & 35.8 & 1.78 & $ 291071.18 $ \\
+		$ 2D $ & 514.42 & 0.9  & 35.8 & 2.28 & $ 113384.06 $ \\
+		$ 3A $ & 181.88 & 0.22 & 66.3 & 2.76 & $ 277974.62 $ \\
+		$ 3C $ & 181.88 & 0.2  & 66.3 & 7.6 & $ 12184.16 $ \\
 		\bottomrule
 	\end{tabular}
 	\label{ratinglife}
 \end{table}
+
+\section{SKF rating life for shaft 1}
+For shaft 1, the calculation is almost the same as the above.
+
+\begin{table}[ht]
+	\centering
+	\caption{Compact specification table of shaft 1 bearings according to SKF \cite{rolling_bearings}}
+	\begin{tabular}{ll}\toprule
+		Specifications & Bearings 1 \\\midrule
+		SKF designation & 6207 \\
+		$ d \unitp{mm} $ & 35\\
+		$ D \unitp{mm} $ & 72\\
+		$ B \unitp{mm} $ & 17\\
+		$ C \unitp{kN} $ & 27\\
+		$ C_0 \unitp{kN} $ & 15.3\\
+		$ P_u \unitp{kN} $ & 0.655\\
+		$ d_a \unitp{mm} $ min. & 42 \\
+		$ d_a \unitp{mm} $ max. & - \\
+		$ D_a \unitp{mm} $ max. & 65 \\
+		$ r_a \unitp{mm} $ max. & 1 \\
+		$ k_r $ & 0.025\\
+		$ f_0 $ & 14\\
+		\bottomrule
+	\end{tabular}
+	\label{bearingspecs2}
+\end{table}
+
+Before evaluating SKF rating life, the axial load on the deep groove bearings must met this condition, p.254 \cite{rolling_bearings}:
+\[
+F_a = 0.22 \leq 0.25C_0 = 0.25\times  =3.83 \unitp{kN}
+\]
+
+Minimum load condition must also be evaluated, p.254 \cite{rolling_bearings}:
+\[
+\begin{array}{ll}
+F_{rm} & = k_r\left(\dfrac{\nu n}{1000}\right)^{2/3}\left(d_m/100\right)^2\\
+& = 0.025\times \left (\dfrac{30 \times 1455}{1000}\right)^{2/3} \left[\dfrac{0.5(35+72)}{100}\right]^2\\
+& = 0.09<5.88\unitp{kN}
+\end{array}
+\]
+
+where $ \nu $ and formula of $ d_m $ are taken from the previous section.
+
+The bearing pair is arranged face-to-face. Therefore, using equation on p.254 \cite{rolling_bearings}:
+\[
+\begin{array}{l}
+F_a/F_r = 0.1/5.88 = 0.017 \leq e = 0.27\\
+\Rightarrow P = F_r + Y_1F_a = 5.88+2.45\times 0.1 = 6.13 \unitp{kN}
+\end{array}
+\]
+
+where $ e, Y_1 $ are the calculation factors. They are provided on Table 10, p.257 \cite{rolling_bearings}, which relies on $ f_0,F_a,C_0 $.
+
+The SKF rating life $ a_{SKF} $ is found using the same method applied to shaft 2 and 3 bearing pairs. First, the viscosity ratio $ \kappa $ is calculated:
+\[
+\kappa = \dfrac{\nu}{\nu_1} = \dfrac{30}{0.1} = 300
+\]
+
+Taking the same contamination factor $ \eta_c = 0.5 $, the ratio $ \eta_c \frac{P_u}{P} = 0.5\times \dfrac{0.655}{6.13} = 0.05 $.
+
+From the value $ \kappa $ and $ \eta_c \frac{P_u}{P} $, $ a_{SKF} = 50 $. Using this value,
+\[
+\begin{array}{ll}
+L_{nmh} & = \left(\dfrac{10^6}{60n}\right) a_1 a_{SKF} \left(\dfrac{C}{P}\right)^p\\
+& = \left(\dfrac{10^6}{60\times}\right) \times 1 \times 50 \left(\dfrac{27}{6.13}\right)^3\\
+& = 48940.2 \unitp{h}
+\end{array}
+\]
+
+According to calculation, under specified environmental conditions (normal cleanliness, working at $ 80\degc $ and $ 90\% $ reliability), the bearings are guaranteed to operate for at least $ 12,000 $ hours. This is the typical life span in machines for use 8 hours a day, but not always fully utilized, Table 1, p.88 \cite{rolling_bearings}.
+
+SKF recommends when $ \kappa < 1 $, EP/AW additives should be used, p.102 \cite{rolling_bearings}. However, it is always possible to obtain higher lubrication condition $ \kappa $ if better viscosity oil is used (ISO VG 63). Also, the speeds of 3 shafts are not too low ($ > 10 \unitp{rpm} $) that static loading analysis is needed. Therefore, the selected SKF bearings are still valid.
+
+The proposed bearings are listed as follows (specifications are provided in SKF bearings catalog \cite{rolling_bearings}):
+\begin{itemize}
+	\item Shaft 1: 6207
+	\item Shaft 2: 7209 BE-2RZP
+	\item Shaft 3: 7212 BEP
+\end{itemize}
