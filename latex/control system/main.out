@@ -1,4 +1,24 @@
 \BOOKMARK [0][-]{chapter.1}{Modeling the motor}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Electrical modeling}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Mechanical modeling}{chapter.1}% 3
-\BOOKMARK [0][-]{appendix*.4}{References}{}% 4
+\BOOKMARK [1][-]{section.1.3}{Forming the transfer function}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Proportional controller design}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Specifying the problem}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Solving the problem}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Graphic results}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Transfer function of the gain controller}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Transient response of the system}{section.2.3}% 10
+\BOOKMARK [0][-]{chapter.3}{Ideal integral \(PI\) controller design}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Specifying the problem}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Solving the problem}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Graphic results}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.1}{Transfer function of PI controller}{section.3.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.2}{Transient response of the system}{section.3.3}% 16
+\BOOKMARK [0][-]{chapter.4}{PID controller design}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Specifying the problem}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Ideal derivative \(PD\) controller}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{Ideal integral \(PI\) controller}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{Graphic results}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.4.1}{Compensated pole of the PD controller \040zc }{section.4.4}% 22
+\BOOKMARK [2][-]{subsection.4.4.2}{Transfer function of the PID controller}{section.4.4}% 23
+\BOOKMARK [2][-]{subsection.4.4.3}{Transient response of the system}{section.4.4}% 24

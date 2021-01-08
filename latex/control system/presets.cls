@@ -2,8 +2,8 @@
 \usepackage[utf8]{inputenc}
 %\renewcommand{\rmdefault}{unc}
 %\usepackage[T1]{fontenc}
-\usepackage[vietnamese, english]{babel}
-
+\usepackage[english]{babel}
+\usepackage{minted}
 \usepackage{array}
 \usepackage{tgtermes}
 \usepackage{amsmath}
@@ -34,7 +34,6 @@
 \usepackage[table,xcdraw]{xcolor}
 
 \addbibresource{ref.bib}
-
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -45,7 +44,7 @@
 
 % increase line height
 %\renewcommand{\baselinestretch}{1.25}
-\setlength{\belowcaptionskip}{0.6\baselineskip}
+%\setlength{\belowcaptionskip}{0.6\baselineskip}
 \renewcommand{\sectionmark}[1]{\markright{\thesection~ #1}}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter~ #1}{}}
 
@@ -55,8 +54,8 @@
 % set default path for figures
 \graphicspath{{./images/}}
 
-\title{Introduction to Flow Sensors and Datasheet Reading}
-\author{Group 3}
+\title{PID Controller Design for Self-excited Brushed DC Motor}
+\author{Nguyen Quy Khoi}
 
 \makeatletter
 \let\thetitle\@title

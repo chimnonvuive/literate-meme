@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kn}{from} \PYG{n+nn}{control} \PYG{k+kn}{import} \PYG{o}{*}
+	\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{o}{*}
+	\PYG{k+kn}{from} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{import} \PYG{o}{*}
+	
+	
+	\PYG{n}{s} \PYG{o}{=} \PYG{n}{tf}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}s\PYGZsq{}}\PYG{p}{)}
+	\PYG{n}{G} \PYG{o}{=} \PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mf}{18.2}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{])} \PYG{o}{*} \PYG{p}{(}\PYG{n}{s}\PYG{o}{+}\PYG{l+m+mf}{14.31}\PYG{p}{)} \PYG{o}{*} \PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{l+m+mf}{0.1}\PYG{o}{/}\PYG{n}{s}\PYG{p}{)}
+	\PYG{n}{sys} \PYG{o}{=} \PYG{n}{feedback}\PYG{p}{(}\PYG{l+m+mf}{0.217}\PYG{o}{*}\PYG{n}{G}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+	
+	\PYG{n}{U} \PYG{o}{=} \PYG{n}{T} \PYG{o}{=} \PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mf}{0.8}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{)}
+	\PYG{n}{yout}\PYG{p}{,} \PYG{n}{T}\PYG{p}{,} \PYG{n}{xout} \PYG{o}{=} \PYG{n}{lsim}\PYG{p}{(}\PYG{n}{sys}\PYG{p}{,} \PYG{n}{U}\PYG{p}{,} \PYG{n}{T}\PYG{p}{)}
+	
+	\PYG{n}{plot}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,} \PYG{n}{U}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}gray\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}ramp input\PYGZsq{}}\PYG{p}{)}
+	\PYG{n}{plot}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,} \PYG{n}{yout}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}blue\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}ramp response\PYGZsq{}}\PYG{p}{)}
+	\PYG{n}{legend}\PYG{p}{()}
+\end{Verbatim}
